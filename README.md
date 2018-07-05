@@ -1,2 +1,5 @@
 # MyMind
-学习中所记录的各种脑图:&lt;Effective Objective-C 2.0>
+## Effective Objective-C 2.0
+
+![Effective Objective-C 2.0](/Users/inso/Desktop/Effective Objective-C 2.0.png)
+
