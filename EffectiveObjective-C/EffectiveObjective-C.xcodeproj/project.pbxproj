@@ -7,15 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A16B0664D1017E0C99638FA9 /* libPods-EffectiveObjective-C.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 58807DF2DF82E01DABBB8C07 /* libPods-EffectiveObjective-C.a */; };
 		E68396B820F337800033B009 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E68396B720F337800033B009 /* AppDelegate.m */; };
 		E68396BB20F337800033B009 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E68396BA20F337800033B009 /* ViewController.m */; };
 		E68396BE20F337800033B009 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E68396BC20F337800033B009 /* Main.storyboard */; };
 		E68396C020F337810033B009 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E68396BF20F337810033B009 /* Assets.xcassets */; };
 		E68396C320F337810033B009 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E68396C120F337810033B009 /* LaunchScreen.storyboard */; };
 		E68396C620F337810033B009 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E68396C520F337810033B009 /* main.m */; };
+		E68396CF20F3397D0033B009 /* Item10ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E68396CE20F3397D0033B009 /* Item10ViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		58807DF2DF82E01DABBB8C07 /* libPods-EffectiveObjective-C.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EffectiveObjective-C.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C13BBE0AE3FB7A415B80D14 /* Pods-EffectiveObjective-C.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EffectiveObjective-C.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EffectiveObjective-C/Pods-EffectiveObjective-C.debug.xcconfig"; sourceTree = "<group>"; };
+		D41122C360501C051B35329D /* Pods-EffectiveObjective-C.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EffectiveObjective-C.release.xcconfig"; path = "Pods/Target Support Files/Pods-EffectiveObjective-C/Pods-EffectiveObjective-C.release.xcconfig"; sourceTree = "<group>"; };
 		E68396B320F337800033B009 /* EffectiveObjective-C.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "EffectiveObjective-C.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E68396B620F337800033B009 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E68396B720F337800033B009 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -26,6 +31,9 @@
 		E68396C220F337810033B009 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E68396C420F337810033B009 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E68396C520F337810033B009 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E68396CD20F3397D0033B009 /* Item10ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Item10ViewController.h; sourceTree = "<group>"; };
+		E68396CE20F3397D0033B009 /* Item10ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Item10ViewController.m; sourceTree = "<group>"; };
+		E68396D020F33B6F0033B009 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +41,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A16B0664D1017E0C99638FA9 /* libPods-EffectiveObjective-C.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		67B314C412C01359F8A4B9F0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				58807DF2DF82E01DABBB8C07 /* libPods-EffectiveObjective-C.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A99C44DB9CF7EB573410D091 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6C13BBE0AE3FB7A415B80D14 /* Pods-EffectiveObjective-C.debug.xcconfig */,
+				D41122C360501C051B35329D /* Pods-EffectiveObjective-C.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		E68396AA20F337800033B009 = {
 			isa = PBXGroup;
 			children = (
 				E68396B520F337800033B009 /* EffectiveObjective-C */,
 				E68396B420F337800033B009 /* Products */,
+				A99C44DB9CF7EB573410D091 /* Pods */,
+				67B314C412C01359F8A4B9F0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +86,7 @@
 		E68396B520F337800033B009 /* EffectiveObjective-C */ = {
 			isa = PBXGroup;
 			children = (
+				E68396CC20F339660033B009 /* Item 10 */,
 				E68396B620F337800033B009 /* AppDelegate.h */,
 				E68396B720F337800033B009 /* AppDelegate.m */,
 				E68396B920F337800033B009 /* ViewController.h */,
@@ -67,8 +96,18 @@
 				E68396C120F337810033B009 /* LaunchScreen.storyboard */,
 				E68396C420F337810033B009 /* Info.plist */,
 				E68396C520F337810033B009 /* main.m */,
+				E68396D020F33B6F0033B009 /* PrefixHeader.pch */,
 			);
 			path = "EffectiveObjective-C";
+			sourceTree = "<group>";
+		};
+		E68396CC20F339660033B009 /* Item 10 */ = {
+			isa = PBXGroup;
+			children = (
+				E68396CD20F3397D0033B009 /* Item10ViewController.h */,
+				E68396CE20F3397D0033B009 /* Item10ViewController.m */,
+			);
+			path = "Item 10";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -78,6 +117,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E68396C920F337810033B009 /* Build configuration list for PBXNativeTarget "EffectiveObjective-C" */;
 			buildPhases = (
+				C8B336AD9CF2F7AF888B1756 /* [CP] Check Pods Manifest.lock */,
 				E68396AF20F337800033B009 /* Sources */,
 				E68396B020F337800033B009 /* Frameworks */,
 				E68396B120F337800033B009 /* Resources */,
@@ -136,11 +176,33 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		C8B336AD9CF2F7AF888B1756 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EffectiveObjective-C-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E68396AF20F337800033B009 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E68396CF20F3397D0033B009 /* Item10ViewController.m in Sources */,
 				E68396BB20F337800033B009 /* ViewController.m in Sources */,
 				E68396C620F337810033B009 /* main.m in Sources */,
 				E68396B820F337800033B009 /* AppDelegate.m in Sources */,
@@ -281,10 +343,12 @@
 		};
 		E68396CA20F337810033B009 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C13BBE0AE3FB7A415B80D14 /* Pods-EffectiveObjective-C.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8CJPZVXX3U;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PRODUCT_NAME)/PrefixHeader.pch";
 				INFOPLIST_FILE = "EffectiveObjective-C/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -298,10 +362,12 @@
 		};
 		E68396CB20F337810033B009 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D41122C360501C051B35329D /* Pods-EffectiveObjective-C.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8CJPZVXX3U;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PRODUCT_NAME)/PrefixHeader.pch";
 				INFOPLIST_FILE = "EffectiveObjective-C/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

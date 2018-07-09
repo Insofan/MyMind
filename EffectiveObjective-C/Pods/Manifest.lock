@@ -1,0 +1,24 @@
+PODS:
+  - HXTool (0.1.6)
+  - Masonry (1.1.0)
+  - ReactiveObjC (3.1.0)
+
+DEPENDENCIES:
+  - HXTool
+  - Masonry
+  - ReactiveObjC
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - HXTool
+    - Masonry
+    - ReactiveObjC
+
+SPEC CHECKSUMS:
+  HXTool: a9db6a4a85948b3d3191ef9e2ebc95f3dbfe8041
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  ReactiveObjC: 2a38ea15335de4119d8b17caf1db1484f61db902
+
+PODFILE CHECKSUM: c5d34f7f53a975d1c970449e131889f106980b18
+
+COCOAPODS: 1.5.2
