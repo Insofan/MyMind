@@ -17,6 +17,8 @@
 		E68396CF20F3397D0033B009 /* Item10ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E68396CE20F3397D0033B009 /* Item10ViewController.m */; };
 		E6B2419820F735F7008DBB25 /* NSObject+Associate.m in Sources */ = {isa = PBXBuildFile; fileRef = E6B2419720F735F7008DBB25 /* NSObject+Associate.m */; };
 		E6B2419B20F739CB008DBB25 /* UITapGestureRecognizer+Associate.m in Sources */ = {isa = PBXBuildFile; fileRef = E6B2419A20F739CB008DBB25 /* UITapGestureRecognizer+Associate.m */; };
+		E6B2419F20F74447008DBB25 /* Item11ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6B2419E20F74447008DBB25 /* Item11ViewController.m */; };
+		E6B241A220F7478C008DBB25 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = E6B241A120F7478C008DBB25 /* Person.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,10 @@
 		E6B2419720F735F7008DBB25 /* NSObject+Associate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Associate.m"; sourceTree = "<group>"; };
 		E6B2419920F739CB008DBB25 /* UITapGestureRecognizer+Associate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITapGestureRecognizer+Associate.h"; sourceTree = "<group>"; };
 		E6B2419A20F739CB008DBB25 /* UITapGestureRecognizer+Associate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITapGestureRecognizer+Associate.m"; sourceTree = "<group>"; };
+		E6B2419D20F74447008DBB25 /* Item11ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Item11ViewController.h; sourceTree = "<group>"; };
+		E6B2419E20F74447008DBB25 /* Item11ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Item11ViewController.m; sourceTree = "<group>"; };
+		E6B241A020F7478C008DBB25 /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		E6B241A120F7478C008DBB25 /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +69,15 @@
 				E6B2419A20F739CB008DBB25 /* UITapGestureRecognizer+Associate.m */,
 			);
 			path = "Associate Group";
+			sourceTree = "<group>";
+		};
+		31664696673AA1060317BADD /* Msg Send */ = {
+			isa = PBXGroup;
+			children = (
+				E6B241A020F7478C008DBB25 /* Person.h */,
+				E6B241A120F7478C008DBB25 /* Person.m */,
+			);
+			path = "Msg Send";
 			sourceTree = "<group>";
 		};
 		67B314C412C01359F8A4B9F0 /* Frameworks */ = {
@@ -103,6 +118,7 @@
 		E68396B520F337800033B009 /* EffectiveObjective-C */ = {
 			isa = PBXGroup;
 			children = (
+				E6B2419C20F7442F008DBB25 /* Item 11 */,
 				E68396CC20F339660033B009 /* Item 10 */,
 				E68396B620F337800033B009 /* AppDelegate.h */,
 				E68396B720F337800033B009 /* AppDelegate.m */,
@@ -126,6 +142,16 @@
 				3166441597FA8D120F1D9307 /* Associate Group */,
 			);
 			path = "Item 10";
+			sourceTree = "<group>";
+		};
+		E6B2419C20F7442F008DBB25 /* Item 11 */ = {
+			isa = PBXGroup;
+			children = (
+				E6B2419D20F74447008DBB25 /* Item11ViewController.h */,
+				E6B2419E20F74447008DBB25 /* Item11ViewController.m */,
+				31664696673AA1060317BADD /* Msg Send */,
+			);
+			path = "Item 11";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,6 +248,8 @@
 			files = (
 				E68396CF20F3397D0033B009 /* Item10ViewController.m in Sources */,
 				E68396BB20F337800033B009 /* ViewController.m in Sources */,
+				E6B241A220F7478C008DBB25 /* Person.m in Sources */,
+				E6B2419F20F74447008DBB25 /* Item11ViewController.m in Sources */,
 				E6B2419820F735F7008DBB25 /* NSObject+Associate.m in Sources */,
 				E68396C620F337810033B009 /* main.m in Sources */,
 				E6B2419B20F739CB008DBB25 /* UITapGestureRecognizer+Associate.m in Sources */,
@@ -286,7 +314,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -345,7 +373,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -368,6 +396,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8CJPZVXX3U;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PRODUCT_NAME)/PrefixHeader.pch";
 				INFOPLIST_FILE = "EffectiveObjective-C/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -387,6 +416,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8CJPZVXX3U;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PRODUCT_NAME)/PrefixHeader.pch";
 				INFOPLIST_FILE = "EffectiveObjective-C/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
