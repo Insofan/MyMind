@@ -15,6 +15,8 @@
 		E68396C320F337810033B009 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E68396C120F337810033B009 /* LaunchScreen.storyboard */; };
 		E68396C620F337810033B009 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E68396C520F337810033B009 /* main.m */; };
 		E68396CF20F3397D0033B009 /* Item10ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E68396CE20F3397D0033B009 /* Item10ViewController.m */; };
+		E6B2419820F735F7008DBB25 /* NSObject+Associate.m in Sources */ = {isa = PBXBuildFile; fileRef = E6B2419720F735F7008DBB25 /* NSObject+Associate.m */; };
+		E6B2419B20F739CB008DBB25 /* UITapGestureRecognizer+Associate.m in Sources */ = {isa = PBXBuildFile; fileRef = E6B2419A20F739CB008DBB25 /* UITapGestureRecognizer+Associate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,10 @@
 		E68396CD20F3397D0033B009 /* Item10ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Item10ViewController.h; sourceTree = "<group>"; };
 		E68396CE20F3397D0033B009 /* Item10ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Item10ViewController.m; sourceTree = "<group>"; };
 		E68396D020F33B6F0033B009 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		E6B2419620F735F7008DBB25 /* NSObject+Associate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+Associate.h"; sourceTree = "<group>"; };
+		E6B2419720F735F7008DBB25 /* NSObject+Associate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Associate.m"; sourceTree = "<group>"; };
+		E6B2419920F739CB008DBB25 /* UITapGestureRecognizer+Associate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITapGestureRecognizer+Associate.h"; sourceTree = "<group>"; };
+		E6B2419A20F739CB008DBB25 /* UITapGestureRecognizer+Associate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITapGestureRecognizer+Associate.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +54,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3166441597FA8D120F1D9307 /* Associate Group */ = {
+			isa = PBXGroup;
+			children = (
+				E6B2419620F735F7008DBB25 /* NSObject+Associate.h */,
+				E6B2419720F735F7008DBB25 /* NSObject+Associate.m */,
+				E6B2419920F739CB008DBB25 /* UITapGestureRecognizer+Associate.h */,
+				E6B2419A20F739CB008DBB25 /* UITapGestureRecognizer+Associate.m */,
+			);
+			path = "Associate Group";
+			sourceTree = "<group>";
+		};
 		67B314C412C01359F8A4B9F0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -106,6 +123,7 @@
 			children = (
 				E68396CD20F3397D0033B009 /* Item10ViewController.h */,
 				E68396CE20F3397D0033B009 /* Item10ViewController.m */,
+				3166441597FA8D120F1D9307 /* Associate Group */,
 			);
 			path = "Item 10";
 			sourceTree = "<group>";
@@ -204,7 +222,9 @@
 			files = (
 				E68396CF20F3397D0033B009 /* Item10ViewController.m in Sources */,
 				E68396BB20F337800033B009 /* ViewController.m in Sources */,
+				E6B2419820F735F7008DBB25 /* NSObject+Associate.m in Sources */,
 				E68396C620F337810033B009 /* main.m in Sources */,
+				E6B2419B20F739CB008DBB25 /* UITapGestureRecognizer+Associate.m in Sources */,
 				E68396B820F337800033B009 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
