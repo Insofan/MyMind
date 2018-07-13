@@ -20,6 +20,7 @@
         _vcArray = @[
                      @{@"key": @"Item 10", @"value":NSClassFromString(@"Item10ViewController")},
                      @{@"key": @"Item 11", @"value":NSClassFromString(@"Item11ViewController")},
+                     @{@"key": @"Item 12", @"value":NSClassFromString(@"Item12ViewController")},
 
                      ];
     }

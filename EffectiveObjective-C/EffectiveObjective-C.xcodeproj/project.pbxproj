@@ -19,6 +19,8 @@
 		E6B2419B20F739CB008DBB25 /* UITapGestureRecognizer+Associate.m in Sources */ = {isa = PBXBuildFile; fileRef = E6B2419A20F739CB008DBB25 /* UITapGestureRecognizer+Associate.m */; };
 		E6B2419F20F74447008DBB25 /* Item11ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6B2419E20F74447008DBB25 /* Item11ViewController.m */; };
 		E6B241A220F7478C008DBB25 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = E6B241A120F7478C008DBB25 /* Person.m */; };
+		E6D3221620F87C5D00D0C47C /* Item12ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6D3221520F87C5D00D0C47C /* Item12ViewController.m */; };
+		E6D3221A20F87F8400D0C47C /* EOCAutoDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = E6D3221920F87F8400D0C47C /* EOCAutoDictionary.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +48,10 @@
 		E6B2419E20F74447008DBB25 /* Item11ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Item11ViewController.m; sourceTree = "<group>"; };
 		E6B241A020F7478C008DBB25 /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
 		E6B241A120F7478C008DBB25 /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		E6D3221420F87C5D00D0C47C /* Item12ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Item12ViewController.h; sourceTree = "<group>"; };
+		E6D3221520F87C5D00D0C47C /* Item12ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Item12ViewController.m; sourceTree = "<group>"; };
+		E6D3221820F87F8400D0C47C /* EOCAutoDictionary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EOCAutoDictionary.h; sourceTree = "<group>"; };
+		E6D3221920F87F8400D0C47C /* EOCAutoDictionary.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EOCAutoDictionary.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +124,7 @@
 		E68396B520F337800033B009 /* EffectiveObjective-C */ = {
 			isa = PBXGroup;
 			children = (
+				E6D3221320F87C2800D0C47C /* Item 12 */,
 				E6B2419C20F7442F008DBB25 /* Item 11 */,
 				E68396CC20F339660033B009 /* Item 10 */,
 				E68396B620F337800033B009 /* AppDelegate.h */,
@@ -152,6 +159,25 @@
 				31664696673AA1060317BADD /* Msg Send */,
 			);
 			path = "Item 11";
+			sourceTree = "<group>";
+		};
+		E6D3221320F87C2800D0C47C /* Item 12 */ = {
+			isa = PBXGroup;
+			children = (
+				E6D3221420F87C5D00D0C47C /* Item12ViewController.h */,
+				E6D3221520F87C5D00D0C47C /* Item12ViewController.m */,
+				E6D3221720F87F6200D0C47C /* NSObject */,
+			);
+			path = "Item 12";
+			sourceTree = "<group>";
+		};
+		E6D3221720F87F6200D0C47C /* NSObject */ = {
+			isa = PBXGroup;
+			children = (
+				E6D3221820F87F8400D0C47C /* EOCAutoDictionary.h */,
+				E6D3221920F87F8400D0C47C /* EOCAutoDictionary.m */,
+			);
+			path = NSObject;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,9 +276,11 @@
 				E68396BB20F337800033B009 /* ViewController.m in Sources */,
 				E6B241A220F7478C008DBB25 /* Person.m in Sources */,
 				E6B2419F20F74447008DBB25 /* Item11ViewController.m in Sources */,
+				E6D3221620F87C5D00D0C47C /* Item12ViewController.m in Sources */,
 				E6B2419820F735F7008DBB25 /* NSObject+Associate.m in Sources */,
 				E68396C620F337810033B009 /* main.m in Sources */,
 				E6B2419B20F739CB008DBB25 /* UITapGestureRecognizer+Associate.m in Sources */,
+				E6D3221A20F87F8400D0C47C /* EOCAutoDictionary.m in Sources */,
 				E68396B820F337800033B009 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
