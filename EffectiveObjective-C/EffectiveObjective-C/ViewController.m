@@ -22,6 +22,7 @@
                      @{@"key": @"Item 11", @"value":NSClassFromString(@"Item11ViewController")},
                      @{@"key": @"Item 12", @"value":NSClassFromString(@"Item12ViewController")},
                      @{@"key": @"Item 13", @"value":NSClassFromString(@"Item13ViewController")},
+                     @{@"key": @"Item 16", @"value":NSClassFromString(@"Item16ViewController")},
 
 
                      ];

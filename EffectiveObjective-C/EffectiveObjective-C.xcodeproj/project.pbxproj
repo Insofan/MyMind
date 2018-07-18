@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		31664AF090EE1C56DB81E8D4 /* EOCRectangle.m in Sources */ = {isa = PBXBuildFile; fileRef = 3166477419673952E70D85C8 /* EOCRectangle.m */; };
+		31664C485B78B80088E689BE /* EOCSquare.m in Sources */ = {isa = PBXBuildFile; fileRef = 31664904CB56CF35E025FD10 /* EOCSquare.m */; };
 		A16B0664D1017E0C99638FA9 /* libPods-EffectiveObjective-C.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 58807DF2DF82E01DABBB8C07 /* libPods-EffectiveObjective-C.a */; };
 		E68396B820F337800033B009 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E68396B720F337800033B009 /* AppDelegate.m */; };
 		E68396BB20F337800033B009 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E68396BA20F337800033B009 /* ViewController.m */; };
@@ -22,9 +24,14 @@
 		E6D3221620F87C5D00D0C47C /* Item12ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6D3221520F87C5D00D0C47C /* Item12ViewController.m */; };
 		E6D3221A20F87F8400D0C47C /* EOCAutoDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = E6D3221920F87F8400D0C47C /* EOCAutoDictionary.m */; };
 		E6D3221E20F88DC100D0C47C /* Item13ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6D3221D20F88DC100D0C47C /* Item13ViewController.m */; };
+		E6E1933020FF292500DEC1B0 /* Item16ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6E1932F20FF292500DEC1B0 /* Item16ViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3166456B11C419DB260B4C36 /* EOCRectangle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EOCRectangle.h; sourceTree = "<group>"; };
+		3166474010423CFCA2925EC1 /* EOCSquare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EOCSquare.h; sourceTree = "<group>"; };
+		3166477419673952E70D85C8 /* EOCRectangle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EOCRectangle.m; sourceTree = "<group>"; };
+		31664904CB56CF35E025FD10 /* EOCSquare.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EOCSquare.m; sourceTree = "<group>"; };
 		58807DF2DF82E01DABBB8C07 /* libPods-EffectiveObjective-C.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EffectiveObjective-C.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C13BBE0AE3FB7A415B80D14 /* Pods-EffectiveObjective-C.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EffectiveObjective-C.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EffectiveObjective-C/Pods-EffectiveObjective-C.debug.xcconfig"; sourceTree = "<group>"; };
 		D41122C360501C051B35329D /* Pods-EffectiveObjective-C.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EffectiveObjective-C.release.xcconfig"; path = "Pods/Target Support Files/Pods-EffectiveObjective-C/Pods-EffectiveObjective-C.release.xcconfig"; sourceTree = "<group>"; };
@@ -55,6 +62,8 @@
 		E6D3221920F87F8400D0C47C /* EOCAutoDictionary.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EOCAutoDictionary.m; sourceTree = "<group>"; };
 		E6D3221C20F88DC100D0C47C /* Item13ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Item13ViewController.h; sourceTree = "<group>"; };
 		E6D3221D20F88DC100D0C47C /* Item13ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Item13ViewController.m; sourceTree = "<group>"; };
+		E6E1932E20FF292500DEC1B0 /* Item16ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Item16ViewController.h; sourceTree = "<group>"; };
+		E6E1932F20FF292500DEC1B0 /* Item16ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Item16ViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +136,7 @@
 		E68396B520F337800033B009 /* EffectiveObjective-C */ = {
 			isa = PBXGroup;
 			children = (
+				E6E1932D20FF28F800DEC1B0 /* item 16 */,
 				E6D3221B20F88DA100D0C47C /* Item 13 */,
 				E6D3221320F87C2800D0C47C /* Item 12 */,
 				E6B2419C20F7442F008DBB25 /* Item 11 */,
@@ -191,6 +201,19 @@
 				E6D3221D20F88DC100D0C47C /* Item13ViewController.m */,
 			);
 			path = "Item 13";
+			sourceTree = "<group>";
+		};
+		E6E1932D20FF28F800DEC1B0 /* item 16 */ = {
+			isa = PBXGroup;
+			children = (
+				E6E1932E20FF292500DEC1B0 /* Item16ViewController.h */,
+				E6E1932F20FF292500DEC1B0 /* Item16ViewController.m */,
+				3166477419673952E70D85C8 /* EOCRectangle.m */,
+				3166456B11C419DB260B4C36 /* EOCRectangle.h */,
+				31664904CB56CF35E025FD10 /* EOCSquare.m */,
+				3166474010423CFCA2925EC1 /* EOCSquare.h */,
+			);
+			path = "item 16";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -295,7 +318,10 @@
 				E68396C620F337810033B009 /* main.m in Sources */,
 				E6B2419B20F739CB008DBB25 /* UITapGestureRecognizer+Associate.m in Sources */,
 				E6D3221A20F87F8400D0C47C /* EOCAutoDictionary.m in Sources */,
+				E6E1933020FF292500DEC1B0 /* Item16ViewController.m in Sources */,
 				E68396B820F337800033B009 /* AppDelegate.m in Sources */,
+				31664AF090EE1C56DB81E8D4 /* EOCRectangle.m in Sources */,
+				31664C485B78B80088E689BE /* EOCSquare.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
