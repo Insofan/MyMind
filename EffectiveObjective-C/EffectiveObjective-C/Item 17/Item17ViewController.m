@@ -8,6 +8,8 @@
 
 #import "Item17ViewController.h"
 #import "EOCPerson.h"
+#import "EOCLocation.h"
+
 @interface Item17ViewController ()
 
 @end
@@ -20,6 +22,10 @@
     // Do any additional setup after loading the view.
     EOCPerson *person = [[EOCPerson alloc] initWithFirstName:@"Bob" lastName:@"Smith"];
     NSLog(@"object %@ ", person);
+
+    EOCLocation *location = [[EOCLocation alloc] initWithTitle:@"Peking" latitude:50.1 longitude:66.6];
+    NSLog(@"object %@ ", location);
+
 }
 
 - (void)didReceiveMemoryWarning {

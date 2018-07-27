@@ -17,6 +17,7 @@
 		E68396C320F337810033B009 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E68396C120F337810033B009 /* LaunchScreen.storyboard */; };
 		E68396C620F337810033B009 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E68396C520F337810033B009 /* main.m */; };
 		E68396CF20F3397D0033B009 /* Item10ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E68396CE20F3397D0033B009 /* Item10ViewController.m */; };
+		E6B1A29D210B09F100ABD335 /* EOCLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = E6B1A29C210B09F100ABD335 /* EOCLocation.m */; };
 		E6B2419820F735F7008DBB25 /* NSObject+Associate.m in Sources */ = {isa = PBXBuildFile; fileRef = E6B2419720F735F7008DBB25 /* NSObject+Associate.m */; };
 		E6B2419B20F739CB008DBB25 /* UITapGestureRecognizer+Associate.m in Sources */ = {isa = PBXBuildFile; fileRef = E6B2419A20F739CB008DBB25 /* UITapGestureRecognizer+Associate.m */; };
 		E6B2419F20F74447008DBB25 /* Item11ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6B2419E20F74447008DBB25 /* Item11ViewController.m */; };
@@ -50,6 +51,8 @@
 		E68396CD20F3397D0033B009 /* Item10ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Item10ViewController.h; sourceTree = "<group>"; };
 		E68396CE20F3397D0033B009 /* Item10ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Item10ViewController.m; sourceTree = "<group>"; };
 		E68396D020F33B6F0033B009 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		E6B1A29B210B09F100ABD335 /* EOCLocation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EOCLocation.h; sourceTree = "<group>"; };
+		E6B1A29C210B09F100ABD335 /* EOCLocation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EOCLocation.m; sourceTree = "<group>"; };
 		E6B2419620F735F7008DBB25 /* NSObject+Associate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+Associate.h"; sourceTree = "<group>"; };
 		E6B2419720F735F7008DBB25 /* NSObject+Associate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Associate.m"; sourceTree = "<group>"; };
 		E6B2419920F739CB008DBB25 /* UITapGestureRecognizer+Associate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITapGestureRecognizer+Associate.h"; sourceTree = "<group>"; };
@@ -172,6 +175,17 @@
 			path = "Item 10";
 			sourceTree = "<group>";
 		};
+		E6B1A29A210B094700ABD335 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E6E1933520FF3A7800DEC1B0 /* EOCPerson.h */,
+				E6E1933620FF3A7800DEC1B0 /* EOCPerson.m */,
+				E6B1A29B210B09F100ABD335 /* EOCLocation.h */,
+				E6B1A29C210B09F100ABD335 /* EOCLocation.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		E6B2419C20F7442F008DBB25 /* Item 11 */ = {
 			isa = PBXGroup;
 			children = (
@@ -228,8 +242,7 @@
 			children = (
 				E6E1933220FF3A4100DEC1B0 /* Item17ViewController.h */,
 				E6E1933320FF3A4100DEC1B0 /* Item17ViewController.m */,
-				E6E1933520FF3A7800DEC1B0 /* EOCPerson.h */,
-				E6E1933620FF3A7800DEC1B0 /* EOCPerson.m */,
+				E6B1A29A210B094700ABD335 /* Model */,
 			);
 			path = "Item 17";
 			sourceTree = "<group>";
@@ -330,6 +343,7 @@
 				E68396BB20F337800033B009 /* ViewController.m in Sources */,
 				E6B241A220F7478C008DBB25 /* Person.m in Sources */,
 				E6B2419F20F74447008DBB25 /* Item11ViewController.m in Sources */,
+				E6B1A29D210B09F100ABD335 /* EOCLocation.m in Sources */,
 				E6E1933720FF3A7800DEC1B0 /* EOCPerson.m in Sources */,
 				E6D3221E20F88DC100D0C47C /* Item13ViewController.m in Sources */,
 				E6D3221620F87C5D00D0C47C /* Item12ViewController.m in Sources */,
