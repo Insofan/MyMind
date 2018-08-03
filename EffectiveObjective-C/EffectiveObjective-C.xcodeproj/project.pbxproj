@@ -10,6 +10,8 @@
 		31664AF090EE1C56DB81E8D4 /* EOCRectangle.m in Sources */ = {isa = PBXBuildFile; fileRef = 3166477419673952E70D85C8 /* EOCRectangle.m */; };
 		31664C485B78B80088E689BE /* EOCSquare.m in Sources */ = {isa = PBXBuildFile; fileRef = 31664904CB56CF35E025FD10 /* EOCSquare.m */; };
 		A16B0664D1017E0C99638FA9 /* libPods-EffectiveObjective-C.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 58807DF2DF82E01DABBB8C07 /* libPods-EffectiveObjective-C.a */; };
+		E611A08F2113011900AF382A /* Item18ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E611A08E2113011900AF382A /* Item18ViewController.m */; };
+		E611A093211301F700AF382A /* Item18Model.m in Sources */ = {isa = PBXBuildFile; fileRef = E611A092211301F700AF382A /* Item18Model.m */; };
 		E68396B820F337800033B009 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E68396B720F337800033B009 /* AppDelegate.m */; };
 		E68396BB20F337800033B009 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E68396BA20F337800033B009 /* ViewController.m */; };
 		E68396BE20F337800033B009 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E68396BC20F337800033B009 /* Main.storyboard */; };
@@ -38,6 +40,10 @@
 		58807DF2DF82E01DABBB8C07 /* libPods-EffectiveObjective-C.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EffectiveObjective-C.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C13BBE0AE3FB7A415B80D14 /* Pods-EffectiveObjective-C.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EffectiveObjective-C.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EffectiveObjective-C/Pods-EffectiveObjective-C.debug.xcconfig"; sourceTree = "<group>"; };
 		D41122C360501C051B35329D /* Pods-EffectiveObjective-C.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EffectiveObjective-C.release.xcconfig"; path = "Pods/Target Support Files/Pods-EffectiveObjective-C/Pods-EffectiveObjective-C.release.xcconfig"; sourceTree = "<group>"; };
+		E611A08D2113011900AF382A /* Item18ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Item18ViewController.h; sourceTree = "<group>"; };
+		E611A08E2113011900AF382A /* Item18ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Item18ViewController.m; sourceTree = "<group>"; };
+		E611A091211301F700AF382A /* Item18Model.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Item18Model.h; sourceTree = "<group>"; };
+		E611A092211301F700AF382A /* Item18Model.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Item18Model.m; sourceTree = "<group>"; };
 		E68396B320F337800033B009 /* EffectiveObjective-C.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "EffectiveObjective-C.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E68396B620F337800033B009 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E68396B720F337800033B009 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -124,6 +130,25 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		E611A08C2113010600AF382A /* Item 18 */ = {
+			isa = PBXGroup;
+			children = (
+				E611A08D2113011900AF382A /* Item18ViewController.h */,
+				E611A08E2113011900AF382A /* Item18ViewController.m */,
+				E611A090211301E300AF382A /* Model */,
+			);
+			path = "Item 18";
+			sourceTree = "<group>";
+		};
+		E611A090211301E300AF382A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E611A091211301F700AF382A /* Item18Model.h */,
+				E611A092211301F700AF382A /* Item18Model.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		E68396AA20F337800033B009 = {
 			isa = PBXGroup;
 			children = (
@@ -145,6 +170,7 @@
 		E68396B520F337800033B009 /* EffectiveObjective-C */ = {
 			isa = PBXGroup;
 			children = (
+				E611A08C2113010600AF382A /* Item 18 */,
 				E6E1933120FF3A1900DEC1B0 /* Item 17 */,
 				E6E1932D20FF28F800DEC1B0 /* item 16 */,
 				E6D3221B20F88DA100D0C47C /* Item 13 */,
@@ -343,11 +369,13 @@
 				E68396BB20F337800033B009 /* ViewController.m in Sources */,
 				E6B241A220F7478C008DBB25 /* Person.m in Sources */,
 				E6B2419F20F74447008DBB25 /* Item11ViewController.m in Sources */,
+				E611A08F2113011900AF382A /* Item18ViewController.m in Sources */,
 				E6B1A29D210B09F100ABD335 /* EOCLocation.m in Sources */,
 				E6E1933720FF3A7800DEC1B0 /* EOCPerson.m in Sources */,
 				E6D3221E20F88DC100D0C47C /* Item13ViewController.m in Sources */,
 				E6D3221620F87C5D00D0C47C /* Item12ViewController.m in Sources */,
 				E6B2419820F735F7008DBB25 /* NSObject+Associate.m in Sources */,
+				E611A093211301F700AF382A /* Item18Model.m in Sources */,
 				E68396C620F337810033B009 /* main.m in Sources */,
 				E6B2419B20F739CB008DBB25 /* UITapGestureRecognizer+Associate.m in Sources */,
 				E6D3221A20F87F8400D0C47C /* EOCAutoDictionary.m in Sources */,
