@@ -12,6 +12,8 @@
 		A16B0664D1017E0C99638FA9 /* libPods-EffectiveObjective-C.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 58807DF2DF82E01DABBB8C07 /* libPods-EffectiveObjective-C.a */; };
 		E611A08F2113011900AF382A /* Item18ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E611A08E2113011900AF382A /* Item18ViewController.m */; };
 		E611A093211301F700AF382A /* Item18Model.m in Sources */ = {isa = PBXBuildFile; fileRef = E611A092211301F700AF382A /* Item18Model.m */; };
+		E637B9F621196B9300256F0C /* Item22ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E637B9F521196B9300256F0C /* Item22ViewController.m */; };
+		E637B9FA21196C6E00256F0C /* Item22Model.m in Sources */ = {isa = PBXBuildFile; fileRef = E637B9F921196C6E00256F0C /* Item22Model.m */; };
 		E65E30B221182602007B6471 /* Item21ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E65E30B121182602007B6471 /* Item21ViewController.m */; };
 		E65E30B521182948007B6471 /* EOCError.m in Sources */ = {isa = PBXBuildFile; fileRef = E65E30B421182948007B6471 /* EOCError.m */; };
 		E68396B820F337800033B009 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E68396B720F337800033B009 /* AppDelegate.m */; };
@@ -46,6 +48,10 @@
 		E611A08E2113011900AF382A /* Item18ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Item18ViewController.m; sourceTree = "<group>"; };
 		E611A091211301F700AF382A /* Item18Model.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Item18Model.h; sourceTree = "<group>"; };
 		E611A092211301F700AF382A /* Item18Model.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Item18Model.m; sourceTree = "<group>"; };
+		E637B9F421196B9300256F0C /* Item22ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Item22ViewController.h; sourceTree = "<group>"; };
+		E637B9F521196B9300256F0C /* Item22ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Item22ViewController.m; sourceTree = "<group>"; };
+		E637B9F821196C6E00256F0C /* Item22Model.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Item22Model.h; sourceTree = "<group>"; };
+		E637B9F921196C6E00256F0C /* Item22Model.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Item22Model.m; sourceTree = "<group>"; };
 		E65E30B021182602007B6471 /* Item21ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Item21ViewController.h; sourceTree = "<group>"; };
 		E65E30B121182602007B6471 /* Item21ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Item21ViewController.m; sourceTree = "<group>"; };
 		E65E30B321182948007B6471 /* EOCError.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EOCError.h; sourceTree = "<group>"; };
@@ -155,6 +161,25 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		E637B9F0211969C000256F0C /* Item 22 */ = {
+			isa = PBXGroup;
+			children = (
+				E637B9F421196B9300256F0C /* Item22ViewController.h */,
+				E637B9F521196B9300256F0C /* Item22ViewController.m */,
+				E637B9F721196C5600256F0C /* Item 22 */,
+			);
+			path = "Item 22";
+			sourceTree = "<group>";
+		};
+		E637B9F721196C5600256F0C /* Item 22 */ = {
+			isa = PBXGroup;
+			children = (
+				E637B9F821196C6E00256F0C /* Item22Model.h */,
+				E637B9F921196C6E00256F0C /* Item22Model.m */,
+			);
+			path = "Item 22";
+			sourceTree = "<group>";
+		};
 		E65E30AF211825DA007B6471 /* Item 21 */ = {
 			isa = PBXGroup;
 			children = (
@@ -187,6 +212,7 @@
 		E68396B520F337800033B009 /* EffectiveObjective-C */ = {
 			isa = PBXGroup;
 			children = (
+				E637B9F0211969C000256F0C /* Item 22 */,
 				E65E30AF211825DA007B6471 /* Item 21 */,
 				E611A08C2113010600AF382A /* Item 18 */,
 				E6E1933120FF3A1900DEC1B0 /* Item 17 */,
@@ -385,6 +411,7 @@
 			files = (
 				E68396CF20F3397D0033B009 /* Item10ViewController.m in Sources */,
 				E68396BB20F337800033B009 /* ViewController.m in Sources */,
+				E637B9FA21196C6E00256F0C /* Item22Model.m in Sources */,
 				E6B241A220F7478C008DBB25 /* Person.m in Sources */,
 				E65E30B521182948007B6471 /* EOCError.m in Sources */,
 				E6B2419F20F74447008DBB25 /* Item11ViewController.m in Sources */,
@@ -400,6 +427,7 @@
 				E6B2419B20F739CB008DBB25 /* UITapGestureRecognizer+Associate.m in Sources */,
 				E6D3221A20F87F8400D0C47C /* EOCAutoDictionary.m in Sources */,
 				E6E1933420FF3A4100DEC1B0 /* Item17ViewController.m in Sources */,
+				E637B9F621196B9300256F0C /* Item22ViewController.m in Sources */,
 				E6E1933020FF292500DEC1B0 /* Item16ViewController.m in Sources */,
 				E68396B820F337800033B009 /* AppDelegate.m in Sources */,
 				31664AF090EE1C56DB81E8D4 /* EOCRectangle.m in Sources */,
