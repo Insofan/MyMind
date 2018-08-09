@@ -7,6 +7,7 @@ target 'EffectiveObjective-C' do
   pod 'Masonry'
   pod 'HXTool'
   pod 'ReactiveObjC'
+  pod 'AFNetworking'
   # Pods for EffectiveObjective-C
 
 end

@@ -2,7 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="30ababe6-87fc-4cf9-8c74-c4e606edf232" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EffectiveObjective-C/Item 23/Item23ViewController.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EffectiveObjective-C/Item 23/Item23ViewController.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EffectiveObjective-C/Item 23/Model/Item23Model.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EffectiveObjective-C/Item 23/Model/Item23Model.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EffectiveObjective-C/Item 23/Net/Item23Network.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EffectiveObjective-C/Item 23/Net/Item23Network.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EffectiveObjective-C/Item 23/Net/Item23NetworkDelegate.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EffectiveObjective-C.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/EffectiveObjective-C.xcodeproj/project.pbxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EffectiveObjective-C/ViewController.m" beforeDir="false" afterPath="$PROJECT_DIR$/EffectiveObjective-C/ViewController.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Podfile" beforeDir="false" afterPath="$PROJECT_DIR$/Podfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Podfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Podfile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/Manifest.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Manifest.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/Pods.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Pods.xcodeproj/project.pbxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-EffectiveObjective-C/Pods-EffectiveObjective-C-acknowledgements.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Target Support Files/Pods-EffectiveObjective-C/Pods-EffectiveObjective-C-acknowledgements.markdown" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-EffectiveObjective-C/Pods-EffectiveObjective-C-acknowledgements.plist" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Target Support Files/Pods-EffectiveObjective-C/Pods-EffectiveObjective-C-acknowledgements.plist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-EffectiveObjective-C/Pods-EffectiveObjective-C.debug.xcconfig" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Target Support Files/Pods-EffectiveObjective-C/Pods-EffectiveObjective-C.debug.xcconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-EffectiveObjective-C/Pods-EffectiveObjective-C.release.xcconfig" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Target Support Files/Pods-EffectiveObjective-C/Pods-EffectiveObjective-C.release.xcconfig" afterDir="false" />
     </list>
     <ignored path="$USER_HOME$/Library/Developer/Xcode/DerivedData/EffectiveObjective-C-ddjtbvfkdcxnnzdagnejjofdmzju/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -15,41 +31,32 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="iphoneos_e74aa63a1065e1a3932dcd59f06bed37d75d2c05" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="EOCSquare.m" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/EffectiveObjective-C/item 16/EOCSquare.m">
+      <file leaf-file-name="Item23Network.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/EffectiveObjective-C/Item 23/Net/Item23Network.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="594">
-              <caret line="22" selection-start-line="22" selection-end-line="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EOCLocation.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/EffectiveObjective-C/Item 17/Model/EOCLocation.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="14" selection-start-line="14" selection-end-line="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EOCLocation.m" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/EffectiveObjective-C/Item 17/Model/EOCLocation.m">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-87">
-              <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Item17ViewController.m" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/EffectiveObjective-C/Item 17/Item17ViewController.m">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="219">
-              <caret line="20" column="57" lean-forward="true" selection-start-line="20" selection-start-column="57" selection-end-line="20" selection-end-column="57" />
+            <state relative-caret-position="332">
+              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
               <folding>
-                <element signature="e#153#185#0" expanded="true" />
+                <element signature="e#145#178#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Item23Network.m" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/EffectiveObjective-C/Item 23/Net/Item23Network.m">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="467">
+              <caret line="58" column="8" selection-start-line="58" selection-start-column="8" selection-end-line="58" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Item23NetworkDelegate.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/EffectiveObjective-C/Item 23/Net/Item23NetworkDelegate.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="431">
+              <caret line="22" column="67" selection-start-line="22" selection-start-column="67" selection-end-line="22" selection-end-column="67" />
             </state>
           </provider>
         </entry>
@@ -74,6 +81,9 @@
         <option value="$PROJECT_DIR$/EffectiveObjective-C/Item 17/Model/EOCLocation.h" />
         <option value="$PROJECT_DIR$/EffectiveObjective-C/Item 17/Model/EOCLocation.m" />
         <option value="$PROJECT_DIR$/EffectiveObjective-C/Item 17/Item17ViewController.m" />
+        <option value="$PROJECT_DIR$/EffectiveObjective-C/Item 23/Net/Item23NetworkDelegate.h" />
+        <option value="$PROJECT_DIR$/EffectiveObjective-C/Item 23/Net/Item23Network.h" />
+        <option value="$PROJECT_DIR$/EffectiveObjective-C/Item 23/Net/Item23Network.m" />
       </list>
     </option>
   </component>
@@ -89,6 +99,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Cidr.FilesView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -105,21 +116,27 @@
               <item name="" type="efc3779f:XcodeRootNode" />
               <item name="EffectiveObjective-C" type="1d218c8b:XcodeProjectNode" />
               <item name="EffectiveObjective-C" type="fcab9f18:XcodeViewNode" />
-              <item name="Item 17" type="fcab9f18:XcodeViewNode" />
+              <item name="Item 23" type="fcab9f18:XcodeViewNode" />
             </path>
             <path>
               <item name="" type="efc3779f:XcodeRootNode" />
               <item name="EffectiveObjective-C" type="1d218c8b:XcodeProjectNode" />
               <item name="EffectiveObjective-C" type="fcab9f18:XcodeViewNode" />
-              <item name="Item 17" type="fcab9f18:XcodeViewNode" />
+              <item name="Item 23" type="fcab9f18:XcodeViewNode" />
               <item name="Model" type="fcab9f18:XcodeViewNode" />
+            </path>
+            <path>
+              <item name="" type="efc3779f:XcodeRootNode" />
+              <item name="EffectiveObjective-C" type="1d218c8b:XcodeProjectNode" />
+              <item name="EffectiveObjective-C" type="fcab9f18:XcodeViewNode" />
+              <item name="Item 23" type="fcab9f18:XcodeViewNode" />
+              <item name="Net" type="fcab9f18:XcodeViewNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="Cidr.FilesView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -155,7 +172,6 @@
       <window_info id="Designer" order="2" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24973601" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.32945284" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.500528" side_tool="true" weight="0.33760187" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32945284" />
@@ -171,6 +187,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.32945284" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -213,6 +230,37 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/EffectiveObjective-C/item 16/EOCSquare.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EffectiveObjective-C/Item 17/Model/EOCLocation.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EffectiveObjective-C/Item 17/Model/EOCLocation.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EffectiveObjective-C/Item 17/Item17ViewController.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="20" column="57" lean-forward="true" selection-start-line="20" selection-start-column="57" selection-end-line="20" selection-end-column="57" />
+          <folding>
+            <element signature="e#153#185#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/EffectiveObjective-C/Item 10/Item10ViewController.m">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1566">
@@ -231,9 +279,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="432">
           <caret line="16" selection-start-line="16" selection-end-line="16" />
-          <folding>
-            <element signature="e#165#209#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -262,9 +307,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="243">
           <caret line="9" column="40" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
-          <folding>
-            <element signature="e#97#130#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -300,9 +342,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="432">
           <caret line="16" selection-start-line="16" selection-end-line="16" />
-          <folding>
-            <element signature="e#165#209#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -338,9 +377,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="432">
           <caret line="16" selection-start-line="16" selection-end-line="16" />
-          <folding>
-            <element signature="e#165#209#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -362,9 +398,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="243">
           <caret line="9" column="40" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
-          <folding>
-            <element signature="e#97#130#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -391,7 +424,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/EffectiveObjective-C/Item 17/Model/EOCLocation.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-87">
+        <state relative-caret-position="324">
           <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
         </state>
       </provider>
@@ -406,10 +439,45 @@
     <entry file="file://$PROJECT_DIR$/EffectiveObjective-C/Item 17/Item17ViewController.m">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="219">
-          <caret line="20" column="57" lean-forward="true" selection-start-line="20" selection-start-column="57" selection-end-line="20" selection-end-column="57" />
+          <caret line="20" column="57" selection-start-line="20" selection-start-column="57" selection-end-line="20" selection-end-column="57" />
           <folding>
             <element signature="e#153#185#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EffectiveObjective-C/Item 23/Item23ViewController.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-249" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EffectiveObjective-C/Item 23/Model/Item23Model.m">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EffectiveObjective-C/Item 23/Model/Item23Model.h">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EffectiveObjective-C/Item 23/Net/Item23Network.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="332">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="e#145#178#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EffectiveObjective-C/Item 23/Net/Item23NetworkDelegate.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="431">
+          <caret line="22" column="67" selection-start-line="22" selection-start-column="67" selection-end-line="22" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EffectiveObjective-C/Item 23/Net/Item23Network.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="467">
+          <caret line="58" column="8" selection-start-line="58" selection-start-column="8" selection-end-line="58" selection-end-column="8" />
         </state>
       </provider>
     </entry>

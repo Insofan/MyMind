@@ -34,6 +34,9 @@
 		E6E1933020FF292500DEC1B0 /* Item16ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6E1932F20FF292500DEC1B0 /* Item16ViewController.m */; };
 		E6E1933420FF3A4100DEC1B0 /* Item17ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6E1933320FF3A4100DEC1B0 /* Item17ViewController.m */; };
 		E6E1933720FF3A7800DEC1B0 /* EOCPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = E6E1933620FF3A7800DEC1B0 /* EOCPerson.m */; };
+		E6F9681D211C152300081C2D /* Item23ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6F9681C211C152300081C2D /* Item23ViewController.m */; };
+		E6F96822211C166E00081C2D /* Item23Model.m in Sources */ = {isa = PBXBuildFile; fileRef = E6F96821211C166E00081C2D /* Item23Model.m */; };
+		E6F96828211C18AE00081C2D /* Item23Network.m in Sources */ = {isa = PBXBuildFile; fileRef = E6F96827211C18AE00081C2D /* Item23Network.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -91,6 +94,13 @@
 		E6E1933320FF3A4100DEC1B0 /* Item17ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Item17ViewController.m; sourceTree = "<group>"; };
 		E6E1933520FF3A7800DEC1B0 /* EOCPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EOCPerson.h; sourceTree = "<group>"; };
 		E6E1933620FF3A7800DEC1B0 /* EOCPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EOCPerson.m; sourceTree = "<group>"; };
+		E6F9681B211C152300081C2D /* Item23ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Item23ViewController.h; sourceTree = "<group>"; };
+		E6F9681C211C152300081C2D /* Item23ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Item23ViewController.m; sourceTree = "<group>"; };
+		E6F96820211C166E00081C2D /* Item23Model.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Item23Model.h; sourceTree = "<group>"; };
+		E6F96821211C166E00081C2D /* Item23Model.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Item23Model.m; sourceTree = "<group>"; };
+		E6F96823211C16C400081C2D /* Item23NetworkDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Item23NetworkDelegate.h; sourceTree = "<group>"; };
+		E6F96826211C18AE00081C2D /* Item23Network.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Item23Network.h; sourceTree = "<group>"; };
+		E6F96827211C18AE00081C2D /* Item23Network.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Item23Network.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -212,6 +222,7 @@
 		E68396B520F337800033B009 /* EffectiveObjective-C */ = {
 			isa = PBXGroup;
 			children = (
+				E6F9681A211C150D00081C2D /* Item 23 */,
 				E637B9F0211969C000256F0C /* Item 22 */,
 				E65E30AF211825DA007B6471 /* Item 21 */,
 				E611A08C2113010600AF382A /* Item 18 */,
@@ -315,6 +326,36 @@
 				E6B1A29A210B094700ABD335 /* Model */,
 			);
 			path = "Item 17";
+			sourceTree = "<group>";
+		};
+		E6F9681A211C150D00081C2D /* Item 23 */ = {
+			isa = PBXGroup;
+			children = (
+				E6F9681F211C153800081C2D /* Net */,
+				E6F9681E211C152F00081C2D /* Model */,
+				E6F9681B211C152300081C2D /* Item23ViewController.h */,
+				E6F9681C211C152300081C2D /* Item23ViewController.m */,
+			);
+			path = "Item 23";
+			sourceTree = "<group>";
+		};
+		E6F9681E211C152F00081C2D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E6F96820211C166E00081C2D /* Item23Model.h */,
+				E6F96821211C166E00081C2D /* Item23Model.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E6F9681F211C153800081C2D /* Net */ = {
+			isa = PBXGroup;
+			children = (
+				E6F96823211C16C400081C2D /* Item23NetworkDelegate.h */,
+				E6F96826211C18AE00081C2D /* Item23Network.h */,
+				E6F96827211C18AE00081C2D /* Item23Network.m */,
+			);
+			path = Net;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -424,11 +465,14 @@
 				E6B2419820F735F7008DBB25 /* NSObject+Associate.m in Sources */,
 				E611A093211301F700AF382A /* Item18Model.m in Sources */,
 				E68396C620F337810033B009 /* main.m in Sources */,
+				E6F96822211C166E00081C2D /* Item23Model.m in Sources */,
 				E6B2419B20F739CB008DBB25 /* UITapGestureRecognizer+Associate.m in Sources */,
 				E6D3221A20F87F8400D0C47C /* EOCAutoDictionary.m in Sources */,
+				E6F96828211C18AE00081C2D /* Item23Network.m in Sources */,
 				E6E1933420FF3A4100DEC1B0 /* Item17ViewController.m in Sources */,
 				E637B9F621196B9300256F0C /* Item22ViewController.m in Sources */,
 				E6E1933020FF292500DEC1B0 /* Item16ViewController.m in Sources */,
+				E6F9681D211C152300081C2D /* Item23ViewController.m in Sources */,
 				E68396B820F337800033B009 /* AppDelegate.m in Sources */,
 				31664AF090EE1C56DB81E8D4 /* EOCRectangle.m in Sources */,
 				31664C485B78B80088E689BE /* EOCSquare.m in Sources */,
