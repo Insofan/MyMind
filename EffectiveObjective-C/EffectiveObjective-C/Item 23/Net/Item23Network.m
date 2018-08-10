@@ -52,7 +52,7 @@ NSString *const Item23ErrorDomain = @"ErrorDomain";
 
 - (void)sendFail {
     if (_delegateFlags.didFailWithError) {
-        NSError *error = [NSError errorWithDomain:Item23ErrorDomain code:networkErrorRequestFail userInfo:nil];
+        NSError *error = [NSError errorWithDomain:Item23ErrorDomain code:networkErrorkLoss userInfo:nil];
         [_delegate networkFetcher:self didFailWithError:error];
     }
 }
