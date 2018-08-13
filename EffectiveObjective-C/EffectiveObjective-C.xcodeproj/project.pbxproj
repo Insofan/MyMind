@@ -18,6 +18,8 @@
 		E633E20D211D7F640000C270 /* Item24PersonModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E633E20C211D7F640000C270 /* Item24PersonModel.m */; };
 		E633E210211D83DA0000C270 /* Item24Person+Friendship.m in Sources */ = {isa = PBXBuildFile; fileRef = E633E20F211D83DA0000C270 /* Item24Person+Friendship.m */; };
 		E633E213211D8DA10000C270 /* Item24Person+Play.m in Sources */ = {isa = PBXBuildFile; fileRef = E633E212211D8DA10000C270 /* Item24Person+Play.m */; };
+		E633E217212125D60000C270 /* Item25ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E633E216212125D60000C270 /* Item25ViewController.m */; };
+		E633E21A212126660000C270 /* Item25String+ABCHTTP.m in Sources */ = {isa = PBXBuildFile; fileRef = E633E219212126660000C270 /* Item25String+ABCHTTP.m */; };
 		E637B9F621196B9300256F0C /* Item22ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E637B9F521196B9300256F0C /* Item22ViewController.m */; };
 		E637B9FA21196C6E00256F0C /* Item22Model.m in Sources */ = {isa = PBXBuildFile; fileRef = E637B9F921196C6E00256F0C /* Item22Model.m */; };
 		E65E30B221182602007B6471 /* Item21ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E65E30B121182602007B6471 /* Item21ViewController.m */; };
@@ -69,6 +71,10 @@
 		E633E20F211D83DA0000C270 /* Item24Person+Friendship.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Item24Person+Friendship.m"; sourceTree = "<group>"; };
 		E633E211211D8DA10000C270 /* Item24Person+Play.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Item24Person+Play.h"; sourceTree = "<group>"; };
 		E633E212211D8DA10000C270 /* Item24Person+Play.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Item24Person+Play.m"; sourceTree = "<group>"; };
+		E633E215212125D60000C270 /* Item25ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Item25ViewController.h; sourceTree = "<group>"; };
+		E633E216212125D60000C270 /* Item25ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Item25ViewController.m; sourceTree = "<group>"; };
+		E633E218212126660000C270 /* Item25String+ABCHTTP.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Item25String+ABCHTTP.h"; sourceTree = "<group>"; };
+		E633E219212126660000C270 /* Item25String+ABCHTTP.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Item25String+ABCHTTP.m"; sourceTree = "<group>"; };
 		E637B9F421196B9300256F0C /* Item22ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Item22ViewController.h; sourceTree = "<group>"; };
 		E637B9F521196B9300256F0C /* Item22ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Item22ViewController.m; sourceTree = "<group>"; };
 		E637B9F821196C6E00256F0C /* Item22Model.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Item22Model.h; sourceTree = "<group>"; };
@@ -231,6 +237,17 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		E633E214212125C70000C270 /* Item 25 */ = {
+			isa = PBXGroup;
+			children = (
+				E633E215212125D60000C270 /* Item25ViewController.h */,
+				E633E216212125D60000C270 /* Item25ViewController.m */,
+				E633E218212126660000C270 /* Item25String+ABCHTTP.h */,
+				E633E219212126660000C270 /* Item25String+ABCHTTP.m */,
+			);
+			path = "Item 25";
+			sourceTree = "<group>";
+		};
 		E637B9F0211969C000256F0C /* Item 22 */ = {
 			isa = PBXGroup;
 			children = (
@@ -282,6 +299,7 @@
 		E68396B520F337800033B009 /* EffectiveObjective-C */ = {
 			isa = PBXGroup;
 			children = (
+				E633E214212125C70000C270 /* Item 25 */,
 				E633E206211D78F20000C270 /* Item 24 */,
 				E6F9681A211C150D00081C2D /* Item 23 */,
 				E637B9F0211969C000256F0C /* Item 22 */,
@@ -539,8 +557,10 @@
 				E633E209211D7C320000C270 /* Item24ViewController.m in Sources */,
 				E637B9F621196B9300256F0C /* Item22ViewController.m in Sources */,
 				E6E1933020FF292500DEC1B0 /* Item16ViewController.m in Sources */,
+				E633E21A212126660000C270 /* Item25String+ABCHTTP.m in Sources */,
 				E633E213211D8DA10000C270 /* Item24Person+Play.m in Sources */,
 				E6F9681D211C152300081C2D /* Item23ViewController.m in Sources */,
+				E633E217212125D60000C270 /* Item25ViewController.m in Sources */,
 				E68396B820F337800033B009 /* AppDelegate.m in Sources */,
 				31664AF090EE1C56DB81E8D4 /* EOCRectangle.m in Sources */,
 				31664C485B78B80088E689BE /* EOCSquare.m in Sources */,
