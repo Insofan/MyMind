@@ -20,7 +20,6 @@
 		E633E213211D8DA10000C270 /* Item24Person+Play.m in Sources */ = {isa = PBXBuildFile; fileRef = E633E212211D8DA10000C270 /* Item24Person+Play.m */; };
 		E633E217212125D60000C270 /* Item25ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E633E216212125D60000C270 /* Item25ViewController.m */; };
 		E633E21A212126660000C270 /* Item25String+ABCHTTP.m in Sources */ = {isa = PBXBuildFile; fileRef = E633E219212126660000C270 /* Item25String+ABCHTTP.m */; };
-		E633E21F21212D000000C270 /* Item27ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E633E21E21212D000000C270 /* Item27ViewController.m */; };
 		E633E22221212D270000C270 /* Item26ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E633E22121212D270000C270 /* Item26ViewController.m */; };
 		E633E22521212F190000C270 /* Item26PersonModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E633E22421212F190000C270 /* Item26PersonModel.m */; };
 		E633E22921212F530000C270 /* Item26Person+Friendship.m in Sources */ = {isa = PBXBuildFile; fileRef = E633E22821212F530000C270 /* Item26Person+Friendship.m */; };
@@ -35,6 +34,7 @@
 		E68396C320F337810033B009 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E68396C120F337810033B009 /* LaunchScreen.storyboard */; };
 		E68396C620F337810033B009 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E68396C520F337810033B009 /* main.m */; };
 		E68396CF20F3397D0033B009 /* Item10ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E68396CE20F3397D0033B009 /* Item10ViewController.m */; };
+		E69506BC2122CD5700CE2E8B /* Item28ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E69506BB2122CD5700CE2E8B /* Item28ViewController.m */; };
 		E6B1A29D210B09F100ABD335 /* EOCLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = E6B1A29C210B09F100ABD335 /* EOCLocation.m */; };
 		E6B2419820F735F7008DBB25 /* NSObject+Associate.m in Sources */ = {isa = PBXBuildFile; fileRef = E6B2419720F735F7008DBB25 /* NSObject+Associate.m */; };
 		E6B2419B20F739CB008DBB25 /* UITapGestureRecognizer+Associate.m in Sources */ = {isa = PBXBuildFile; fileRef = E6B2419A20F739CB008DBB25 /* UITapGestureRecognizer+Associate.m */; };
@@ -79,8 +79,6 @@
 		E633E216212125D60000C270 /* Item25ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Item25ViewController.m; sourceTree = "<group>"; };
 		E633E218212126660000C270 /* Item25String+ABCHTTP.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Item25String+ABCHTTP.h"; sourceTree = "<group>"; };
 		E633E219212126660000C270 /* Item25String+ABCHTTP.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Item25String+ABCHTTP.m"; sourceTree = "<group>"; };
-		E633E21D21212D000000C270 /* Item27ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Item27ViewController.h; sourceTree = "<group>"; };
-		E633E21E21212D000000C270 /* Item27ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Item27ViewController.m; sourceTree = "<group>"; };
 		E633E22021212D270000C270 /* Item26ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Item26ViewController.h; sourceTree = "<group>"; };
 		E633E22121212D270000C270 /* Item26ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Item26ViewController.m; sourceTree = "<group>"; };
 		E633E22321212F190000C270 /* Item26PersonModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Item26PersonModel.h; sourceTree = "<group>"; };
@@ -108,6 +106,8 @@
 		E68396CD20F3397D0033B009 /* Item10ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Item10ViewController.h; sourceTree = "<group>"; };
 		E68396CE20F3397D0033B009 /* Item10ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Item10ViewController.m; sourceTree = "<group>"; };
 		E68396D020F33B6F0033B009 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		E69506BA2122CD5700CE2E8B /* Item28ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Item28ViewController.h; sourceTree = "<group>"; };
+		E69506BB2122CD5700CE2E8B /* Item28ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Item28ViewController.m; sourceTree = "<group>"; };
 		E6B1A29B210B09F100ABD335 /* EOCLocation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EOCLocation.h; sourceTree = "<group>"; };
 		E6B1A29C210B09F100ABD335 /* EOCLocation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EOCLocation.m; sourceTree = "<group>"; };
 		E6B2419620F735F7008DBB25 /* NSObject+Associate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+Associate.h"; sourceTree = "<group>"; };
@@ -273,8 +273,6 @@
 		E633E21C21212CEE0000C270 /* Item 27 */ = {
 			isa = PBXGroup;
 			children = (
-				E633E21D21212D000000C270 /* Item27ViewController.h */,
-				E633E21E21212D000000C270 /* Item27ViewController.m */,
 			);
 			path = "Item 27";
 			sourceTree = "<group>";
@@ -341,6 +339,7 @@
 		E68396B520F337800033B009 /* EffectiveObjective-C */ = {
 			isa = PBXGroup;
 			children = (
+				E69506B92122CD4900CE2E8B /* Item 28 */,
 				E633E21C21212CEE0000C270 /* Item 27 */,
 				E633E21B21212BFC0000C270 /* Item 26 */,
 				E633E214212125C70000C270 /* Item 25 */,
@@ -377,6 +376,15 @@
 				3166441597FA8D120F1D9307 /* Associate Group */,
 			);
 			path = "Item 10";
+			sourceTree = "<group>";
+		};
+		E69506B92122CD4900CE2E8B /* Item 28 */ = {
+			isa = PBXGroup;
+			children = (
+				E69506BA2122CD5700CE2E8B /* Item28ViewController.h */,
+				E69506BB2122CD5700CE2E8B /* Item28ViewController.m */,
+			);
+			path = "Item 28";
 			sourceTree = "<group>";
 		};
 		E6B1A29A210B094700ABD335 /* Model */ = {
@@ -577,6 +585,7 @@
 				E633E205211D6D4F0000C270 /* Item23DemoDelegateObject.m in Sources */,
 				E68396CF20F3397D0033B009 /* Item10ViewController.m in Sources */,
 				E68396BB20F337800033B009 /* ViewController.m in Sources */,
+				E69506BC2122CD5700CE2E8B /* Item28ViewController.m in Sources */,
 				E633E20D211D7F640000C270 /* Item24PersonModel.m in Sources */,
 				E637B9FA21196C6E00256F0C /* Item22Model.m in Sources */,
 				E6B241A220F7478C008DBB25 /* Person.m in Sources */,
@@ -599,7 +608,6 @@
 				E6D3221A20F87F8400D0C47C /* EOCAutoDictionary.m in Sources */,
 				E6F96828211C18AE00081C2D /* Item23Network.m in Sources */,
 				E6E1933420FF3A4100DEC1B0 /* Item17ViewController.m in Sources */,
-				E633E21F21212D000000C270 /* Item27ViewController.m in Sources */,
 				E633E209211D7C320000C270 /* Item24ViewController.m in Sources */,
 				E637B9F621196B9300256F0C /* Item22ViewController.m in Sources */,
 				E6E1933020FF292500DEC1B0 /* Item16ViewController.m in Sources */,
