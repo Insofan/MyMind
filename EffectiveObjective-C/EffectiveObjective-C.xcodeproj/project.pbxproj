@@ -35,6 +35,8 @@
 		E68396C620F337810033B009 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E68396C520F337810033B009 /* main.m */; };
 		E68396CF20F3397D0033B009 /* Item10ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E68396CE20F3397D0033B009 /* Item10ViewController.m */; };
 		E69506BC2122CD5700CE2E8B /* Item28ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E69506BB2122CD5700CE2E8B /* Item28ViewController.m */; };
+		E69584542125753800E41910 /* Item30ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E69584532125753800E41910 /* Item30ViewController.m */; };
+		E695845821258C7C00E41910 /* Item30Model.m in Sources */ = {isa = PBXBuildFile; fileRef = E695845721258C7C00E41910 /* Item30Model.m */; };
 		E6B1A29D210B09F100ABD335 /* EOCLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = E6B1A29C210B09F100ABD335 /* EOCLocation.m */; };
 		E6B2419820F735F7008DBB25 /* NSObject+Associate.m in Sources */ = {isa = PBXBuildFile; fileRef = E6B2419720F735F7008DBB25 /* NSObject+Associate.m */; };
 		E6B2419B20F739CB008DBB25 /* UITapGestureRecognizer+Associate.m in Sources */ = {isa = PBXBuildFile; fileRef = E6B2419A20F739CB008DBB25 /* UITapGestureRecognizer+Associate.m */; };
@@ -108,6 +110,10 @@
 		E68396D020F33B6F0033B009 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		E69506BA2122CD5700CE2E8B /* Item28ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Item28ViewController.h; sourceTree = "<group>"; };
 		E69506BB2122CD5700CE2E8B /* Item28ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Item28ViewController.m; sourceTree = "<group>"; };
+		E69584522125753800E41910 /* Item30ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Item30ViewController.h; sourceTree = "<group>"; };
+		E69584532125753800E41910 /* Item30ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Item30ViewController.m; sourceTree = "<group>"; };
+		E695845621258C7C00E41910 /* Item30Model.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Item30Model.h; sourceTree = "<group>"; };
+		E695845721258C7C00E41910 /* Item30Model.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Item30Model.m; sourceTree = "<group>"; };
 		E6B1A29B210B09F100ABD335 /* EOCLocation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EOCLocation.h; sourceTree = "<group>"; };
 		E6B1A29C210B09F100ABD335 /* EOCLocation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EOCLocation.m; sourceTree = "<group>"; };
 		E6B2419620F735F7008DBB25 /* NSObject+Associate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+Associate.h"; sourceTree = "<group>"; };
@@ -339,6 +345,7 @@
 		E68396B520F337800033B009 /* EffectiveObjective-C */ = {
 			isa = PBXGroup;
 			children = (
+				E69584512125751C00E41910 /* Item 30 */,
 				E69506B92122CD4900CE2E8B /* Item 28 */,
 				E633E21C21212CEE0000C270 /* Item 27 */,
 				E633E21B21212BFC0000C270 /* Item 26 */,
@@ -385,6 +392,25 @@
 				E69506BB2122CD5700CE2E8B /* Item28ViewController.m */,
 			);
 			path = "Item 28";
+			sourceTree = "<group>";
+		};
+		E69584512125751C00E41910 /* Item 30 */ = {
+			isa = PBXGroup;
+			children = (
+				E69584522125753800E41910 /* Item30ViewController.h */,
+				E69584532125753800E41910 /* Item30ViewController.m */,
+				E695845521258C6100E41910 /* Model */,
+			);
+			path = "Item 30";
+			sourceTree = "<group>";
+		};
+		E695845521258C6100E41910 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E695845621258C7C00E41910 /* Item30Model.h */,
+				E695845721258C7C00E41910 /* Item30Model.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		E6B1A29A210B094700ABD335 /* Model */ = {
@@ -613,9 +639,11 @@
 				E6E1933020FF292500DEC1B0 /* Item16ViewController.m in Sources */,
 				E633E21A212126660000C270 /* Item25String+ABCHTTP.m in Sources */,
 				E633E22521212F190000C270 /* Item26PersonModel.m in Sources */,
+				E69584542125753800E41910 /* Item30ViewController.m in Sources */,
 				E633E213211D8DA10000C270 /* Item24Person+Play.m in Sources */,
 				E6F9681D211C152300081C2D /* Item23ViewController.m in Sources */,
 				E633E217212125D60000C270 /* Item25ViewController.m in Sources */,
+				E695845821258C7C00E41910 /* Item30Model.m in Sources */,
 				E68396B820F337800033B009 /* AppDelegate.m in Sources */,
 				31664AF090EE1C56DB81E8D4 /* EOCRectangle.m in Sources */,
 				31664C485B78B80088E689BE /* EOCSquare.m in Sources */,

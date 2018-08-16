@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1FC3A2C0FCECEACF1DE1405C /* libPods-Learning AV Foundation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CF91F7B5BD053DB7F5ED2C2F /* libPods-Learning AV Foundation.a */; };
+		E60232F52122D73D001B59CC /* CH1TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E60232F42122D73D001B59CC /* CH1TableViewController.m */; };
 		E6B21F74211C089F00B1681F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E6B21F73211C089F00B1681F /* AppDelegate.m */; };
 		E6B21F77211C089F00B1681F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6B21F76211C089F00B1681F /* ViewController.m */; };
 		E6B21F7A211C089F00B1681F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6B21F78211C089F00B1681F /* Main.storyboard */; };
@@ -18,6 +19,9 @@
 
 /* Begin PBXFileReference section */
 		CF91F7B5BD053DB7F5ED2C2F /* libPods-Learning AV Foundation.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Learning AV Foundation.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E60232F22122D659001B59CC /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		E60232F32122D73D001B59CC /* CH1TableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CH1TableViewController.h; sourceTree = "<group>"; };
+		E60232F42122D73D001B59CC /* CH1TableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CH1TableViewController.m; sourceTree = "<group>"; };
 		E6B21F6F211C089F00B1681F /* Learning AV Foundation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Learning AV Foundation.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6B21F72211C089F00B1681F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E6B21F73211C089F00B1681F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -87,6 +91,7 @@
 				E6B21F73211C089F00B1681F /* AppDelegate.m */,
 				E6B21F75211C089F00B1681F /* ViewController.h */,
 				E6B21F76211C089F00B1681F /* ViewController.m */,
+				E60232F22122D659001B59CC /* PrefixHeader.pch */,
 				E6B21F78211C089F00B1681F /* Main.storyboard */,
 				E6B21F7B211C08A000B1681F /* Assets.xcassets */,
 				E6B21F7D211C08A000B1681F /* LaunchScreen.storyboard */,
@@ -99,6 +104,8 @@
 		E6B21F88211C091400B1681F /* Chapter One */ = {
 			isa = PBXGroup;
 			children = (
+				E60232F32122D73D001B59CC /* CH1TableViewController.h */,
+				E60232F42122D73D001B59CC /* CH1TableViewController.m */,
 			);
 			path = "Chapter One";
 			sourceTree = "<group>";
@@ -197,6 +204,7 @@
 			files = (
 				E6B21F77211C089F00B1681F /* ViewController.m in Sources */,
 				E6B21F82211C08A000B1681F /* main.m in Sources */,
+				E60232F52122D73D001B59CC /* CH1TableViewController.m in Sources */,
 				E6B21F74211C089F00B1681F /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -340,6 +348,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8CJPZVXX3U;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PRODUCT_NAME)/PrefixHeader.pch";
 				INFOPLIST_FILE = "Learning AV Foundation/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -358,6 +367,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8CJPZVXX3U;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PRODUCT_NAME)/PrefixHeader.pch";
 				INFOPLIST_FILE = "Learning AV Foundation/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
