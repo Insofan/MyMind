@@ -37,6 +37,7 @@
 		E69506BC2122CD5700CE2E8B /* Item28ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E69506BB2122CD5700CE2E8B /* Item28ViewController.m */; };
 		E69584542125753800E41910 /* Item30ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E69584532125753800E41910 /* Item30ViewController.m */; };
 		E695845821258C7C00E41910 /* Item30Model.m in Sources */ = {isa = PBXBuildFile; fileRef = E695845721258C7C00E41910 /* Item30Model.m */; };
+		E6A3B0612126A75700EFBF5A /* Item31ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6A3B0602126A75700EFBF5A /* Item31ViewController.m */; };
 		E6B1A29D210B09F100ABD335 /* EOCLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = E6B1A29C210B09F100ABD335 /* EOCLocation.m */; };
 		E6B2419820F735F7008DBB25 /* NSObject+Associate.m in Sources */ = {isa = PBXBuildFile; fileRef = E6B2419720F735F7008DBB25 /* NSObject+Associate.m */; };
 		E6B2419B20F739CB008DBB25 /* UITapGestureRecognizer+Associate.m in Sources */ = {isa = PBXBuildFile; fileRef = E6B2419A20F739CB008DBB25 /* UITapGestureRecognizer+Associate.m */; };
@@ -114,6 +115,8 @@
 		E69584532125753800E41910 /* Item30ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Item30ViewController.m; sourceTree = "<group>"; };
 		E695845621258C7C00E41910 /* Item30Model.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Item30Model.h; sourceTree = "<group>"; };
 		E695845721258C7C00E41910 /* Item30Model.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Item30Model.m; sourceTree = "<group>"; };
+		E6A3B05F2126A75700EFBF5A /* Item31ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Item31ViewController.h; sourceTree = "<group>"; };
+		E6A3B0602126A75700EFBF5A /* Item31ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Item31ViewController.m; sourceTree = "<group>"; };
 		E6B1A29B210B09F100ABD335 /* EOCLocation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EOCLocation.h; sourceTree = "<group>"; };
 		E6B1A29C210B09F100ABD335 /* EOCLocation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EOCLocation.m; sourceTree = "<group>"; };
 		E6B2419620F735F7008DBB25 /* NSObject+Associate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+Associate.h"; sourceTree = "<group>"; };
@@ -345,6 +348,7 @@
 		E68396B520F337800033B009 /* EffectiveObjective-C */ = {
 			isa = PBXGroup;
 			children = (
+				E6A3B05E2126A72400EFBF5A /* Item 31 */,
 				E69584512125751C00E41910 /* Item 30 */,
 				E69506B92122CD4900CE2E8B /* Item 28 */,
 				E633E21C21212CEE0000C270 /* Item 27 */,
@@ -411,6 +415,15 @@
 				E695845721258C7C00E41910 /* Item30Model.m */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		E6A3B05E2126A72400EFBF5A /* Item 31 */ = {
+			isa = PBXGroup;
+			children = (
+				E6A3B05F2126A75700EFBF5A /* Item31ViewController.h */,
+				E6A3B0602126A75700EFBF5A /* Item31ViewController.m */,
+			);
+			path = "Item 31";
 			sourceTree = "<group>";
 		};
 		E6B1A29A210B094700ABD335 /* Model */ = {
@@ -611,6 +624,7 @@
 				E633E205211D6D4F0000C270 /* Item23DemoDelegateObject.m in Sources */,
 				E68396CF20F3397D0033B009 /* Item10ViewController.m in Sources */,
 				E68396BB20F337800033B009 /* ViewController.m in Sources */,
+				E6A3B0612126A75700EFBF5A /* Item31ViewController.m in Sources */,
 				E69506BC2122CD5700CE2E8B /* Item28ViewController.m in Sources */,
 				E633E20D211D7F640000C270 /* Item24PersonModel.m in Sources */,
 				E637B9FA21196C6E00256F0C /* Item22Model.m in Sources */,
