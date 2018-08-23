@@ -20,3 +20,17 @@ target_link_libraries(
         swresample
         swscale
 )
+add_executable(example example.cpp)
+
+target_link_libraries(
+        example
+        avcodec
+        avdevice
+        avfilter
+        avformat
+        avresample
+        avutil
+        postproc
+        swresample
+        swscale
+)
