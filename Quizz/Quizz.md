@@ -201,3 +201,74 @@ OC中String， Array和Dictionary的类型位引用类型。
 - 值类型相比引用类型， 最大优势可以高效的使用内存。 值的类型在栈上， 引用的类型在堆上， 栈上的操作仅是单个指针上下移动， 堆上操作则牵扯合并、移位、重新链接等。也就是说， swift这样设计大幅减少了堆上的内存分配和回收次数。同时， copy-on-write又将值传递和复制的开销降到最低。
 - Swift将String， Array和Dictionary设计成值类型也是为了线程安全， 通过swift的let设置， 是的这些数据达到真正意义上的不变， 根本解决了多线程中内存访问操作顺序问题
 - Swift将String， Array和Dictionary设计成值类型还可以提升api的灵活度， 例如通过实现Collection这样的协议， 可以遍历String， 使得开发更加灵活， 高效。
+
+## Q:Message send 如果找不到对象， 则会如何进行后续处理
+
+Message send找不到对象会分为两种情况：对象为空（nil）， 对象不为空， 却找不到对应的方法
+
+- 对象为空时， OC在向nil发送消息是有效的， 在runtime中不会产生任何效果。 如果消息中返回的值是对象， 那么给nil发送消息返回nil， 如果方法返回值是结构体， 那么给nil发送消息返回是0。
+- 对象不为空， 却找不到对应的方法时， 程序有异常， 引发unrecognized selector
+
+## Q:什么是method swizzling
+
+每个类都维护一个方法列表， 其中方法名与其实现是一一对应的关系， 即SEL（方法名）和IMP（指向实现的指针）的对应关系。 method swizzling 可以在runtime中将SEL和IMP的对应关系进行更换， 比如原来SELa指向IMPa， 更换好SELa可以指向IMPb。
+
+```objective-c
+oneSEL = @selector(methodOne:);
+Method oneMethod = class_getInstanceMethod(selfClass, oneSEL);
+
+twoSEL = @selector(methodTwo:);
+Method twoMethod = class_getInstanceMethod(selfClass, twoSEL);
+
+BOOL addSucc = class_addMethod(selfClass, oneSEL, method_getImplementation(twoMethod), method_getTypeEncoding(oneMethod));
+
+if (addSucc) {
+    class_replaceMethod(selfClass, twoSEL, method_getImplementation(oneMethod), method_getTypeEncoding(oneMethod));
+} else {
+    method_exchangeImplementations(oneMethod, twoMethod);
+}
+```
+
+## Q:isKindOfClass和isMemberOfClass有什么不同
+
+```
+[obj isKindOfClass:[SomeClass class]];
+[obj isMemberOfClass:[SomeClass class]];
+```
+
+- 在上面的代码中， 第一行代码的isKindOfClass用来判断obj是否为SomeClass或其子类
+- isMemberOfClass，用来判断obj当且仅当obj是SomeClass（非子类）
+
+## Q:能否通过Category给已有的类添加属性
+
+可以， 但要使用runtime， 用objc_getAssociateObject和objc_setAssociateObject来实现， 具体代码见Effective OC
+
+## Q:LLDB中p和po有什么区别
+
+- p是expr -的缩写， 他的工作是把接收到的参数在当前环境下进行编译， 然后打印出对应的值
+- po是expr -o-， 他所做的工作和p类似，如果接收到的是一个指针， 那么他会调用对象的description/debugDescription放发并进行打印。 如果接受的是core foundation对象那么会有CFShow方法进行打印，如果两个方法都失败，则和p打印出结果一样
+- 总的来说po会比p打印出更多内容，一般p即可， 因为p操作较少， 效率较高。
+
+## Q:Xcode中的Buildtime issues和Runtime issues有什么区别
+
+- Buildtime issues有三类：编译器识别出的警告(Warning),错误(Error)和静态分析(Static Code Analysis)。
+- 其中静态分析有三类：未初始化变量， 未使用数据， 和API使用错误
+- Runtime issues有三类：线程问题、UI布局和渲染问题，以及内存问题， 线程问题最多列如数据竞争
+
+## Q:App启动时间过长， 该怎样优化
+
+App启动时间过长， 可能由多个原因造成。 从理论上说， App的启动时间是由main（）函数之前t1和main函数之后t1的加载时间造成的。
+
+关于t1， 需要分析App的启动日志， 具体方法实在Xcode中添加DYLD_PRINT_STATISTICS环境变量， 将其值设置为1， 这样就可以的到启动日志
+
+```
+Some log
+```
+
+通过日志可以知道， aap主要在动态加载库， 重定位， 初始化三个方面小号时间过长， 优化手段就有了
+
+- 减少东岱库的数量， 苹果推荐动态库不要多于6个
+- 减少OC的数量， 列如合并删除， 可以加快动态链接重定位的速度
+- 使用initialize方法替换load方法或是尽量将load方法中的代码延迟调用， 减小初始化的时间
+
+关于t2， 主要是构建第一个页面并渲染完成的时间， 要在加载页具体观察， 如viewDidLoad方法和viewWillAppear方法。
