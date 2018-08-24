@@ -8,6 +8,7 @@ extern "C" {
 #include <libavcodec/avcodec.h>
 }
 
+#include <sstream>
 
 int main() {
     std::cout << "Hello, World!" << std::endl;
