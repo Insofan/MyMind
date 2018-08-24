@@ -60,10 +60,14 @@ static void *MyAlertViewKey = "MyAlertViewKey";
     alert.delegate = self;
     
     void (^alertBlock)(NSInteger) = ^(NSInteger buttonIndex){
-        @strongify(self);
+        
         if (buttonIndex == 0) {
+            @strongify(self);
+
             [self doCancel];
         } else {
+            @strongify(self);
+
             [self doContinue];
         }
     };
