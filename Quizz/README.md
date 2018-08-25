@@ -272,3 +272,44 @@ Some log
 - 使用initialize方法替换load方法或是尽量将load方法中的代码延迟调用， 减小初始化的时间
 
 关于t2， 主要是构建第一个页面并渲染完成的时间， 要在加载页具体观察， 如viewDidLoad方法和viewWillAppear方法。
+
+## Q:如何用Xcode检测代码中的循环引用
+
+一种方法是使用Xcode中的Memory Debug Graph，另一种是[MLeaksFinder](https://github.com/Tencent/MLeaksFinder)
+
+## Q:怎样解决EXC_BAD_ACCESS
+
+产生EXC_BAD_ACCESS，是因为僵尸指针， 有以下集中方法：
+
+- 设置全局断点， 快速定位bug所在：这种方法效果一般
+- 重写Object的respondsToSelector方法：这种方法效果一般， 并且需要在每个class上进行定点排查， 所以不推荐使用此方法
+- 使用Zombie和Address Sanitizer：可以在绝大多数数情况下定位问题代码
+
+## Q:要在UIView上定义一个Label有几种方式
+
+SB、xib或者纯代码， 然后用Frame或是auto layout
+
+## Q:storyboard/xib和纯代码构建UI相比， 有哪些优点和缺点
+
+优点：
+
+- 可视化，简单、拖拉拽
+- 跳转关系清楚。在storyboard里可以清楚的区分view controller之间的跳转关系
+
+缺点：
+
+- 写作冲突: 多人编辑时， 很容易产生难以解决的冲突， 因为 sb/xib自带xcode和系统的版本号， 
+- 很难做到界面继承和重用:代码很容易做到
+- 不利于进行模块化管理:在storyboard/xib中搜索起来很不方便， 并且不可能同意修改多个UI的属性值， 必须一个个地改， 代码中使用一个工厂模式就可以解决
+- 影响性能:列如构建首页UI时， 代码书写和优化会比storyboard多图层的渲染要好很多
+
+## Q:Auto Layout 和 Frame在UI布局和渲染上有什么区别
+
+- Auto Layout 是针对多尺寸屏幕的设计。其本质是通过线性不等式设置UI空间的相对位置， 从而适配多种屏幕尺寸
+- Frame是基于XY坐标轴系统的布局机制。他限定了UI空间的具体位置， 是从iOS开发中最底层， 最基本的界面布局机制
+- Auto Layout 的性能比Frame差很多。Auto Layout是通过求解线性不等式转化位Frame进行布局， 其中计算量非常大， 通常Auto Layout的性能消耗是Frame的十倍
+
+性能消耗解决办法：
+
+- 尽量压缩视图层级， 减少计算量
+- 也可以将计算放在后台线程来处理， 这样就可以不阻塞主线程操作， 其结果可以被缓存
