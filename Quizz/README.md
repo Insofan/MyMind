@@ -341,3 +341,109 @@ SB、xib或者纯代码， 然后用Frame或是auto layout
 - Safe Area是值app合理显示的区域， 它不包括 status bar， navigation bar， tab bar和toolbar等， 在iPhone X中一般是指扣除了 status bar （44）和底部的home indicator（34）， 这样app中的内容不会被“刘海”或者影响底部的手势操作
 - SafeAreaLayoutGuide是指Safe Area的区域和限制， 在布局中， 可以分别取得它的上，下， 左，右
 - SafeAreaInsets限定了Safe Area区域与整个屏幕之间的布局关系。 一般用上下左右4个值来获取Safe Area与屏幕边缘之间的距离
+
+## Q:在iOS中实现动画的方式有几种
+
+主要有三种UIView Animation， CALayer Animation和 UIViewPropertyAnimator
+
+- UIView Animation可以实现基于UIView的简单动画， 它是CALayer Animation的封装， 主要可以实现移动、旋转、变色等基本操作。其基本函数为+ animateWithDuration:animations: , duration为基本参数, 在block中对UIView属性的调整就是动画结束后的最终效果. 除此之外, 他还有关键帧动画和两个view转换接口, 它的动画无法回撤, 暂停, 与手势交互
+- CALayer Animation是在更底层CALayer上的动画接口.除了可以实现UIView Animation的功能, 他可以修改更多实现更复杂的动画. 其实现的动画可以回撤, 暂停与手势交互
+- UIViewPropertyAnimator是iOS10中引进的处理动画的接口, 他也是基于UIView实现的, 他可以实现所有的UIView Animation效果, 他最大的优点在于timing function以及与手势配合的交互变成, 其动画设置相比CALayer Animation十分简便
+
+## Q:控制屏幕上的圆形小球, 使其水平向右滑动200个point
+
+主要要问清需求
+
+## Q:在iOS开发中, 如何保证App的UI在iPhone, iPad和iPad分屏下依然适用
+
+苹果在iOS 8中引入了Adaptive UI的概念, 要保证App的UI在各种情况下适用需要注意一下几点
+
+- 采用Auto Layout 与用frame设置的绝对位置不同, 所有UI空间将保持相对位置, 例如, 将label设置成对应屏幕的 center X和 center Y, 此时无论是在iPhone 中还是在iPad中, 此label豆浆相对于屏幕居中
+- 采用Size Class, 很多实用, UI控件在iPhone中尺寸刚好, 但在iPad上有可能偏小. 此时用Size Class可以分别在不同的机型上安装对应的constraint, 针对不同情况Regular和Compact设置横屏和竖屏
+- 多屏主要分三种: Slide Over, Split View 和Picture in Picture, 苹果明确支出App应该支持Split Over和Split View, 应和UI设计沟通, 配合Size Class 进行适配
+
+## Q:如何用Drag & drop实现图片拖动功能
+
+iOS 11 加入功能, 代码实现
+
+## Q:说明并比较关键词:contentView, contentInset, contentSize和contentOffset
+
+- UIScrollView上显示内容的区域被称为 contentView, 一般情况下, 用户对UIScrollView的操作, 例如, addSubview这样操作都是在contentView中进行的
+- contentInset是指contentView与UIScrollView的便捷. 类似网页开发中的padding
+- contentSize是指contentView的大小, 它一般超过屏幕大小, 是整个UIScrollView实际内容的大小, 例如一个4倍屏幕的尺寸, 用户在缩放的时候只能看到其中1/4的内容, 那他的size是4个屏幕合起来的
+- contentOffset是当前contentView相对于左上角原点的坐标
+
+## Q:说明UITableViewCell的重用机制
+
+UITableView的每一行就是UITableViewCell. 绝大多数UITableViewCell的构图都一样, 只是内容不同而已.所以, 可以将同一类型的UITableViewCell标记为相同的Identifier, 然后用reuseIdentifier进行构建, 配合不同内容进行批量使用.
+
+当用户滑动列表时, 如果reuseIdentifer部位nil, 则UITableView会自动调用已经生成好的UiTableView来展示内容, 否则每次滑动都会创建新的UITableViewCell, 这样浪费资源, 造成主线程卡顿.
+
+## Q:说明并比较协议:UITableViewDataSource和UITableViewDelegate
+
+一般在UIViewController上配置UITableView时, 都会用到这两个协议, 这两个协议由当前UIViewController实现.
+
+- UITableViewDataSource控制UITablView的实际数据:例如, 有多少section, 每个section有多少行, 每行用那种UITableViewCell. 其中, numOfRows和cellForRowAtIndexPath这两个方法必须被实现, numOfSectionsn默认为1
+- UITableViewDelegate用来处理UITableView和Ui的交互, 例如, 设置UITableView的header和footer, 点击, 拖动, 删除某个UITableViewCell对应的操作. 它所有的方法都是可选方法, 有默认实现.
+
+## Q:说明并比较协议:UICollectionViewDataSource,UICollectionViewDelegate和UICollectionViewDelegateFlowLayout
+
+- UICollectionViewDataSource用来管控UICollectionView的实际数据. 例如:有多少section, 每个section有多少个item, 每个item对应的UI如何. 其中, numOfItems和cellforItemAtIndexPath等
+- UICollectionViewDelegate用来处理交互. 例如, 点击, 拖动, 高亮某个item, 它是所有的方法都是可选方法, 有默认实现
+- UICollectionViewDelegateFlowLayout用来处理UICollectionView的布局及其行为, 列如item的尺寸, collectionView的滚动方向, 这个协议所有方法都是可选, 有默认实现
+
+## Q:实现一个10行列表, 每行随机显示一个0 - 100 的证书, 用户可以删除, 移动任何一行, 下拉列表数字重新刷新
+
+代码实现
+
+## Q:UICollectionView中的Supplementary Views和Decoration Views分别指什么
+
+Cells, Supplementary Views和Decoration Views共同构成了整个UICollectionView视图. Cells是最基本的, 并且必须由用户实现并配置, 而Supplementary Views和Decoration Views有默认实现, 主要用来梅花UICollectionView.
+
+- Supplementary Views是补充视图. 一般用于设置每个section的Header View或者Footer View, 以及用于标记section的View
+- Decoration Views是装饰视图.它是完全与数据没有关系的视图, 负责给cell或者Supplementary Views添加辅助视图
+- Supplementary Views的布局一般可以再UICollectionViewFlowLayout中实现完成. 如果要定制化实现supplementary Views 和 Decoration Views, 就要实现UICollectionViewLayout抽象类
+
+## Q:如果一个列表视图滑动很慢, 那么应该怎么优化
+
+一般是UI或是数据出现问题
+
+分析问题:
+
+- 列表渲染时间长界面渲染后, 大量的操作或者耗时计算阻塞了主线成
+- 数据源问题, 可能是因为网络加载太慢, 不能及时得到数据, 也有可能是需要更新的数据太多,  主线程一时处理不过来.
+
+优化问题:
+
+- 先检查Cell是否服用, 对于复杂的视图, 可以采用惰性加载来推迟创建时间, 尽量减少视图的层级也是很好的优化方法, , 减少圆角, 由UI切好直接添加进去, 用frame布局, UI空间复杂或者层级较多, 应减少
+- 对于第二个问题, 可以用gcd多线程操作将复杂的计算放到后端线程, 并运行缓存. 列如, 对于布局计算或非UI对象的创建就可以如此操作
+- 对于第三个问题, 建议将网络数据缓存并存储在手机端, 将取得的部分数据优先级进行顺序渲染, 还可以优化服务器端的网络请求
+
+另外, 对于界面渲染和优化, 其实[Texture](https://github.com/TextureGroup/Texture)是最好的解决方案, 该库从底层重新写UI的刷新, 数据加载等, 将这些功能移出主线程可以异步进行耗时操作
+
+## Q:说一说实现预加载的方法
+
+实际开发中, 当列表滑动到一定程度后, 就需要发送网络请求, 以获得新的数据, 网络请求是一种耗时的操作, 为了提高用户体验, 开发者经常运用预加载方式提前发送网络请求, 这样可以在用户滑动在列表底部之前获得最新数据, 无须让用户等待, 这就是无限滚动列表.
+
+预加载原理就是, 根据当前UITableView所在位置除以整个contentView的高度, 以判断当前位置是否超过Threshold, 如果超过, 就发送网络请求, 获得数据
+
+具体见实现代码
+
+这中解决方法缺点十分明显:
+
+会出现新加载的页面还没有被访问, 应用程序就发送另一次网络请求的情况.
+
+列如:假设Threshold阈值是0.7, 当前是28, 则已加载了40条数据, 开始请求40 - 50的cell数据, 可是之前加载的30 - 39的cell数据还没有被访问, 此时发送网络请求就造成了浪费.
+
+解决方法是将Threshold变成一个动态的值, 随之数据的增长而增长
+
+具体见实现代码
+
+## Q:如何用UICollectionView实现瀑布流界面
+
+代码实现
+
+
+
+
+
