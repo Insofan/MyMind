@@ -313,3 +313,31 @@ SB、xib或者纯代码， 然后用Frame或是auto layout
 
 - 尽量压缩视图层级， 减少计算量
 - 也可以将计算放在后台线程来处理， 这样就可以不阻塞主线程操作， 其结果可以被缓存
+
+## Q:UIView和CALayer有什么区别
+
+- UIView和CALayer都是UI的操作对象：两者都是NSObject的子类， 发生在UIView上的操作， 也会发生在响应的CALayer上
+- UIVew是CALayer用于交互的对象。UIView是UIResponder的子类， 并且提供了CALayer很多没有的交互借口， 主要负责用户触发的各种操作
+- CALayer在图像和动画的渲染上性能更好， 这是因为UIView有冗余的交互借口， 而且相比CALayer还有层级之分， CALayer无须处理交互时进行渲染， 可以节省大力时间
+
+## Q:说明并比较关键词:frame， bounds和center
+
+- frame是指当前视图相对于父视图的平面坐标系统中的位置，大小
+- bounds是指当前视图相对于自己平面坐标的位置和大小
+- center是一个CGPoint，指当前视图在父视图平面坐标系统中中间的点
+
+## Q:说明并比较方法：layoutIfNeeded， layoutSubviews和setNeedsLayout
+
+- layoutIfNeeded方法一旦调用， 主线程会立即强制重新布局， 它从当前视图开始， 一直到玩称所有姿势图
+
+- layoutSubviews用来定义视图尺寸。 它是系统调用的， 开发这不能手动调用。 我们所能做的就是重写该方法， 让系统在调整尺寸是能够按照我们希望的效果进行布局， 这个方法主要在屏幕旋转， 滑动或者触摸界面修改子视图时被触发
+
+- setNeedsLayout与layoutIfNeeded相似， 唯一不同的就是它不会立刻强制视图重新布局， 而是在下一个布局周期才会触发， 它主要用于多个视图布局先后更新的场景， 如两个位置不断变化的的点连成一条直线
+
+## Q:说明并比较关键词：Safe Area， SafeAreaLayoutGuide和SafeAreaInsets
+
+由于iPhone X采用了全新的刘海设计， 所以， iOS11中引入了 Safe Area的概念
+
+- Safe Area是值app合理显示的区域， 它不包括 status bar， navigation bar， tab bar和toolbar等， 在iPhone X中一般是指扣除了 status bar （44）和底部的home indicator（34）， 这样app中的内容不会被“刘海”或者影响底部的手势操作
+- SafeAreaLayoutGuide是指Safe Area的区域和限制， 在布局中， 可以分别取得它的上，下， 左，右
+- SafeAreaInsets限定了Safe Area区域与整个屏幕之间的布局关系。 一般用上下左右4个值来获取Safe Area与屏幕边缘之间的距离
