@@ -53,6 +53,8 @@
 		E6E1933420FF3A4100DEC1B0 /* Item17ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6E1933320FF3A4100DEC1B0 /* Item17ViewController.m */; };
 		E6E1933720FF3A7800DEC1B0 /* EOCPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = E6E1933620FF3A7800DEC1B0 /* EOCPerson.m */; };
 		E6E7670E21339861009CC5D4 /* Item38Tool.m in Sources */ = {isa = PBXBuildFile; fileRef = E6E7670D21339861009CC5D4 /* Item38Tool.m */; };
+		E6E767122133A0A5009CC5D4 /* Item39ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6E767112133A0A5009CC5D4 /* Item39ViewController.m */; };
+		E6E767152133A1B5009CC5D4 /* Item39NetTool.m in Sources */ = {isa = PBXBuildFile; fileRef = E6E767142133A1B5009CC5D4 /* Item39NetTool.m */; };
 		E6F9681D211C152300081C2D /* Item23ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6F9681C211C152300081C2D /* Item23ViewController.m */; };
 		E6F96822211C166E00081C2D /* Item23Model.m in Sources */ = {isa = PBXBuildFile; fileRef = E6F96821211C166E00081C2D /* Item23Model.m */; };
 		E6F96828211C18AE00081C2D /* Item23Network.m in Sources */ = {isa = PBXBuildFile; fileRef = E6F96827211C18AE00081C2D /* Item23Network.m */; };
@@ -151,6 +153,10 @@
 		E6E1933620FF3A7800DEC1B0 /* EOCPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EOCPerson.m; sourceTree = "<group>"; };
 		E6E7670C21339861009CC5D4 /* Item38Tool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Item38Tool.h; sourceTree = "<group>"; };
 		E6E7670D21339861009CC5D4 /* Item38Tool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Item38Tool.m; sourceTree = "<group>"; };
+		E6E767102133A0A5009CC5D4 /* Item39ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Item39ViewController.h; sourceTree = "<group>"; };
+		E6E767112133A0A5009CC5D4 /* Item39ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Item39ViewController.m; sourceTree = "<group>"; };
+		E6E767132133A1B5009CC5D4 /* Item39NetTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Item39NetTool.h; sourceTree = "<group>"; };
+		E6E767142133A1B5009CC5D4 /* Item39NetTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Item39NetTool.m; sourceTree = "<group>"; };
 		E6F9681B211C152300081C2D /* Item23ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Item23ViewController.h; sourceTree = "<group>"; };
 		E6F9681C211C152300081C2D /* Item23ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Item23ViewController.m; sourceTree = "<group>"; };
 		E6F96820211C166E00081C2D /* Item23Model.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Item23Model.h; sourceTree = "<group>"; };
@@ -382,6 +388,7 @@
 		E68396B520F337800033B009 /* EffectiveObjective-C */ = {
 			isa = PBXGroup;
 			children = (
+				E6E7670F2133A092009CC5D4 /* Item 39 */,
 				E6255FC921338CD100A1C48E /* Item 38 */,
 				E6255FB8212FE2D500A1C48E /* Item 37 */,
 				E6A3B05E2126A72400EFBF5A /* Item 31 */,
@@ -534,6 +541,17 @@
 			path = "Item 17";
 			sourceTree = "<group>";
 		};
+		E6E7670F2133A092009CC5D4 /* Item 39 */ = {
+			isa = PBXGroup;
+			children = (
+				E6E767102133A0A5009CC5D4 /* Item39ViewController.h */,
+				E6E767112133A0A5009CC5D4 /* Item39ViewController.m */,
+				E6E767132133A1B5009CC5D4 /* Item39NetTool.h */,
+				E6E767142133A1B5009CC5D4 /* Item39NetTool.m */,
+			);
+			path = "Item 39";
+			sourceTree = "<group>";
+		};
 		E6F9681A211C150D00081C2D /* Item 23 */ = {
 			isa = PBXGroup;
 			children = (
@@ -676,6 +694,7 @@
 				E6E7670E21339861009CC5D4 /* Item38Tool.m in Sources */,
 				E6E1933720FF3A7800DEC1B0 /* EOCPerson.m in Sources */,
 				E6D3221E20F88DC100D0C47C /* Item13ViewController.m in Sources */,
+				E6E767152133A1B5009CC5D4 /* Item39NetTool.m in Sources */,
 				E6D3221620F87C5D00D0C47C /* Item12ViewController.m in Sources */,
 				E6B2419820F735F7008DBB25 /* NSObject+Associate.m in Sources */,
 				E6255FCF21338EE500A1C48E /* Item38SecViewController.m in Sources */,
@@ -686,6 +705,7 @@
 				E6D3221A20F87F8400D0C47C /* EOCAutoDictionary.m in Sources */,
 				E6F96828211C18AE00081C2D /* Item23Network.m in Sources */,
 				E6E1933420FF3A4100DEC1B0 /* Item17ViewController.m in Sources */,
+				E6E767122133A0A5009CC5D4 /* Item39ViewController.m in Sources */,
 				E633E209211D7C320000C270 /* Item24ViewController.m in Sources */,
 				E637B9F621196B9300256F0C /* Item22ViewController.m in Sources */,
 				E6E1933020FF292500DEC1B0 /* Item16ViewController.m in Sources */,
