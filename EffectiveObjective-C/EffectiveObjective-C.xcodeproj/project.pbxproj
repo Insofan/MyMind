@@ -55,6 +55,7 @@
 		E6E7670E21339861009CC5D4 /* Item38Tool.m in Sources */ = {isa = PBXBuildFile; fileRef = E6E7670D21339861009CC5D4 /* Item38Tool.m */; };
 		E6E767122133A0A5009CC5D4 /* Item39ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6E767112133A0A5009CC5D4 /* Item39ViewController.m */; };
 		E6E767152133A1B5009CC5D4 /* Item39NetTool.m in Sources */ = {isa = PBXBuildFile; fileRef = E6E767142133A1B5009CC5D4 /* Item39NetTool.m */; };
+		E6E7671C2133CA07009CC5D4 /* Item41ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6E7671B2133CA07009CC5D4 /* Item41ViewController.m */; };
 		E6F9681D211C152300081C2D /* Item23ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6F9681C211C152300081C2D /* Item23ViewController.m */; };
 		E6F96822211C166E00081C2D /* Item23Model.m in Sources */ = {isa = PBXBuildFile; fileRef = E6F96821211C166E00081C2D /* Item23Model.m */; };
 		E6F96828211C18AE00081C2D /* Item23Network.m in Sources */ = {isa = PBXBuildFile; fileRef = E6F96827211C18AE00081C2D /* Item23Network.m */; };
@@ -157,6 +158,8 @@
 		E6E767112133A0A5009CC5D4 /* Item39ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Item39ViewController.m; sourceTree = "<group>"; };
 		E6E767132133A1B5009CC5D4 /* Item39NetTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Item39NetTool.h; sourceTree = "<group>"; };
 		E6E767142133A1B5009CC5D4 /* Item39NetTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Item39NetTool.m; sourceTree = "<group>"; };
+		E6E7671A2133CA07009CC5D4 /* Item41ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Item41ViewController.h; sourceTree = "<group>"; };
+		E6E7671B2133CA07009CC5D4 /* Item41ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Item41ViewController.m; sourceTree = "<group>"; };
 		E6F9681B211C152300081C2D /* Item23ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Item23ViewController.h; sourceTree = "<group>"; };
 		E6F9681C211C152300081C2D /* Item23ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Item23ViewController.m; sourceTree = "<group>"; };
 		E6F96820211C166E00081C2D /* Item23Model.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Item23Model.h; sourceTree = "<group>"; };
@@ -388,6 +391,7 @@
 		E68396B520F337800033B009 /* EffectiveObjective-C */ = {
 			isa = PBXGroup;
 			children = (
+				E6E767192133C369009CC5D4 /* Item41 */,
 				E6E7670F2133A092009CC5D4 /* Item 39 */,
 				E6255FC921338CD100A1C48E /* Item 38 */,
 				E6255FB8212FE2D500A1C48E /* Item 37 */,
@@ -552,6 +556,15 @@
 			path = "Item 39";
 			sourceTree = "<group>";
 		};
+		E6E767192133C369009CC5D4 /* Item41 */ = {
+			isa = PBXGroup;
+			children = (
+				E6E7671A2133CA07009CC5D4 /* Item41ViewController.h */,
+				E6E7671B2133CA07009CC5D4 /* Item41ViewController.m */,
+			);
+			path = Item41;
+			sourceTree = "<group>";
+		};
 		E6F9681A211C150D00081C2D /* Item 23 */ = {
 			isa = PBXGroup;
 			children = (
@@ -711,6 +724,7 @@
 				E6E1933020FF292500DEC1B0 /* Item16ViewController.m in Sources */,
 				E633E21A212126660000C270 /* Item25String+ABCHTTP.m in Sources */,
 				E633E22521212F190000C270 /* Item26PersonModel.m in Sources */,
+				E6E7671C2133CA07009CC5D4 /* Item41ViewController.m in Sources */,
 				E69584542125753800E41910 /* Item30ViewController.m in Sources */,
 				E633E213211D8DA10000C270 /* Item24Person+Play.m in Sources */,
 				E6F9681D211C152300081C2D /* Item23ViewController.m in Sources */,
