@@ -13,6 +13,8 @@
 		E611A08F2113011900AF382A /* Item18ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E611A08E2113011900AF382A /* Item18ViewController.m */; };
 		E611A093211301F700AF382A /* Item18Model.m in Sources */ = {isa = PBXBuildFile; fileRef = E611A092211301F700AF382A /* Item18Model.m */; };
 		E6255FBB212FE2E800A1C48E /* Item37ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6255FBA212FE2E800A1C48E /* Item37ViewController.m */; };
+		E6255FCC21338CF300A1C48E /* Item38ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6255FCB21338CF300A1C48E /* Item38ViewController.m */; };
+		E6255FCF21338EE500A1C48E /* Item38SecViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6255FCE21338EE500A1C48E /* Item38SecViewController.m */; };
 		E633E201211D6B530000C270 /* Item23DemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E633E200211D6B530000C270 /* Item23DemoViewController.m */; };
 		E633E205211D6D4F0000C270 /* Item23DemoDelegateObject.m in Sources */ = {isa = PBXBuildFile; fileRef = E633E204211D6D4F0000C270 /* Item23DemoDelegateObject.m */; };
 		E633E209211D7C320000C270 /* Item24ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E633E208211D7C320000C270 /* Item24ViewController.m */; };
@@ -50,6 +52,7 @@
 		E6E1933020FF292500DEC1B0 /* Item16ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6E1932F20FF292500DEC1B0 /* Item16ViewController.m */; };
 		E6E1933420FF3A4100DEC1B0 /* Item17ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6E1933320FF3A4100DEC1B0 /* Item17ViewController.m */; };
 		E6E1933720FF3A7800DEC1B0 /* EOCPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = E6E1933620FF3A7800DEC1B0 /* EOCPerson.m */; };
+		E6E7670E21339861009CC5D4 /* Item38Tool.m in Sources */ = {isa = PBXBuildFile; fileRef = E6E7670D21339861009CC5D4 /* Item38Tool.m */; };
 		E6F9681D211C152300081C2D /* Item23ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6F9681C211C152300081C2D /* Item23ViewController.m */; };
 		E6F96822211C166E00081C2D /* Item23Model.m in Sources */ = {isa = PBXBuildFile; fileRef = E6F96821211C166E00081C2D /* Item23Model.m */; };
 		E6F96828211C18AE00081C2D /* Item23Network.m in Sources */ = {isa = PBXBuildFile; fileRef = E6F96827211C18AE00081C2D /* Item23Network.m */; };
@@ -69,6 +72,10 @@
 		E611A092211301F700AF382A /* Item18Model.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Item18Model.m; sourceTree = "<group>"; };
 		E6255FB9212FE2E800A1C48E /* Item37ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Item37ViewController.h; sourceTree = "<group>"; };
 		E6255FBA212FE2E800A1C48E /* Item37ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Item37ViewController.m; sourceTree = "<group>"; };
+		E6255FCA21338CF300A1C48E /* Item38ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Item38ViewController.h; sourceTree = "<group>"; };
+		E6255FCB21338CF300A1C48E /* Item38ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Item38ViewController.m; sourceTree = "<group>"; };
+		E6255FCD21338EE500A1C48E /* Item38SecViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Item38SecViewController.h; sourceTree = "<group>"; };
+		E6255FCE21338EE500A1C48E /* Item38SecViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Item38SecViewController.m; sourceTree = "<group>"; };
 		E633E1FF211D6B530000C270 /* Item23DemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Item23DemoViewController.h; sourceTree = "<group>"; };
 		E633E200211D6B530000C270 /* Item23DemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Item23DemoViewController.m; sourceTree = "<group>"; };
 		E633E203211D6D4F0000C270 /* Item23DemoDelegateObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Item23DemoDelegateObject.h; sourceTree = "<group>"; };
@@ -142,6 +149,8 @@
 		E6E1933320FF3A4100DEC1B0 /* Item17ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Item17ViewController.m; sourceTree = "<group>"; };
 		E6E1933520FF3A7800DEC1B0 /* EOCPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EOCPerson.h; sourceTree = "<group>"; };
 		E6E1933620FF3A7800DEC1B0 /* EOCPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EOCPerson.m; sourceTree = "<group>"; };
+		E6E7670C21339861009CC5D4 /* Item38Tool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Item38Tool.h; sourceTree = "<group>"; };
+		E6E7670D21339861009CC5D4 /* Item38Tool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Item38Tool.m; sourceTree = "<group>"; };
 		E6F9681B211C152300081C2D /* Item23ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Item23ViewController.h; sourceTree = "<group>"; };
 		E6F9681C211C152300081C2D /* Item23ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Item23ViewController.m; sourceTree = "<group>"; };
 		E6F96820211C166E00081C2D /* Item23Model.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Item23Model.h; sourceTree = "<group>"; };
@@ -226,6 +235,19 @@
 				E6255FBA212FE2E800A1C48E /* Item37ViewController.m */,
 			);
 			path = "Item 37";
+			sourceTree = "<group>";
+		};
+		E6255FC921338CD100A1C48E /* Item 38 */ = {
+			isa = PBXGroup;
+			children = (
+				E6255FCA21338CF300A1C48E /* Item38ViewController.h */,
+				E6255FCB21338CF300A1C48E /* Item38ViewController.m */,
+				E6255FCD21338EE500A1C48E /* Item38SecViewController.h */,
+				E6255FCE21338EE500A1C48E /* Item38SecViewController.m */,
+				E6E7670C21339861009CC5D4 /* Item38Tool.h */,
+				E6E7670D21339861009CC5D4 /* Item38Tool.m */,
+			);
+			path = "Item 38";
 			sourceTree = "<group>";
 		};
 		E633E1FE211D6B200000C270 /* Demo */ = {
@@ -360,6 +382,7 @@
 		E68396B520F337800033B009 /* EffectiveObjective-C */ = {
 			isa = PBXGroup;
 			children = (
+				E6255FC921338CD100A1C48E /* Item 38 */,
 				E6255FB8212FE2D500A1C48E /* Item 37 */,
 				E6A3B05E2126A72400EFBF5A /* Item 31 */,
 				E69584512125751C00E41910 /* Item 30 */,
@@ -650,10 +673,12 @@
 				E633E210211D83DA0000C270 /* Item24Person+Friendship.m in Sources */,
 				E6B1A29D210B09F100ABD335 /* EOCLocation.m in Sources */,
 				E65E30B221182602007B6471 /* Item21ViewController.m in Sources */,
+				E6E7670E21339861009CC5D4 /* Item38Tool.m in Sources */,
 				E6E1933720FF3A7800DEC1B0 /* EOCPerson.m in Sources */,
 				E6D3221E20F88DC100D0C47C /* Item13ViewController.m in Sources */,
 				E6D3221620F87C5D00D0C47C /* Item12ViewController.m in Sources */,
 				E6B2419820F735F7008DBB25 /* NSObject+Associate.m in Sources */,
+				E6255FCF21338EE500A1C48E /* Item38SecViewController.m in Sources */,
 				E611A093211301F700AF382A /* Item18Model.m in Sources */,
 				E68396C620F337810033B009 /* main.m in Sources */,
 				E6F96822211C166E00081C2D /* Item23Model.m in Sources */,
@@ -670,6 +695,7 @@
 				E633E213211D8DA10000C270 /* Item24Person+Play.m in Sources */,
 				E6F9681D211C152300081C2D /* Item23ViewController.m in Sources */,
 				E633E217212125D60000C270 /* Item25ViewController.m in Sources */,
+				E6255FCC21338CF300A1C48E /* Item38ViewController.m in Sources */,
 				E695845821258C7C00E41910 /* Item30Model.m in Sources */,
 				E6255FBB212FE2E800A1C48E /* Item37ViewController.m in Sources */,
 				E68396B820F337800033B009 /* AppDelegate.m in Sources */,

@@ -15,5 +15,9 @@
 #import <Masonry.h>
 #import <HXTool.h>
 #import <ReactiveObjC.h>
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import <AVFoundation/AVFoundation.h>
+
 #endif
 #endif /* PrefixHeader_pch */

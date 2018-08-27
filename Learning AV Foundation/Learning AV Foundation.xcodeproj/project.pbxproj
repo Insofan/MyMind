@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		1FC3A2C0FCECEACF1DE1405C /* libPods-Learning AV Foundation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CF91F7B5BD053DB7F5ED2C2F /* libPods-Learning AV Foundation.a */; };
 		E60232F52122D73D001B59CC /* CH1TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E60232F42122D73D001B59CC /* CH1TableViewController.m */; };
+		E6255FC1212FFAF300A1C48E /* CH11ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6255FC0212FFAF300A1C48E /* CH11ViewController.m */; };
+		E6255FC5212FFEFA00A1C48E /* CH12TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6255FC4212FFEFA00A1C48E /* CH12TableViewController.m */; };
+		E6255FC8212FFF9F00A1C48E /* CH12TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E6255FC7212FFF9F00A1C48E /* CH12TableViewCell.m */; };
 		E6B21F74211C089F00B1681F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E6B21F73211C089F00B1681F /* AppDelegate.m */; };
 		E6B21F77211C089F00B1681F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6B21F76211C089F00B1681F /* ViewController.m */; };
 		E6B21F7A211C089F00B1681F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6B21F78211C089F00B1681F /* Main.storyboard */; };
@@ -22,6 +25,13 @@
 		E60232F22122D659001B59CC /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		E60232F32122D73D001B59CC /* CH1TableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CH1TableViewController.h; sourceTree = "<group>"; };
 		E60232F42122D73D001B59CC /* CH1TableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CH1TableViewController.m; sourceTree = "<group>"; };
+		E6255FBC212FF6D600A1C48E /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		E6255FBF212FFAF300A1C48E /* CH11ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CH11ViewController.h; sourceTree = "<group>"; };
+		E6255FC0212FFAF300A1C48E /* CH11ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CH11ViewController.m; sourceTree = "<group>"; };
+		E6255FC3212FFEFA00A1C48E /* CH12TableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CH12TableViewController.h; sourceTree = "<group>"; };
+		E6255FC4212FFEFA00A1C48E /* CH12TableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CH12TableViewController.m; sourceTree = "<group>"; };
+		E6255FC6212FFF9F00A1C48E /* CH12TableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CH12TableViewCell.h; sourceTree = "<group>"; };
+		E6255FC7212FFF9F00A1C48E /* CH12TableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CH12TableViewCell.m; sourceTree = "<group>"; };
 		E6B21F6F211C089F00B1681F /* Learning AV Foundation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Learning AV Foundation.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6B21F72211C089F00B1681F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E6B21F73211C089F00B1681F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -60,9 +70,30 @@
 		93FEF3E0D7CC773898B7B4F4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E6255FBC212FF6D600A1C48E /* AVFoundation.framework */,
 				CF91F7B5BD053DB7F5ED2C2F /* libPods-Learning AV Foundation.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E6255FBE212FFACD00A1C48E /* CH11 */ = {
+			isa = PBXGroup;
+			children = (
+				E6255FBF212FFAF300A1C48E /* CH11ViewController.h */,
+				E6255FC0212FFAF300A1C48E /* CH11ViewController.m */,
+			);
+			path = CH11;
+			sourceTree = "<group>";
+		};
+		E6255FC2212FFE4600A1C48E /* CH12 */ = {
+			isa = PBXGroup;
+			children = (
+				E6255FC3212FFEFA00A1C48E /* CH12TableViewController.h */,
+				E6255FC4212FFEFA00A1C48E /* CH12TableViewController.m */,
+				E6255FC6212FFF9F00A1C48E /* CH12TableViewCell.h */,
+				E6255FC7212FFF9F00A1C48E /* CH12TableViewCell.m */,
+			);
+			path = CH12;
 			sourceTree = "<group>";
 		};
 		E6B21F66211C089F00B1681F = {
@@ -106,6 +137,8 @@
 			children = (
 				E60232F32122D73D001B59CC /* CH1TableViewController.h */,
 				E60232F42122D73D001B59CC /* CH1TableViewController.m */,
+				E6255FC2212FFE4600A1C48E /* CH12 */,
+				E6255FBE212FFACD00A1C48E /* CH11 */,
 			);
 			path = "Chapter One";
 			sourceTree = "<group>";
@@ -203,8 +236,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				E6B21F77211C089F00B1681F /* ViewController.m in Sources */,
+				E6255FC8212FFF9F00A1C48E /* CH12TableViewCell.m in Sources */,
 				E6B21F82211C08A000B1681F /* main.m in Sources */,
 				E60232F52122D73D001B59CC /* CH1TableViewController.m in Sources */,
+				E6255FC5212FFEFA00A1C48E /* CH12TableViewController.m in Sources */,
+				E6255FC1212FFAF300A1C48E /* CH11ViewController.m in Sources */,
 				E6B21F74211C089F00B1681F /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

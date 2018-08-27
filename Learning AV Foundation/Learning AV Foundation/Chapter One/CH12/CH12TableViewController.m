@@ -1,55 +1,41 @@
 //
-//  CH1TableViewController.m
+//  CH12TableViewController.m
 //  Learning AV Foundation
 //
-//  Created by Insomnia on 2018/8/14.
+//  Created by Insomnia on 2018/8/24.
 //  Copyright © 2018年 Insomnia. All rights reserved.
 //
 
-#import "CH1TableViewController.h"
-@interface CH1TableViewController ()
-@property (copy, nonatomic) NSArray *vcArray;
+#import "CH12TableViewController.h"
+
+@interface CH12TableViewController ()
 
 @end
 
-@implementation CH1TableViewController
-- (NSArray *)vcArray {
-    if (!_vcArray) {
-        _vcArray = @[
-                     @{@"key": @"吔屎丫你！", @"value": NSClassFromString(@"CH11ViewController")},
-                     
-                     ];
-    }
-    return _vcArray;
-}
+@implementation CH12TableViewController
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    // Uncomment the following line to preserve selection between presentations.
+    // self.clearsSelectionOnViewWillAppear = NO;
+    
+    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
+    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+}
 
+#pragma mark - Table view data source
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+#warning Incomplete implementation, return the number of sections
+    return 0;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return self.vcArray.count;
+#warning Incomplete implementation, return the number of rows
+    return 0;
 }
 
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return [UIScreen hx_screenHeight] / 10.0;
-}
-
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ReuseCell];
-    cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:ReuseCell];
-    cell.textLabel.text = _vcArray[indexPath.row][@"key"];
-    return cell;
-}
-
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    [tableView dequeueReusableCellWithIdentifier:ReuseCell];
-    UIViewController *vc = [[_vcArray[indexPath.row][@"value"] class] new];
-    vc.title = self.vcArray[indexPath.row][@"key"];
-    [self.navigationController pushViewController:vc animated:true];
-    
-}
 /*
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
