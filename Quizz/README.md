@@ -494,6 +494,25 @@ Http是无状态的,  session和cookie用来控制会话
 8. ##### 客户端解锁返回信息
      客户端会用刚生成的钥匙解密信息, 并显示在浏览器上
 
+## Q:说明并比较类:URLSessionTask, URLSessionDataTask, URLSessionUploadTask和URLSessionDownloadTask
+
+- URLSessionTask 是一个抽象类. 通过实现它, 可以实例化任意网络传输任务, 列如请求, 上传, 下载.它的cancel, resume, suspend都有默认实现
+- URLSessionDataTask负责HTTP Get请求, 它是URLSessionTask的具体实现, 一般用与从服务器获取数据并存在内存中
+- URLSessionUploadTask负责HTTP Post/Put请求, 他继承了URLSessionDataTask类, 一般用于上传
+- URLSessionDownloadTask负责下载数据, 它是URLSessionTask的具体实现, 它一般将下载的数据保存在一个临时文件中, 在取消后可以将数据保存, 之后继续下载
+
+## Q:什么是Completion Handler
+
+Completion Handler 一般用于API请求之后返回的数据
+
+当URLSessionTask结束之后, 无论是成功还是报错, Completion Handler 一般都会接收三个可选参数, Data, URLResponse, Error
+
+## Q:设计一个方法, 在给定API的网址的条件下, 返回用户数据
+
+代码实现一个网络请求, 测试URLSessionDataTask的基本用法
+
 ## 
+
+
 
 
