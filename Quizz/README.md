@@ -511,7 +511,36 @@ Completion Handler 一般用于API请求之后返回的数据
 
 代码实现一个网络请求, 测试URLSessionDataTask的基本用法
 
-## 
+## Q:在iOS开发中, 本地消息通知的流程是怎样的
+
+UserNotifications 框架是针对远程和本地推送的框架, 其主要流程分为一下四步
+
+1. ##### 注册
+     通过requestAuthorization这个方法, 通知中心会向用户发送通知许可请求. 用户点击同意按钮, 即可完成注册
+
+2. ##### 创建
+     首先设置消息内容 UNMutableNotificationContent 和触发机制UNNotificationTrigger, 然后用这两个值来创建UNNotificationRequest, 最后将request加入到当前通知中心UNUserNotificationCenter.current()中. 远程通知与本地通知大同小异, 远程通知的消息内容和消息创建都在服务器端完成, 而不是本地完成
+
+3. ##### 推送
+     这一步就是系统或者远程推送通知的过程, 收到通知后, 通知会根据对应UI显示在手机上
+
+4. ##### 响应
+     用户看到通知后, 点击通知后看到响应的响应选项, UNNotifictionAction和UNNotificationCategory用于响应设置
+
+## Q:说一说在iOS开发中, 远程消息推送的原理
+
+主要是App, 服务器和APNs间的关系
+
+1. App通过requestAuthorization向iOS申请远程推送权限, 基本和本地推送一样
+2. iOS系统向APNs服务器请求手机端的deviceToken, 并告诉App, 允许接受推送的通知
+3. App接收到手机端的deviceToken
+4. App将受到的deviceToken传给APP对应的服务器
+5. 远程消息由App对应服务器端产生, 它会先经过APNs服务器
+6. APNs服务器将远程推送推送给对应App
+7. 根据对应的deviceToken, 推送给指定手机
+可以看一下书上图, 很经典
+
+
 
 
 
