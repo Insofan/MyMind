@@ -24,7 +24,8 @@ int main() {
     struct sockaddr_in servAddr, clientAddr;
 
     socklen_t clientAddrSize;
-    fp = fopen("ch7fileServer.cpp", "rb");
+    //路径问题
+    fp = fopen("/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/ch7/ch7fileServer.cpp", "rb");
 
     servSd = socket(AF_INET, SOCK_STREAM, 0);
     if (servSd < 0) {
