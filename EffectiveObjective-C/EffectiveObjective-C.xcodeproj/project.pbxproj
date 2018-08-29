@@ -46,6 +46,7 @@
 		E6B2419B20F739CB008DBB25 /* UITapGestureRecognizer+Associate.m in Sources */ = {isa = PBXBuildFile; fileRef = E6B2419A20F739CB008DBB25 /* UITapGestureRecognizer+Associate.m */; };
 		E6B2419F20F74447008DBB25 /* Item11ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6B2419E20F74447008DBB25 /* Item11ViewController.m */; };
 		E6B241A220F7478C008DBB25 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = E6B241A120F7478C008DBB25 /* Person.m */; };
+		E6CA16E021352E8F00511F3F /* Item43ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6CA16DF21352E8F00511F3F /* Item43ViewController.m */; };
 		E6D3221620F87C5D00D0C47C /* Item12ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6D3221520F87C5D00D0C47C /* Item12ViewController.m */; };
 		E6D3221A20F87F8400D0C47C /* EOCAutoDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = E6D3221920F87F8400D0C47C /* EOCAutoDictionary.m */; };
 		E6D3221E20F88DC100D0C47C /* Item13ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6D3221D20F88DC100D0C47C /* Item13ViewController.m */; };
@@ -140,6 +141,8 @@
 		E6B2419E20F74447008DBB25 /* Item11ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Item11ViewController.m; sourceTree = "<group>"; };
 		E6B241A020F7478C008DBB25 /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
 		E6B241A120F7478C008DBB25 /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		E6CA16DE21352E8F00511F3F /* Item43ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Item43ViewController.h; sourceTree = "<group>"; };
+		E6CA16DF21352E8F00511F3F /* Item43ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Item43ViewController.m; sourceTree = "<group>"; };
 		E6D3221420F87C5D00D0C47C /* Item12ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Item12ViewController.h; sourceTree = "<group>"; };
 		E6D3221520F87C5D00D0C47C /* Item12ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Item12ViewController.m; sourceTree = "<group>"; };
 		E6D3221820F87F8400D0C47C /* EOCAutoDictionary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EOCAutoDictionary.h; sourceTree = "<group>"; };
@@ -391,7 +394,8 @@
 		E68396B520F337800033B009 /* EffectiveObjective-C */ = {
 			isa = PBXGroup;
 			children = (
-				E6E767192133C369009CC5D4 /* Item41 */,
+				E6CA16DD21352E5900511F3F /* Item 43 */,
+				E6E767192133C369009CC5D4 /* Item 41 */,
 				E6E7670F2133A092009CC5D4 /* Item 39 */,
 				E6255FC921338CD100A1C48E /* Item 38 */,
 				E6255FB8212FE2D500A1C48E /* Item 37 */,
@@ -494,6 +498,15 @@
 			path = "Item 11";
 			sourceTree = "<group>";
 		};
+		E6CA16DD21352E5900511F3F /* Item 43 */ = {
+			isa = PBXGroup;
+			children = (
+				E6CA16DE21352E8F00511F3F /* Item43ViewController.h */,
+				E6CA16DF21352E8F00511F3F /* Item43ViewController.m */,
+			);
+			path = "Item 43";
+			sourceTree = "<group>";
+		};
 		E6D3221320F87C2800D0C47C /* Item 12 */ = {
 			isa = PBXGroup;
 			children = (
@@ -556,13 +569,13 @@
 			path = "Item 39";
 			sourceTree = "<group>";
 		};
-		E6E767192133C369009CC5D4 /* Item41 */ = {
+		E6E767192133C369009CC5D4 /* Item 41 */ = {
 			isa = PBXGroup;
 			children = (
 				E6E7671A2133CA07009CC5D4 /* Item41ViewController.h */,
 				E6E7671B2133CA07009CC5D4 /* Item41ViewController.m */,
 			);
-			path = Item41;
+			path = "Item 41";
 			sourceTree = "<group>";
 		};
 		E6F9681A211C150D00081C2D /* Item 23 */ = {
@@ -719,6 +732,7 @@
 				E6F96828211C18AE00081C2D /* Item23Network.m in Sources */,
 				E6E1933420FF3A4100DEC1B0 /* Item17ViewController.m in Sources */,
 				E6E767122133A0A5009CC5D4 /* Item39ViewController.m in Sources */,
+				E6CA16E021352E8F00511F3F /* Item43ViewController.m in Sources */,
 				E633E209211D7C320000C270 /* Item24ViewController.m in Sources */,
 				E637B9F621196B9300256F0C /* Item22ViewController.m in Sources */,
 				E6E1933020FF292500DEC1B0 /* Item16ViewController.m in Sources */,
