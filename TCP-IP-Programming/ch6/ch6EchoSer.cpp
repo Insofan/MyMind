@@ -31,7 +31,10 @@ int main() {
 
     memset(&servAddr, 0, sizeof(servAddr));
     servAddr.sin_family      = AF_INET;
-    servAddr.sin_addr.s_addr = inet_addr("127.0.0.1");
+//    servAddr.sin_addr.s_addr = inet_addr("127.0.0.1");
+    servAddr.sin_addr.s_addr = inet_addr("192.168.0.104");
+
+
     servAddr.sin_port = ntohs(6666);
 
     int bindFlag = bind(servSock, (struct sockaddr*)&servAddr, sizeof(servAddr));
