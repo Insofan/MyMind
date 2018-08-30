@@ -540,8 +540,116 @@ UserNotifications 框架是针对远程和本地推送的框架, 其主要流程
 7. 根据对应的deviceToken, 推送给指定手机
 可以看一下书上图, 很经典
 
+## Q:在iOS开发中, 如何实现编码和解码
 
+代码实现
 
+## Q:说一说在iOS开发中数据持久化的方案
 
+- Plist:他是一个XML文件, 会将某些固定类型的数据存放于其中, 读写分别通过contentOfFile和writeToFile来完成. Plist一般用于保存App的基本设置
+- Preference:它通过UserDefaults来完成key-value配对保存. 如果保存用synchronize方法, 他会将数据保存在一个pilist文件下. Preference同样用于保存App的基本信息
+- NSKeyedArchiver:遵循NSCoding协议的对象就可以实现序列化. NSCoding有两个必要实现的方法, 即父档的归档(initWithCoder 方法)和接档(encodeWithCoder方法). 存储数据通过NSKeyedArchiver的工厂方法archiveRootObject:toFile:来实现, 数据读取通过NSKeyedUnarchiver的工厂方法, unarchiveObjectwithFile:来实现. 相比前两者, NSKeyedArchive可以任意指定文件存储的位置和文件名.
+- CoreData:前面集中方法都是覆盖存储, 在修改数据时要读取整个文件, 修改后再覆盖写入, 十分不适合大量的数据存储. CoreData就是苹果公司推出的大规模数据持久化方案. 它的基本逻辑和SQL数据库, 每个表Entity, 可以添加, 读取, 修改, 删除对象实例. 他可以像SQL一样提供模糊搜索, 过滤搜索, 表关联等复杂操作, 虽然CoreData功能强大, 但也有缺点, 即学习曲线高, 操作复杂.
 
+## Q:多线程在iOS开发中有哪三种方式
+
+- NSThread:可以最大限度的掌握每一个线程的生命周期, 但是也需要开发这手动管理所有的线程活动, 比如创建, 同步, 暂停, 取消等, 其中手动加锁操作的挑战性很大.NSThread总体使用场景很小, 基本是在开发底层的开源软件或是测试时使用
+- GCD:苹果公司推荐的方式, 他将线程管理给了系统, 用的是名为Dispatch Queue的队列; 开发这只要定义每个线程需要执行的工作即可, 所有的工作都是先进先出, 每一个block运行速度极快(纳秒). 使用GCD主要是为了追求高效处理大并发数据, 如图片异步加载, 网络请求等
+- Operations:与GCD类似, 虽然是Operation Queue队列实现, 但是他并不局限于先进先出的队列操作, Operation提供了多个接口可以实现暂停, 继续, 终止, 优先顺序, 依赖等操作, 比GCD更灵活. Operations的应用场景最广, 在效率上Operation处理速度较快(毫秒), 几乎所有的基本线程操作都可以实现.
+
+## Q:比较关键词:Serial, Concurrent, Sync和Async
+
+  Serial/Concurrent:串行, 并行 
+- 串行:指在同一时间内, 队列中只能执行一个任务,  当前任务执行完成后才能执行下一个任务. 串行队列中只有一个线程
+- 并行:允许多个任务在同一个时间内进行, 在并行队列中有多个线程,\
+- 串行队列的任务一定是按开始顺序结束, 并行队列的任务不一定会
+
+Sync/Async:同步, 异步
+
+- 同步: 会把当前任务加到队列中, 等任务执行完成, 线程才会返回继续运行, 同步会阻塞线程
+- 异步: 也会把当前的任务加到队列中, 但他会立即返回 , 并不会等任务执行完成
+
+注意: 在串行队列中执行同步操作容易造成死锁, 并行队列中不担心这个问题. 异步操作无论是在串行队列中执行还是并行队列中执行, 都可能出现竞争问题.
+
+## Q:串行队列的代码实战
+
+代码实现, 串行同步, 串行异步, 死锁条件, 串行中进行异步, 同步嵌套
+
+## Q:并行队列的代码实现
+
+代码实现, 注意死锁条件
+
+## Q:距离说明iOS并发变成中的三大问题
+
+三大问题: 竞争条件, 优先倒置, 死锁问题
+
+- 竞争条件:指两个或连个以上线程对共享数据进行读写操作时, 最终的数据结果不确定
+
+- ```swift
+  var num = 0
+  DispatchQueue.globa().async {
+      for _ in 1..10000 {
+          num += 1
+      }
+  }
+  
+  for _ in 1..10000 {
+      num += 1
+  }
+  ```
+
+最后的计算结果num很有可能小鱼20000, 因为其操作为非原子操作, 在上述两个线程对num进行读写, 其值会随着执行顺序的不同而产生不同结果
+
+- 优先倒置:指低优先级的任务会因为各种原因高于优先级的任务执行. 例如:
+
+- ```swift
+  var highPriorityQueue = DispatchQueue.global(qos: .userInitiated)
+  var lowPriorityQueue = DispatchQueue.global(qos: .utility)
+  
+  let semaphore = DispatchSemaphore(value: 1)
+  
+  lowPriorityQueue.async{
+      semaphore.wait()
+      for i in 0...10 {
+          print(i)
+      }
+      semaphore.signal()
+  }
+  
+  highPriorityQueue.async {
+      semaphore.wait()
+      for i in 11...20 {
+          print(i)
+      }
+      semaphore.signal()
+  }
+  ```
+
+以上代码如果没有semaphore, 则高优先级的highPriorityQueue会优先执行, 所以程序会优先打印完成11~20. 而加了semaphore之后, 低优先级的lowPriorityQueue会先挂起semaphore, 而高优先级的PriorityQueue就只有等semaphore被释放才能执行打印操作, 
+
+也就是说, 低优先级的线程可以锁上某种高优先级的线程需要的资源, 从而使高优先级的需要等低优先级执行玩
+
+- 死锁问题: 指两个或两个以上的线程, 他们之间互相等待彼此停止执行, 以获得某种资源, 但是没有一方提前退出的情况, 在iOS开发中, 有一个经典的例子就是两个Operation互相依赖
+
+  ```
+  let operationA = Operation()
+  let operationB = Operation()
+  
+  operationA.addDependecy(operationB)
+  operationB.addDependecy(operationA)
+  
+  //最经典的, 对一个串行队列进行异步, 同步嵌套, 
+  serialQueue.async {
+      serialQueue.sync {
+          
+      }
+  }
+  因为串行队列一次只能执行一个任务, 所以, 首先会把异步block中的任务派发执行, 当进入block中时, 同步操作意味这阻塞当前队列, 而此时外部block正在等待内部block操作完成, 而内部block又阻塞其操作完成, 即内部block在等待外部block操作完成. 所以, 串行队列在等待自己释放资源, 构成死锁, 也提醒我们, 千万不要在主线程进行同步操作
+  //主线程同步死锁
+  https://www.jianshu.com/p/8ab497e39eb5
+  ```
+
+## Q:竞态条件的代码实战
+
+代码实现, 用barrier flag 保证并行队列只进行当前的写操作, 而无视其他操作
 
