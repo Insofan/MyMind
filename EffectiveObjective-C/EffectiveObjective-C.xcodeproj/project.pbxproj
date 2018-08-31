@@ -60,6 +60,7 @@
 		E6F9681D211C152300081C2D /* Item23ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6F9681C211C152300081C2D /* Item23ViewController.m */; };
 		E6F96822211C166E00081C2D /* Item23Model.m in Sources */ = {isa = PBXBuildFile; fileRef = E6F96821211C166E00081C2D /* Item23Model.m */; };
 		E6F96828211C18AE00081C2D /* Item23Network.m in Sources */ = {isa = PBXBuildFile; fileRef = E6F96827211C18AE00081C2D /* Item23Network.m */; };
+		E6FB7CA52139152300133044 /* Item43CustomOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = E6FB7CA42139152300133044 /* Item43CustomOperation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -170,6 +171,8 @@
 		E6F96823211C16C400081C2D /* Item23NetworkDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Item23NetworkDelegate.h; sourceTree = "<group>"; };
 		E6F96826211C18AE00081C2D /* Item23Network.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Item23Network.h; sourceTree = "<group>"; };
 		E6F96827211C18AE00081C2D /* Item23Network.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Item23Network.m; sourceTree = "<group>"; };
+		E6FB7CA32139152300133044 /* Item43CustomOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Item43CustomOperation.h; sourceTree = "<group>"; };
+		E6FB7CA42139152300133044 /* Item43CustomOperation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Item43CustomOperation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -503,6 +506,8 @@
 			children = (
 				E6CA16DE21352E8F00511F3F /* Item43ViewController.h */,
 				E6CA16DF21352E8F00511F3F /* Item43ViewController.m */,
+				E6FB7CA32139152300133044 /* Item43CustomOperation.h */,
+				E6FB7CA42139152300133044 /* Item43CustomOperation.m */,
 			);
 			path = "Item 43";
 			sourceTree = "<group>";
@@ -737,6 +742,7 @@
 				E637B9F621196B9300256F0C /* Item22ViewController.m in Sources */,
 				E6E1933020FF292500DEC1B0 /* Item16ViewController.m in Sources */,
 				E633E21A212126660000C270 /* Item25String+ABCHTTP.m in Sources */,
+				E6FB7CA52139152300133044 /* Item43CustomOperation.m in Sources */,
 				E633E22521212F190000C270 /* Item26PersonModel.m in Sources */,
 				E6E7671C2133CA07009CC5D4 /* Item41ViewController.m in Sources */,
 				E69584542125753800E41910 /* Item30ViewController.m in Sources */,

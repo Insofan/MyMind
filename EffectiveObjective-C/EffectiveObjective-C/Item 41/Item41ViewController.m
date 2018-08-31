@@ -47,7 +47,7 @@ static dispatch_queue_t _syncQueue;
     self.view.backgroundColor = [UIColor hx_randomColor];
     
 
-    //保证读写线程安全
+    //保证读写线程安全, 书上的图非常经典
     
     self.name = [NSString stringWithFormat:@"name"];
     NSLog(@"name: %@ thread: %@", self.name , [NSThread currentThread]);
