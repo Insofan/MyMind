@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface Item41ViewController : UIViewController
-
+@property (nonatomic, copy) NSString *name;
+@property (nonatomic, copy) NSString *otherName;
 @end

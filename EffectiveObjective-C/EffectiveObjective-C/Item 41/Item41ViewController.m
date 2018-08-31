@@ -9,34 +9,34 @@
 #import "Item41ViewController.h"
 
 @interface Item41ViewController ()
-@property (nonatomic, copy) NSString *someStr;
-@property (nonatomic, strong) dispatch_queue_t syncQueue;
 @end
 
 @implementation Item41ViewController
+static NSString *_name;
+static dispatch_queue_t _syncQueue;
 
-- (dispatch_queue_t)syncQueue {
-    if (!_syncQueue) {
-        _syncQueue = dispatch_queue_create("com.effectiveobjective.syncQueue",NULL);
+
+- (instancetype)init {
+    self = [super init];
+    if (self) {
+        //0是并行, NULL是串行
+        _syncQueue = dispatch_queue_create("com.effectiveobjectivec.syncQueue", DISPATCH_QUEUE_SERIAL);
+//        _syncQueue = dispatch_queue_create("com.effectiveobjectivec.syncQueue", NULL);
     }
-    return _syncQueue;
+    return self;
 }
 
-- (NSString *)someStr {
+- (NSString *)name {
     __block NSString *localStr;
-    @weakify(self);
-//    _syncQueue = dispatch_queue_create("com.effectiveobjective.syncQueue",NULL);
-
-    dispatch_sync(self.syncQueue, ^{
-        @strongify(self);
-        localStr = self.someStr;
+    dispatch_sync(_syncQueue, ^{
+        localStr = _name;
     });
     return localStr;
 }
 
-- (void)setSomeStr:(NSString *)someStr{
-    dispatch_sync(self.syncQueue, ^{
-        self.someStr = [NSString stringWithFormat:@"%@", someStr];
+- (void)setName:(NSString *)name{
+    dispatch_barrier_async(_syncQueue, ^{
+        _name = [NSString stringWithFormat:@"%@", name];
     });
 }
 
@@ -45,17 +45,16 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor hx_randomColor];
-    //避免使用@synchronized和 nslock, 使用gcd队列, 这段有问题 一直不对
-    //0是并行, NULL是串行
-    [self syncQueue];
-//    NSLog(@"str: %@", self.someStr);
-    self.someStr = @"set value 1";
-    NSLog(@"str: %@", self.someStr);
-    self.someStr = @"set value 2";
-    NSLog(@"str: %@", self.someStr);
-    NSLog(@"str: %@", self.someStr);
+    
 
-
+    //保证读写线程安全
+    
+    self.name = [NSString stringWithFormat:@"name"];
+    NSLog(@"name: %@ thread: %@", self.name , [NSThread currentThread]);
+    
+    self.otherName = [NSString stringWithFormat:@"Other name"];
+    NSLog(@"other name: %@ thread: %@", self.otherName , [NSThread currentThread]);
+  
 }
 
 - (void)didReceiveMemoryWarning {
@@ -63,6 +62,11 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)dealloc {
+    if (_name) {
+        _name = nil;
+    }
+}
 /*
 #pragma mark - Navigation
 
