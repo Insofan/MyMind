@@ -60,13 +60,50 @@ CMAKE_SOURCE_DIR = /Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming
 CMAKE_BINARY_DIR = /Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug
 
 #=============================================================================
+# Target rules for target CMakeFiles/ch9setbuf.dir
+
+# All Build rule for target.
+CMakeFiles/ch9setbuf.dir/all:
+	$(MAKE) -f CMakeFiles/ch9setbuf.dir/build.make CMakeFiles/ch9setbuf.dir/depend
+	$(MAKE) -f CMakeFiles/ch9setbuf.dir/build.make CMakeFiles/ch9setbuf.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/CMakeFiles --progress-num=27,28 "Built target ch9setbuf"
+.PHONY : CMakeFiles/ch9setbuf.dir/all
+
+# Include target in all.
+all: CMakeFiles/ch9setbuf.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/ch9setbuf.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/ch9setbuf.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/ch9setbuf.dir/rule
+
+# Convenience name for target.
+ch9setbuf: CMakeFiles/ch9setbuf.dir/rule
+
+.PHONY : ch9setbuf
+
+# clean rule for target.
+CMakeFiles/ch9setbuf.dir/clean:
+	$(MAKE) -f CMakeFiles/ch9setbuf.dir/build.make CMakeFiles/ch9setbuf.dir/clean
+.PHONY : CMakeFiles/ch9setbuf.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/ch9setbuf.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/ch9sockType.dir
 
 # All Build rule for target.
 CMakeFiles/ch9sockType.dir/all:
 	$(MAKE) -f CMakeFiles/ch9sockType.dir/build.make CMakeFiles/ch9sockType.dir/depend
 	$(MAKE) -f CMakeFiles/ch9sockType.dir/build.make CMakeFiles/ch9sockType.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/CMakeFiles --progress-num=27,28 "Built target ch9sockType"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/CMakeFiles --progress-num=29,30 "Built target ch9sockType"
 .PHONY : CMakeFiles/ch9sockType.dir/all
 
 # Include target in all.
@@ -103,7 +140,7 @@ clean: CMakeFiles/ch9sockType.dir/clean
 CMakeFiles/gethostbyname.dir/all:
 	$(MAKE) -f CMakeFiles/gethostbyname.dir/build.make CMakeFiles/gethostbyname.dir/depend
 	$(MAKE) -f CMakeFiles/gethostbyname.dir/build.make CMakeFiles/gethostbyname.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/CMakeFiles --progress-num=33,34 "Built target gethostbyname"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/CMakeFiles --progress-num=35,36 "Built target gethostbyname"
 .PHONY : CMakeFiles/gethostbyname.dir/all
 
 # Include target in all.
@@ -325,7 +362,7 @@ clean: CMakeFiles/ch5opServer.dir/clean
 CMakeFiles/inet_ntoa.dir/all:
 	$(MAKE) -f CMakeFiles/inet_ntoa.dir/build.make CMakeFiles/inet_ntoa.dir/depend
 	$(MAKE) -f CMakeFiles/inet_ntoa.dir/build.make CMakeFiles/inet_ntoa.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/CMakeFiles --progress-num=43,44 "Built target inet_ntoa"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/CMakeFiles --progress-num=45,46 "Built target inet_ntoa"
 .PHONY : CMakeFiles/inet_ntoa.dir/all
 
 # Include target in all.
@@ -362,7 +399,7 @@ clean: CMakeFiles/inet_ntoa.dir/clean
 CMakeFiles/fdSeri.dir/all:
 	$(MAKE) -f CMakeFiles/fdSeri.dir/build.make CMakeFiles/fdSeri.dir/depend
 	$(MAKE) -f CMakeFiles/fdSeri.dir/build.make CMakeFiles/fdSeri.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/CMakeFiles --progress-num=31,32 "Built target fdSeri"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/CMakeFiles --progress-num=33,34 "Built target fdSeri"
 .PHONY : CMakeFiles/fdSeri.dir/all
 
 # Include target in all.
@@ -399,7 +436,7 @@ clean: CMakeFiles/fdSeri.dir/clean
 CMakeFiles/inetAddr.dir/all:
 	$(MAKE) -f CMakeFiles/inetAddr.dir/build.make CMakeFiles/inetAddr.dir/depend
 	$(MAKE) -f CMakeFiles/inetAddr.dir/build.make CMakeFiles/inetAddr.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/CMakeFiles --progress-num=39,40 "Built target inetAddr"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/CMakeFiles --progress-num=41,42 "Built target inetAddr"
 .PHONY : CMakeFiles/inetAddr.dir/all
 
 # Include target in all.
@@ -436,7 +473,7 @@ clean: CMakeFiles/inetAddr.dir/clean
 CMakeFiles/inet_aton.dir/all:
 	$(MAKE) -f CMakeFiles/inet_aton.dir/build.make CMakeFiles/inet_aton.dir/depend
 	$(MAKE) -f CMakeFiles/inet_aton.dir/build.make CMakeFiles/inet_aton.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/CMakeFiles --progress-num=41,42 "Built target inet_aton"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/CMakeFiles --progress-num=43,44 "Built target inet_aton"
 .PHONY : CMakeFiles/inet_aton.dir/all
 
 # Include target in all.
@@ -621,7 +658,7 @@ clean: CMakeFiles/ch5echoClient.dir/clean
 CMakeFiles/endianConv.dir/all:
 	$(MAKE) -f CMakeFiles/endianConv.dir/build.make CMakeFiles/endianConv.dir/depend
 	$(MAKE) -f CMakeFiles/endianConv.dir/build.make CMakeFiles/endianConv.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/CMakeFiles --progress-num=29,30 "Built target endianConv"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/CMakeFiles --progress-num=31,32 "Built target endianConv"
 .PHONY : CMakeFiles/endianConv.dir/all
 
 # Include target in all.
@@ -658,7 +695,7 @@ clean: CMakeFiles/endianConv.dir/clean
 CMakeFiles/helloServ.dir/all:
 	$(MAKE) -f CMakeFiles/helloServ.dir/build.make CMakeFiles/helloServ.dir/depend
 	$(MAKE) -f CMakeFiles/helloServ.dir/build.make CMakeFiles/helloServ.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/CMakeFiles --progress-num=37,38 "Built target helloServ"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/CMakeFiles --progress-num=39,40 "Built target helloServ"
 .PHONY : CMakeFiles/helloServ.dir/all
 
 # Include target in all.
@@ -843,7 +880,7 @@ clean: CMakeFiles/ch4echoServer.dir/clean
 CMakeFiles/lowRead.dir/all:
 	$(MAKE) -f CMakeFiles/lowRead.dir/build.make CMakeFiles/lowRead.dir/depend
 	$(MAKE) -f CMakeFiles/lowRead.dir/build.make CMakeFiles/lowRead.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/CMakeFiles --progress-num=47,48 "Built target lowRead"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/CMakeFiles --progress-num=49,50 "Built target lowRead"
 .PHONY : CMakeFiles/lowRead.dir/all
 
 # Include target in all.
@@ -880,7 +917,7 @@ clean: CMakeFiles/lowRead.dir/clean
 CMakeFiles/helloClient.dir/all:
 	$(MAKE) -f CMakeFiles/helloClient.dir/build.make CMakeFiles/helloClient.dir/depend
 	$(MAKE) -f CMakeFiles/helloClient.dir/build.make CMakeFiles/helloClient.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/CMakeFiles --progress-num=35,36 "Built target helloClient"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/CMakeFiles --progress-num=37,38 "Built target helloClient"
 .PHONY : CMakeFiles/helloClient.dir/all
 
 # Include target in all.
@@ -917,7 +954,7 @@ clean: CMakeFiles/helloClient.dir/clean
 CMakeFiles/lowOpen.dir/all:
 	$(MAKE) -f CMakeFiles/lowOpen.dir/build.make CMakeFiles/lowOpen.dir/depend
 	$(MAKE) -f CMakeFiles/lowOpen.dir/build.make CMakeFiles/lowOpen.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/CMakeFiles --progress-num=45,46 "Built target lowOpen"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/CMakeFiles --progress-num=47,48 "Built target lowOpen"
 .PHONY : CMakeFiles/lowOpen.dir/all
 
 # Include target in all.

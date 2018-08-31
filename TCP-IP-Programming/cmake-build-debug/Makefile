@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named ch9setbuf
+
+# Build rule for target.
+ch9setbuf: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ch9setbuf
+.PHONY : ch9setbuf
+
+# fast build rule for target.
+ch9setbuf/fast:
+	$(MAKE) -f CMakeFiles/ch9setbuf.dir/build.make CMakeFiles/ch9setbuf.dir/build
+.PHONY : ch9setbuf/fast
+
+#=============================================================================
 # Target rules for targets named ch9sockType
 
 # Build rule for target.
@@ -1043,6 +1056,33 @@ ch9/ch9getBuf.cpp.s:
 	$(MAKE) -f CMakeFiles/ch9getBuf.dir/build.make CMakeFiles/ch9getBuf.dir/ch9/ch9getBuf.cpp.s
 .PHONY : ch9/ch9getBuf.cpp.s
 
+ch9/ch9setbuf.o: ch9/ch9setbuf.cpp.o
+
+.PHONY : ch9/ch9setbuf.o
+
+# target to build an object file
+ch9/ch9setbuf.cpp.o:
+	$(MAKE) -f CMakeFiles/ch9setbuf.dir/build.make CMakeFiles/ch9setbuf.dir/ch9/ch9setbuf.cpp.o
+.PHONY : ch9/ch9setbuf.cpp.o
+
+ch9/ch9setbuf.i: ch9/ch9setbuf.cpp.i
+
+.PHONY : ch9/ch9setbuf.i
+
+# target to preprocess a source file
+ch9/ch9setbuf.cpp.i:
+	$(MAKE) -f CMakeFiles/ch9setbuf.dir/build.make CMakeFiles/ch9setbuf.dir/ch9/ch9setbuf.cpp.i
+.PHONY : ch9/ch9setbuf.cpp.i
+
+ch9/ch9setbuf.s: ch9/ch9setbuf.cpp.s
+
+.PHONY : ch9/ch9setbuf.s
+
+# target to generate assembly for a file
+ch9/ch9setbuf.cpp.s:
+	$(MAKE) -f CMakeFiles/ch9setbuf.dir/build.make CMakeFiles/ch9setbuf.dir/ch9/ch9setbuf.cpp.s
+.PHONY : ch9/ch9setbuf.cpp.s
+
 ch9/ch9sockType.o: ch9/ch9sockType.cpp.o
 
 .PHONY : ch9/ch9sockType.o
@@ -1076,6 +1116,7 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+	@echo "... ch9setbuf"
 	@echo "... ch9sockType"
 	@echo "... gethostbyname"
 	@echo "... ch6EchoSer"
@@ -1171,6 +1212,9 @@ help:
 	@echo "... ch9/ch9getBuf.o"
 	@echo "... ch9/ch9getBuf.i"
 	@echo "... ch9/ch9getBuf.s"
+	@echo "... ch9/ch9setbuf.o"
+	@echo "... ch9/ch9setbuf.i"
+	@echo "... ch9/ch9setbuf.s"
 	@echo "... ch9/ch9sockType.o"
 	@echo "... ch9/ch9sockType.i"
 	@echo "... ch9/ch9sockType.s"
