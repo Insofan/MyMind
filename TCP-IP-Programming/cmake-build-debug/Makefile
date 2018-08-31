@@ -267,6 +267,19 @@ ch6BoundHost2/fast:
 .PHONY : ch6BoundHost2/fast
 
 #=============================================================================
+# Target rules for targets named ch9getBuf
+
+# Build rule for target.
+ch9getBuf: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ch9getBuf
+.PHONY : ch9getBuf
+
+# fast build rule for target.
+ch9getBuf/fast:
+	$(MAKE) -f CMakeFiles/ch9getBuf.dir/build.make CMakeFiles/ch9getBuf.dir/build
+.PHONY : ch9getBuf/fast
+
+#=============================================================================
 # Target rules for targets named ch6BoundHost1
 
 # Build rule for target.
@@ -1003,6 +1016,33 @@ ch8/gethostbyname.cpp.s:
 	$(MAKE) -f CMakeFiles/gethostbyname.dir/build.make CMakeFiles/gethostbyname.dir/ch8/gethostbyname.cpp.s
 .PHONY : ch8/gethostbyname.cpp.s
 
+ch9/ch9getBuf.o: ch9/ch9getBuf.cpp.o
+
+.PHONY : ch9/ch9getBuf.o
+
+# target to build an object file
+ch9/ch9getBuf.cpp.o:
+	$(MAKE) -f CMakeFiles/ch9getBuf.dir/build.make CMakeFiles/ch9getBuf.dir/ch9/ch9getBuf.cpp.o
+.PHONY : ch9/ch9getBuf.cpp.o
+
+ch9/ch9getBuf.i: ch9/ch9getBuf.cpp.i
+
+.PHONY : ch9/ch9getBuf.i
+
+# target to preprocess a source file
+ch9/ch9getBuf.cpp.i:
+	$(MAKE) -f CMakeFiles/ch9getBuf.dir/build.make CMakeFiles/ch9getBuf.dir/ch9/ch9getBuf.cpp.i
+.PHONY : ch9/ch9getBuf.cpp.i
+
+ch9/ch9getBuf.s: ch9/ch9getBuf.cpp.s
+
+.PHONY : ch9/ch9getBuf.s
+
+# target to generate assembly for a file
+ch9/ch9getBuf.cpp.s:
+	$(MAKE) -f CMakeFiles/ch9getBuf.dir/build.make CMakeFiles/ch9getBuf.dir/ch9/ch9getBuf.cpp.s
+.PHONY : ch9/ch9getBuf.cpp.s
+
 ch9/ch9sockType.o: ch9/ch9sockType.cpp.o
 
 .PHONY : ch9/ch9sockType.o
@@ -1049,6 +1089,7 @@ help:
 	@echo "... inetAddr"
 	@echo "... inet_aton"
 	@echo "... ch6BoundHost2"
+	@echo "... ch9getBuf"
 	@echo "... ch6BoundHost1"
 	@echo "... ch5echoClient"
 	@echo "... rebuild_cache"
@@ -1127,6 +1168,9 @@ help:
 	@echo "... ch8/gethostbyname.o"
 	@echo "... ch8/gethostbyname.i"
 	@echo "... ch8/gethostbyname.s"
+	@echo "... ch9/ch9getBuf.o"
+	@echo "... ch9/ch9getBuf.i"
+	@echo "... ch9/ch9getBuf.s"
 	@echo "... ch9/ch9sockType.o"
 	@echo "... ch9/ch9sockType.i"
 	@echo "... ch9/ch9sockType.s"
