@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/ch7/ch7fileServer.cpp
+stdio.h
+-
+arpa/inet.h
+-
+sys/socket.h
+-
+unistd.h
+-
+iostream
+-
+string
+-
+

@@ -1,0 +1,1126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="Project"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="clang"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ch9sockType">
+				<Option output="/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/ch9sockType" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 ch9sockType"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ch9sockType/fast">
+				<Option output="/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/ch9sockType" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 ch9sockType/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gethostbyname">
+				<Option output="/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/gethostbyname" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 gethostbyname"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gethostbyname/fast">
+				<Option output="/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/gethostbyname" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 gethostbyname/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ch6EchoSer">
+				<Option output="/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/ch6EchoSer" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 ch6EchoSer"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ch6EchoSer/fast">
+				<Option output="/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/ch6EchoSer" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 ch6EchoSer/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ch6EchoCli">
+				<Option output="/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/ch6EchoCli" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 ch6EchoCli"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ch6EchoCli/fast">
+				<Option output="/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/ch6EchoCli" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 ch6EchoCli/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ch5opClient">
+				<Option output="/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/ch5opClient" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 ch5opClient"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ch5opClient/fast">
+				<Option output="/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/ch5opClient" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 ch5opClient/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ch7fileServer">
+				<Option output="/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/ch7fileServer" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 ch7fileServer"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ch7fileServer/fast">
+				<Option output="/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/ch7fileServer" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 ch7fileServer/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ch5opServer">
+				<Option output="/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/ch5opServer" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 ch5opServer"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ch5opServer/fast">
+				<Option output="/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/ch5opServer" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 ch5opServer/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="inet_ntoa">
+				<Option output="/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/inet_ntoa" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 inet_ntoa"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="inet_ntoa/fast">
+				<Option output="/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/inet_ntoa" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 inet_ntoa/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="fdSeri">
+				<Option output="/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/fdSeri" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 fdSeri"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="fdSeri/fast">
+				<Option output="/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/fdSeri" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 fdSeri/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="inetAddr">
+				<Option output="/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/inetAddr" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 inetAddr"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="inetAddr/fast">
+				<Option output="/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/inetAddr" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 inetAddr/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="inet_aton">
+				<Option output="/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/inet_aton" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 inet_aton"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="inet_aton/fast">
+				<Option output="/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/inet_aton" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 inet_aton/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ch6BoundHost2">
+				<Option output="/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/ch6BoundHost2" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 ch6BoundHost2"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ch6BoundHost2/fast">
+				<Option output="/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/ch6BoundHost2" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 ch6BoundHost2/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ch6BoundHost1">
+				<Option output="/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/ch6BoundHost1" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 ch6BoundHost1"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ch6BoundHost1/fast">
+				<Option output="/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/ch6BoundHost1" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 ch6BoundHost1/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ch5echoClient">
+				<Option output="/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/ch5echoClient" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 ch5echoClient"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ch5echoClient/fast">
+				<Option output="/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/ch5echoClient" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 ch5echoClient/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="endianConv">
+				<Option output="/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/endianConv" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 endianConv"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="endianConv/fast">
+				<Option output="/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/endianConv" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 endianConv/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="helloServ">
+				<Option output="/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/helloServ" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 helloServ"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="helloServ/fast">
+				<Option output="/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/helloServ" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 helloServ/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ch7fileClient">
+				<Option output="/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/ch7fileClient" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 ch7fileClient"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ch7fileClient/fast">
+				<Option output="/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/ch7fileClient" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 ch7fileClient/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ch4echoClnt">
+				<Option output="/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/ch4echoClnt" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 ch4echoClnt"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ch4echoClnt/fast">
+				<Option output="/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/ch4echoClnt" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 ch4echoClnt/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ch6UEchoConClient">
+				<Option output="/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/ch6UEchoConClient" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 ch6UEchoConClient"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ch6UEchoConClient/fast">
+				<Option output="/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/ch6UEchoConClient" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 ch6UEchoConClient/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ch4echoServer">
+				<Option output="/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/ch4echoServer" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 ch4echoServer"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ch4echoServer/fast">
+				<Option output="/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/ch4echoServer" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 ch4echoServer/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="lowRead">
+				<Option output="/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/lowRead" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 lowRead"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="lowRead/fast">
+				<Option output="/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/lowRead" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 lowRead/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="helloClient">
+				<Option output="/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/helloClient" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 helloClient"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="helloClient/fast">
+				<Option output="/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/helloClient" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 helloClient/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="lowOpen">
+				<Option output="/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/lowOpen" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 lowOpen"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="lowOpen/fast">
+				<Option output="/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/lowOpen" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 lowOpen/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/ch1/fdSeri.cpp">
+			<Option target="fdSeri"/>
+		</Unit>
+		<Unit filename="/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/ch1/helloClient.cpp">
+			<Option target="helloClient"/>
+		</Unit>
+		<Unit filename="/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/ch1/helloServ.cpp">
+			<Option target="helloServ"/>
+		</Unit>
+		<Unit filename="/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/ch1/lowOpen.cpp">
+			<Option target="lowOpen"/>
+		</Unit>
+		<Unit filename="/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/ch1/lowRead.cpp">
+			<Option target="lowRead"/>
+		</Unit>
+		<Unit filename="/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/ch2/endianConv.cpp">
+			<Option target="endianConv"/>
+		</Unit>
+		<Unit filename="/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/ch2/inet_addr.cpp">
+			<Option target="inetAddr"/>
+		</Unit>
+		<Unit filename="/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/ch2/inet_aton.cpp">
+			<Option target="inet_aton"/>
+		</Unit>
+		<Unit filename="/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/ch2/inet_ntoa.cpp">
+			<Option target="inet_ntoa"/>
+		</Unit>
+		<Unit filename="/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/ch4/echoClnt.cpp">
+			<Option target="ch4echoClnt"/>
+		</Unit>
+		<Unit filename="/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/ch4/echoServer.cpp">
+			<Option target="ch4echoServer"/>
+		</Unit>
+		<Unit filename="/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/ch5/echoClient2.cpp">
+			<Option target="ch5echoClient"/>
+		</Unit>
+		<Unit filename="/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/ch5/opClient.cpp">
+			<Option target="ch5opClient"/>
+		</Unit>
+		<Unit filename="/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/ch5/opServer.cpp">
+			<Option target="ch5opServer"/>
+		</Unit>
+		<Unit filename="/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/ch6/ch6BoundHost1.cpp">
+			<Option target="ch6BoundHost1"/>
+		</Unit>
+		<Unit filename="/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/ch6/ch6BoundHost2.cpp">
+			<Option target="ch6BoundHost2"/>
+		</Unit>
+		<Unit filename="/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/ch6/ch6EchoCli.cpp">
+			<Option target="ch6EchoCli"/>
+		</Unit>
+		<Unit filename="/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/ch6/ch6EchoSer.cpp">
+			<Option target="ch6EchoSer"/>
+		</Unit>
+		<Unit filename="/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/ch6/ch6UEchoConClient.cpp">
+			<Option target="ch6UEchoConClient"/>
+		</Unit>
+		<Unit filename="/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/ch7/ch7fileClient.cpp">
+			<Option target="ch7fileClient"/>
+		</Unit>
+		<Unit filename="/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/ch7/ch7fileServer.cpp">
+			<Option target="ch7fileServer"/>
+		</Unit>
+		<Unit filename="/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/ch8/gethostbyname.cpp">
+			<Option target="gethostbyname"/>
+		</Unit>
+		<Unit filename="/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/ch9/ch9sockType.cpp">
+			<Option target="ch9sockType"/>
+		</Unit>
+		<Unit filename="/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

@@ -2,27 +2,29 @@
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true" buildAllGenerated="true">
     <generated>
-      <config projectName="Project" targetName="lowOpen" />
-      <config projectName="Project" targetName="ch4echoClnt" />
-      <config projectName="Project" targetName="inet_aton" />
-      <config projectName="Project" targetName="ch5opServer" />
-      <config projectName="Project" targetName="ch5echoClient" />
+      <config projectName="Project" targetName="ch6EchoCli" />
       <config projectName="Project" targetName="ch6EchoSer" />
-      <config projectName="Project" targetName="inet_ntoa" />
-      <config projectName="Project" targetName="ch7fileClient" />
-      <config projectName="Project" targetName="inetAddr" />
-      <config projectName="Project" targetName="endianConv" />
-      <config projectName="Project" targetName="ch6BoundHost2" />
-      <config projectName="Project" targetName="ch6BoundHost1" />
-      <config projectName="Project" targetName="helloServ" />
-      <config projectName="Project" targetName="helloClient" />
-      <config projectName="Project" targetName="ch4echoServer" />
-      <config projectName="Project" targetName="fdSeri" />
       <config projectName="Project" targetName="ch6UEchoConClient" />
       <config projectName="Project" targetName="lowRead" />
+      <config projectName="Project" targetName="fdSeri" />
       <config projectName="Project" targetName="ch7fileServer" />
-      <config projectName="Project" targetName="ch6EchoCli" />
+      <config projectName="Project" targetName="helloServ" />
+      <config projectName="Project" targetName="ch6BoundHost1" />
+      <config projectName="Project" targetName="ch6BoundHost2" />
+      <config projectName="Project" targetName="ch7fileClient" />
+      <config projectName="Project" targetName="inet_aton" />
+      <config projectName="Project" targetName="ch5opServer" />
+      <config projectName="Project" targetName="gethostbyname" />
+      <config projectName="Project" targetName="ch9sockType" />
+      <config projectName="Project" targetName="lowOpen" />
+      <config projectName="Project" targetName="inet_ntoa" />
+      <config projectName="Project" targetName="endianConv" />
+      <config projectName="Project" targetName="ch4echoServer" />
       <config projectName="Project" targetName="ch5opClient" />
+      <config projectName="Project" targetName="inetAddr" />
+      <config projectName="Project" targetName="helloClient" />
+      <config projectName="Project" targetName="ch5echoClient" />
+      <config projectName="Project" targetName="ch4echoClnt" />
     </generated>
   </component>
   <component name="CMakeSettings" AUTO_RELOAD="true">
@@ -32,7 +34,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="38fbfa02-0094-4b10-a478-1d6043a3d9db" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/TCP-IP-Programming.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -45,11 +53,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ch6EchoSer.cpp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ch6EchoSer.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ch6/ch6EchoSer.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="236">
-              <caret line="45" column="20" selection-start-line="45" selection-start-column="7" selection-end-line="45" selection-end-column="21" />
+            <state relative-caret-position="258">
+              <caret line="46" column="20" selection-start-line="46" selection-start-column="20" selection-end-line="46" selection-end-column="20" />
               <folding>
                 <element signature="e#44#62#0" expanded="true" />
               </folding>
@@ -57,11 +65,41 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="gethostbyname.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ch8/gethostbyname.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="154">
+              <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ch9sockType.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ch9/ch9sockType.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="159">
+              <caret line="34" column="3" selection-start-line="34" selection-start-column="3" selection-end-line="34" selection-end-column="3" />
+              <folding>
+                <element signature="e#44#62#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CMakeLists.txt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="176">
+              <caret line="8" column="10" lean-forward="true" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="ch7fileServer.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ch7/ch7fileServer.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="572">
-              <caret line="26" column="10" selection-start-line="26" selection-start-column="10" selection-end-line="26" selection-end-column="10" />
+            <state relative-caret-position="168">
+              <caret line="73" selection-start-line="73" selection-end-line="73" />
               <folding>
                 <element signature="e#44#62#0" expanded="true" />
               </folding>
@@ -101,17 +139,19 @@
         <option value="$PROJECT_DIR$/ch5/opServer.cpp" />
         <option value="$PROJECT_DIR$/ch6/ch6BoundHost.cpp" />
         <option value="$PROJECT_DIR$/ch6/ch6BoundHost2.cpp" />
-        <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/ch6/ch6UEchoConClient.cpp" />
         <option value="$PROJECT_DIR$/ch6/ch6EchoSer.cpp" />
         <option value="$PROJECT_DIR$/ch6/ch6EchoCli.cpp" />
         <option value="$PROJECT_DIR$/ch7/ch7fileClient.cpp" />
         <option value="$PROJECT_DIR$/ch7/ch7fileServer.cpp" />
+        <option value="$PROJECT_DIR$/ch8/gethostbyname.cpp" />
+        <option value="$PROJECT_DIR$/ch9/sockType.cpp" />
+        <option value="$PROJECT_DIR$/CMakeLists.txt" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1494" />
+    <option name="x" value="-1544" />
     <option name="y" value="12" />
     <option name="width" value="1440" />
     <option name="height" value="877" />
@@ -122,6 +162,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -132,17 +173,12 @@
             <path>
               <item name="TCP-IP-Programming" type="b2602c69:ProjectViewProjectNode" />
               <item name="TCP-IP-Programming" type="462c0819:PsiDirectoryNode" />
-              <item name="ch4" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TCP-IP-Programming" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TCP-IP-Programming" type="462c0819:PsiDirectoryNode" />
-              <item name="ch6" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TCP-IP-Programming" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TCP-IP-Programming" type="462c0819:PsiDirectoryNode" />
               <item name="ch7" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TCP-IP-Programming" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TCP-IP-Programming" type="462c0819:PsiDirectoryNode" />
+              <item name="ch9" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="TCP-IP-Programming" type="b2602c69:ProjectViewProjectNode" />
@@ -153,7 +189,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -173,29 +208,31 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.ch7fileServer">
-    <configuration name="Build All" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="ch7fileClient" EXPLICIT_BUILD_TARGET_NAME="all" />
-    <configuration name="ch4echoClnt" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="ch4echoClnt" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="ch7fileClient" />
-    <configuration name="ch4echoServer" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="ch4echoServer" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="ch7fileClient" />
-    <configuration name="ch5echoClient" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="ch5echoClient" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="ch7fileClient" />
-    <configuration name="ch5opClient" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="ch5opClient" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="ch7fileClient" />
-    <configuration name="ch5opServer" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="ch5opServer" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="ch7fileServer" />
-    <configuration name="ch6BoundHost1" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="ch6BoundHost1" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="ch7fileClient" />
-    <configuration name="ch6BoundHost2" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="ch6BoundHost2" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="ch7fileClient" />
-    <configuration name="ch6EchoCli" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="ch6EchoCli" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="ch7fileClient" />
-    <configuration name="ch6EchoSer" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="ch6EchoSer" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="ch7fileClient" />
-    <configuration name="ch6UEchoConClient" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="ch6UEchoConClient" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="ch7fileClient" />
-    <configuration name="ch7fileClient" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="ch7fileClient" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="ch7fileClient" />
-    <configuration name="ch7fileServer" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="ch7fileServer" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="ch7fileServer" />
-    <configuration name="endianConv" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="endianConv" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="endianConv" />
-    <configuration name="fdSeri" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="fdSeri" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="fdSeri" />
-    <configuration name="helloClient" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="helloClient" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="helloClient" />
-    <configuration name="helloServ" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="helloServ" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="helloServ" />
-    <configuration name="inetAddr" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="inetAddr" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="inetAddr" />
-    <configuration name="inet_aton" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="inet_aton" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="inet_aton" />
-    <configuration name="inet_ntoa" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="inet_ntoa" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="inet_ntoa" />
-    <configuration name="lowOpen" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="lowOpen" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="lowOpen" />
-    <configuration name="lowRead" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="lowRead" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="lowRead" />
+  <component name="RunManager" selected="Application.ch9sockType">
+    <configuration name="Build All" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="sockType" EXPLICIT_BUILD_TARGET_NAME="all" />
+    <configuration name="ch4echoClnt" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="ch4echoClnt" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="sockType" />
+    <configuration name="ch4echoServer" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="ch4echoServer" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="sockType" />
+    <configuration name="ch5echoClient" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="ch5echoClient" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="sockType" />
+    <configuration name="ch5opClient" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="ch5opClient" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="sockType" />
+    <configuration name="ch5opServer" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="ch5opServer" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="sockType" />
+    <configuration name="ch6BoundHost1" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="ch6BoundHost1" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="sockType" />
+    <configuration name="ch6BoundHost2" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="ch6BoundHost2" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="sockType" />
+    <configuration name="ch6EchoCli" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="ch6EchoCli" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="ch9sockType" />
+    <configuration name="ch6EchoSer" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="ch6EchoSer" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="sockType" />
+    <configuration name="ch6UEchoConClient" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="ch6UEchoConClient" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="sockType" />
+    <configuration name="ch7fileClient" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="ch7fileClient" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="sockType" />
+    <configuration name="ch7fileServer" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="ch7fileServer" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="sockType" />
+    <configuration name="ch9sockType" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="ch9sockType" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="ch9sockType" />
+    <configuration name="endianConv" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="endianConv" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="sockType" />
+    <configuration name="fdSeri" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="fdSeri" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="sockType" />
+    <configuration name="gethostbyname" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="gethostbyname" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="sockType" />
+    <configuration name="helloClient" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="helloClient" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="sockType" />
+    <configuration name="helloServ" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="helloServ" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="sockType" />
+    <configuration name="inetAddr" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="inetAddr" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="sockType" />
+    <configuration name="inet_aton" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="inet_aton" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="sockType" />
+    <configuration name="inet_ntoa" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="inet_ntoa" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="sockType" />
+    <configuration name="lowOpen" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="lowOpen" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="sockType" />
+    <configuration name="lowRead" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="lowRead" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="sockType" />
     <list>
       <item itemvalue="Application.Build All" />
       <item itemvalue="Application.ch4echoClnt" />
@@ -210,8 +247,10 @@
       <item itemvalue="Application.ch6UEchoConClient" />
       <item itemvalue="Application.ch7fileClient" />
       <item itemvalue="Application.ch7fileServer" />
+      <item itemvalue="Application.ch9sockType" />
       <item itemvalue="Application.endianConv" />
       <item itemvalue="Application.fdSeri" />
+      <item itemvalue="Application.gethostbyname" />
       <item itemvalue="Application.helloClient" />
       <item itemvalue="Application.helloServ" />
       <item itemvalue="Application.inet_aton" />
@@ -240,11 +279,12 @@
       <workItem from="1535436631140" duration="7546000" />
       <workItem from="1535528265056" duration="310000" />
       <workItem from="1535611829991" duration="2822000" />
+      <workItem from="1535680195628" duration="3578000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28102000" />
+    <option name="totallyTimeSpent" value="31680000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -261,19 +301,19 @@
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19309373" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49964765" weight="0.32948717" />
+      <window_info anchor="bottom" id="Messages" order="7" sideWeight="0.49964765" weight="0.32692307" />
       <window_info anchor="bottom" id="CMake" order="7" weight="0.32954547" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5024665" side_tool="true" weight="0.22307692" />
-      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32954547" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49753347" weight="0.22307692" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32954547" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.4997367" visible="true" weight="0.42435896" />
-      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49964765" weight="0.4" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Messages" order="7" sideWeight="0.49964765" weight="0.32692307" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -329,6 +369,36 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/ch6/ch6EchoSer.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="990">
+          <caret line="45" column="20" selection-start-line="45" selection-start-column="7" selection-end-line="45" selection-end-column="21" />
+          <folding>
+            <element signature="e#44#62#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ch7/ch7fileServer.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="572">
+          <caret line="26" column="10" selection-start-line="26" selection-start-column="10" selection-end-line="26" selection-end-column="10" />
+          <folding>
+            <element signature="e#44#62#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ch7/ch7fileClient.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="30" column="36" selection-start-line="30" selection-start-column="36" selection-end-line="30" selection-end-column="36" />
+          <folding>
+            <element signature="e#44#62#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/ch6/ch6EchoSer.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="968">
@@ -400,9 +470,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="286">
           <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
-          <folding>
-            <element signature="e#44#62#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -523,13 +590,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="5" column="38" selection-start-line="5" selection-start-column="38" selection-end-line="5" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///usr/include/sys/socket.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="174">
@@ -582,9 +642,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="29" column="33" selection-start-line="29" selection-start-column="33" selection-end-line="29" selection-end-column="33" />
-          <folding>
-            <element signature="e#44#62#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -592,16 +649,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="660">
           <caret line="30" column="36" selection-start-line="30" selection-start-column="36" selection-end-line="30" selection-end-column="36" />
-          <folding>
-            <element signature="e#44#62#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ch7/ch7fileServer.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="572">
-          <caret line="26" column="10" selection-start-line="26" selection-start-column="10" selection-end-line="26" selection-end-column="10" />
           <folding>
             <element signature="e#44#62#0" expanded="true" />
           </folding>
@@ -617,11 +664,45 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ch6/ch6EchoSer.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="45" column="20" selection-start-line="45" selection-start-column="7" selection-end-line="45" selection-end-column="21" />
+        <state relative-caret-position="258">
+          <caret line="46" column="20" selection-start-line="46" selection-start-column="20" selection-end-line="46" selection-end-column="20" />
           <folding>
             <element signature="e#44#62#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ch8/gethostbyname.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ch7/ch7fileServer.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="73" selection-start-line="73" selection-end-line="73" />
+          <folding>
+            <element signature="e#44#62#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ch9/ch9sockType.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="34" column="3" selection-start-line="34" selection-start-column="3" selection-end-line="34" selection-end-column="3" />
+          <folding>
+            <element signature="e#44#62#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" column="10" lean-forward="true" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
         </state>
       </provider>
     </entry>

@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/ch6/ch6BoundHost1.cpp
+stdio.h
+-
+string
+-
+stdlib.h
+-
+unistd.h
+-
+iostream
+-
+arpa/inet.h
+-
+sys/socket.h
+-
+

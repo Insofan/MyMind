@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/ch9/ch9sockType.cpp
+stdio.h
+-
+unistd.h
+-
+sys/socket.h
+-
+stdlib.h
+-
+iostream
+-
+

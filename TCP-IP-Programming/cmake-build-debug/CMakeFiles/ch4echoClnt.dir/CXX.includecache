@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/inso/Desktop/Workspace/MyMind/TCP-IP-Programming/ch4/echoClnt.cpp
+stdlib.h
+-
+stdio.h
+-
+arpa/inet.h
+-
+sys/socket.h
+-
+string.h
+-
+unistd.h
+-
+
