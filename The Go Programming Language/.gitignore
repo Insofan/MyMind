@@ -106,6 +106,8 @@ fabric.properties
 
 # .nfs files are created when an open file is removed but is still being accessed
 .nfs*
-
+.idea/*
+.idea/watcherTasks.xml
 
 # End of https://www.gitignore.io/api/go,linux,jetbrains
+
