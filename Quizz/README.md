@@ -653,3 +653,71 @@ Sync/Async:同步, 异步
 
 代码实现, 用barrier flag 保证并行队列只进行当前的写操作, 而无视其他操作
 
+## Q:试比较GCD中的方法: dispatch_async, dispatch_after, dispatch_once和dispatch_group
+
+- dispatch_async:用于对某个线程异步操作. 异步操作可以让我们在不阻塞线程的情况下, 充分利用不同线程和队列来处理任务. 例如, 当需要从网络端下载图片, 然后将某个图片赋予给某个UIImageView时, 就可以用到dispatch_async
+
+  ```objective-c
+  dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH), 0), ^{
+  	UIImage *image = [client fetchImageFromURL: url];
+  	dispatch_async(dispatch_get_main_queue(), ^{
+      	self.imageView.image = image;
+  	});
+  });
+  ```
+
+- dispatch_after:一般用于延时操作, 例如将一个页面的导航标题在两秒钟后更改
+
+  ```
+  self.title = @"等待";
+  double delayInSeconds = 2.0;
+  dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayInSeconds * NS_PER_SEC));
+  dispatch_after(popTime, dispatch_main_queue(), ^(void){
+     	self.title = @"完成"; 
+  });
+  ```
+
+- dispatch_once:用于确保线程安全的单例子, 它表示修饰的区域只会访问一次, 这样在多线程的情况下, 类也只会初始化一次, 确保了Objective-C中单例的原子化.
+
+  ```objective-c
+  + (instancetype)sharedManager {
+      static Manager *sharedManager = nil;
+  	static dispatch_once_t onceToken;
+  	dispatch_once(&onceToken, ^{
+         sharedManager = [Manager new]; 
+  	});
+  	return sharedManager;
+  }
+  ```
+
+- dispatch_group:一般用于多个任务同步. 一般用法是当多个任务关联到同一个群组(group)后, 所有的任务在执行后, 再执行一个统一的后续工作. 注意. dispatch_group_wait是一个同步操作他会阻塞线程
+
+  ```
+  dispatch_group_t group = dispatch_group_create();
+  
+  dispatch_group_async(group, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+     NSLog(@"任务1"); 
+  });
+  dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+     NSLog(@"任务2"); 
+  });
+  dispatch_group_notify(group, dispatch_get_main_queue(), ^{
+  	NSLog(@"任务1和任务2都完成了");
+  });
+  ```
+
+  ## Q:GCD中全局(global)有哪儿几种优先级
+
+  全局global默认时并发队列, 如果不指定优先级, 则为默认default优先级, 共有background, utility, default ,user-Initialted, user-Interactive, unspecified.
+
+- background: 用来处理特别耗时的后台操作, 如同步,备份数据
+
+- utility: 用来处理一些需要时间, 而又不用立即返回结果的操作. 其特别适用于异步操作, 例如下载, 导入数据.
+
+- default: 默认优先级, 一般来说开发者应该指定优先级, default属于特殊情况
+
+- user-Initiated: 用来处理用户触发的需要立刻返回结果的操作, 比如, 打开用户点击的文件
+
+- user_Interactive:用来处理与用户交互的操作. 其一般用于主线程, 如果不及时响应, 有可能阻塞主线程
+
+- unspecified: 未确定优先级, 由系统根据不同环境推断, 如, 使用过时的API不支持优先级时, 就可以设定为未确定优先级, unspecified属于特殊操作.
