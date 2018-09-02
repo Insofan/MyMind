@@ -34,7 +34,7 @@ A：循环引用是指两个或两个以上的对象互相强引用， 导致所
 
 ## Q: 什么是block？它和代理的区别是什么
 
-block结构上类似函数指针，只是多做了一个查表动作。block和代理都是回调的方式， block是一段封装好的代码， 代理的声明和实现一般分开， 比如UITableDelegate， 就是代理的声明在UITableView中， 实现在某个UIViewController中。
+block结构上类似函数指针。block和代理都是回调的方式， block是一段封装好的代码， 代理的声明和实现一般分开， 比如UITableDelegate， 就是代理的声明在UITableView中， 实现在某个UIViewController中。
 
 block和代理的区别首先在于， block集中代码块， 而代理分散代码块， 所以block更适合轻便， 简单的回调， 如网络传输。 而代理适用于公共借口较多的情况， 这样也容易解耦代码。
 
@@ -706,7 +706,7 @@ Sync/Async:同步, 异步
   });
   ```
 
-  ## Q:GCD中全局(global)有哪儿几种优先级
+## Q:GCD中全局(global)有哪儿几种优先级
 
   全局global默认时并发队列, 如果不指定优先级, 则为默认default优先级, 共有background, utility, default ,user-Initialted, user-Interactive, unspecified.
 
@@ -721,3 +721,32 @@ Sync/Async:同步, 异步
 - user_Interactive:用来处理与用户交互的操作. 其一般用于主线程, 如果不及时响应, 有可能阻塞主线程
 
 - unspecified: 未确定优先级, 由系统根据不同环境推断, 如, 使用过时的API不支持优先级时, 就可以设定为未确定优先级, unspecified属于特殊操作.
+
+## Q:试比较Operation中的关键词:Operation, OperationBlock和OperationQueue
+
+Operation是iOS中除GCD之外另一种并发变成, 他将单个任务作为一个Operation, 放在OperationQueue中进行管理和运行
+
+- Opeartion: 指一系列任务和工作, Operation是一个抽象类, 一般通过它来集成完成自定义的任务, 一个Operation有四个状态: Ready, executing, cancelled, finished.
+- BlockOperation: 它是Operation的子类, 它在默认权限的全局队列上运行, 负责执行多个任务, 它可以向dispatch_group一样同步管理多个任务.
+- OperationQueue: 负责安排多个Operation的队列, 但它并不局限于FIFO, 它提供了多个接口可以实现, 暂停, 继续, 终止, 依赖等复杂操作, 还可以通过maxConcurrentOperationCount来设置是否串行或者并行.
+
+## Q:如何在OperationQueue中取消某个Operation
+
+在Operation抽象类中, 有一个cancel()方法, 它做的唯一一个工作就是将Operation的isCancelled属性变成true, 但并不会真正的深入代码暂停具体某个工作, 所以要利用isCancelled属性变化来暂停工作
+
+代码实现
+
+## Q:在实际开发中, 主线程和其他线程有哪些应用场景
+
+主线程一般负责UI的相关操作, 如绘图布局等, 很多UIKit控件如果不在主线程中执行会产生未知效果, 可以在Xcode中通过Main Thread Checker来检测
+
+其他线程一般负责耗时工作, 如数据解析, 复杂操作, 图片的解码编码等工作, 如果放在主线程中, 因为主线程是串行队列, 会阻塞主线程的UI操作, 影响用户体验
+
+## Q:说说你平常开发中用到的设计模式
+
+- 装饰模式(Decorator): 它可以在不修改源代码的基础上进行拓展, 注意他与继承的最大区别是, 继承可以修改父类, 而装饰模式不希望如此
+- 适配模式(Adapter): 它可以将一个类的接口转换成另一个类的接口, 使得原本互不相容的类可以通过接口一起工作
+- 外观模式(Facade): 它用一个公共接口来提供多个类和其他数据类型, 公共接口让多个类互相之间保持独立, 解耦性良好. 同时, 使用接口时, 外部无须理解其背后的复杂逻辑, 另外就算接口背后的逻辑改变, 也不影响接口的使用
+- 单例模式(Singleton): 此模式保证对于一个特有类, 只有一个公共的实例存在. 它一般与懒加载一起出现, 只有被需要时才会创建, 单例模式里自由, UserDefaults. UIApplication等
+- 观察者模式(Observer): 它定义对象之间的一种一对多的依赖关系, 每当对象发生变化是, 其相关依赖对象得到通知并自动更新. iOS典型就是KVO和NotificationCenter
+- 备忘录模式(Memento): 它在不破坏的前提下, 它捕获一个对象的内部状态, 并在该对象之外保存状态, 这样以后就可以将该对象恢复到保存之前的状态  (Plist存密码)
