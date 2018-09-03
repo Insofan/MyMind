@@ -29,6 +29,8 @@
 		E637B9F621196B9300256F0C /* Item22ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E637B9F521196B9300256F0C /* Item22ViewController.m */; };
 		E637B9FA21196C6E00256F0C /* Item22Model.m in Sources */ = {isa = PBXBuildFile; fileRef = E637B9F921196C6E00256F0C /* Item22Model.m */; };
 		E654AF20213D059E00BDB978 /* Item44ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E654AF1F213D059E00BDB978 /* Item44ViewController.m */; };
+		E654AF24213D127B00BDB978 /* Item45ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E654AF23213D127B00BDB978 /* Item45ViewController.m */; };
+		E654AF27213D129B00BDB978 /* Item45SingletonModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E654AF26213D129B00BDB978 /* Item45SingletonModel.m */; };
 		E65E30B221182602007B6471 /* Item21ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E65E30B121182602007B6471 /* Item21ViewController.m */; };
 		E65E30B521182948007B6471 /* EOCError.m in Sources */ = {isa = PBXBuildFile; fileRef = E65E30B421182948007B6471 /* EOCError.m */; };
 		E68396B820F337800033B009 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E68396B720F337800033B009 /* AppDelegate.m */; };
@@ -110,6 +112,10 @@
 		E637B9F921196C6E00256F0C /* Item22Model.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Item22Model.m; sourceTree = "<group>"; };
 		E654AF1E213D059E00BDB978 /* Item44ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Item44ViewController.h; sourceTree = "<group>"; };
 		E654AF1F213D059E00BDB978 /* Item44ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Item44ViewController.m; sourceTree = "<group>"; };
+		E654AF22213D127B00BDB978 /* Item45ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Item45ViewController.h; sourceTree = "<group>"; };
+		E654AF23213D127B00BDB978 /* Item45ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Item45ViewController.m; sourceTree = "<group>"; };
+		E654AF25213D129B00BDB978 /* Item45SingletonModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Item45SingletonModel.h; sourceTree = "<group>"; };
+		E654AF26213D129B00BDB978 /* Item45SingletonModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Item45SingletonModel.m; sourceTree = "<group>"; };
 		E65E30B021182602007B6471 /* Item21ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Item21ViewController.h; sourceTree = "<group>"; };
 		E65E30B121182602007B6471 /* Item21ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Item21ViewController.m; sourceTree = "<group>"; };
 		E65E30B321182948007B6471 /* EOCError.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EOCError.h; sourceTree = "<group>"; };
@@ -377,6 +383,17 @@
 			path = "item 44";
 			sourceTree = "<group>";
 		};
+		E654AF21213D126700BDB978 /* Item 45 */ = {
+			isa = PBXGroup;
+			children = (
+				E654AF22213D127B00BDB978 /* Item45ViewController.h */,
+				E654AF23213D127B00BDB978 /* Item45ViewController.m */,
+				E654AF25213D129B00BDB978 /* Item45SingletonModel.h */,
+				E654AF26213D129B00BDB978 /* Item45SingletonModel.m */,
+			);
+			path = "Item 45";
+			sourceTree = "<group>";
+		};
 		E65E30AF211825DA007B6471 /* Item 21 */ = {
 			isa = PBXGroup;
 			children = (
@@ -409,6 +426,7 @@
 		E68396B520F337800033B009 /* EffectiveObjective-C */ = {
 			isa = PBXGroup;
 			children = (
+				E654AF21213D126700BDB978 /* Item 45 */,
 				E654AF1D213D058A00BDB978 /* item 44 */,
 				E6CA16DD21352E5900511F3F /* Item 43 */,
 				E6E767192133C369009CC5D4 /* Item 41 */,
@@ -722,6 +740,7 @@
 				E633E205211D6D4F0000C270 /* Item23DemoDelegateObject.m in Sources */,
 				E68396CF20F3397D0033B009 /* Item10ViewController.m in Sources */,
 				E68396BB20F337800033B009 /* ViewController.m in Sources */,
+				E654AF27213D129B00BDB978 /* Item45SingletonModel.m in Sources */,
 				E6A3B0612126A75700EFBF5A /* Item31ViewController.m in Sources */,
 				E69506BC2122CD5700CE2E8B /* Item28ViewController.m in Sources */,
 				E633E20D211D7F640000C270 /* Item24PersonModel.m in Sources */,
@@ -739,6 +758,7 @@
 				E6E7670E21339861009CC5D4 /* Item38Tool.m in Sources */,
 				E6E1933720FF3A7800DEC1B0 /* EOCPerson.m in Sources */,
 				E6D3221E20F88DC100D0C47C /* Item13ViewController.m in Sources */,
+				E654AF24213D127B00BDB978 /* Item45ViewController.m in Sources */,
 				E6E767152133A1B5009CC5D4 /* Item39NetTool.m in Sources */,
 				E6D3221620F87C5D00D0C47C /* Item12ViewController.m in Sources */,
 				E6B2419820F735F7008DBB25 /* NSObject+Associate.m in Sources */,
