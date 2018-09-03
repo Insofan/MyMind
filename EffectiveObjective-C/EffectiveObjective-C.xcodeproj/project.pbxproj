@@ -28,6 +28,7 @@
 		E633E22921212F530000C270 /* Item26Person+Friendship.m in Sources */ = {isa = PBXBuildFile; fileRef = E633E22821212F530000C270 /* Item26Person+Friendship.m */; };
 		E637B9F621196B9300256F0C /* Item22ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E637B9F521196B9300256F0C /* Item22ViewController.m */; };
 		E637B9FA21196C6E00256F0C /* Item22Model.m in Sources */ = {isa = PBXBuildFile; fileRef = E637B9F921196C6E00256F0C /* Item22Model.m */; };
+		E654AF20213D059E00BDB978 /* Item44ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E654AF1F213D059E00BDB978 /* Item44ViewController.m */; };
 		E65E30B221182602007B6471 /* Item21ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E65E30B121182602007B6471 /* Item21ViewController.m */; };
 		E65E30B521182948007B6471 /* EOCError.m in Sources */ = {isa = PBXBuildFile; fileRef = E65E30B421182948007B6471 /* EOCError.m */; };
 		E68396B820F337800033B009 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E68396B720F337800033B009 /* AppDelegate.m */; };
@@ -107,6 +108,8 @@
 		E637B9F521196B9300256F0C /* Item22ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Item22ViewController.m; sourceTree = "<group>"; };
 		E637B9F821196C6E00256F0C /* Item22Model.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Item22Model.h; sourceTree = "<group>"; };
 		E637B9F921196C6E00256F0C /* Item22Model.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Item22Model.m; sourceTree = "<group>"; };
+		E654AF1E213D059E00BDB978 /* Item44ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Item44ViewController.h; sourceTree = "<group>"; };
+		E654AF1F213D059E00BDB978 /* Item44ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Item44ViewController.m; sourceTree = "<group>"; };
 		E65E30B021182602007B6471 /* Item21ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Item21ViewController.h; sourceTree = "<group>"; };
 		E65E30B121182602007B6471 /* Item21ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Item21ViewController.m; sourceTree = "<group>"; };
 		E65E30B321182948007B6471 /* EOCError.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EOCError.h; sourceTree = "<group>"; };
@@ -365,6 +368,15 @@
 			path = "Item 22";
 			sourceTree = "<group>";
 		};
+		E654AF1D213D058A00BDB978 /* item 44 */ = {
+			isa = PBXGroup;
+			children = (
+				E654AF1E213D059E00BDB978 /* Item44ViewController.h */,
+				E654AF1F213D059E00BDB978 /* Item44ViewController.m */,
+			);
+			path = "item 44";
+			sourceTree = "<group>";
+		};
 		E65E30AF211825DA007B6471 /* Item 21 */ = {
 			isa = PBXGroup;
 			children = (
@@ -397,6 +409,7 @@
 		E68396B520F337800033B009 /* EffectiveObjective-C */ = {
 			isa = PBXGroup;
 			children = (
+				E654AF1D213D058A00BDB978 /* item 44 */,
 				E6CA16DD21352E5900511F3F /* Item 43 */,
 				E6E767192133C369009CC5D4 /* Item 41 */,
 				E6E7670F2133A092009CC5D4 /* Item 39 */,
@@ -712,6 +725,7 @@
 				E6A3B0612126A75700EFBF5A /* Item31ViewController.m in Sources */,
 				E69506BC2122CD5700CE2E8B /* Item28ViewController.m in Sources */,
 				E633E20D211D7F640000C270 /* Item24PersonModel.m in Sources */,
+				E654AF20213D059E00BDB978 /* Item44ViewController.m in Sources */,
 				E637B9FA21196C6E00256F0C /* Item22Model.m in Sources */,
 				E6B241A220F7478C008DBB25 /* Person.m in Sources */,
 				E65E30B521182948007B6471 /* EOCError.m in Sources */,
