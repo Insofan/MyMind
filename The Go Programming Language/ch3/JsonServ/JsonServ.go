@@ -20,5 +20,9 @@ func main() {
 			})
 	})
 
+	r.NoRoute(func(c *gin.Context) {
+		c.String(404, "No router")
+	})
+
 	r.Run(":8888")
 }
