@@ -42,6 +42,8 @@
                      @{@"key": @"Item 43", @"value":NSClassFromString(@"Item43ViewController")},
                      @{@"key": @"Item 44", @"value":NSClassFromString(@"Item44ViewController")},
                      @{@"key": @"Item 45", @"value":NSClassFromString(@"Item45ViewController")},
+                     @{@"key": @"Item 48", @"value":NSClassFromString(@"Item48ViewController")},
+
                      ];
     }
     return _vcArray;
