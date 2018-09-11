@@ -45,6 +45,7 @@
                      @{@"key": @"Item 48", @"value":NSClassFromString(@"Item48ViewController")},
                      @{@"key": @"Item 49", @"value":NSClassFromString(@"Item49ViewController")},
                      @{@"key": @"Item 50", @"value":NSClassFromString(@"Item50ViewController")},
+                     @{@"key": @"Item 52", @"value":NSClassFromString(@"Item52ViewController")},
 
                      ];
     }
