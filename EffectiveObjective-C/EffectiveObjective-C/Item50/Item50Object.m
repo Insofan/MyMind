@@ -32,20 +32,36 @@ static NSInteger const kMaxConst =  5 * 1024 *1024;
     return _cache;
 }
 - (void)downloadDataForURL:(NSURL *)url{
-    NSData *cachedData = [self.cache objectForKey:url];
+//    NSData *cachedData = [self.cache objectForKey:url];
+    NSPurgeableData *cachedData = [self.cache objectForKey:url];
+
     if (cachedData) {
+        [cachedData beginContentAccess];
         NSLog(@"Data has been downloaded in cache");
+        [cachedData endContentAccess];
     } else {
         Item50Fetcher *fetcher = [[Item50Fetcher alloc] initWithURL:url];
         [fetcher startWithCompletionHandler:^(NSData *data) {
-            //必须这样设置  limit 才有效
-            
+            /* 未使用purge
+             //必须这样设置  limit 才有效
             [self.cache setObject:data forKey:url cost:kMaxConst];
             NSLog(@"Not in cache download bingo");
             NSData *tempData = [self.cache objectForKey:url];
             if (tempData) {
                 NSLog(@"Data downloaded into cache");
             }
+             */
+            //这里 因为用了 datawWithData 所以 无需再实用access
+            NSPurgeableData *purgeableData = [NSPurgeableData dataWithData:data];
+            [self.cache setObject:purgeableData forKey:url cost:purgeableData.length];
+            NSLog(@"Not in cache download bingo");
+            NSData *tempData = [self.cache objectForKey:url];
+            if (tempData) {
+                NSLog(@"Data downloaded into cache");
+            }
+            [purgeableData endContentAccess];
+            
+            
         } failure:^(NSError *err) {
             NSLog(@"Not in cache download failure");
         }];
