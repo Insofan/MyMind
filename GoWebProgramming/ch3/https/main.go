@@ -12,26 +12,36 @@ import (
 	"fmt"
 	"log"
 	"net/http"
-
-	"golang.org/x/net/http2"
 )
 
-type MyHandler struct{}
+type HelloHandler struct{}
 
-func (h *MyHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprintf(w, "Hello https server")
+func (h *HelloHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
+	fmt.Fprintf(w, "Hello ")
+}
+
+type WorldHandler struct{}
+
+func (h *WorldHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
+	fmt.Fprintf(w, "World")
+
 }
 
 func main() {
 
-	handler := MyHandler{}
 	server := http.Server{
-		Addr:    "127.0.0.1:8080",
-		Handler: &handler,
+		Addr: "127.0.0.1:8080",
 	}
 
-	http2.ConfigureServer(&server, &http2.Server{})
-	err := server.ListenAndServeTLS("cert.pem", "key.pem")
+	hello := HelloHandler{}
+	world := WorldHandler{}
+
+	http.Handle("/hello", &hello)
+	http.Handle("/world", &world)
+
+	//http2.ConfigureServer(&server, &http2.Server{})
+	//err := server.ListenAndServeTLS("cert.pem", "key.pem")
+	err := server.ListenAndServe()
 	if err != nil {
 		log.Fatal(err)
 	}
