@@ -39,8 +39,6 @@ func main() {
 	http.Handle("/hello", &hello)
 	http.Handle("/world", &world)
 
-	//http2.ConfigureServer(&server, &http2.Server{})
-	//err := server.ListenAndServeTLS("cert.pem", "key.pem")
 	err := server.ListenAndServe()
 	if err != nil {
 		log.Fatal(err)
