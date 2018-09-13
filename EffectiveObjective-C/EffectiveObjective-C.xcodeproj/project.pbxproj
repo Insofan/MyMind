@@ -34,6 +34,13 @@
 		E654AF2B213E339500BDB978 /* Item48ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E654AF2A213E339500BDB978 /* Item48ViewController.m */; };
 		E65E30B221182602007B6471 /* Item21ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E65E30B121182602007B6471 /* Item21ViewController.m */; };
 		E65E30B521182948007B6471 /* EOCError.m in Sources */ = {isa = PBXBuildFile; fileRef = E65E30B421182948007B6471 /* EOCError.m */; };
+		E665A86021476C05002F83B3 /* Item49ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E665A85F21476C05002F83B3 /* Item49ViewController.m */; };
+		E665A86421479A2A002F83B3 /* Item50ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E665A86321479A2A002F83B3 /* Item50ViewController.m */; };
+		E665A86721479E02002F83B3 /* Item50Fetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = E665A86621479E02002F83B3 /* Item50Fetcher.m */; };
+		E665A86A2147A014002F83B3 /* Item50Object.m in Sources */ = {isa = PBXBuildFile; fileRef = E665A8692147A014002F83B3 /* Item50Object.m */; };
+		E665A86E2147B0B8002F83B3 /* Item52ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E665A86D2147B0B8002F83B3 /* Item52ViewController.m */; };
+		E665A8712147B111002F83B3 /* Item52FirTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = E665A8702147B111002F83B3 /* Item52FirTimer.m */; };
+		E665A8742147B2B2002F83B3 /* Item52FirTimer+Timer.m in Sources */ = {isa = PBXBuildFile; fileRef = E665A8732147B2B2002F83B3 /* Item52FirTimer+Timer.m */; };
 		E68396B820F337800033B009 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E68396B720F337800033B009 /* AppDelegate.m */; };
 		E68396BB20F337800033B009 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E68396BA20F337800033B009 /* ViewController.m */; };
 		E68396BE20F337800033B009 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E68396BC20F337800033B009 /* Main.storyboard */; };
@@ -123,6 +130,20 @@
 		E65E30B121182602007B6471 /* Item21ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Item21ViewController.m; sourceTree = "<group>"; };
 		E65E30B321182948007B6471 /* EOCError.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EOCError.h; sourceTree = "<group>"; };
 		E65E30B421182948007B6471 /* EOCError.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EOCError.m; sourceTree = "<group>"; };
+		E665A85E21476C05002F83B3 /* Item49ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Item49ViewController.h; sourceTree = "<group>"; };
+		E665A85F21476C05002F83B3 /* Item49ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Item49ViewController.m; sourceTree = "<group>"; };
+		E665A86221479A2A002F83B3 /* Item50ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Item50ViewController.h; sourceTree = "<group>"; };
+		E665A86321479A2A002F83B3 /* Item50ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Item50ViewController.m; sourceTree = "<group>"; };
+		E665A86521479E02002F83B3 /* Item50Fetcher.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Item50Fetcher.h; sourceTree = "<group>"; };
+		E665A86621479E02002F83B3 /* Item50Fetcher.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Item50Fetcher.m; sourceTree = "<group>"; };
+		E665A8682147A014002F83B3 /* Item50Object.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Item50Object.h; sourceTree = "<group>"; };
+		E665A8692147A014002F83B3 /* Item50Object.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Item50Object.m; sourceTree = "<group>"; };
+		E665A86C2147B0B8002F83B3 /* Item52ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Item52ViewController.h; sourceTree = "<group>"; };
+		E665A86D2147B0B8002F83B3 /* Item52ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Item52ViewController.m; sourceTree = "<group>"; };
+		E665A86F2147B111002F83B3 /* Item52FirTimer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Item52FirTimer.h; sourceTree = "<group>"; };
+		E665A8702147B111002F83B3 /* Item52FirTimer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Item52FirTimer.m; sourceTree = "<group>"; };
+		E665A8722147B2B2002F83B3 /* Item52FirTimer+Timer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Item52FirTimer+Timer.h"; sourceTree = "<group>"; };
+		E665A8732147B2B2002F83B3 /* Item52FirTimer+Timer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Item52FirTimer+Timer.m"; sourceTree = "<group>"; };
 		E68396B320F337800033B009 /* EffectiveObjective-C.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "EffectiveObjective-C.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E68396B620F337800033B009 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E68396B720F337800033B009 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -417,6 +438,41 @@
 			path = "Item 21";
 			sourceTree = "<group>";
 		};
+		E665A85D21476BC8002F83B3 /* Item 49 */ = {
+			isa = PBXGroup;
+			children = (
+				E665A85E21476C05002F83B3 /* Item49ViewController.h */,
+				E665A85F21476C05002F83B3 /* Item49ViewController.m */,
+			);
+			path = "Item 49";
+			sourceTree = "<group>";
+		};
+		E665A86121476F81002F83B3 /* Item 50 */ = {
+			isa = PBXGroup;
+			children = (
+				E665A86221479A2A002F83B3 /* Item50ViewController.h */,
+				E665A86321479A2A002F83B3 /* Item50ViewController.m */,
+				E665A86521479E02002F83B3 /* Item50Fetcher.h */,
+				E665A86621479E02002F83B3 /* Item50Fetcher.m */,
+				E665A8682147A014002F83B3 /* Item50Object.h */,
+				E665A8692147A014002F83B3 /* Item50Object.m */,
+			);
+			path = "Item 50";
+			sourceTree = "<group>";
+		};
+		E665A86B2147B05E002F83B3 /* Item 52 */ = {
+			isa = PBXGroup;
+			children = (
+				E665A86C2147B0B8002F83B3 /* Item52ViewController.h */,
+				E665A86D2147B0B8002F83B3 /* Item52ViewController.m */,
+				E665A86F2147B111002F83B3 /* Item52FirTimer.h */,
+				E665A8702147B111002F83B3 /* Item52FirTimer.m */,
+				E665A8722147B2B2002F83B3 /* Item52FirTimer+Timer.h */,
+				E665A8732147B2B2002F83B3 /* Item52FirTimer+Timer.m */,
+			);
+			path = "Item 52";
+			sourceTree = "<group>";
+		};
 		E68396AA20F337800033B009 = {
 			isa = PBXGroup;
 			children = (
@@ -438,6 +494,9 @@
 		E68396B520F337800033B009 /* EffectiveObjective-C */ = {
 			isa = PBXGroup;
 			children = (
+				E665A86B2147B05E002F83B3 /* Item 52 */,
+				E665A86121476F81002F83B3 /* Item 50 */,
+				E665A85D21476BC8002F83B3 /* Item 49 */,
 				E654AF28213E335B00BDB978 /* Item 48 */,
 				E654AF21213D126700BDB978 /* Item 45 */,
 				E654AF1D213D058A00BDB978 /* item 44 */,
@@ -753,6 +812,7 @@
 				E633E205211D6D4F0000C270 /* Item23DemoDelegateObject.m in Sources */,
 				E68396CF20F3397D0033B009 /* Item10ViewController.m in Sources */,
 				E68396BB20F337800033B009 /* ViewController.m in Sources */,
+				E665A86721479E02002F83B3 /* Item50Fetcher.m in Sources */,
 				E654AF2B213E339500BDB978 /* Item48ViewController.m in Sources */,
 				E654AF27213D129B00BDB978 /* Item45SingletonModel.m in Sources */,
 				E6A3B0612126A75700EFBF5A /* Item31ViewController.m in Sources */,
@@ -762,12 +822,15 @@
 				E637B9FA21196C6E00256F0C /* Item22Model.m in Sources */,
 				E6B241A220F7478C008DBB25 /* Person.m in Sources */,
 				E65E30B521182948007B6471 /* EOCError.m in Sources */,
+				E665A86421479A2A002F83B3 /* Item50ViewController.m in Sources */,
 				E633E22921212F530000C270 /* Item26Person+Friendship.m in Sources */,
 				E6B2419F20F74447008DBB25 /* Item11ViewController.m in Sources */,
 				E633E201211D6B530000C270 /* Item23DemoViewController.m in Sources */,
 				E611A08F2113011900AF382A /* Item18ViewController.m in Sources */,
 				E633E210211D83DA0000C270 /* Item24Person+Friendship.m in Sources */,
+				E665A8712147B111002F83B3 /* Item52FirTimer.m in Sources */,
 				E6B1A29D210B09F100ABD335 /* EOCLocation.m in Sources */,
+				E665A86E2147B0B8002F83B3 /* Item52ViewController.m in Sources */,
 				E65E30B221182602007B6471 /* Item21ViewController.m in Sources */,
 				E6E7670E21339861009CC5D4 /* Item38Tool.m in Sources */,
 				E6E1933720FF3A7800DEC1B0 /* EOCPerson.m in Sources */,
@@ -778,11 +841,13 @@
 				E6B2419820F735F7008DBB25 /* NSObject+Associate.m in Sources */,
 				E6255FCF21338EE500A1C48E /* Item38SecViewController.m in Sources */,
 				E611A093211301F700AF382A /* Item18Model.m in Sources */,
+				E665A86A2147A014002F83B3 /* Item50Object.m in Sources */,
 				E68396C620F337810033B009 /* main.m in Sources */,
 				E6F96822211C166E00081C2D /* Item23Model.m in Sources */,
 				E6B2419B20F739CB008DBB25 /* UITapGestureRecognizer+Associate.m in Sources */,
 				E6D3221A20F87F8400D0C47C /* EOCAutoDictionary.m in Sources */,
 				E6F96828211C18AE00081C2D /* Item23Network.m in Sources */,
+				E665A8742147B2B2002F83B3 /* Item52FirTimer+Timer.m in Sources */,
 				E6E1933420FF3A4100DEC1B0 /* Item17ViewController.m in Sources */,
 				E6E767122133A0A5009CC5D4 /* Item39ViewController.m in Sources */,
 				E6CA16E021352E8F00511F3F /* Item43ViewController.m in Sources */,
@@ -795,6 +860,7 @@
 				E6E7671C2133CA07009CC5D4 /* Item41ViewController.m in Sources */,
 				E69584542125753800E41910 /* Item30ViewController.m in Sources */,
 				E633E213211D8DA10000C270 /* Item24Person+Play.m in Sources */,
+				E665A86021476C05002F83B3 /* Item49ViewController.m in Sources */,
 				E6F9681D211C152300081C2D /* Item23ViewController.m in Sources */,
 				E633E217212125D60000C270 /* Item25ViewController.m in Sources */,
 				E6255FCC21338CF300A1C48E /* Item38ViewController.m in Sources */,
