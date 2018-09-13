@@ -39,3 +39,5 @@ add_executable(signal ch10/signal.cpp)
 add_executable(sigaction ch10/sigaction.cpp)
 add_executable(echoMServ ch10/echoMServ.cpp)
 add_executable(select ch12/select.cpp)
+
+add_executable(selectServ ch12/selectServ.cpp)
