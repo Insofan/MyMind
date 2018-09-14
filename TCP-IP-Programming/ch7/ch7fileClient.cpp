@@ -27,8 +27,8 @@ int main() {
 
     memset(&servAddr, 0, sizeof(servAddr));
     servAddr.sin_family = AF_INET;
-    servAddr.sin_addr.s_addr = inet_addr("192.168.0.104");
-    servAddr.sin_port = htons(6666);
+    servAddr.sin_addr.s_addr = inet_addr("192.168.0.103");
+    servAddr.sin_port = htons(6667);
 
     connect(sd, (struct sockaddr*)&servAddr, sizeof(servAddr));
 
