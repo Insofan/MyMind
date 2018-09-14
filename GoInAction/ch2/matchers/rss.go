@@ -7,7 +7,15 @@
 //
 package matchers
 
-import "encoding/xml"
+import (
+	"MyMind/GoInAction/ch2/search"
+	"encoding/xml"
+	"errors"
+	"fmt"
+	"log"
+	"net/http"
+	"regexp"
+)
 
 type (
 	// item defines the fields associated with the item tag
@@ -53,14 +61,80 @@ type (
 	}
 )
 
-//实现Mathcher接口, 因为 不需要维护任何状态, 所以使用一个空姐狗来实现Matcher接口
+//实现Mathcher接口, 因为 不需要维护任何状态, 所以使用一个空接口来实现Matcher接口
 type rssMatcher struct{}
 
 func init() {
 	var matcher rssMatcher
 	//search.register... 注册
+	search.Register("rss", matcher)
 }
 
-func (m rssMatcher) Search(feed) {
+func (m rssMatcher) Search(feed *search.Feed, searchTerm string) ([]*search.Result, error) {
+	var results []*search.Result
+	log.Printf("Search Feed Type[%s] Site[%s] For URI[%s]\n", feed.Type, feed.Name, feed.URI)
 
+	document, err := m.retrieve(feed)
+	if err != nil {
+		return nil, err
+	}
+
+	for _, channelItem := range document.Channel.Item {
+		// Check the title for the search term.
+		matched, err := regexp.MatchString(searchTerm, channelItem.Title)
+		if err != nil {
+			return nil, err
+		}
+
+		//如果存在
+		if matched {
+			results = append(results, &search.Result{
+				Field:   "Title",
+				Content: channelItem.Title,
+			})
+		}
+
+		//同上
+
+		matched, err = regexp.MatchString(searchTerm, channelItem.Description)
+		if err != nil {
+			return nil, err
+		}
+
+		// If we found a match save the result.
+		if matched {
+			results = append(results, &search.Result{
+				Field:   "Description",
+				Content: channelItem.Description,
+			})
+		}
+	}
+
+	return results, nil
+}
+
+func (m rssMatcher) retrieve(feed *search.Feed) (*rssDocument, error) {
+	if feed.URI == "" {
+		return nil, errors.New("No rss feed uri provided")
+	}
+
+	//get 取回数据
+	resp, err := http.Get(feed.URI)
+	if err != nil {
+		return nil, err
+	}
+
+	defer resp.Body.Close()
+
+	// Check the status code for a 200 so we know we have received a
+	// proper response.
+	if resp.StatusCode != 200 {
+		return nil, fmt.Errorf("HTTP Response Error %d\n", resp.StatusCode)
+	}
+
+	//decode
+	var document rssDocument
+	err = xml.NewDecoder(resp.Body).Decode(&document)
+
+	return &document, err
 }
