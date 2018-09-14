@@ -26,16 +26,18 @@ func RetrieveFeeds() ([]*Feed, error) {
 	if err != nil {
 		return nil, err
 	}
-	//析构 打开后跟一个defer
+	//析构 打开后跟一个defer, 函数返回时才会执行
 	defer file.Close()
 
 	//decode 成一个指针切片
 	var feeds []*Feed
 
 	err = json.NewDecoder(file).Decode(&feeds)
-	if err != nil {
-		return nil, err
-	}
+	//if err != nil {
+	//	return nil, err
+	//}
 
-	return feeds, nil
+	//这里不需要检查错误, 因为这个err 会被返回, 调用者会检查
+
+	return feeds, err
 }
