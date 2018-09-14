@@ -41,3 +41,7 @@ add_executable(echoMServ ch10/echoMServ.cpp)
 add_executable(select ch12/select.cpp)
 
 add_executable(selectServ ch12/selectServ.cpp)
+add_executable(oobSend ch13/oobSend.cpp)
+add_executable(oobRecv ch13/oobRecv.cpp)
+add_executable(oob_recv ch13/oob_recv.c)
+add_executable(oob_send ch13/oob_send.c)
