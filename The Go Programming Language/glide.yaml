@@ -1,5 +1,0 @@
-package: MyMind/The Go Programming Language
-import:
-- package: github.com/gin-gonic/gin
-  version: ~1.3.0
-- package: golang.org/x/net/html
