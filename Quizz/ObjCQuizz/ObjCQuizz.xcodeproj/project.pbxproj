@@ -10,6 +10,7 @@
 		31664517441B11928F09425C /* KVOImplementViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31664860EE91D773736F23AE /* KVOImplementViewController.m */; };
 		31664888256C4867CE029338 /* KVORACUseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3166467B7E942FD04ECE5C56 /* KVORACUseViewController.m */; };
 		316649D52C655F5B86518411 /* KVOObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 3166452B6EACA34ADC4D8285 /* KVOObject.m */; };
+		31664F3CB484A2755346139A /* NSObject+hx_KVO.m in Sources */ = {isa = PBXBuildFile; fileRef = 31664095AF7F245309141381 /* NSObject+hx_KVO.m */; };
 		797C7172DCF6A9BB541837C7 /* libPods-ObjCQuizz.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FD5125294E5432F964A6447 /* libPods-ObjCQuizz.a */; };
 		E68E6F4C2159C9A000486DD0 /* KVOTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E68E6F4B2159C9A000486DD0 /* KVOTableViewController.m */; };
 		E68E6F502159CA9900486DD0 /* OCQBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E68E6F4F2159CA9900486DD0 /* OCQBaseTableViewController.m */; };
@@ -24,11 +25,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		31664095AF7F245309141381 /* NSObject+hx_KVO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+hx_KVO.m"; sourceTree = "<group>"; };
 		316640EC64B8665A62527881 /* KVOImplementViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KVOImplementViewController.h; sourceTree = "<group>"; };
 		3166429C58FBF2DA8C8B52A9 /* KVOObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KVOObject.h; sourceTree = "<group>"; };
 		3166452B6EACA34ADC4D8285 /* KVOObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KVOObject.m; sourceTree = "<group>"; };
 		3166467B7E942FD04ECE5C56 /* KVORACUseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KVORACUseViewController.m; sourceTree = "<group>"; };
 		31664860EE91D773736F23AE /* KVOImplementViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KVOImplementViewController.m; sourceTree = "<group>"; };
+		3166494C38D4767A748247BC /* NSObject+hx_KVO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+hx_KVO.h"; sourceTree = "<group>"; };
 		31664A681FB85C09D92B8713 /* KVORACUseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KVORACUseViewController.h; sourceTree = "<group>"; };
 		3FD5125294E5432F964A6447 /* libPods-ObjCQuizz.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ObjCQuizz.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A58B7EA39C10095E1023871 /* Pods-ObjCQuizz.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObjCQuizz.release.xcconfig"; path = "Pods/Target Support Files/Pods-ObjCQuizz/Pods-ObjCQuizz.release.xcconfig"; sourceTree = "<group>"; };
@@ -69,6 +72,8 @@
 		31664A495248BE8F2CDA3927 /* KVOImp */ = {
 			isa = PBXGroup;
 			children = (
+				31664095AF7F245309141381 /* NSObject+hx_KVO.m */,
+				3166494C38D4767A748247BC /* NSObject+hx_KVO.h */,
 			);
 			path = KVOImp;
 			sourceTree = "<group>";
@@ -282,6 +287,7 @@
 				31664888256C4867CE029338 /* KVORACUseViewController.m in Sources */,
 				31664517441B11928F09425C /* KVOImplementViewController.m in Sources */,
 				316649D52C655F5B86518411 /* KVOObject.m in Sources */,
+				31664F3CB484A2755346139A /* NSObject+hx_KVO.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
