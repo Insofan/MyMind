@@ -66,6 +66,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		31664A495248BE8F2CDA3927 /* KVOImp */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = KVOImp;
+			sourceTree = "<group>";
+		};
 		31664B7E04B8076757300D87 /* KVORACUse */ = {
 			isa = PBXGroup;
 			children = (
@@ -131,6 +138,7 @@
 			children = (
 				31664860EE91D773736F23AE /* KVOImplementViewController.m */,
 				316640EC64B8665A62527881 /* KVOImplementViewController.h */,
+				31664A495248BE8F2CDA3927 /* KVOImp */,
 			);
 			path = KVOImplement;
 			sourceTree = "<group>";
