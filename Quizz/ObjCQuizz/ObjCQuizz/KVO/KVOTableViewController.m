@@ -9,7 +9,7 @@
 #import "KVOTableViewController.h"
 
 @interface KVOTableViewController ()
-@property (copy, nonatomic) NSArray *vcArray;
+@property(copy, nonatomic) NSArray *vcArray;
 @end
 
 @implementation KVOTableViewController
@@ -18,9 +18,10 @@
 - (NSArray *)vcArray {
     if (!_vcArray) {
         _vcArray = @[
-                     @{@"key": @"KVO Use", @"value":NSClassFromString(@"KVOOCUseViewController")},
-                @{@"key": @"KVO RAC Use", @"value":NSClassFromString(@"KVORACUseViewController")},
-                     ];
+                @{@"key": @"KVO Use", @"value": NSClassFromString(@"KVOOCUseViewController")},
+                @{@"key": @"KVO RAC Use", @"value": NSClassFromString(@"KVORACUseViewController")},
+                @{@"key": @"KVO Implementation", @"value": NSClassFromString(@"KVOImplementViewController")},
+        ];
     }
     return _vcArray;
 }
@@ -35,21 +36,21 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"baseReuse"];
-    
+
     cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"baseReuse"];
     cell.textLabel.text = _vcArray[indexPath.row][@"key"];
-    
+
     return cell;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:true];
-    
+
     UIViewController *vc = [[_vcArray[indexPath.row][@"value"] class] new];
     vc.title = self.vcArray[indexPath.row][@"key"];
-    
+
     [self.navigationController pushViewController:vc animated:true];
-    
+
 }
 
 

@@ -18,8 +18,11 @@
 @implementation KVOOCUseViewController
 
 - (void)buttonLogic {
+    @weakify(self);
     [[self.button rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(__kindof UIControl *x) {
+        @strongify(self);
         self.kvoObject.someValue++;
+        self.kvoObject.name = [self.kvoObject.name isEqualToString:@"second name"] ?  @"first name" : @"second name";
     }];
 }
 
@@ -27,11 +30,12 @@
     [super viewDidLoad];
     self.kvoObject = [KVOObject new];
 
-    //第一次赋值用set value for key
     [self.kvoObject setValue:@(1) forKey:@"someValue"];
+    //对象则不用
+    self.kvoObject.name = @"first name";
     [self.kvoObject addObserver:self forKeyPath:@"someValue" options:NSKeyValueObservingOptionOld | NSKeyValueObservingOptionNew context:nil];
-    self.label.text            = [NSString stringWithFormat:@"%tu", self.kvoObject.someValue];
-
+    [self.kvoObject addObserver:self forKeyPath:@"name" options:NSKeyValueObservingOptionOld | NSKeyValueObservingOptionNew context:nil];
+    self.label.text = [NSString stringWithFormat:@"%tu", self.kvoObject.someValue];
 }
 
 - (void)observeValueForKeyPath:(nullable NSString *)keyPath ofObject:(nullable id)object change:(nullable NSDictionary<NSKeyValueChangeKey, id> *)change context:(nullable void *)context {
@@ -41,6 +45,10 @@
         [[NSOperationQueue mainQueue] addOperationWithBlock:^{
             self.label.text = [NSString stringWithFormat:@"%tu", self.kvoObject.someValue];
         }];
+    }
+
+    if ([keyPath isEqualToString:@"name"]) {
+        NSLog(@"Old name value: %@, New name value: %@", change[@"old"], change[@"new"]);
     }
 }
 
