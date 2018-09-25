@@ -19,6 +19,7 @@
     if (!_vcArray) {
         _vcArray = @[
                      @{@"key": @"KVO Use", @"value":NSClassFromString(@"KVOOCUseViewController")},
+                @{@"key": @"KVO RAC Use", @"value":NSClassFromString(@"KVORACUseViewController")},
                      ];
     }
     return _vcArray;
