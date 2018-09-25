@@ -1,5 +1,5 @@
 //
-//  KVOTableViewController.h
+//  KVOOCUseViewController.h
 //  ObjCQuizz
 //
 //  Created by Insomnia on 2018/9/25.
@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "OCQBaseTableViewController.h"
-@interface KVOTableViewController : OCQBaseTableViewController
+#import "OCQBaseViewController.h"
+@interface KVOOCUseViewController : OCQBaseViewController
 
 @end
