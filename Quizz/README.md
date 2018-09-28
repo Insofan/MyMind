@@ -102,7 +102,7 @@ type NS_ENUM(NSInteger, CustomerType) {
 @end
 ```
 
-## Q:内存管理语法考查
+## Q:内存管![](https://upload-images.jianshu.io/upload_images/852671-43a595a0c0c52a31.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1000/format/webp)理语法考查
 
 请问下面的代码打印结果是什么
 
@@ -1140,6 +1140,33 @@ IPv6改进:
 4. IPv6提供了IPv4升级到IPv6的升级方式, 减少了成本消耗
 
 最显著特点就是地址变长, 从而从根本上解决了IP地址紧张问题. 
+
+## Q: Xcode 点击run之后发生了什么
+
+1. 预处理器, 所有带#的都是预处理器负责的范畴: #include 导入头文件, #define将宏定义展开, #ifdef #elif #endif条件编译, 其他宏指令#error #warning #pragma
+2. 编译器: 现在iOS 用的编译器是LLVM(Low Level Virtual Machine), 以前使用GCC. LLVM基本架构
+
+![LLVM架构](https://upload-images.jianshu.io/upload_images/852671-707a44a3e73b5229.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1000/format/webp)
+
+编译器负责词法分析, 语法分析, 语义分析, 静态分析
+
+编译器分为前端(clang)和编译器后端, 前端负责产生和机器无关的中间代码, 后端负责将中间代码优化并转化为汇编代码.
+
+3. 汇编器:汇编器将编译生成的汇编代码翻译成计算机可以识别的机器指令, 并生成目标文件. 
+4. 链接器将所有用到的目标程序连接到一起, 无论用静态链接还是动态链接. iOS生成match-O
+5. 代码签名
+
+![](https://upload-images.jianshu.io/upload_images/852671-43a595a0c0c52a31.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1000/format/webp)
+
+每次build会生成一个`.ipa`文件, 在_CodeSignature的子目录, 这是一个plist文件, 里面包含程序的代码签名, 程序一旦签, 就没有办法改变其中的任何东西, 包括资源文件可执行文件等
+
+6. 启动
+
+
+
+题外dyld动态链接器在启动过程中起了很重要的作用, 1. 加载以来的dylibs, 2. Fix-up:Rebase修正地址偏移, 因为OS X和iOS 有ASLR的机制来做地址随机化偏移来防止攻击 3. Fix-ups:Binding: 确定 Non-Lazy Pointer地址，进行符号地址绑定 4. Objc Runtime 初始化: 加载所有类 5. Initializers: 执行load 方法和_ _attribute_ _((constructor))修饰的函数
+
+
 
 
 
