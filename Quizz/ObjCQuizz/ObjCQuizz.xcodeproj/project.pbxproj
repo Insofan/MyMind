@@ -72,8 +72,8 @@
 		31664A495248BE8F2CDA3927 /* KVOImp */ = {
 			isa = PBXGroup;
 			children = (
-				31664095AF7F245309141381 /* NSObject+hx_KVO.m */,
 				3166494C38D4767A748247BC /* NSObject+hx_KVO.h */,
+				31664095AF7F245309141381 /* NSObject+hx_KVO.m */,
 			);
 			path = KVOImp;
 			sourceTree = "<group>";

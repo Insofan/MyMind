@@ -5,6 +5,31 @@
 
 #import <Foundation/Foundation.h>
 
-@interface NSObject (hx_KVO)
-- (void)hx_addObserver(id):observer key:(NSString *)key callback:
+@protocol HXKVODelegate <NSObject>
+@optional
+/**
+ * KVO delegate
+ * @param object Observe object
+ * @param keyPath  property name
+ * @param oldValue  oldValue
+ * @param newValue newValue
+ */
+- (void)hx_observeValueForObject:(id)object keyPath:(NSString *)keyPath oldValue:(id)oldValue newValue:(id)newValue;
+@end
+
+
+@interface NSObject (hx_KVO) <HXKVODelegate>
+/**
+ * Add observe
+ * @param object Observe object
+ * @param keyPath Property name
+ */
+- (void)hx_addObserver:(id)object keyPath:(NSString *)keyPath;
+
+/**
+ * Remove observe
+ * @param object Observe object
+ * @param keyPath Property name
+ */
+- (void)hx_removeObserver:(id)object keyPath:(NSString *)keyPath;
 @end
