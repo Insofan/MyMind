@@ -15,7 +15,10 @@ import (
 
 func process(w http.ResponseWriter, r *http.Request) {
 	r.ParseForm()
-	fmt.Fprintln(w, r.Form)
+	//获取url 加 post
+	//fmt.Fprintln(w, r.Form)
+	//只获取post部分, 但是PostForm只支持 application/x-www-form-urlencoded编码, 所以要用multipartform来获取multipart/form-data编码的表单
+	fmt.Fprintln(w, r.PostForm)
 }
 func main() {
 	server := http.Server{
