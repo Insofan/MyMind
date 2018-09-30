@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+</head>
+<body>
+<form action="http://127.0.0.1:8080/process?hello=world&thread=123" method="post" enctype="application/x-www-form-urlencoded">
+    <!--可以通过调用Request结构的方法, 用户可以讲URL, 主题又或者以上两者的数据提交, 上面可以只写成 ..:8080\/process-->
+    <input type="text" name="hello" value="Inso">
+    <input type="text" name="post" value="456">
+    <input type="submit">
+</form>
+</body>
+</html>
