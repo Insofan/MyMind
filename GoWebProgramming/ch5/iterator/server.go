@@ -14,7 +14,7 @@ import (
 )
 
 func process(w http.ResponseWriter, r *http.Request) {
-	t, _ := template.ParseFiles("ch5/iterator/tmpl.html")
+	t, _ := template.ParseFiles("ch5/iterator/layout.html")
 	daysOfWeek := []string{"Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"}
 	t.Execute(w, daysOfWeek)
 

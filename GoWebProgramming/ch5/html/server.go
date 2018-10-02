@@ -16,10 +16,10 @@ import (
 func process(w http.ResponseWriter, r *http.Request) {
 	/*
 		相当于
-		t := template.New("tmpl.html")
-		 t , _ := t.ParseFiles("tmpl.html")
+		t := template.New("layout.html")
+		 t , _ := t.ParseFiles("layout.html")
 	*/
-	t, _ := template.ParseFiles("ch5/html/tmpl.html")
+	t, _ := template.ParseFiles("ch5/html/layout.html")
 	t.Execute(w, "HELLO WROLD")
 }
 

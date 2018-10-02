@@ -3,7 +3,7 @@
  * Description:
  * User: Insomnia
  * Date: 2018-10-02
- * Time: 下午12:28
+ * Time: 下午2:29
  */
 
 package main
@@ -16,15 +16,25 @@ import (
 )
 
 func process(w http.ResponseWriter, r *http.Request) {
-	t, _ := template.ParseFiles("ch5/random/layout.html")
 	rand.Seed(time.Now().Unix())
-	t.Execute(w, rand.Intn(10) > 5)
+	var t *template.Template
+	if rand.Intn(10) > 5 {
+
+		t, _ = template.ParseFiles("ch5/nested1/layout.html", "ch5/nested1/blue_hello.html")
+	} else {
+		t, _ = template.ParseFiles("ch5/nested1/layout.html", "ch5/nested1/red_hello.html")
+	}
+	//显示调用定义define 模板
+	t.ExecuteTemplate(w, "layout", "")
+
 }
 
 func main() {
+
 	server := http.Server{
-		Addr: ":8080",
+		Addr: "127.0.0.1:8080",
 	}
+
 	http.HandleFunc("/process", process)
 	server.ListenAndServe()
 }

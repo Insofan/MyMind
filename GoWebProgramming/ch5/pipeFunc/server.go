@@ -20,8 +20,8 @@ func formatDate(t time.Time) string {
 }
 func process(w http.ResponseWriter, r *http.Request) {
 	funcMap := template.FuncMap{"fdate": formatDate}
-	t := template.New("tmpl.html").Funcs(funcMap)
-	t, _ = t.ParseFiles("ch5/pipeFunc/tmpl.html")
+	t := template.New("layout.html").Funcs(funcMap)
+	t, _ = t.ParseFiles("ch5/pipeFunc/layout.html")
 	t.Execute(w, time.Now())
 }
 func main() {

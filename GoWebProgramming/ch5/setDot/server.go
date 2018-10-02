@@ -14,7 +14,7 @@ import (
 )
 
 func process(w http.ResponseWriter, r *http.Request) {
-	t, _ := template.ParseFiles("ch5/setDot/tmpl.html")
+	t, _ := template.ParseFiles("ch5/setDot/layout.html")
 	t.Execute(w, "hello")
 }
 func main() {
