@@ -8,4 +8,5 @@
 |       [Go语言实战](https://item.jd.com/12136974.html)        |
 |       [Go Web编程](https://item.jd.com/12252845.html)        |
 | [编程珠玑(第2版 修订版)](https://item.jd.com/11642529.html)  |
+| [敏捷软件开发(原则模式与实践)](https://item.jd.com/10078483.html) |
 
