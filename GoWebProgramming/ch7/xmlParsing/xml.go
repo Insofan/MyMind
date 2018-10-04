@@ -11,7 +11,7 @@ package main
 import (
 	"encoding/xml"
 	"fmt"
-	"io/ioutil"
+	"io"
 	"os"
 )
 
@@ -22,11 +22,19 @@ type Post struct {
 	Content string   `xml:"content"`
 	Author  Author   `xml:"author"`
 	Xml     string   `xml:",innerxml"`
+	//跳跃式访问
+	Comments []Comment `xml:comments>comment`
 }
 
 type Author struct {
-	Id   string `xml:"id, attr"`
+	Id   string `xml:"id,attr"`
 	Name string `xml:",chardata"`
+}
+
+type Comment struct {
+	Id      string `xml:"id,attr"`
+	Content string `xml:"content"`
+	Author  Author `xml:"author"`
 }
 
 func main() {
@@ -37,14 +45,28 @@ func main() {
 	}
 
 	defer xmlFile.Close()
-	xmlData, err := ioutil.ReadAll(xmlFile)
-	if err != nil {
-		fmt.Println("Err reading xml data:", err)
-		return
-	}
 
-	var post Post
-	xml.Unmarshal(xmlData, &post)
-	fmt.Println(post)
+	decoder := xml.NewDecoder(xmlFile)
+
+	for {
+		t, err := decoder.Token()
+		if err == io.EOF {
+			break
+		}
+
+		if err != nil {
+			fmt.Println("Err reading xml data:", err)
+			return
+		}
+
+		switch se := t.(type) {
+		case xml.StartElement:
+			if se.Name.Local == "comment" {
+				var comment Comment
+				decoder.DecodeElement(&comment, &se)
+				fmt.Println(comment)
+			}
+		}
+	}
 
 }
