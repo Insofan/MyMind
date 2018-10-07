@@ -102,3 +102,52 @@ vs2005下: i = 13 j = 13 m = 30 n = 39
 gcc下: i = 13 j = 13 m = 30 n = 37
 ```
 
+## Q: 简述静态全局变量的概念
+
+在全局变量前加上static关键字, 并且不能用extern导出, 静态全局变量的作用域仅限于定义静态全局变量的文件内部.
+
+## Q: 不使用break的switch语句
+
+| 考评结果 |            年终奖品             |
+| :------: | :-----------------------------: |
+|    A     | 一个月奖金, 福利1, 福利2, 福利3 |
+|    B     |    一个月奖金, 福利1, 福利2     |
+|    C     |        一个月奖金, 福利1        |
+|    D     |           一个月奖金            |
+
+```C++
+string helper(char mark) {
+    string msg = "Your year award: ";
+    switch (mark) {
+        case 'A': msg.append("福利3");
+        case 'B': msg.append("福利2");
+        case 'C': msg.append("福利1");
+        default: msg.append("一个月奖金");
+    }
+    return msg;
+}
+```
+
+## Q: for循环的三要素, 并写出下面的输出循环
+
+for 第一个分号初始化, 只执行一次, 第二个分号用来限制循环条件, 第三个分号用来更新与循环有关的变量.
+
+```c++
+bool foo(char c) {
+    cout << c;
+    return true;
+}
+
+int main() {
+    int i = 0;
+    for (foo('A'); foo('B') && (i++ < 2); foo('C')) {
+        foo('D');
+    }
+    
+    return 0;
+}
+
+#输出
+A, B, C, D, B, C, D, B
+```
+
