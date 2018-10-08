@@ -18,18 +18,18 @@
 @end
 
 
-@interface NSObject (hx_KVO) <HXKVODelegate>
+@interface NSObject (HXKVO) <HXKVODelegate>
 /**
  * Add observe
  * @param object Observe object
  * @param keyPath Property name
  */
-- (void)hx_addObserver:(id)object keyPath:(NSString *)keyPath;
+- (void)hx_addObserverForObject:(id)object keyPath:(NSString *)keyPath;
 
 /**
  * Remove observe
  * @param object Observe object
  * @param keyPath Property name
  */
-- (void)hx_removeObserver:(id)object keyPath:(NSString *)keyPath;
+- (void)hx_removeObserverForObject:(id)object keyPath:(NSString *)keyPath;
 @end
