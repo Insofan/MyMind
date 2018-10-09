@@ -8,5 +8,5 @@
 
 @interface KVOObject : NSObject
 @property(assign, nonatomic) NSInteger someValue;
-@property (strong, nonatomic) NSString *name;
+@property (copy, nonatomic) NSString *name;
 @end

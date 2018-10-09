@@ -141,8 +141,8 @@
 		E68E6F552159CC9600486DD0 /* KVOImplement */ = {
 			isa = PBXGroup;
 			children = (
-				31664860EE91D773736F23AE /* KVOImplementViewController.m */,
 				316640EC64B8665A62527881 /* KVOImplementViewController.h */,
+				31664860EE91D773736F23AE /* KVOImplementViewController.m */,
 				31664A495248BE8F2CDA3927 /* KVOImp */,
 			);
 			path = KVOImplement;
