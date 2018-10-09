@@ -1,6 +1,6 @@
-- 
-
 ## Q: 预处理做了什么工作
+
+![](https://upload-images.jianshu.io/upload_images/4254263-4c7392949a83933b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/790/format/webp)
 
 所有以#开头的代码都属于预处理器处理的范畴
 

@@ -1166,9 +1166,49 @@ IPv6改进:
 
 题外dyld动态链接器在启动过程中起了很重要的作用, 1. 加载以来的dylibs, 2. Fix-up:Rebase修正地址偏移, 因为OS X和iOS 有ASLR的机制来做地址随机化偏移来防止攻击 3. Fix-ups:Binding: 确定 Non-Lazy Pointer地址，进行符号地址绑定 4. Objc Runtime 初始化: 加载所有类 5. Initializers: 执行load 方法和_ _attribute_ _((constructor))修饰的函数
 
+## Q: 简述下MVC
 
+MVC, 即Model-View-Controller, 它是苹果公司推荐的App开发架构, 分成Model负责处理数据, View负责UI, Controller负责将View和Model连接.由于Controller承担的任务相对较重, 很多初级开发人员将View和Controller部分的代码全部塞到了ViewController中造成了高度耦合
 
+## Q: Objective-C单例(Singleton)
 
+```objective-c
+- (instanceType)sharedManager {
+    static Manager *shareManager = nil;
+	static distance_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+       sharedManager = [self new]; 
+    });
+    return sharedManager;
+}
+```
+
+## Q: 什么是装饰器(Decorator)
+
+不改变原封装的前提下, 为对象添加新功能, OC中表现为Category和Delegation. UITableViewDelegate就是典型的Delegation
+
+## Q: 什么是观察者模式(Observer)
+
+观察者定义对象之间一对多的依赖关系, 每一个对象状态发生改变时, 其相关依赖对象皆得到通知并自动更新. OC中表现形式为通知和KVO
+
+## Q: 什么是备忘录模式(Memento)
+
+备忘录, 保存对象当前的状态, 并在日后可以恢复的模式.
+
+## Q: 比较苹果官方的MVC架构的优点和缺点
+
+优点:
+
+1. 代码总量少: 基本上, MVC大量逻辑和视图代码都集中在ViewController中, View和Model严格区分, 代码分配遵循一定规则
+2. 简单易懂: 大部分人可以快速上手
+
+缺点:
+
+1. 代码过于集中: Controller将View和Controller高度耦合, 它将处理交互, 视图更新, 布局, Model数据获取和修改, 导航等所有操作
+2. 难以进行测试: 由于高度耦合, 使得以检测功能为主的单元测试需要配合固定视图才能进行
+3. 难以扩展: ViewController中添加新功能需要格外小心, 高度耦合逻辑结构增加了出错的风险.
+4. Model过于简单:
+5. 网络请求无处安放
 
 
 
