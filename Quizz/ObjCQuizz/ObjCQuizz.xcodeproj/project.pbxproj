@@ -12,6 +12,9 @@
 		316649D52C655F5B86518411 /* KVOObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 3166452B6EACA34ADC4D8285 /* KVOObject.m */; };
 		31664F3CB484A2755346139A /* NSObject+hx_KVO.m in Sources */ = {isa = PBXBuildFile; fileRef = 31664095AF7F245309141381 /* NSObject+hx_KVO.m */; };
 		797C7172DCF6A9BB541837C7 /* libPods-ObjCQuizz.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FD5125294E5432F964A6447 /* libPods-ObjCQuizz.a */; };
+		E6316813217468000081EFD0 /* RuntimeApiTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6316812217468000081EFD0 /* RuntimeApiTableViewController.m */; };
+		E6316816217468CC0081EFD0 /* RuntimeNSObjectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6316815217468CC0081EFD0 /* RuntimeNSObjectViewController.m */; };
+		E631681A217469670081EFD0 /* RuntimeNSObject.m in Sources */ = {isa = PBXBuildFile; fileRef = E6316819217469670081EFD0 /* RuntimeNSObject.m */; };
 		E68E6F4C2159C9A000486DD0 /* KVOTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E68E6F4B2159C9A000486DD0 /* KVOTableViewController.m */; };
 		E68E6F502159CA9900486DD0 /* OCQBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E68E6F4F2159CA9900486DD0 /* OCQBaseTableViewController.m */; };
 		E68E6F542159CB9300486DD0 /* OCQBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E68E6F532159CB9300486DD0 /* OCQBaseViewController.m */; };
@@ -35,6 +38,12 @@
 		31664A681FB85C09D92B8713 /* KVORACUseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KVORACUseViewController.h; sourceTree = "<group>"; };
 		3FD5125294E5432F964A6447 /* libPods-ObjCQuizz.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ObjCQuizz.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A58B7EA39C10095E1023871 /* Pods-ObjCQuizz.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObjCQuizz.release.xcconfig"; path = "Pods/Target Support Files/Pods-ObjCQuizz/Pods-ObjCQuizz.release.xcconfig"; sourceTree = "<group>"; };
+		E6316811217468000081EFD0 /* RuntimeApiTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RuntimeApiTableViewController.h; sourceTree = "<group>"; };
+		E6316812217468000081EFD0 /* RuntimeApiTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RuntimeApiTableViewController.m; sourceTree = "<group>"; };
+		E6316814217468CC0081EFD0 /* RuntimeNSObjectViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RuntimeNSObjectViewController.h; sourceTree = "<group>"; };
+		E6316815217468CC0081EFD0 /* RuntimeNSObjectViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RuntimeNSObjectViewController.m; sourceTree = "<group>"; };
+		E6316818217469670081EFD0 /* RuntimeNSObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RuntimeNSObject.h; sourceTree = "<group>"; };
+		E6316819217469670081EFD0 /* RuntimeNSObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RuntimeNSObject.m; sourceTree = "<group>"; };
 		E68E6F482159C8F000486DD0 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		E68E6F4A2159C9A000486DD0 /* KVOTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KVOTableViewController.h; sourceTree = "<group>"; };
 		E68E6F4B2159C9A000486DD0 /* KVOTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KVOTableViewController.m; sourceTree = "<group>"; };
@@ -104,6 +113,27 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		E6316810217467CF0081EFD0 /* RuntimeApi */ = {
+			isa = PBXGroup;
+			children = (
+				E6316811217468000081EFD0 /* RuntimeApiTableViewController.h */,
+				E6316812217468000081EFD0 /* RuntimeApiTableViewController.m */,
+				E6316817217468D40081EFD0 /* RuntimeNSObjectViewController */,
+			);
+			path = RuntimeApi;
+			sourceTree = "<group>";
+		};
+		E6316817217468D40081EFD0 /* RuntimeNSObjectViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E6316814217468CC0081EFD0 /* RuntimeNSObjectViewController.h */,
+				E6316815217468CC0081EFD0 /* RuntimeNSObjectViewController.m */,
+				E6316818217469670081EFD0 /* RuntimeNSObject.h */,
+				E6316819217469670081EFD0 /* RuntimeNSObject.m */,
+			);
+			path = RuntimeNSObjectViewController;
+			sourceTree = "<group>";
+		};
 		E68E6F492159C98400486DD0 /* KVO */ = {
 			isa = PBXGroup;
 			children = (
@@ -169,6 +199,7 @@
 		E6B7E12B2159C7AB00101EDC /* ObjCQuizz */ = {
 			isa = PBXGroup;
 			children = (
+				E6316810217467CF0081EFD0 /* RuntimeApi */,
 				E68E6F512159CA9E00486DD0 /* Util */,
 				E68E6F492159C98400486DD0 /* KVO */,
 				E6B7E12C2159C7AB00101EDC /* AppDelegate.h */,
@@ -284,10 +315,13 @@
 				E68E6F4C2159C9A000486DD0 /* KVOTableViewController.m in Sources */,
 				E68E6F502159CA9900486DD0 /* OCQBaseTableViewController.m in Sources */,
 				E6B7E12E2159C7AC00101EDC /* AppDelegate.m in Sources */,
+				E6316813217468000081EFD0 /* RuntimeApiTableViewController.m in Sources */,
 				31664888256C4867CE029338 /* KVORACUseViewController.m in Sources */,
 				31664517441B11928F09425C /* KVOImplementViewController.m in Sources */,
 				316649D52C655F5B86518411 /* KVOObject.m in Sources */,
 				31664F3CB484A2755346139A /* NSObject+hx_KVO.m in Sources */,
+				E631681A217469670081EFD0 /* RuntimeNSObject.m in Sources */,
+				E6316816217468CC0081EFD0 /* RuntimeNSObjectViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,38 +1,27 @@
 //
-//  ViewController.m
+//  RuntimeApiTableViewController.m
 //  ObjCQuizz
 //
-//  Created by Insomnia on 2018/9/25.
+//  Created by Insomnia on 2018/10/15.
 //  Copyright © 2018年 Insomnia. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "RuntimeApiTableViewController.h"
 
-@interface ViewController ()
-@property (copy, nonatomic) NSArray *vcArray;
-
+@interface RuntimeApiTableViewController ()
+@property(copy, nonatomic) NSArray *vcArray;
 @end
 
-@implementation ViewController
+@implementation RuntimeApiTableViewController
+
 - (NSArray *)vcArray {
     if (!_vcArray) {
         _vcArray = @[
-                     @{@"key": @"KVO", @"value":NSClassFromString(@"KVOTableViewController")},
-                     @{@"key": @"Runtime Api", @"value":NSClassFromString(@"RuntimeApiTableViewController")},
+                     @{@"key": @"Runtime NSObject Use", @"value": NSClassFromString(@"RuntimeNSObjectViewController")},
                      ];
     }
     return _vcArray;
 }
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-    self.view.backgroundColor = [UIColor hx_randomColor];
-    self.title = @"ObjC Quizz";
-}
-
-
-#pragma mark - Table view data source
-
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return self.vcArray.count;
@@ -60,6 +49,4 @@
     [self.navigationController pushViewController:vc animated:true];
     
 }
-
-
 @end
