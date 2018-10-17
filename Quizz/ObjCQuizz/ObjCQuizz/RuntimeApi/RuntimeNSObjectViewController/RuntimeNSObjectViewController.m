@@ -56,7 +56,7 @@
     for (unsigned int i = 0; i < count; i++) {
         Ivar myIvar = ivarList[i];
         const char *ivarName = ivar_getName(myIvar);
-        NSLog(@"Ivar---->%@", [NSString stringWithUTF8String:ivarName]);
+        NSLog(@"Ivar : %@", [NSString stringWithUTF8String:ivarName]);
     }
 }
 
