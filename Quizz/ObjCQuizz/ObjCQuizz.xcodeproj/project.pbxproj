@@ -12,6 +12,8 @@
 		316649D52C655F5B86518411 /* KVOObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 3166452B6EACA34ADC4D8285 /* KVOObject.m */; };
 		31664F3CB484A2755346139A /* NSObject+hx_KVO.m in Sources */ = {isa = PBXBuildFile; fileRef = 31664095AF7F245309141381 /* NSObject+hx_KVO.m */; };
 		797C7172DCF6A9BB541837C7 /* libPods-ObjCQuizz.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FD5125294E5432F964A6447 /* libPods-ObjCQuizz.a */; };
+		E6276338217DB9FE00EDF7BE /* MessageSendTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6276337217DB9FE00EDF7BE /* MessageSendTableViewController.m */; };
+		E627633B217DBA5700EDF7BE /* MessageSendUseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E627633A217DBA5700EDF7BE /* MessageSendUseViewController.m */; };
 		E6316813217468000081EFD0 /* RuntimeApiTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6316812217468000081EFD0 /* RuntimeApiTableViewController.m */; };
 		E6316816217468CC0081EFD0 /* RuntimeNSObjectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6316815217468CC0081EFD0 /* RuntimeNSObjectViewController.m */; };
 		E631681A217469670081EFD0 /* RuntimeNSObject.m in Sources */ = {isa = PBXBuildFile; fileRef = E6316819217469670081EFD0 /* RuntimeNSObject.m */; };
@@ -38,6 +40,10 @@
 		31664A681FB85C09D92B8713 /* KVORACUseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KVORACUseViewController.h; sourceTree = "<group>"; };
 		3FD5125294E5432F964A6447 /* libPods-ObjCQuizz.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ObjCQuizz.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A58B7EA39C10095E1023871 /* Pods-ObjCQuizz.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObjCQuizz.release.xcconfig"; path = "Pods/Target Support Files/Pods-ObjCQuizz/Pods-ObjCQuizz.release.xcconfig"; sourceTree = "<group>"; };
+		E6276336217DB9FE00EDF7BE /* MessageSendTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MessageSendTableViewController.h; sourceTree = "<group>"; };
+		E6276337217DB9FE00EDF7BE /* MessageSendTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MessageSendTableViewController.m; sourceTree = "<group>"; };
+		E6276339217DBA5700EDF7BE /* MessageSendUseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MessageSendUseViewController.h; sourceTree = "<group>"; };
+		E627633A217DBA5700EDF7BE /* MessageSendUseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MessageSendUseViewController.m; sourceTree = "<group>"; };
 		E6316811217468000081EFD0 /* RuntimeApiTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RuntimeApiTableViewController.h; sourceTree = "<group>"; };
 		E6316812217468000081EFD0 /* RuntimeApiTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RuntimeApiTableViewController.m; sourceTree = "<group>"; };
 		E6316814217468CC0081EFD0 /* RuntimeNSObjectViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RuntimeNSObjectViewController.h; sourceTree = "<group>"; };
@@ -111,6 +117,17 @@
 				6A58B7EA39C10095E1023871 /* Pods-ObjCQuizz.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		E6276335217DB99400EDF7BE /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				E6276336217DB9FE00EDF7BE /* MessageSendTableViewController.h */,
+				E6276337217DB9FE00EDF7BE /* MessageSendTableViewController.m */,
+				E6276339217DBA5700EDF7BE /* MessageSendUseViewController.h */,
+				E627633A217DBA5700EDF7BE /* MessageSendUseViewController.m */,
+			);
+			path = Message;
 			sourceTree = "<group>";
 		};
 		E6316810217467CF0081EFD0 /* RuntimeApi */ = {
@@ -199,6 +216,7 @@
 		E6B7E12B2159C7AB00101EDC /* ObjCQuizz */ = {
 			isa = PBXGroup;
 			children = (
+				E6276335217DB99400EDF7BE /* Message */,
 				E6316810217467CF0081EFD0 /* RuntimeApi */,
 				E68E6F512159CA9E00486DD0 /* Util */,
 				E68E6F492159C98400486DD0 /* KVO */,
@@ -312,6 +330,7 @@
 				E68E6F542159CB9300486DD0 /* OCQBaseViewController.m in Sources */,
 				E6B7E13C2159C7AD00101EDC /* main.m in Sources */,
 				E68E6F582159CCAC00486DD0 /* KVOOCUseViewController.m in Sources */,
+				E627633B217DBA5700EDF7BE /* MessageSendUseViewController.m in Sources */,
 				E68E6F4C2159C9A000486DD0 /* KVOTableViewController.m in Sources */,
 				E68E6F502159CA9900486DD0 /* OCQBaseTableViewController.m in Sources */,
 				E6B7E12E2159C7AC00101EDC /* AppDelegate.m in Sources */,
@@ -322,6 +341,7 @@
 				31664F3CB484A2755346139A /* NSObject+hx_KVO.m in Sources */,
 				E631681A217469670081EFD0 /* RuntimeNSObject.m in Sources */,
 				E6316816217468CC0081EFD0 /* RuntimeNSObjectViewController.m in Sources */,
+				E6276338217DB9FE00EDF7BE /* MessageSendTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -464,6 +484,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XM8VFF44DF;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PRODUCT_NAME)/PrefixHeader.pch";
 				INFOPLIST_FILE = ObjCQuizz/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -483,6 +504,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XM8VFF44DF;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PRODUCT_NAME)/PrefixHeader.pch";
 				INFOPLIST_FILE = ObjCQuizz/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
