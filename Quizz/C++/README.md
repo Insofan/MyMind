@@ -340,6 +340,53 @@ struct s5 {
 - 通过malloc动态分配的内存空间必须通过free函数来释放, 这两个函数成对出现, 如果申请的空间没有释放, 就会发生内存泄漏, 系统不会主动释放通过malloc在堆上申请的空间, 这样内存会被慢慢耗尽
 - 在通过free函数释放空间后, 最好将指针立即置空, 这样可以防止后面的程序对指针进行误操作
 
+## Q: 不使用临时变量交换两个数
+
+```c++
+a = a^b;
+b = a^b;
+a = a^b;
+```
+
+## Q: 简述main函数
+
+main函数在执行之前经过一系列初始化工作, 在main函数执行之后也有一系列扫尾工作.
+标准main函数有两种, 一种不带参, 一种带参
+```c++
+int main()
+int main(int argc, char *argv[])
+```
+第一个参数argc: argument count 缩写, 参数个数缩写
+第二个参数argv: argument value 缩写, 参数具体值, 其中argv[0]是程序的名字, 其余是命令行输入参数.
+
+## Q: 简述main函数在执行前后都发生了什么
+先进行初始化工作, 例如初始化静态变量, 全局变量.然后开始进入main函数, 在main结束后会进行扫尾工作,并不会立即结束, 例如调用atexit注册函数, 顺序与atexit顺序正好相反.
+
+```c++
+void func1() {
+    cout << "func 1" << endl;
+}
+void func2() {
+    cout << "func 2" << endl;
+}
+void func2() {
+    cout << "func 3" << endl;
+}
+int main() {
+    atexit(func1);
+    atexit(func2);
+    atexit(func3);
+    cout << "main " << endl;
+	return 0;
+}
+输出顺序是 main > func3 > func2 > func1
+```
+
+
+
+
+
+
 
 
 
