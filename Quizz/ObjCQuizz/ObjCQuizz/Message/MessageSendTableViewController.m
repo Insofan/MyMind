@@ -19,6 +19,9 @@
     if (!_vcArray) {
         _vcArray = @[
                      @{@"key": @"Message Send Use", @"value": NSClassFromString(@"MessageSendUseViewController")},
+                     @{@"key": @"1 Message Resolve", @"value": NSClassFromString(@"MsgResolveViewController")},
+                     @{@"key": @"2 Forwarding Target", @"value": NSClassFromString(@"ForwardingTargetViewController")},
+                     @{@"key": @"3 Forwarding Invocation", @"value": NSClassFromString(@"ForwardingInvocationViewController")},
                      ];
     }
     return _vcArray;

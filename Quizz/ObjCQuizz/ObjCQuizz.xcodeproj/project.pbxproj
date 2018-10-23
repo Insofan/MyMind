@@ -14,6 +14,14 @@
 		797C7172DCF6A9BB541837C7 /* libPods-ObjCQuizz.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FD5125294E5432F964A6447 /* libPods-ObjCQuizz.a */; };
 		E6276338217DB9FE00EDF7BE /* MessageSendTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6276337217DB9FE00EDF7BE /* MessageSendTableViewController.m */; };
 		E627633B217DBA5700EDF7BE /* MessageSendUseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E627633A217DBA5700EDF7BE /* MessageSendUseViewController.m */; };
+		E6276343217EAE6000EDF7BE /* MsgResolveObject.m in Sources */ = {isa = PBXBuildFile; fileRef = E6276342217EAE6000EDF7BE /* MsgResolveObject.m */; };
+		E6276346217EAE7B00EDF7BE /* MsgResolveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6276345217EAE7B00EDF7BE /* MsgResolveViewController.m */; };
+		E627634A217EBFD300EDF7BE /* ForwardingTargetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6276349217EBFD300EDF7BE /* ForwardingTargetViewController.m */; };
+		E627634D217EC00400EDF7BE /* ForwardingTargetObject.m in Sources */ = {isa = PBXBuildFile; fileRef = E627634C217EC00400EDF7BE /* ForwardingTargetObject.m */; };
+		E6276350217EC0DA00EDF7BE /* ForwardingTargetBackupObject.m in Sources */ = {isa = PBXBuildFile; fileRef = E627634F217EC0DA00EDF7BE /* ForwardingTargetBackupObject.m */; };
+		E6276354217EC1CA00EDF7BE /* ForwardingInvocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6276353217EC1CA00EDF7BE /* ForwardingInvocationViewController.m */; };
+		E6276357217EC1DE00EDF7BE /* ForwardingInvocationObj.m in Sources */ = {isa = PBXBuildFile; fileRef = E6276356217EC1DE00EDF7BE /* ForwardingInvocationObj.m */; };
+		E627635A217EC85C00EDF7BE /* ForwardingInvocationBackupObj.m in Sources */ = {isa = PBXBuildFile; fileRef = E6276359217EC85C00EDF7BE /* ForwardingInvocationBackupObj.m */; };
 		E6316813217468000081EFD0 /* RuntimeApiTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6316812217468000081EFD0 /* RuntimeApiTableViewController.m */; };
 		E6316816217468CC0081EFD0 /* RuntimeNSObjectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6316815217468CC0081EFD0 /* RuntimeNSObjectViewController.m */; };
 		E631681A217469670081EFD0 /* RuntimeNSObject.m in Sources */ = {isa = PBXBuildFile; fileRef = E6316819217469670081EFD0 /* RuntimeNSObject.m */; };
@@ -44,6 +52,22 @@
 		E6276337217DB9FE00EDF7BE /* MessageSendTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MessageSendTableViewController.m; sourceTree = "<group>"; };
 		E6276339217DBA5700EDF7BE /* MessageSendUseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MessageSendUseViewController.h; sourceTree = "<group>"; };
 		E627633A217DBA5700EDF7BE /* MessageSendUseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MessageSendUseViewController.m; sourceTree = "<group>"; };
+		E6276341217EAE6000EDF7BE /* MsgResolveObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MsgResolveObject.h; sourceTree = "<group>"; };
+		E6276342217EAE6000EDF7BE /* MsgResolveObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MsgResolveObject.m; sourceTree = "<group>"; };
+		E6276344217EAE7B00EDF7BE /* MsgResolveViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MsgResolveViewController.h; sourceTree = "<group>"; };
+		E6276345217EAE7B00EDF7BE /* MsgResolveViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MsgResolveViewController.m; sourceTree = "<group>"; };
+		E6276348217EBFD300EDF7BE /* ForwardingTargetViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ForwardingTargetViewController.h; sourceTree = "<group>"; };
+		E6276349217EBFD300EDF7BE /* ForwardingTargetViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ForwardingTargetViewController.m; sourceTree = "<group>"; };
+		E627634B217EC00400EDF7BE /* ForwardingTargetObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ForwardingTargetObject.h; sourceTree = "<group>"; };
+		E627634C217EC00400EDF7BE /* ForwardingTargetObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ForwardingTargetObject.m; sourceTree = "<group>"; };
+		E627634E217EC0DA00EDF7BE /* ForwardingTargetBackupObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ForwardingTargetBackupObject.h; sourceTree = "<group>"; };
+		E627634F217EC0DA00EDF7BE /* ForwardingTargetBackupObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ForwardingTargetBackupObject.m; sourceTree = "<group>"; };
+		E6276352217EC1CA00EDF7BE /* ForwardingInvocationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ForwardingInvocationViewController.h; sourceTree = "<group>"; };
+		E6276353217EC1CA00EDF7BE /* ForwardingInvocationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ForwardingInvocationViewController.m; sourceTree = "<group>"; };
+		E6276355217EC1DE00EDF7BE /* ForwardingInvocationObj.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ForwardingInvocationObj.h; sourceTree = "<group>"; };
+		E6276356217EC1DE00EDF7BE /* ForwardingInvocationObj.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ForwardingInvocationObj.m; sourceTree = "<group>"; };
+		E6276358217EC85C00EDF7BE /* ForwardingInvocationBackupObj.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ForwardingInvocationBackupObj.h; sourceTree = "<group>"; };
+		E6276359217EC85C00EDF7BE /* ForwardingInvocationBackupObj.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ForwardingInvocationBackupObj.m; sourceTree = "<group>"; };
 		E6316811217468000081EFD0 /* RuntimeApiTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RuntimeApiTableViewController.h; sourceTree = "<group>"; };
 		E6316812217468000081EFD0 /* RuntimeApiTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RuntimeApiTableViewController.m; sourceTree = "<group>"; };
 		E6316814217468CC0081EFD0 /* RuntimeNSObjectViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RuntimeNSObjectViewController.h; sourceTree = "<group>"; };
@@ -122,12 +146,60 @@
 		E6276335217DB99400EDF7BE /* Message */ = {
 			isa = PBXGroup;
 			children = (
+				E6276351217EC1A900EDF7BE /* ForwardingInvocation */,
+				E6276347217EBFA300EDF7BE /* ForwardingTarget */,
+				E627633D217EAD3B00EDF7BE /* ResolveInstanceMethod */,
 				E6276336217DB9FE00EDF7BE /* MessageSendTableViewController.h */,
 				E6276337217DB9FE00EDF7BE /* MessageSendTableViewController.m */,
+				E627633C217EAD2A00EDF7BE /* MsgSend */,
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
+		E627633C217EAD2A00EDF7BE /* MsgSend */ = {
+			isa = PBXGroup;
+			children = (
 				E6276339217DBA5700EDF7BE /* MessageSendUseViewController.h */,
 				E627633A217DBA5700EDF7BE /* MessageSendUseViewController.m */,
 			);
-			path = Message;
+			path = MsgSend;
+			sourceTree = "<group>";
+		};
+		E627633D217EAD3B00EDF7BE /* ResolveInstanceMethod */ = {
+			isa = PBXGroup;
+			children = (
+				E6276341217EAE6000EDF7BE /* MsgResolveObject.h */,
+				E6276342217EAE6000EDF7BE /* MsgResolveObject.m */,
+				E6276344217EAE7B00EDF7BE /* MsgResolveViewController.h */,
+				E6276345217EAE7B00EDF7BE /* MsgResolveViewController.m */,
+			);
+			path = ResolveInstanceMethod;
+			sourceTree = "<group>";
+		};
+		E6276347217EBFA300EDF7BE /* ForwardingTarget */ = {
+			isa = PBXGroup;
+			children = (
+				E6276348217EBFD300EDF7BE /* ForwardingTargetViewController.h */,
+				E6276349217EBFD300EDF7BE /* ForwardingTargetViewController.m */,
+				E627634B217EC00400EDF7BE /* ForwardingTargetObject.h */,
+				E627634C217EC00400EDF7BE /* ForwardingTargetObject.m */,
+				E627634E217EC0DA00EDF7BE /* ForwardingTargetBackupObject.h */,
+				E627634F217EC0DA00EDF7BE /* ForwardingTargetBackupObject.m */,
+			);
+			path = ForwardingTarget;
+			sourceTree = "<group>";
+		};
+		E6276351217EC1A900EDF7BE /* ForwardingInvocation */ = {
+			isa = PBXGroup;
+			children = (
+				E6276352217EC1CA00EDF7BE /* ForwardingInvocationViewController.h */,
+				E6276353217EC1CA00EDF7BE /* ForwardingInvocationViewController.m */,
+				E6276355217EC1DE00EDF7BE /* ForwardingInvocationObj.h */,
+				E6276356217EC1DE00EDF7BE /* ForwardingInvocationObj.m */,
+				E6276358217EC85C00EDF7BE /* ForwardingInvocationBackupObj.h */,
+				E6276359217EC85C00EDF7BE /* ForwardingInvocationBackupObj.m */,
+			);
+			path = ForwardingInvocation;
 			sourceTree = "<group>";
 		};
 		E6316810217467CF0081EFD0 /* RuntimeApi */ = {
@@ -326,17 +398,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E627635A217EC85C00EDF7BE /* ForwardingInvocationBackupObj.m in Sources */,
+				E627634D217EC00400EDF7BE /* ForwardingTargetObject.m in Sources */,
 				E6B7E1312159C7AC00101EDC /* ViewController.m in Sources */,
+				E6276346217EAE7B00EDF7BE /* MsgResolveViewController.m in Sources */,
 				E68E6F542159CB9300486DD0 /* OCQBaseViewController.m in Sources */,
 				E6B7E13C2159C7AD00101EDC /* main.m in Sources */,
+				E627634A217EBFD300EDF7BE /* ForwardingTargetViewController.m in Sources */,
+				E6276357217EC1DE00EDF7BE /* ForwardingInvocationObj.m in Sources */,
 				E68E6F582159CCAC00486DD0 /* KVOOCUseViewController.m in Sources */,
 				E627633B217DBA5700EDF7BE /* MessageSendUseViewController.m in Sources */,
 				E68E6F4C2159C9A000486DD0 /* KVOTableViewController.m in Sources */,
+				E6276343217EAE6000EDF7BE /* MsgResolveObject.m in Sources */,
 				E68E6F502159CA9900486DD0 /* OCQBaseTableViewController.m in Sources */,
 				E6B7E12E2159C7AC00101EDC /* AppDelegate.m in Sources */,
 				E6316813217468000081EFD0 /* RuntimeApiTableViewController.m in Sources */,
 				31664888256C4867CE029338 /* KVORACUseViewController.m in Sources */,
 				31664517441B11928F09425C /* KVOImplementViewController.m in Sources */,
+				E6276354217EC1CA00EDF7BE /* ForwardingInvocationViewController.m in Sources */,
+				E6276350217EC0DA00EDF7BE /* ForwardingTargetBackupObject.m in Sources */,
 				316649D52C655F5B86518411 /* KVOObject.m in Sources */,
 				31664F3CB484A2755346139A /* NSObject+hx_KVO.m in Sources */,
 				E631681A217469670081EFD0 /* RuntimeNSObject.m in Sources */,
