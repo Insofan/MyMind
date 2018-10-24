@@ -381,7 +381,42 @@ int main() {
 }
 输出顺序是 main > func3 > func2 > func1
 ```
+## Q: 简述指针的概念
+内存中每个字节都有唯一的编码, 称为内存地址. 驻留在内存中的变量页有一个地址与之对应, 确定变量在内存中的起始位置.
+指针保存的是变量的地址, 指针可以找到变量在内存中的位置
+## Q: 指针与数组的区别
+程序中定义了8个变量, 请指出哪些是指针, 哪些是数组? 并写出程序的输出
 
+```c++
+void equal(char str7[], char str8[]) {
+    printf("%d\n", str7 == str8);
+}
+
+int main() {
+    char str1[15] = "hello,world";
+    char str2[15] = "hello,world";
+    char str3[] = "hello, world";
+    char str4[] = "hello, world";
+    
+    char *str5 = "hello,world";
+    char *str6 = "hello,world";
+    
+    printf("%d\n", str1 == str2);
+    printf("%d\n", str3 == str4);
+    printf("%d\n", str5 == str6);
+    
+    equal(str1, str2);
+    getchar();
+    
+    return 0;
+}
+
+输出:
+1. str1, str2 是两个字符数组, 数组存储在栈上, 两个数组有各自独立的存储空间, 内存地址没有交集, 所以是0
+2. str3, str4 与上面同理, 输出是0
+3. str5, str6是两个典型的指针, 定义类指针类型和名称, 两个指针都指向字符串常量"hello, world"的首字符, 字符串常量保存在字符串常量区中, 内容相同的字符串常量区中只有一份拷贝, str5, str6指向同一个常量, 所以输出1
+4. str7, str8 看起来是数组, 但是作为参数是加上是指针, 是str1, str2的指针所以输出为0
+```
 
 
 
