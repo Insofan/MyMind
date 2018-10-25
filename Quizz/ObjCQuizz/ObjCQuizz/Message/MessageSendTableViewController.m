@@ -22,6 +22,7 @@
                      @{@"key": @"1 Message Resolve", @"value": NSClassFromString(@"MsgResolveViewController")},
                      @{@"key": @"2 Forwarding Target", @"value": NSClassFromString(@"ForwardingTargetViewController")},
                      @{@"key": @"3 Forwarding Invocation", @"value": NSClassFromString(@"ForwardingInvocationViewController")},
+                     @{@"key": @"防止方法未实现崩溃", @"value": NSClassFromString(@"ProtectUnrecognizeViewController")},
                      ];
     }
     return _vcArray;

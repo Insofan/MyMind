@@ -12,6 +12,7 @@
 		316649D52C655F5B86518411 /* KVOObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 3166452B6EACA34ADC4D8285 /* KVOObject.m */; };
 		31664F3CB484A2755346139A /* NSObject+hx_KVO.m in Sources */ = {isa = PBXBuildFile; fileRef = 31664095AF7F245309141381 /* NSObject+hx_KVO.m */; };
 		797C7172DCF6A9BB541837C7 /* libPods-ObjCQuizz.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FD5125294E5432F964A6447 /* libPods-ObjCQuizz.a */; };
+		E60B9F23218170F600EB4997 /* UnsafeObject.m in Sources */ = {isa = PBXBuildFile; fileRef = E60B9F22218170F600EB4997 /* UnsafeObject.m */; };
 		E6276338217DB9FE00EDF7BE /* MessageSendTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6276337217DB9FE00EDF7BE /* MessageSendTableViewController.m */; };
 		E627633B217DBA5700EDF7BE /* MessageSendUseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E627633A217DBA5700EDF7BE /* MessageSendUseViewController.m */; };
 		E6276343217EAE6000EDF7BE /* MsgResolveObject.m in Sources */ = {isa = PBXBuildFile; fileRef = E6276342217EAE6000EDF7BE /* MsgResolveObject.m */; };
@@ -25,6 +26,8 @@
 		E6316813217468000081EFD0 /* RuntimeApiTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6316812217468000081EFD0 /* RuntimeApiTableViewController.m */; };
 		E6316816217468CC0081EFD0 /* RuntimeNSObjectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6316815217468CC0081EFD0 /* RuntimeNSObjectViewController.m */; };
 		E631681A217469670081EFD0 /* RuntimeNSObject.m in Sources */ = {isa = PBXBuildFile; fileRef = E6316819217469670081EFD0 /* RuntimeNSObject.m */; };
+		E685683921816A4000F587A1 /* ProtectUnrecognizeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E685683821816A4000F587A1 /* ProtectUnrecognizeViewController.m */; };
+		E685683C21816AB600F587A1 /* SafeMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = E685683B21816AB600F587A1 /* SafeMethod.m */; };
 		E68E6F4C2159C9A000486DD0 /* KVOTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E68E6F4B2159C9A000486DD0 /* KVOTableViewController.m */; };
 		E68E6F502159CA9900486DD0 /* OCQBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E68E6F4F2159CA9900486DD0 /* OCQBaseTableViewController.m */; };
 		E68E6F542159CB9300486DD0 /* OCQBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E68E6F532159CB9300486DD0 /* OCQBaseViewController.m */; };
@@ -48,6 +51,8 @@
 		31664A681FB85C09D92B8713 /* KVORACUseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KVORACUseViewController.h; sourceTree = "<group>"; };
 		3FD5125294E5432F964A6447 /* libPods-ObjCQuizz.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ObjCQuizz.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A58B7EA39C10095E1023871 /* Pods-ObjCQuizz.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObjCQuizz.release.xcconfig"; path = "Pods/Target Support Files/Pods-ObjCQuizz/Pods-ObjCQuizz.release.xcconfig"; sourceTree = "<group>"; };
+		E60B9F21218170F600EB4997 /* UnsafeObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UnsafeObject.h; sourceTree = "<group>"; };
+		E60B9F22218170F600EB4997 /* UnsafeObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UnsafeObject.m; sourceTree = "<group>"; };
 		E6276336217DB9FE00EDF7BE /* MessageSendTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MessageSendTableViewController.h; sourceTree = "<group>"; };
 		E6276337217DB9FE00EDF7BE /* MessageSendTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MessageSendTableViewController.m; sourceTree = "<group>"; };
 		E6276339217DBA5700EDF7BE /* MessageSendUseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MessageSendUseViewController.h; sourceTree = "<group>"; };
@@ -74,6 +79,10 @@
 		E6316815217468CC0081EFD0 /* RuntimeNSObjectViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RuntimeNSObjectViewController.m; sourceTree = "<group>"; };
 		E6316818217469670081EFD0 /* RuntimeNSObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RuntimeNSObject.h; sourceTree = "<group>"; };
 		E6316819217469670081EFD0 /* RuntimeNSObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RuntimeNSObject.m; sourceTree = "<group>"; };
+		E685683721816A4000F587A1 /* ProtectUnrecognizeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProtectUnrecognizeViewController.h; sourceTree = "<group>"; };
+		E685683821816A4000F587A1 /* ProtectUnrecognizeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProtectUnrecognizeViewController.m; sourceTree = "<group>"; };
+		E685683A21816AB600F587A1 /* SafeMethod.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SafeMethod.h; sourceTree = "<group>"; };
+		E685683B21816AB600F587A1 /* SafeMethod.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SafeMethod.m; sourceTree = "<group>"; };
 		E68E6F482159C8F000486DD0 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		E68E6F4A2159C9A000486DD0 /* KVOTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KVOTableViewController.h; sourceTree = "<group>"; };
 		E68E6F4B2159C9A000486DD0 /* KVOTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KVOTableViewController.m; sourceTree = "<group>"; };
@@ -146,6 +155,7 @@
 		E6276335217DB99400EDF7BE /* Message */ = {
 			isa = PBXGroup;
 			children = (
+				E6856836218169C000F587A1 /* ProtectUnrecognize */,
 				E6276351217EC1A900EDF7BE /* ForwardingInvocation */,
 				E6276347217EBFA300EDF7BE /* ForwardingTarget */,
 				E627633D217EAD3B00EDF7BE /* ResolveInstanceMethod */,
@@ -221,6 +231,19 @@
 				E6316819217469670081EFD0 /* RuntimeNSObject.m */,
 			);
 			path = RuntimeNSObjectViewController;
+			sourceTree = "<group>";
+		};
+		E6856836218169C000F587A1 /* ProtectUnrecognize */ = {
+			isa = PBXGroup;
+			children = (
+				E685683721816A4000F587A1 /* ProtectUnrecognizeViewController.h */,
+				E685683821816A4000F587A1 /* ProtectUnrecognizeViewController.m */,
+				E685683A21816AB600F587A1 /* SafeMethod.h */,
+				E685683B21816AB600F587A1 /* SafeMethod.m */,
+				E60B9F21218170F600EB4997 /* UnsafeObject.h */,
+				E60B9F22218170F600EB4997 /* UnsafeObject.m */,
+			);
+			path = ProtectUnrecognize;
 			sourceTree = "<group>";
 		};
 		E68E6F492159C98400486DD0 /* KVO */ = {
@@ -399,9 +422,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				E627635A217EC85C00EDF7BE /* ForwardingInvocationBackupObj.m in Sources */,
+				E685683C21816AB600F587A1 /* SafeMethod.m in Sources */,
 				E627634D217EC00400EDF7BE /* ForwardingTargetObject.m in Sources */,
 				E6B7E1312159C7AC00101EDC /* ViewController.m in Sources */,
 				E6276346217EAE7B00EDF7BE /* MsgResolveViewController.m in Sources */,
+				E685683921816A4000F587A1 /* ProtectUnrecognizeViewController.m in Sources */,
 				E68E6F542159CB9300486DD0 /* OCQBaseViewController.m in Sources */,
 				E6B7E13C2159C7AD00101EDC /* main.m in Sources */,
 				E627634A217EBFD300EDF7BE /* ForwardingTargetViewController.m in Sources */,
@@ -419,6 +444,7 @@
 				E6276350217EC0DA00EDF7BE /* ForwardingTargetBackupObject.m in Sources */,
 				316649D52C655F5B86518411 /* KVOObject.m in Sources */,
 				31664F3CB484A2755346139A /* NSObject+hx_KVO.m in Sources */,
+				E60B9F23218170F600EB4997 /* UnsafeObject.m in Sources */,
 				E631681A217469670081EFD0 /* RuntimeNSObject.m in Sources */,
 				E6316816217468CC0081EFD0 /* RuntimeNSObjectViewController.m in Sources */,
 				E6276338217DB9FE00EDF7BE /* MessageSendTableViewController.m in Sources */,
