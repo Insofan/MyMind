@@ -23,6 +23,7 @@
                      @{@"key": @"2 Forwarding Target", @"value": NSClassFromString(@"ForwardingTargetViewController")},
                      @{@"key": @"3 Forwarding Invocation", @"value": NSClassFromString(@"ForwardingInvocationViewController")},
                      @{@"key": @"防止方法未实现崩溃", @"value": NSClassFromString(@"ProtectUnrecognizeViewController")},
+                     @{@"key": @"兼容API方案", @"value": NSClassFromString(@"AdjustAPIViewController")},
                      ];
     }
     return _vcArray;
