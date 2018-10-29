@@ -21,9 +21,9 @@ static void *MyAlertViewKey = "MyAlertViewKey";
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor hx_randomColor];
-//    UITapGestureRecognizer *singleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(singleTap:)];
-//    singleTap.dataStr = @"测试Associate Obj";
-//    [self.view addGestureRecognizer:singleTap];
+    UITapGestureRecognizer *singleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(singleTap:)];
+    singleTap.dataStr = @"测试Associate Obj";
+    [self.view addGestureRecognizer:singleTap];
     
     @weakify(self);
     UIButton *button1 = [UIButton buttonWithType:UIButtonTypeCustom];

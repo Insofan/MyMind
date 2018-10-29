@@ -26,9 +26,6 @@
                      @{@"key": @"兼容API方案", @"value": NSClassFromString(@"AdjustAPIViewController")},
                      @{@"key": @"Associated Object", @"value": NSClassFromString(@"AssociatedObjectViewController")},
                      @{@"key": @"Button的block回调", @"value": NSClassFromString(@"AssociateButtonBlockViewController")},
-                     @{@"key": @"Button的防止重复点击", @"value": NSClassFromString(@"AssociateButtonClickViewController")},
-
-
                      ];
     }
     return _vcArray;

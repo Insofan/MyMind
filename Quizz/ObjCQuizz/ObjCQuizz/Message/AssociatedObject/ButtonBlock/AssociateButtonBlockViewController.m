@@ -7,7 +7,7 @@
 //
 
 #import "AssociateButtonBlockViewController.h"
-
+#import "UIButton+Block.h"
 @interface AssociateButtonBlockViewController ()
 
 @end
@@ -18,6 +18,17 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor hx_randomColor];
+    
+    @weakify(self);
+    UIButton *button1 = [UIButton buttonWithType:UIButtonTypeCustom];
+    [self.view addSubview:button1];
+    button1.frame = CGRectMake(50, 150, 250, 100);
+    button1.backgroundColor = [UIColor blueColor];
+    button1.buttonStr = @"Button动态添加属性";
+    [button1 setTitle:@"Button的Block回调" forState:UIControlStateNormal];
+    [button1 hx_clickCallBack:^(UIButton * _Nonnull button) {
+        NSLog(@"Button 回掉点击成功, %@", button.buttonStr);
+    }];
 }
 
 /*
