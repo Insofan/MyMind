@@ -30,11 +30,14 @@
 		E6316816217468CC0081EFD0 /* RuntimeNSObjectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6316815217468CC0081EFD0 /* RuntimeNSObjectViewController.m */; };
 		E631681A217469670081EFD0 /* RuntimeNSObject.m in Sources */ = {isa = PBXBuildFile; fileRef = E6316819217469670081EFD0 /* RuntimeNSObject.m */; };
 		E685683921816A4000F587A1 /* ProtectUnrecognizeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E685683821816A4000F587A1 /* ProtectUnrecognizeViewController.m */; };
-		E685683C21816AB600F587A1 /* SafeMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = E685683B21816AB600F587A1 /* SafeMethod.m */; };
 		E68E6F4C2159C9A000486DD0 /* KVOTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E68E6F4B2159C9A000486DD0 /* KVOTableViewController.m */; };
 		E68E6F502159CA9900486DD0 /* OCQBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E68E6F4F2159CA9900486DD0 /* OCQBaseTableViewController.m */; };
 		E68E6F542159CB9300486DD0 /* OCQBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E68E6F532159CB9300486DD0 /* OCQBaseViewController.m */; };
 		E68E6F582159CCAC00486DD0 /* KVOOCUseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E68E6F572159CCAC00486DD0 /* KVOOCUseViewController.m */; };
+		E69681222186AC5C00CE8674 /* AssociatedObjectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E69681212186AC5C00CE8674 /* AssociatedObjectViewController.m */; };
+		E69681252186AF7000CE8674 /* UITapGestureRecognizer+Associate.m in Sources */ = {isa = PBXBuildFile; fileRef = E69681232186AF7000CE8674 /* UITapGestureRecognizer+Associate.m */; };
+		E69681282186DC8F00CE8674 /* AssociateButtonBlockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E69681272186DC8F00CE8674 /* AssociateButtonBlockViewController.m */; };
+		E696812B2186DCF600CE8674 /* AssociateButtonClickViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E696812A2186DCF600CE8674 /* AssociateButtonClickViewController.m */; };
 		E6B7E12E2159C7AC00101EDC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E6B7E12D2159C7AC00101EDC /* AppDelegate.m */; };
 		E6B7E1312159C7AC00101EDC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6B7E1302159C7AC00101EDC /* ViewController.m */; };
 		E6B7E1342159C7AC00101EDC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6B7E1322159C7AC00101EDC /* Main.storyboard */; };
@@ -101,6 +104,14 @@
 		E68E6F532159CB9300486DD0 /* OCQBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCQBaseViewController.m; sourceTree = "<group>"; };
 		E68E6F562159CCAC00486DD0 /* KVOOCUseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KVOOCUseViewController.h; sourceTree = "<group>"; };
 		E68E6F572159CCAC00486DD0 /* KVOOCUseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KVOOCUseViewController.m; sourceTree = "<group>"; };
+		E69681202186AC5C00CE8674 /* AssociatedObjectViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AssociatedObjectViewController.h; sourceTree = "<group>"; };
+		E69681212186AC5C00CE8674 /* AssociatedObjectViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AssociatedObjectViewController.m; sourceTree = "<group>"; };
+		E69681232186AF7000CE8674 /* UITapGestureRecognizer+Associate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UITapGestureRecognizer+Associate.m"; path = "../../../../../EffectiveObjective-C/EffectiveObjective-C/Item 10/Associate Group/UITapGestureRecognizer+Associate.m"; sourceTree = "<group>"; };
+		E69681242186AF7000CE8674 /* UITapGestureRecognizer+Associate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UITapGestureRecognizer+Associate.h"; path = "../../../../../EffectiveObjective-C/EffectiveObjective-C/Item 10/Associate Group/UITapGestureRecognizer+Associate.h"; sourceTree = "<group>"; };
+		E69681262186DC8F00CE8674 /* AssociateButtonBlockViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AssociateButtonBlockViewController.h; sourceTree = "<group>"; };
+		E69681272186DC8F00CE8674 /* AssociateButtonBlockViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AssociateButtonBlockViewController.m; sourceTree = "<group>"; };
+		E69681292186DCF600CE8674 /* AssociateButtonClickViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AssociateButtonClickViewController.h; sourceTree = "<group>"; };
+		E696812A2186DCF600CE8674 /* AssociateButtonClickViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AssociateButtonClickViewController.m; sourceTree = "<group>"; };
 		E6B7E1292159C7AB00101EDC /* ObjCQuizz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ObjCQuizz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6B7E12C2159C7AB00101EDC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E6B7E12D2159C7AC00101EDC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -177,6 +188,7 @@
 		E6276335217DB99400EDF7BE /* Message */ = {
 			isa = PBXGroup;
 			children = (
+				E696811F2186AC3800CE8674 /* AssociatedObject */,
 				E60B9F2421818CCF00EB4997 /* AdjustApi */,
 				E6856836218169C000F587A1 /* ProtectUnrecognize */,
 				E6276351217EC1A900EDF7BE /* ForwardingInvocation */,
@@ -313,6 +325,21 @@
 			path = KVOImplement;
 			sourceTree = "<group>";
 		};
+		E696811F2186AC3800CE8674 /* AssociatedObject */ = {
+			isa = PBXGroup;
+			children = (
+				E69681202186AC5C00CE8674 /* AssociatedObjectViewController.h */,
+				E69681212186AC5C00CE8674 /* AssociatedObjectViewController.m */,
+				E69681242186AF7000CE8674 /* UITapGestureRecognizer+Associate.h */,
+				E69681232186AF7000CE8674 /* UITapGestureRecognizer+Associate.m */,
+				E69681262186DC8F00CE8674 /* AssociateButtonBlockViewController.h */,
+				E69681272186DC8F00CE8674 /* AssociateButtonBlockViewController.m */,
+				E69681292186DCF600CE8674 /* AssociateButtonClickViewController.h */,
+				E696812A2186DCF600CE8674 /* AssociateButtonClickViewController.m */,
+			);
+			path = AssociatedObject;
+			sourceTree = "<group>";
+		};
 		E6B7E1202159C7AB00101EDC = {
 			isa = PBXGroup;
 			children = (
@@ -446,7 +473,6 @@
 			files = (
 				E60B9F2D2181993E00EB4997 /* UIScrollView+Forwarding.m in Sources */,
 				E627635A217EC85C00EDF7BE /* ForwardingInvocationBackupObj.m in Sources */,
-				E685683C21816AB600F587A1 /* SafeMethod.m in Sources */,
 				E627634D217EC00400EDF7BE /* ForwardingTargetObject.m in Sources */,
 				E6B7E1312159C7AC00101EDC /* ViewController.m in Sources */,
 				E6276346217EAE7B00EDF7BE /* MsgResolveViewController.m in Sources */,
@@ -460,11 +486,15 @@
 				E68E6F4C2159C9A000486DD0 /* KVOTableViewController.m in Sources */,
 				E6276343217EAE6000EDF7BE /* MsgResolveObject.m in Sources */,
 				E68E6F502159CA9900486DD0 /* OCQBaseTableViewController.m in Sources */,
+				E696812B2186DCF600CE8674 /* AssociateButtonClickViewController.m in Sources */,
+				E69681222186AC5C00CE8674 /* AssociatedObjectViewController.m in Sources */,
 				E6B7E12E2159C7AC00101EDC /* AppDelegate.m in Sources */,
+				E69681282186DC8F00CE8674 /* AssociateButtonBlockViewController.m in Sources */,
 				E60B9F2721818D7B00EB4997 /* AdjustAPIViewController.m in Sources */,
 				E6316813217468000081EFD0 /* RuntimeApiTableViewController.m in Sources */,
 				31664888256C4867CE029338 /* KVORACUseViewController.m in Sources */,
 				31664517441B11928F09425C /* KVOImplementViewController.m in Sources */,
+				E69681252186AF7000CE8674 /* UITapGestureRecognizer+Associate.m in Sources */,
 				E6276354217EC1CA00EDF7BE /* ForwardingInvocationViewController.m in Sources */,
 				E6276350217EC0DA00EDF7BE /* ForwardingTargetBackupObject.m in Sources */,
 				316649D52C655F5B86518411 /* KVOObject.m in Sources */,
@@ -619,7 +649,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PRODUCT_NAME)/PrefixHeader.pch";
 				INFOPLIST_FILE = ObjCQuizz/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -640,7 +670,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PRODUCT_NAME)/PrefixHeader.pch";
 				INFOPLIST_FILE = ObjCQuizz/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
