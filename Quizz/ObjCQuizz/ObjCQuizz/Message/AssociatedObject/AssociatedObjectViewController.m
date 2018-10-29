@@ -9,6 +9,7 @@
 #import "AssociatedObjectViewController.h"
 #import <objc/runtime.h>
 #import "UITapGestureRecognizer+Associate.h"
+#import "TestYYModelDescription.h"
 @interface AssociatedObjectViewController ()<UIAlertViewDelegate>
 @end
 
@@ -24,7 +25,11 @@ static void *MyAlertViewKey = "MyAlertViewKey";
     UITapGestureRecognizer *singleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(singleTap:)];
     singleTap.dataStr = @"测试Associate Obj";
     [self.view addGestureRecognizer:singleTap];
-    
+
+    TestYYModelDescription *testModel = [TestYYModelDescription new];
+    TestYYModelDescription *testModel2 = [TestYYModelDescription new];
+    testModel2.str1 = @"2";
+
     @weakify(self);
     UIButton *button1 = [UIButton buttonWithType:UIButtonTypeCustom];
     [self.view addSubview:button1];

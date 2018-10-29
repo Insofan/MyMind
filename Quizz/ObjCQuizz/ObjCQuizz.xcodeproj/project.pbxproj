@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		31664517441B11928F09425C /* KVOImplementViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31664860EE91D773736F23AE /* KVOImplementViewController.m */; };
 		31664888256C4867CE029338 /* KVORACUseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3166467B7E942FD04ECE5C56 /* KVORACUseViewController.m */; };
+		316648F6B56A6653A84D918B /* TestYYModelDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = 316647448ACC987E84E5B40C /* TestYYModelDescription.m */; };
 		316649D52C655F5B86518411 /* KVOObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 3166452B6EACA34ADC4D8285 /* KVOObject.m */; };
 		31664F3CB484A2755346139A /* NSObject+hx_KVO.m in Sources */ = {isa = PBXBuildFile; fileRef = 31664095AF7F245309141381 /* NSObject+hx_KVO.m */; };
 		797C7172DCF6A9BB541837C7 /* libPods-ObjCQuizz.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FD5125294E5432F964A6447 /* libPods-ObjCQuizz.a */; };
@@ -52,9 +53,11 @@
 		3166429C58FBF2DA8C8B52A9 /* KVOObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KVOObject.h; sourceTree = "<group>"; };
 		3166452B6EACA34ADC4D8285 /* KVOObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KVOObject.m; sourceTree = "<group>"; };
 		3166467B7E942FD04ECE5C56 /* KVORACUseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KVORACUseViewController.m; sourceTree = "<group>"; };
+		316647448ACC987E84E5B40C /* TestYYModelDescription.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TestYYModelDescription.m; path = "../../../../../EffectiveObjective-C/EffectiveObjective-C/Item 10/Associate Group/TestYYModelDescription.m"; sourceTree = "<group>"; };
 		31664860EE91D773736F23AE /* KVOImplementViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KVOImplementViewController.m; sourceTree = "<group>"; };
 		3166494C38D4767A748247BC /* NSObject+hx_KVO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+hx_KVO.h"; sourceTree = "<group>"; };
 		31664A681FB85C09D92B8713 /* KVORACUseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KVORACUseViewController.h; sourceTree = "<group>"; };
+		31664F481008669C21B437D9 /* TestYYModelDescription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TestYYModelDescription.h; path = "../../../../../EffectiveObjective-C/EffectiveObjective-C/Item 10/Associate Group/TestYYModelDescription.h"; sourceTree = "<group>"; };
 		3FD5125294E5432F964A6447 /* libPods-ObjCQuizz.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ObjCQuizz.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A58B7EA39C10095E1023871 /* Pods-ObjCQuizz.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObjCQuizz.release.xcconfig"; path = "Pods/Target Support Files/Pods-ObjCQuizz/Pods-ObjCQuizz.release.xcconfig"; sourceTree = "<group>"; };
 		E60B9F21218170F600EB4997 /* UnsafeObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UnsafeObject.h; sourceTree = "<group>"; };
@@ -344,6 +347,8 @@
 				E69681212186AC5C00CE8674 /* AssociatedObjectViewController.m */,
 				E69681242186AF7000CE8674 /* UITapGestureRecognizer+Associate.h */,
 				E69681232186AF7000CE8674 /* UITapGestureRecognizer+Associate.m */,
+				316647448ACC987E84E5B40C /* TestYYModelDescription.m */,
+				31664F481008669C21B437D9 /* TestYYModelDescription.h */,
 			);
 			path = AssociatedObject;
 			sourceTree = "<group>";
@@ -512,6 +517,7 @@
 				E60B9F2A218194F600EB4997 /* NSObject+TopVC.m in Sources */,
 				E6316816217468CC0081EFD0 /* RuntimeNSObjectViewController.m in Sources */,
 				E6276338217DB9FE00EDF7BE /* MessageSendTableViewController.m in Sources */,
+				316648F6B56A6653A84D918B /* TestYYModelDescription.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
