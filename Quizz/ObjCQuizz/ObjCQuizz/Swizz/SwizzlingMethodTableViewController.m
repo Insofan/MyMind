@@ -1,41 +1,24 @@
 //
-//  ViewController.m
-//  ObjCQuizz
-//
-//  Created by Insomnia on 2018/9/25.
-//  Copyright © 2018年 Insomnia. All rights reserved.
+// Created by Insomnia on 2018/10/30.
+// Copyright (c) 2018 Insomnia. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "SwizzlingMethodTableViewController.h"
 
-@interface ViewController ()
+@interface SwizzlingMethodTableViewController ()
 @property(copy, nonatomic) NSArray *vcArray;
-
 @end
 
-@implementation ViewController
+@implementation SwizzlingMethodTableViewController
+
 - (NSArray *)vcArray {
     if (!_vcArray) {
         _vcArray = @[
-                @{@"key": @"KVO", @"value": NSClassFromString(@"KVOTableViewController")},
-                @{@"key": @"Runtime Api", @"value": NSClassFromString(@"RuntimeApiTableViewController")},
-                @{@"key": @"Message Send", @"value": NSClassFromString(@"MessageSendTableViewController")},
-                @{@"key": @"Swizzling Method", @"value": NSClassFromString(@"SwizzlingMethodTableViewController")},
+                @{@"key": @"统计VC加载次数", @"value": NSClassFromString(@"CountVCViewController")},
         ];
     }
     return _vcArray;
 }
-
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-    self.view.backgroundColor = [UIColor hx_randomColor];
-    self.title                = @"ObjC Quizz";
-}
-
-
-#pragma mark - Table view data source
-
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return self.vcArray.count;
@@ -63,6 +46,4 @@
     [self.navigationController pushViewController:vc animated:true];
 
 }
-
-
 @end
