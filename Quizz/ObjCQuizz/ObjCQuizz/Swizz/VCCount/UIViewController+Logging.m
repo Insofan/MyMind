@@ -18,14 +18,13 @@
 
 - (void)hx_viewDidAppear:(BOOL)animated {
     //call original method, 相当于调用原来的viewDidAppear
-//    [self hx_viewDidAppear:animated];
-    [self viewDidAppear:animated];
-    NSLog(@"Swizz Method class : %@", NSStringFromClass([self class]));
+    [self hx_viewDidAppear:animated];
+    NSLog(@"记录vc进入次数 : %@", NSStringFromClass([self class]));
 }
 
 void swizzleMethod(Class aClass, SEL oriSel, SEL swizzleSel) {
-    Method oriMethod     = class_getClassMethod(aClass, oriSel);
-    Method swizzleMethod = class_getClassMethod(aClass, swizzleSel);
+    Method oriMethod     = class_getInstanceMethod(aClass, oriSel);
+    Method swizzleMethod = class_getInstanceMethod(aClass, swizzleSel);
 
     //测试能否添加Method, 避免多次调用
     BOOL   addFlag = class_addMethod(aClass, oriSel, method_getImplementation(swizzleMethod), method_getTypeEncoding(swizzleMethod));

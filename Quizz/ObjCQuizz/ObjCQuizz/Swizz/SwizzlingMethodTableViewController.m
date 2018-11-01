@@ -15,6 +15,8 @@
     if (!_vcArray) {
         _vcArray = @[
                 @{@"key": @"统计VC加载次数", @"value": NSClassFromString(@"CountVCViewController")},
+                @{@"key": @"防Button误触", @"value": NSClassFromString(@"SingleClickViewController")},
+
         ];
     }
     return _vcArray;

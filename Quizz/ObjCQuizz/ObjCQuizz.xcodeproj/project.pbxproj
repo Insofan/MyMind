@@ -33,6 +33,8 @@
 		E6316813217468000081EFD0 /* RuntimeApiTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6316812217468000081EFD0 /* RuntimeApiTableViewController.m */; };
 		E6316816217468CC0081EFD0 /* RuntimeNSObjectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6316815217468CC0081EFD0 /* RuntimeNSObjectViewController.m */; };
 		E631681A217469670081EFD0 /* RuntimeNSObject.m in Sources */ = {isa = PBXBuildFile; fileRef = E6316819217469670081EFD0 /* RuntimeNSObject.m */; };
+		E648A248218AE0E8002010B8 /* SingleClickViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E648A247218AE0E8002010B8 /* SingleClickViewController.m */; };
+		E648A24C218AE2B9002010B8 /* UIButton+SingleClick.m in Sources */ = {isa = PBXBuildFile; fileRef = E648A24B218AE2B9002010B8 /* UIButton+SingleClick.m */; };
 		E66A86752186E48000C6AA02 /* UIButton+Block.m in Sources */ = {isa = PBXBuildFile; fileRef = E66A86742186E48000C6AA02 /* UIButton+Block.m */; };
 		E685683921816A4000F587A1 /* ProtectUnrecognizeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E685683821816A4000F587A1 /* ProtectUnrecognizeViewController.m */; };
 		E68E6F4C2159C9A000486DD0 /* KVOTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E68E6F4B2159C9A000486DD0 /* KVOTableViewController.m */; };
@@ -103,6 +105,10 @@
 		E6316815217468CC0081EFD0 /* RuntimeNSObjectViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RuntimeNSObjectViewController.m; sourceTree = "<group>"; };
 		E6316818217469670081EFD0 /* RuntimeNSObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RuntimeNSObject.h; sourceTree = "<group>"; };
 		E6316819217469670081EFD0 /* RuntimeNSObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RuntimeNSObject.m; sourceTree = "<group>"; };
+		E648A246218AE0E8002010B8 /* SingleClickViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SingleClickViewController.h; sourceTree = "<group>"; };
+		E648A247218AE0E8002010B8 /* SingleClickViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SingleClickViewController.m; sourceTree = "<group>"; };
+		E648A24A218AE2B9002010B8 /* UIButton+SingleClick.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+SingleClick.h"; sourceTree = "<group>"; };
+		E648A24B218AE2B9002010B8 /* UIButton+SingleClick.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+SingleClick.m"; sourceTree = "<group>"; };
 		E66A86732186E48000C6AA02 /* UIButton+Block.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+Block.h"; sourceTree = "<group>"; };
 		E66A86742186E48000C6AA02 /* UIButton+Block.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Block.m"; sourceTree = "<group>"; };
 		E685683721816A4000F587A1 /* ProtectUnrecognizeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProtectUnrecognizeViewController.h; sourceTree = "<group>"; };
@@ -181,6 +187,7 @@
 		31664BACDFD13BF300E0B2D8 /* Swizz */ = {
 			isa = PBXGroup;
 			children = (
+				E648A249218AE0ED002010B8 /* Button */,
 				31664A0C658F68338B2DF866 /* SwizzlingMethodTableViewController.m */,
 				31664B5A755D0DCBCCFF7C4F /* SwizzlingMethodTableViewController.h */,
 				31664ADE215944E0F4C5ABAA /* VCCount */,
@@ -299,6 +306,17 @@
 				E6316819217469670081EFD0 /* RuntimeNSObject.m */,
 			);
 			path = RuntimeNSObjectViewController;
+			sourceTree = "<group>";
+		};
+		E648A249218AE0ED002010B8 /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				E648A246218AE0E8002010B8 /* SingleClickViewController.h */,
+				E648A247218AE0E8002010B8 /* SingleClickViewController.m */,
+				E648A24A218AE2B9002010B8 /* UIButton+SingleClick.h */,
+				E648A24B218AE2B9002010B8 /* UIButton+SingleClick.m */,
+			);
+			path = Button;
 			sourceTree = "<group>";
 		};
 		E66A86722186E45C00C6AA02 /* ButtonBlock */ = {
@@ -527,6 +545,7 @@
 				E627634A217EBFD300EDF7BE /* ForwardingTargetViewController.m in Sources */,
 				E6276357217EC1DE00EDF7BE /* ForwardingInvocationObj.m in Sources */,
 				E68E6F582159CCAC00486DD0 /* KVOOCUseViewController.m in Sources */,
+				E648A24C218AE2B9002010B8 /* UIButton+SingleClick.m in Sources */,
 				E627633B217DBA5700EDF7BE /* MessageSendUseViewController.m in Sources */,
 				E68E6F4C2159C9A000486DD0 /* KVOTableViewController.m in Sources */,
 				E6276343217EAE6000EDF7BE /* MsgResolveObject.m in Sources */,
@@ -550,6 +569,7 @@
 				E6316816217468CC0081EFD0 /* RuntimeNSObjectViewController.m in Sources */,
 				E6276338217DB9FE00EDF7BE /* MessageSendTableViewController.m in Sources */,
 				316648F6B56A6653A84D918B /* TestYYModelDescription.m in Sources */,
+				E648A248218AE0E8002010B8 /* SingleClickViewController.m in Sources */,
 				316645FA5902E5B108BAE7D1 /* SwizzlingMethodTableViewController.m in Sources */,
 				31664AF1BEF165F12FB1ECA7 /* CountVCViewController.m in Sources */,
 			);
