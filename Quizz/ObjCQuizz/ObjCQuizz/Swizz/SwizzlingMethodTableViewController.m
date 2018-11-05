@@ -16,7 +16,7 @@
         _vcArray = @[
                 @{@"key": @"统计VC加载次数", @"value": NSClassFromString(@"CountVCViewController")},
                 @{@"key": @"防Button误触", @"value": NSClassFromString(@"SingleClickViewController")},
-
+                @{@"key": @"防数组崩溃", @"value": NSClassFromString(@"ArrayViewController")},
         ];
     }
     return _vcArray;

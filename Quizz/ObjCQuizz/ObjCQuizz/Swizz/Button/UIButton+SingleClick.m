@@ -62,7 +62,7 @@ static const char *kIgnoreEvent = "ignore";
         self.ignoreEvent = true;
         [self performSelector:@selector(setIgnoreEventWithFalse) withObject:nil afterDelay:self.acceptEventInterval];
     }
-    
+   //这里并不是递归, 已经完成替换, 实际上是调用 sendAction:to:forEvent:
     [self hx_swizzSendAction:action to:target forEvent:event];
 }
 
