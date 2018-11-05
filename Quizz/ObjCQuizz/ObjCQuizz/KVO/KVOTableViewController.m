@@ -20,7 +20,8 @@
         _vcArray = @[
                 @{@"key": @"KVO Use", @"value": NSClassFromString(@"KVOOCUseViewController")},
                 @{@"key": @"KVO RAC Use", @"value": NSClassFromString(@"KVORACUseViewController")},
-                @{@"key": @"KVO Implementation", @"value": NSClassFromString(@"KVOImplementViewController")},
+                @{@"key": @"KVO Delegate实现", @"value": NSClassFromString(@"KVOImplementViewController")},
+                @{@"key": @"KVO Block实现", @"value": NSClassFromString(@"KVOBlockViewController")},
         ];
     }
     return _vcArray;

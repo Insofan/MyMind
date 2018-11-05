@@ -38,6 +38,8 @@
 		E648A24C218AE2B9002010B8 /* UIButton+SingleClick.m in Sources */ = {isa = PBXBuildFile; fileRef = E648A24B218AE2B9002010B8 /* UIButton+SingleClick.m */; };
 		E66A86752186E48000C6AA02 /* UIButton+Block.m in Sources */ = {isa = PBXBuildFile; fileRef = E66A86742186E48000C6AA02 /* UIButton+Block.m */; };
 		E67C9A47218FE804002CDF42 /* NSArray+Safe.m in Sources */ = {isa = PBXBuildFile; fileRef = E67C9A46218FE804002CDF42 /* NSArray+Safe.m */; };
+		E67C9A4B21901894002CDF42 /* KVOBlockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E67C9A4A21901894002CDF42 /* KVOBlockViewController.m */; };
+		E67C9A4E21901A08002CDF42 /* KVO+Block.m in Sources */ = {isa = PBXBuildFile; fileRef = E67C9A4D21901A08002CDF42 /* KVO+Block.m */; };
 		E685683921816A4000F587A1 /* ProtectUnrecognizeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E685683821816A4000F587A1 /* ProtectUnrecognizeViewController.m */; };
 		E68E6F4C2159C9A000486DD0 /* KVOTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E68E6F4B2159C9A000486DD0 /* KVOTableViewController.m */; };
 		E68E6F502159CA9900486DD0 /* OCQBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E68E6F4F2159CA9900486DD0 /* OCQBaseTableViewController.m */; };
@@ -117,6 +119,10 @@
 		E66A86742186E48000C6AA02 /* UIButton+Block.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Block.m"; sourceTree = "<group>"; };
 		E67C9A45218FE804002CDF42 /* NSArray+Safe.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSArray+Safe.h"; sourceTree = "<group>"; };
 		E67C9A46218FE804002CDF42 /* NSArray+Safe.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Safe.m"; sourceTree = "<group>"; };
+		E67C9A4921901894002CDF42 /* KVOBlockViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KVOBlockViewController.h; sourceTree = "<group>"; };
+		E67C9A4A21901894002CDF42 /* KVOBlockViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KVOBlockViewController.m; sourceTree = "<group>"; };
+		E67C9A4C21901A08002CDF42 /* KVO+Block.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KVO+Block.h"; sourceTree = "<group>"; };
+		E67C9A4D21901A08002CDF42 /* KVO+Block.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "KVO+Block.m"; sourceTree = "<group>"; };
 		E685683721816A4000F587A1 /* ProtectUnrecognizeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProtectUnrecognizeViewController.h; sourceTree = "<group>"; };
 		E685683821816A4000F587A1 /* ProtectUnrecognizeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProtectUnrecognizeViewController.m; sourceTree = "<group>"; };
 		E685683A21816AB600F587A1 /* SafeMethod.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SafeMethod.h; sourceTree = "<group>"; };
@@ -161,6 +167,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3166497B53E02A640FDE7179 /* KVOBlock */ = {
+			isa = PBXGroup;
+			children = (
+				E67C9A4C21901A08002CDF42 /* KVO+Block.h */,
+				E67C9A4D21901A08002CDF42 /* KVO+Block.m */,
+			);
+			path = KVOBlock;
+			sourceTree = "<group>";
+		};
 		31664A495248BE8F2CDA3927 /* KVOImp */ = {
 			isa = PBXGroup;
 			children = (
@@ -348,6 +363,16 @@
 			path = ButtonBlock;
 			sourceTree = "<group>";
 		};
+		E67C9A4821901862002CDF42 /* KVOBlock */ = {
+			isa = PBXGroup;
+			children = (
+				E67C9A4921901894002CDF42 /* KVOBlockViewController.h */,
+				E67C9A4A21901894002CDF42 /* KVOBlockViewController.m */,
+				3166497B53E02A640FDE7179 /* KVOBlock */,
+			);
+			path = KVOBlock;
+			sourceTree = "<group>";
+		};
 		E6856836218169C000F587A1 /* ProtectUnrecognize */ = {
 			isa = PBXGroup;
 			children = (
@@ -364,6 +389,7 @@
 		E68E6F492159C98400486DD0 /* KVO */ = {
 			isa = PBXGroup;
 			children = (
+				E67C9A4821901862002CDF42 /* KVOBlock */,
 				E68E6F4A2159C9A000486DD0 /* KVOTableViewController.h */,
 				E68E6F4B2159C9A000486DD0 /* KVOTableViewController.m */,
 				E68E6F552159CC9600486DD0 /* KVOImplement */,
@@ -557,6 +583,7 @@
 				E6B7E1312159C7AC00101EDC /* ViewController.m in Sources */,
 				E62BE7B7218852E100F47833 /* UIViewController+Logging.m in Sources */,
 				E6276346217EAE7B00EDF7BE /* MsgResolveViewController.m in Sources */,
+				E67C9A4E21901A08002CDF42 /* KVO+Block.m in Sources */,
 				E685683921816A4000F587A1 /* ProtectUnrecognizeViewController.m in Sources */,
 				E68E6F542159CB9300486DD0 /* OCQBaseViewController.m in Sources */,
 				E6B7E13C2159C7AD00101EDC /* main.m in Sources */,
@@ -566,6 +593,7 @@
 				E648A24C218AE2B9002010B8 /* UIButton+SingleClick.m in Sources */,
 				E627633B217DBA5700EDF7BE /* MessageSendUseViewController.m in Sources */,
 				E68E6F4C2159C9A000486DD0 /* KVOTableViewController.m in Sources */,
+				E67C9A4B21901894002CDF42 /* KVOBlockViewController.m in Sources */,
 				E6276343217EAE6000EDF7BE /* MsgResolveObject.m in Sources */,
 				E68E6F502159CA9900486DD0 /* OCQBaseTableViewController.m in Sources */,
 				E69681222186AC5C00CE8674 /* AssociatedObjectViewController.m in Sources */,
