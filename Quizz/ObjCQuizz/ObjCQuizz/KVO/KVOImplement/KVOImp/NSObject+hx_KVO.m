@@ -7,8 +7,8 @@
 #import <objc/runtime.h>
 #import <objc/message.h>
 
-static NSString * const kHXKvoAssiociateObserver = @"HXAssiociateObserver";
-static NSString * const kHXKvoPrefix = @"HXKVO_";
+static NSString * const kHXKvoPrefix = @"HXDelegateKVO_";
+static NSString * const kHXKvoAssiociateObserver = @"HXDelegateAssiociateObserver";
 @interface HXObserverInfo : NSObject
 @property(weak, nonatomic) NSObject           *observer;
 @property(copy, nonatomic) NSString           *keyPath;

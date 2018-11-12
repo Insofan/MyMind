@@ -7,12 +7,12 @@
 //
 
 #import "KVOBlockViewController.h"
-#import "KVOObject.h"
+#import "KVOObject2.h"
 #import "KVO+Block.h"
 @interface KVOBlockViewController ()
 @property(nonatomic, strong) UIButton  *button;
 @property(strong, nonatomic) UILabel   *label;
-@property(strong, nonatomic) KVOObject *kvoObject;
+@property(strong, nonatomic) KVOObject2 *kvoObject;
 @end
 
 @implementation KVOBlockViewController
@@ -27,7 +27,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.kvoObject = [KVOObject new];
+    self.kvoObject = [KVOObject2 new];
     self.kvoObject.name = @"first name";
 
     [self.kvoObject hx_addObserver:self key:@"name" callBackBlock:^(id observedObj, NSString *observedKey, id oldVal, id newVal) {
@@ -37,6 +37,10 @@
         }];
     }];
 
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+//    [self.kvoObject hx_removeObserver:self key:@"name"];
 }
 
 /*

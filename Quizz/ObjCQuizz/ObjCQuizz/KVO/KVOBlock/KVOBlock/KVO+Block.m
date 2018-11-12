@@ -9,8 +9,8 @@
 #import "KVO+Block.h"
 #import <objc/message.h>
 #import <objc/runtime.h>
-static NSString * const kKvoClassPrefixForBlock = @"HXObserver_";
-static NSString * const kKvoAssociateObserverForBlock = @"HXAssociateObserver";
+static NSString * const kKvoClassPrefixForBlock = @"HXBlockPrefix_";
+static NSString * const kKvoAssociateObserverForBlock = @"HXBlockAssociateObserver";
 
 @interface HXObserverBlockInfo : NSObject
 @property(weak, nonatomic) NSObject           *observer;
