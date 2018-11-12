@@ -6,6 +6,8 @@
 #import "KVOImplementViewController.h"
 #import "KVOObject.h"
 #import "NSObject+hx_KVO.h"
+#import "KVO+Block.h"
+
 @interface KVOImplementViewController ()
 @property(nonatomic, strong) UIButton  *button;
 @property(strong, nonatomic) UILabel   *label;
@@ -37,9 +39,6 @@
             self.label.text = [NSString stringWithFormat:@"%@", self.kvoObject.name];
         }];
     }
-
-  
 }
-
 
 @end
