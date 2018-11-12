@@ -8,6 +8,7 @@
 
 #import "KVOBlockViewController.h"
 #import "KVOObject.h"
+#import "KVO+Block.h"
 @interface KVOBlockViewController ()
 @property(nonatomic, strong) UIButton  *button;
 @property(strong, nonatomic) UILabel   *label;
@@ -28,8 +29,13 @@
     [super viewDidLoad];
     self.kvoObject = [KVOObject new];
     self.kvoObject.name = @"first name";
-//    [self.kvoObject setName:@"first name"];
-//    [self.kvoObject hx_addObserverForObject:self keyPath:@"name"];
+
+    [self.kvoObject hx_addObserver:self key:@"name" callBackBlock:^(id observedObj, NSString *observedKey, id oldVal, id newVal) {
+        NSLog(@"Old value: %@, New value: %@", oldVal, newVal);
+        [[NSOperationQueue mainQueue] addOperationWithBlock:^{
+            self.label.text = [NSString stringWithFormat:@"%@", self.kvoObject.name];
+        }];
+    }];
 
 }
 
