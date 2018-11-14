@@ -562,13 +562,68 @@ jing
 g
 ```
 
+## Q: 简述指向指针的指针
 
+```c++
+	int a = 10, b = 20;
+    int *q = &a;
+    int **p = &q;
+    **p = 30;
+    
+    cout << a << endl;
+    cout << b << endl;
 
+输出:	
+30
+20
+```
 
+指针指向指针, 称为指向指针的指针,p 指向指针的指针, 
 
+指针q指向a, *q等于a, 指针p指向q, *p等于q, 推出**p等于a, 
 
+把最近的星包进去, 就说明这个变量是一个什么类型的变量, 则*p是 int *指针, **p是int类型
 
+## Q: 指针作为参数常见错误
 
+```c++
+int find(char *s, char ch, char *sub) {
+    for (int i = 0; *(s + i) != '\0'; i++) {
+        if (*(s + i) == ch) {
+           sub = s +i + 1;
+            return i;
+        }
+    }
+    return 0;
+}
+
+//////////////////////////////////
+char fullName[] = {"Jordan#Michael"};
+char *givenName;
+int cnt = find(fullName, '#', givenName);
+cout << givenName << "has a " << cnt << " characters'family name" << endl;
+```
+
+答案不对, 在find函数调用前 givenName没有初始化, 指向一个随机的地址空间, 调用find函数时, 将givenName的地址作为参数传递给形参sub, sub值发生变化, 将分隔符后面字符的地址赋值给sub,指向J, 而此时givenName的值并没有发生变化, 仍是指向原来的空间.函数调用后, givenName仍旧没有被初始化和赋值.
+
+```c++
+int find2(char *s, char ch, char **psub) {
+    for (int i = 0; *(s + i) != '\0'; i++) {
+        if (*(s + i) == ch) {
+            *psub = s +i + 1;
+            return i;
+        }
+    }
+    return 0;
+}
+//////////////////////////////////
+ char fullName2[] = {"Jordan#Michael"};
+    char *givenName2 = NULL;
+    int cnt2 = find2(fullName2, '#', &givenName2);
+    cout << givenName2 << " has a " << cnt2 << " characters'family name" << endl;
+```
+
+此时, 将givenName的地址作为参数传递给find函数的形参psub, 此时find函数内修改会修改givenName
 
 
 
