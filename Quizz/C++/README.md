@@ -625,11 +625,93 @@ int find2(char *s, char ch, char **psub) {
 
 此时, 将givenName的地址作为参数传递给find函数的形参psub, 此时find函数内修改会修改givenName
 
+## Q: 函数指针基本用法
 
+```c++
+int max(int a, int b) {
+    return  a > b ? a : b;
+}
+int (*p)(int, int) = max;
+int main() {
+    int x = 10;
+    int y = 20;
+    //这两种写法相等,
+    //int z = p(x, y);
+    int z = (*p) (x, y);
+    cout << z << endl;
+    return 0;
+}
+```
 
+指针变量可以指向任何类型的数据, 也可以指向函数
 
+每个函数在内存中都占一段存储单元, 这段存储单元地址称为函数入口地址, 指向这个函数入口地址的指针称为函数指针
 
+注意类型要匹配, 括号不可少
 
+## Q: 通过函数指针进行四则运算
+
+第一版, 可扩展性差
+
+```c++
+#include <iostream>
+
+using namespace std;
+
+int add(int a, int b) { return  a + b;}
+int myMinus(int a, int b) { return a - b;}
+int multi(int a, int b) { return  a * b;}
+
+int process(int a, int b, char operation) {
+    switch (operation) {
+        case '+':
+            return add(a, b);
+        case '-':
+            return myMinus(a, b);
+        case '*':
+            return multi(a, b);
+        default:
+            return 0;
+    }
+}
+
+int main() {
+
+    int a = 10, b = 20;
+    int res1 = process(a, b, '+');
+    int res2 = process(a, b, '-');
+    int res3 = process(a, b, '*');
+
+    cout << res1 << " " << res2 << " " << res3 << endl;
+
+    return 0;
+}
+```
+
+优化版
+
+```c++
+#include <iostream>
+
+using namespace std;
+
+int add(int a, int b) { return  a + b;}
+int myMinus(int a, int b) { return a - b;}
+int multi(int a, int b) { return  a * b;}
+
+int process(int a, int b, int (*func) (int, int)) {
+    return func(a, b);
+}
+
+int main() {
+    int a = 10, b = 20;
+    int res1 = process(a, b, add);
+    int res2 = process(a, b, myMinus);
+    int res3 = process(a, b, multi);
+    cout << res1 << " " << res2 << " " << res3 << endl;
+    return 0;
+}
+```
 
 
 
