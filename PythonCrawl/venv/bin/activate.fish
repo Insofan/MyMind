@@ -29,7 +29,7 @@ end
 # unset irrelevant variables
 deactivate nondestructive
 
-set -gx VIRTUAL_ENV "/home/inso/Desktop/Go/src/MyMind/PythonCrawl/venv"
+set -gx VIRTUAL_ENV "/Users/inso/Desktop/Go/src/MyMind/PythonCrawl/venv"
 
 set -gx _OLD_VIRTUAL_PATH $PATH
 set -gx PATH "$VIRTUAL_ENV/bin" $PATH

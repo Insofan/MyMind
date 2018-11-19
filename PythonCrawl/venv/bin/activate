@@ -37,7 +37,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="/home/inso/Desktop/Go/src/MyMind/PythonCrawl/venv"
+VIRTUAL_ENV="/Users/inso/Desktop/Go/src/MyMind/PythonCrawl/venv"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
