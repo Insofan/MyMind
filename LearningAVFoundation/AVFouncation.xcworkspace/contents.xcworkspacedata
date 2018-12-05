@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <Group
+      location = "group:Chapter 1"
+      name = "Chapter 1">
+      <Group
+         location = "group:HelloAVF_Starter"
+         name = "HelloAVF_Starter">
+         <Group
+            location = "group:Hello AV Foundation"
+            name = "Hello AV Foundation">
+            <FileRef
+               location = "group:THAppDelegate.h">
+            </FileRef>
+            <Group
+               location = "group:en.lproj"
+               name = "en.lproj">
+               <FileRef
+                  location = "group:InfoPlist.strings">
+               </FileRef>
+            </Group>
+            <FileRef
+               location = "group:Hello AV Foundation-Info.plist">
+            </FileRef>
+            <FileRef
+               location = "group:THAppDelegate.m">
+            </FileRef>
+            <FileRef
+               location = "group:THSpeechController.h">
+            </FileRef>
+            <FileRef
+               location = "group:THSpeechController.m">
+            </FileRef>
+            <FileRef
+               location = "group:THViewController.h">
+            </FileRef>
+            <FileRef
+               location = "group:THViewController.m">
+            </FileRef>
+            <FileRef
+               location = "group:THBubbleCell.h">
+            </FileRef>
+            <FileRef
+               location = "group:THBubbleCell.m">
+            </FileRef>
+            <Group
+               location = "group:Base.lproj"
+               name = "Base.lproj">
+               <FileRef
+                  location = "group:Main.storyboard">
+               </FileRef>
+            </Group>
+            <FileRef
+               location = "group:main.m">
+            </FileRef>
+            <Group
+               location = "group:Images.xcassets"
+               name = "Images.xcassets">
+               <Group
+                  location = "group:bubble_left.imageset"
+                  name = "bubble_left.imageset">
+                  <FileRef
+                     location = "group:bubble_left.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:bubble_left@2x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:bubble_right.imageset"
+                  name = "bubble_right.imageset">
+                  <FileRef
+                     location = "group:bubble_right@2x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:bubble_right.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:AppIcon.appiconset"
+                  name = "AppIcon.appiconset">
+                  <FileRef
+                     location = "group:Icon-76@2x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Icon-40@2x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Icon-40@3x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Icon-Small.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Icon-60@3x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Icon-76.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Icon-60@2x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Icon-40.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Icon-Small@3x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Icon-Small@2x.png">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:LaunchImage.launchimage"
+                  name = "LaunchImage.launchimage">
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+               </Group>
+            </Group>
+            <FileRef
+               location = "group:Hello AV Foundation-Prefix.pch">
+            </FileRef>
+         </Group>
+         <FileRef
+            location = "group:Hello AV Foundation.xcodeproj">
+         </FileRef>
+      </Group>
+   </Group>
+</Workspace>
