@@ -2,6 +2,378 @@
 <Workspace
    version = "1.0">
    <Group
+      location = "group:Chapter 2"
+      name = "Chapter 2">
+      <Group
+         location = "group:AudioLooper_Starter"
+         name = "AudioLooper_Starter">
+         <FileRef
+            location = "group:AudioLooper.xcodeproj">
+         </FileRef>
+         <Group
+            location = "group:AudioLooper"
+            name = "AudioLooper">
+            <FileRef
+               location = "group:THMainViewController.h">
+            </FileRef>
+            <FileRef
+               location = "group:THAppDelegate.h">
+            </FileRef>
+            <Group
+               location = "group:en.lproj"
+               name = "en.lproj">
+               <FileRef
+                  location = "group:InfoPlist.strings">
+               </FileRef>
+            </Group>
+            <FileRef
+               location = "group:THPlayerController.h">
+            </FileRef>
+            <FileRef
+               location = "group:AudioLooper-Prefix.pch">
+            </FileRef>
+            <Group
+               location = "group:Base.lproj"
+               name = "Base.lproj">
+               <FileRef
+                  location = "group:Main.storyboard">
+               </FileRef>
+            </Group>
+            <FileRef
+               location = "group:THAppDelegate.m">
+            </FileRef>
+            <FileRef
+               location = "group:THMainViewController.m">
+            </FileRef>
+            <FileRef
+               location = "group:main.m">
+            </FileRef>
+            <FileRef
+               location = "group:AudioLooper-Info.plist">
+            </FileRef>
+            <Group
+               location = "group:Images.xcassets"
+               name = "Images.xcassets">
+               <Group
+                  location = "group:AppIcon.appiconset"
+                  name = "AppIcon.appiconset">
+                  <FileRef
+                     location = "group:Icon-76@2x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Icon-40@2x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Icon-40@3x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Icon-Small.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Icon-60@3x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Icon-76.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Icon-60@2x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Icon-40.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Icon-Small@3x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Icon-Small@2x.png">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:guitar.imageset"
+                  name = "guitar.imageset">
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+                  <FileRef
+                     location = "group:guitar.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:guitar@2x.png">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:drum.imageset"
+                  name = "drum.imageset">
+                  <FileRef
+                     location = "group:drum@2x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:drum.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:LaunchImage.launchimage"
+                  name = "LaunchImage.launchimage">
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:bass.imageset"
+                  name = "bass.imageset">
+                  <FileRef
+                     location = "group:bass.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+                  <FileRef
+                     location = "group:bass@2x.png">
+                  </FileRef>
+               </Group>
+            </Group>
+            <Group
+               location = "group:Loops"
+               name = "Loops">
+               <FileRef
+                  location = "group:drums.caf">
+               </FileRef>
+               <FileRef
+                  location = "group:guitar.caf">
+               </FileRef>
+               <FileRef
+                  location = "group:bass.caf">
+               </FileRef>
+            </Group>
+            <FileRef
+               location = "group:THPlayerController.m">
+            </FileRef>
+            <Group
+               location = "group:Views"
+               name = "Views">
+               <FileRef
+                  location = "group:THPlayButton.h">
+               </FileRef>
+               <FileRef
+                  location = "group:UIColor+THAdditions.h">
+               </FileRef>
+               <FileRef
+                  location = "group:THControlKnob.m">
+               </FileRef>
+               <FileRef
+                  location = "group:THIndicatorLight.m">
+               </FileRef>
+               <FileRef
+                  location = "group:THPlayButton.m">
+               </FileRef>
+               <FileRef
+                  location = "group:THControlKnob.h">
+               </FileRef>
+               <FileRef
+                  location = "group:UIColor+THAdditions.m">
+               </FileRef>
+               <FileRef
+                  location = "group:THIndicatorLight.h">
+               </FileRef>
+            </Group>
+         </Group>
+      </Group>
+      <Group
+         location = "group:VoiceMemo_Starter"
+         name = "VoiceMemo_Starter">
+         <Group
+            location = "group:VoiceMemo"
+            name = "VoiceMemo">
+            <FileRef
+               location = "group:THMemo.m">
+            </FileRef>
+            <FileRef
+               location = "group:THAppDelegate.h">
+            </FileRef>
+            <Group
+               location = "group:en.lproj"
+               name = "en.lproj">
+               <FileRef
+                  location = "group:InfoPlist.strings">
+               </FileRef>
+            </Group>
+            <FileRef
+               location = "group:THLevelMeterView.m">
+            </FileRef>
+            <FileRef
+               location = "group:THLevelMeterColorThreshold.m">
+            </FileRef>
+            <FileRef
+               location = "group:VoiceMemo-Info.plist">
+            </FileRef>
+            <FileRef
+               location = "group:THRecorderController.h">
+            </FileRef>
+            <FileRef
+               location = "group:THLevelPair.m">
+            </FileRef>
+            <FileRef
+               location = "group:THMemoCell.m">
+            </FileRef>
+            <FileRef
+               location = "group:THMeterTable.h">
+            </FileRef>
+            <Group
+               location = "group:Base.lproj"
+               name = "Base.lproj">
+               <FileRef
+                  location = "group:Main.storyboard">
+               </FileRef>
+            </Group>
+            <FileRef
+               location = "group:MainViewController.m">
+            </FileRef>
+            <FileRef
+               location = "group:THAppDelegate.m">
+            </FileRef>
+            <FileRef
+               location = "group:THMemo.h">
+            </FileRef>
+            <FileRef
+               location = "group:main.m">
+            </FileRef>
+            <FileRef
+               location = "group:THLevelMeterColorThreshold.h">
+            </FileRef>
+            <Group
+               location = "group:Images.xcassets"
+               name = "Images.xcassets">
+               <Group
+                  location = "group:transport_bg.imageset"
+                  name = "transport_bg.imageset">
+                  <FileRef
+                     location = "group:transport_bg.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:transport_bg@2x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:pause.imageset"
+                  name = "pause.imageset">
+                  <FileRef
+                     location = "group:pause@2x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:pause.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:AppIcon.appiconset"
+                  name = "AppIcon.appiconset">
+                  <FileRef
+                     location = "group:Icon-76@2x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Icon-40@2x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Icon-40@3x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Icon-Small.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Icon-60@3x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Icon-76.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Icon-60@2x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Icon-40.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Icon-Small@3x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Icon-Small@2x.png">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:stop.imageset"
+                  name = "stop.imageset">
+                  <FileRef
+                     location = "group:stop.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+                  <FileRef
+                     location = "group:stop@2x.png">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:LaunchImage.launchimage"
+                  name = "LaunchImage.launchimage">
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:record.imageset"
+                  name = "record.imageset">
+                  <FileRef
+                     location = "group:play@2x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+                  <FileRef
+                     location = "group:play.png">
+                  </FileRef>
+               </Group>
+            </Group>
+            <FileRef
+               location = "group:THLevelMeterView.h">
+            </FileRef>
+            <FileRef
+               location = "group:VoiceMemo-Prefix.pch">
+            </FileRef>
+            <FileRef
+               location = "group:MainViewController.h">
+            </FileRef>
+            <FileRef
+               location = "group:THMeterTable.m">
+            </FileRef>
+            <FileRef
+               location = "group:THMemoCell.h">
+            </FileRef>
+            <FileRef
+               location = "group:THLevelPair.h">
+            </FileRef>
+            <FileRef
+               location = "group:THRecorderController.m">
+            </FileRef>
+         </Group>
+         <FileRef
+            location = "group:VoiceMemo.xcodeproj">
+         </FileRef>
+      </Group>
+   </Group>
+   <Group
       location = "group:Chapter 1"
       name = "Chapter 1">
       <Group
