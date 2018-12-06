@@ -29,6 +29,18 @@
 @implementation THAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    //铃声静音关闭下 依然可以播放
+    AVAudioSession *session = [AVAudioSession sharedInstance];
+    NSError *err;
+    //指定category 分类,
+    if (![session setCategory:AVAudioSessionCategoryPlayback error:&err]) {
+        NSLog(@"Category Error: %@", [err localizedDescription]);
+    }
+
+    //用setActive 来传递true激活会话
+    if (![session setActive:true error:&err]) {
+        NSLog(@"Activation Error: %@", [err localizedDescription]);
+    }
 
     return YES;
 }

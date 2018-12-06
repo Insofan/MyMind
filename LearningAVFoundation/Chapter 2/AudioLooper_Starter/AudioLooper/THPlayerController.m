@@ -41,6 +41,12 @@
         AVAudioPlayer *bassPlayer = [self playForFile:@"bass"];
         AVAudioPlayer *drumsPlayer = [self playForFile:@"drums"];
         _players = @[guitarPlayer, bassPlayer, drumsPlayer];
+
+        NSNotificationCenter *nsnc = [NSNotificationCenter defaultCenter];
+
+        [nsnc addObserver:self selector:@selector(handleInterruption:)
+                name:AVAudioSessionInterruptionNotification
+                   object:[AVAudioSession sharedInstance]];
     }
      return self;
 }
@@ -106,6 +112,10 @@
 
 - (bool)isValidIndex:(NSUInteger)index {
     return index == 0 || index < self.players.count;
+}
+
+- (void)handleInterruption:(NSNotification *)notification{
+
 }
 
 @end
