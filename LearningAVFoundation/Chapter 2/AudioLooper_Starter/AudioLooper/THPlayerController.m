@@ -90,11 +90,22 @@
 }
 
 - (void)adjustPan:(float)pan forPlayerAtIndex:(NSUInteger)index {
+    if ([self isValidIndex:index]) {
+        AVAudioPlayer *player = self.players[index];
+        player.pan = pan;
+    }
 
 }
 
 - (void)adjustVolume:(float)volume forPlayerAtIndex:(NSUInteger)index {
+    if ([self isValidIndex:index]) {
+        AVAudioPlayer *player = self.players[index];
+        player.volume = volume;
+    }
+}
 
+- (bool)isValidIndex:(NSUInteger)index {
+    return index == 0 || index < self.players.count;
 }
 
 @end
