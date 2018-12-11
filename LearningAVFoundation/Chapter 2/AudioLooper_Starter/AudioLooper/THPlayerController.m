@@ -165,7 +165,6 @@
             [self stop];
             [self.delegate playbackStopped];
         }
-
     }
 }
 

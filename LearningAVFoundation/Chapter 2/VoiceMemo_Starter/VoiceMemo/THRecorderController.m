@@ -34,6 +34,7 @@
 @property (strong, nonatomic) AVAudioPlayer *player;
 @property (strong, nonatomic) AVAudioRecorder *recorder;
 @property (strong, nonatomic) THRecordingStopCompletionHandler completionHandler;
+@property (strong, nonatomic) THMeterTable *meterTable;
 
 @end
 
@@ -42,40 +43,111 @@
 - (id)init {
     self = [super init];
     if (self) {
+        NSString *tmpDir = NSTemporaryDirectory();
+        NSString *filePath = [tmpDir stringByAppendingPathComponent:@"memo.caf"];
+        NSURL *fileURL  = [NSURL fileURLWithPath:filePath];
 
+        NSDictionary *setting = @{
+                //设置格式
+                AVFormatIDKey: @(kAudioFormatAppleIMA4),
+                //设置采样率
+                AVSampleRateKey: @44100.0f,
+                //设置声道, 如果没有外接设备, 应该设为1
+                AVNumberOfChannelsKey: @1,
+                //位深16位
+                AVEncoderBitDepthHintKey: @16,
+                AVEncoderAudioQualityKey: @(AVAudioQualityMedium),
+        };
+
+        NSError *err;
+        self.recorder = [[AVAudioRecorder alloc] initWithURL:fileURL settings:setting error:&err];
+
+        if (self.recorder) {
+            self.recorder.delegate = self;
+            [self.recorder prepareToRecord];
+        } else {
+            NSLog(@"Err: %@", [err localizedDescription]);
+        }
+
+        _meterTable = [[THMeterTable alloc] init];
     }
     return self;
 }
 
 - (BOOL)record {
-    return NO;
+    return [self.recorder record];
 }
 
 - (void)pause {
-
+    [self.recorder pause];
 }
 
+//这种设计方式很有意思, 函数设计一个Block, 在m文件里设置一个property 属性是 block 让 函数block 等于 属性block, 然后在其他的代理里面用block传值
 - (void)stopWithCompletionHandler:(THRecordingStopCompletionHandler)handler {
-
+    self.completionHandler = handler;
+    [self.recorder stop];
 }
 
 - (void)audioRecorderDidFinishRecording:(AVAudioRecorder *)recorder successfully:(BOOL)success {
-
+    if (self.completionHandler) {
+        self.completionHandler(success);
+    }
 }
 
 - (void)saveRecordingWithName:(NSString *)name completionHandler:(THRecordingSaveCompletionHandler)handler {
+    NSTimeInterval timestamp = [NSDate timeIntervalSinceReferenceDate];
+    NSString *filename = [NSString stringWithFormat:@"%@-%f.m4a", name, timestamp];
+    NSString *docksDir = [self documentsDirectory];
+    NSString *destPath = [docksDir stringByAppendingPathComponent:filename];
+    NSURL *srcURL= self.recorder.url;
+    NSURL *destURL = [NSURL fileURLWithPath:destPath];
+    NSError *err;
+    BOOL success = [[NSFileManager defaultManager] copyItemAtURL:srcURL toURL:destURL error:&err];
 
+    if (success) {
+        handler(true, [THMemo memoWithTitle:name url:destURL]);
+        [self.recorder prepareToRecord];
+    } else {
+        handler(false, err);
+    }
+}
+
+- (NSString *)documentsDirectory {
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, true);
+    return [paths objectAtIndex:0];
 }
 
 - (THLevelPair *)levels {
-    return nil;
+    [self.recorder updateMeters];
+    float avgPower = [self.recorder averagePowerForChannel:0];
+    float peakPower = [self.recorder peakPowerForChannel:0];
+    float linearLevel = [self.meterTable valueForPower:avgPower];
+    float linearPeak = [self.meterTable valueForPower:peakPower];
+    return [THLevelPair levelsWithLevel:linearLevel peakLevel:linearPeak];
 }
 
 - (NSString *)formattedCurrentTime {
-    return @"00:00:00";
+    NSUInteger time = (NSUInteger)self.recorder.currentTime;
+    NSInteger hours = (time / 3600);
+    NSInteger minutes = (time / 60) % 60;
+    NSInteger seconds = time % 60;
+    NSString *format = @"%02i:%02i:%02i";
+    //AVPlayer 等大概率不可使用KVO
+    return [NSString stringWithFormat:format, hours, minutes, seconds];
 }
 
 - (BOOL)playbackMemo:(THMemo *)memo {
+    [self.player stop];
+    NSError *err;
+    self.player = [[AVAudioPlayer alloc] initWithContentsOfURL:memo.url error:&err];
+
+    if (err) {
+        NSLog(@"err %@", [err localizedDescription]);
+    }
+    if (self.player) {
+        [self.player play];
+        return true;
+    }
     return NO;
 }
 
