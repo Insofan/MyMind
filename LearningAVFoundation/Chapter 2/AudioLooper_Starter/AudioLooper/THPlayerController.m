@@ -44,9 +44,12 @@
 
         NSNotificationCenter *nsnc = [NSNotificationCenter defaultCenter];
 
+        /*
         [nsnc addObserver:self selector:@selector(handleInterruption:)
                 name:AVAudioSessionInterruptionNotification
                    object:[AVAudioSession sharedInstance]];
+         */
+        [nsnc addObserver:self selector:@selector(handleRouteChange:) name:AVAudioSessionRouteChangeNotification object:[AVAudioSession sharedInstance]];
     }
      return self;
 }
@@ -115,7 +118,55 @@
 }
 
 - (void)handleInterruption:(NSNotification *)notification{
+    NSDictionary *info = notification.userInfo;
+    AVAudioSessionInterruptionType type = [info[AVAudioSessionInterruptionTypeKey] unsignedIntegerValue];
+    /**
+     * 判断打断开始, 结束
+     */
+    if (type == AVAudioSessionInterruptionTypeBegan) {
+        [self stop];
+        if (self.delegate) {
+            [self.delegate playbackStopped];
+        }
+    }else {
+        /**
+         * AVAudioSessionInterruptionTypeEnded, userInfo字典里会包含一个 AVAudioSessionInterruptionOptions值来表名音频会话是否已经重新激活, 以及是否可以再次播放
+         */
+         AVAudioSessionInterruptionOptions options = [info[AVAudioSessionInterruptionOptionKey] unsignedIntegerValue];
+         if (options == AVAudioSessionInterruptionOptionShouldResume) {
+             [self play];
+             if (self.delegate) {
+                 [self.delegate playbackBegan];
+             }
+         }
 
+    }
+}
+
+/**
+ * 耳机断开时停止播放
+ * @param notification
+ */
+- (void)handleRouteChange:(NSNotification *)notification{
+    /**
+     * 线路变换例如用户断开耳机时, 应该停止播放
+     */
+
+    NSDictionary *info = notification.userInfo;
+    AVAudioSessionRouteChangeReason reason = [info[AVAudioSessionRouteChangeReasonKey] unsignedIntegerValue];
+
+    //耳机断开
+    if (reason == AVAudioSessionRouteChangeReasonOldDeviceUnavailable) {
+        AVAudioSessionRouteDescription *previousRoute = info[AVAudioSessionRouteChangePreviousRouteKey];
+        AVAudioSessionPortDescription *previousOutput = previousRoute.outputs[0];
+        NSString *portType = previousOutput.portType;
+
+        if ([portType isEqualToString:AVAudioSessionPortHeadphones]) {
+            [self stop];
+            [self.delegate playbackStopped];
+        }
+
+    }
 }
 
 @end
