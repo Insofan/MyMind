@@ -2,6 +2,176 @@
 <Workspace
    version = "1.0">
    <Group
+      location = "group:/Users/inso/Desktop/Go/src/MyMind/LearningAVFoundation/Chapter 3"
+      name = "Chapter 3">
+      <Group
+         location = "group:MetaManager_Starter"
+         name = "MetaManager_Starter">
+         <Group
+            location = "group:MetaManager"
+            name = "MetaManager">
+            <FileRef
+               location = "group:THGenre.h">
+            </FileRef>
+            <FileRef
+               location = "group:AVMetadataItem+THAdditions.m">
+            </FileRef>
+            <FileRef
+               location = "group:MetaManager-Prefix.pch">
+            </FileRef>
+            <FileRef
+               location = "group:THMetadata.m">
+            </FileRef>
+            <FileRef
+               location = "group:THAppDelegate.h">
+            </FileRef>
+            <Group
+               location = "group:en.lproj"
+               name = "en.lproj">
+               <FileRef
+                  location = "group:InfoPlist.strings">
+               </FileRef>
+               <FileRef
+                  location = "group:Credits.rtf">
+               </FileRef>
+               <FileRef
+                  location = "group:MainMenu.xib">
+               </FileRef>
+            </Group>
+            <FileRef
+               location = "group:THTrackMetadataConverter.h">
+            </FileRef>
+            <FileRef
+               location = "group:THDefaultMetadataConverter.m">
+            </FileRef>
+            <FileRef
+               location = "group:THMetadataConverterFactory.h">
+            </FileRef>
+            <FileRef
+               location = "group:THDiscMetadataConverter.m">
+            </FileRef>
+            <FileRef
+               location = "group:THCommentMetadataConverter.m">
+            </FileRef>
+            <FileRef
+               location = "group:AppIcon.icns">
+            </FileRef>
+            <FileRef
+               location = "group:THArtworkMetadataConverter.h">
+            </FileRef>
+            <FileRef
+               location = "group:NSFileManager+DirectoryLocations.h">
+            </FileRef>
+            <FileRef
+               location = "group:THMediaItem.h">
+            </FileRef>
+            <FileRef
+               location = "group:THGenreMetadataConverter.m">
+            </FileRef>
+            <FileRef
+               location = "group:THMainWindowController.h">
+            </FileRef>
+            <FileRef
+               location = "group:THMetadataKeys.m">
+            </FileRef>
+            <FileRef
+               location = "group:THNumberFormatter.m">
+            </FileRef>
+            <FileRef
+               location = "group:THDefaultMetadataConverter.h">
+            </FileRef>
+            <FileRef
+               location = "group:MetaManager-Info.plist">
+            </FileRef>
+            <FileRef
+               location = "group:THTrackMetadataConverter.m">
+            </FileRef>
+            <FileRef
+               location = "group:THAppDelegate.m">
+            </FileRef>
+            <FileRef
+               location = "group:THMetadata.h">
+            </FileRef>
+            <FileRef
+               location = "group:AVMetadataItem+THAdditions.h">
+            </FileRef>
+            <FileRef
+               location = "group:THGenre.m">
+            </FileRef>
+            <FileRef
+               location = "group:main.m">
+            </FileRef>
+            <FileRef
+               location = "group:THMainWindow.xib">
+            </FileRef>
+            <FileRef
+               location = "group:Attribution">
+            </FileRef>
+            <FileRef
+               location = "group:THMetadataConverterFactory.m">
+            </FileRef>
+            <FileRef
+               location = "group:THMetadataConverter.h">
+            </FileRef>
+            <FileRef
+               location = "group:THNumberFormatter.h">
+            </FileRef>
+            <FileRef
+               location = "group:THMainWindowController.m">
+            </FileRef>
+            <FileRef
+               location = "group:THMetadataKeys.h">
+            </FileRef>
+            <FileRef
+               location = "group:THGenreMetadataConverter.h">
+            </FileRef>
+            <FileRef
+               location = "group:THMediaItem.m">
+            </FileRef>
+            <FileRef
+               location = "group:NSFileManager+DirectoryLocations.m">
+            </FileRef>
+            <FileRef
+               location = "group:THArtworkMetadataConverter.m">
+            </FileRef>
+            <FileRef
+               location = "group:THCommentMetadataConverter.h">
+            </FileRef>
+            <Group
+               location = "group:Media"
+               name = "Media">
+               <FileRef
+                  location = "group:Charlie The Unicorn.m4v">
+               </FileRef>
+               <FileRef
+                  location = "group:Hubblecast.mov">
+               </FileRef>
+               <FileRef
+                  location = "group:02 Demo ID3v2.2.mp3">
+               </FileRef>
+               <FileRef
+                  location = "group:03 Demo ID3v2.3.mp3">
+               </FileRef>
+               <FileRef
+                  location = "group:01 Demo AAC.m4a">
+               </FileRef>
+               <FileRef
+                  location = "group:04 Demo ID3v2.4.mp3">
+               </FileRef>
+            </Group>
+            <FileRef
+               location = "group:THDiscMetadataConverter.h">
+            </FileRef>
+         </Group>
+         <FileRef
+            location = "group:MetaManager.xcodeproj">
+         </FileRef>
+         <FileRef
+            location = "group:AppIcon.icns">
+         </FileRef>
+      </Group>
+   </Group>
+   <Group
       location = "group:Chapter 2"
       name = "Chapter 2">
       <Group
