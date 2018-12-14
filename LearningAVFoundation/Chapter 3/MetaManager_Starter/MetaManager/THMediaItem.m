@@ -44,6 +44,16 @@
     self = [super init];
     if (self) {
         // Listing 3.3
+        _url = url;
+        _asset = [AVAsset assetWithURL:url];
+        _filename = [url lastPathComponent];
+        _filetype = [self fileTypeForURL:url];
+        _editable = ![_filetype isEqualToString:AVFileTypeMPEGLayer3];
+        _acceptedFormats = @[
+                             AVMetadataFormatQuickTimeMetadata,
+                             AVMetadataFormatiTunesMetadata,
+                             AVMetadataFormatID3Metadata,
+                             ];
     }
     return self;
 }
@@ -51,14 +61,55 @@
 - (NSString *)fileTypeForURL:(NSURL *)url {
 
     // Listing 3.3
+    NSString *ext = [[self.url lastPathComponent] pathExtension];
+    NSString *type = nil;
+    if ([ext isEqualToString:@"m4a"]) {
+        type = AVFileTypeAppleM4A;
+    } else if ([ext isEqualToString:@"m4v"]) {
+        type = AVFileTypeAppleM4V;
+    } else if ([ext isEqualToString:@"mov"]) {
+        type = AVFileTypeQuickTimeMovie;
+    } else if ([ext isEqualToString:@"mp4"]) {
+        type = AVFileTypeMPEG4;
+    } else {
+        type = AVFileTypeMPEGLayer3;
+    }
     
-    return nil;
-    
+    return type;
 }
 
 - (void)prepareWithCompletionHandler:(THCompletionHandler)completionHandler {
     
     // Listing 3.4
+    if(self.prepared) {
+        completionHandler(self.prepared);
+        return;
+    }
+    self.metadata = [THMetadata new];
+    NSArray *keys = @[COMMON_META_KEY, AVAILABLE_META_KEY];
+    // 异步加载属性
+    [self.asset loadValuesAsynchronouslyForKeys:keys completionHandler:^{
+        AVKeyValueStatus commonStatus = [self.asset statusOfValueForKey:COMMON_META_KEY error:nil];
+        AVKeyValueStatus formatsStatus = [self.asset statusOfValueForKey:AVAILABLE_META_KEY error:nil];
+        self.prepared = (commonStatus == AVKeyValueStatusLoaded) && (formatsStatus == AVKeyValueStatusLoaded);
+        if (self.prepared) {
+            for (AVMetadataItem *item in self.asset.commonMetadata) {
+                [self.metadata addMetadataItem:item withKey:item.commonKey];
+            }
+        }
+        
+        for (id format in self.asset.availableMetadataFormats) {
+            if ([self.acceptedFormats containsObject:format]) {
+                NSArray * items = [self.asset metadataForFormat:format];
+                
+                for (AVMetadataItem *item in items) {
+                    [self.metadata addMetadataItem:item withKey:item.keyString];
+                }
+            }
+        }
+        
+        completionHandler(self.prepared);
+    }];
 }
 
 - (void)saveWithCompletionHandler:(THCompletionHandler)handler {

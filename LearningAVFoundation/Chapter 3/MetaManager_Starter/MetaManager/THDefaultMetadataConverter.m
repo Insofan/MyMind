@@ -31,15 +31,17 @@
 
     // Listing 3.10
     
-    return nil;
+    return item.value;
 }
 
 - (AVMetadataItem *)metadataItemFromDisplayValue:(id)value
                                 withMetadataItem:(AVMetadataItem *)item {
     
     // Listing 3.10
-    
-    return nil;
+    //有些属性是只读属性, 所以需要拷贝
+    AVMutableMetadataItem *metadataItem = [item mutableCopy];
+    metadataItem.value = value;
+    return metadataItem;
 }
 
 @end

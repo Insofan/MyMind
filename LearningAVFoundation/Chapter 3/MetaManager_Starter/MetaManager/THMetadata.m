@@ -40,6 +40,9 @@
     if (self) {
         
         // Listing 3.6
+        _keyMapping = [self buildKeyMapping];
+        _metadata = [NSMutableDictionary dictionary];
+        _converterFactory = [[THMetadataConverterFactory alloc] init];
         
     }
     return self;
@@ -116,6 +119,23 @@
 - (void)addMetadataItem:(AVMetadataItem *)item withKey:(id)key {
 
     // Listing 3.7
+    NSString * normalizedKey = self.keyMapping[key];
+    if (normalizedKey) {
+        id <THMetadataConverter> converter = [self.converterFactory converterForKey:normalizedKey];
+        id value = [converter displayValueFromMetadataItem:item];
+        
+        if ([value  isKindOfClass:[NSDictionary class]]) {
+            NSDictionary *data = (NSDictionary *)value;
+            for (NSString *currentKey in data) {
+                [self setValue:data[currentKey] forKey:currentKey];
+            }
+
+        } else {
+            [self setValue:value forKey:normalizedKey];
+        }
+        // Store the AVMetadataItem away for later use
+        self.metadata[normalizedKey] = item;                                // 4
+    }
     
 }
 
