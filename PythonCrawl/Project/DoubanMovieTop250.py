@@ -24,7 +24,7 @@ proxies = {
 }
 
 def get_movie_url(url):
-    html = requests.get(url, headers=headers, proxies=proxies)
+    html = requests.get(url, headers=headers)
     selector = etree.HTML(html.text)
     movie_hrefs = selector.xpath('//div[@class="hd"]/a/@href')
     for movie_href in movie_hrefs:

@@ -13,5 +13,6 @@
 | [Objective-C高级编程 iOS与OS X多线程和内存管理](https://item.jd.com/11258970.html) |
 |  [CSS 实战手册(第四版)](https://item.jd.com/12053508.html)   |
 |  [Python核心编程(第2版)](https://item.jd.com/10062788.html)  |
-|       [Docker实战](https://item.jd.com/12013041.html)        |
+|     [第一本Docker书](https://item.jd.com/11909234.html)      |
+|     [Angular权威教程](https://item.jd.com/12176534.html)     |
 
