@@ -11,8 +11,8 @@ import {Article} from './article.model';
   }
 })
 export class ArticleComponent implements OnInit {
-  // @Input() article: Article;
-  article: Article;
+  @Input() article: Article;
+  // article: Article;
   constructor() {
     this.article = new Article(
       'Angular 2',

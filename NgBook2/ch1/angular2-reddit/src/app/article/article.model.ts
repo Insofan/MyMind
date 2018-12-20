@@ -17,6 +17,7 @@ export class Article {
     this.votes -= 1;
   }
 
+  // 重定向
   domain(): string {
     try {
       const link: string = this.link.split('//')[1];
