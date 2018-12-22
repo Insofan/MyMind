@@ -1,0 +1,15 @@
+.bg {
+  display: flex;
+  background-color: #ffffff;
+  margin-top: 80px;
+  margin-left: 10%;
+  width: 80%;
+  /*border: 1px solid  rgba(34,36,38,.15);*/
+  flex-direction: column;
+}
+p {
+  font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;
+  line-height: 1.5;
+  font-size: 2.0rem;
+}
+

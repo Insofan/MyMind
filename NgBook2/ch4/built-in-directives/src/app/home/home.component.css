@@ -54,12 +54,18 @@
 .ant-layout {
   background-color: white;
 }
-.sider {
+
+.ant-layout-sider {
   background-color: white;
-  border: 1px solid  rgba(34,36,38,.15);
-  margin-top: 80px;
   margin-left: 13%;
-  /*min-width: 200px;*/
+  margin-top: 80px;
+  border: 1px solid  rgba(34,36,38,.15) !important;
   width: 200px;
+  min-width: 200px;
 }
+.sider {
+  background-color: black;
+}
+
+
 

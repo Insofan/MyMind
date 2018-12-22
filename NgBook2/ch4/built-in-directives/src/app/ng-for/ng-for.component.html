@@ -1,0 +1,47 @@
+<div class="bg">
+  <nz-divider nzText="Simple list of strings"></nz-divider>
+  <ul nz-menu>
+    <li nz-menu-item *ngFor="let city of cities"> {{city}}</li>
+  </ul>
+  <nz-divider nzText="With Text"></nz-divider>
+  <!--peopleTable 是数据, 下面body里面用这个数据-->
+  <nz-table class="people-table" #peopleTable nzBordered [nzData]="people">
+    <thead>
+    <tr>
+      <th>Name</th>
+      <th>Age</th>
+      <th>City</th>
+    </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let data of peopleTable.data; index as i">
+        <td>{{data.name}}</td>
+        <td>{{data.age}}</td>
+        <td>{{data.city}}</td>
+      </tr>
+    </tbody>
+  </nz-table>
+
+  <nz-divider nzText="Nested data"></nz-divider>
+  <div *ngFor="let item of peopleByCity">
+    <h2>{{item.city}}</h2>
+    <nz-table #pByCityTable nzBordered [nzData]="item">
+      <thead>
+      <tr>
+        <th>Name</th>
+        <th>Age</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let p of item.people; index as i">
+        <td>{{p.name}}</td>
+        <td>{{p.age}}</td>
+      </tr>
+      </tbody>
+    </nz-table>
+  </div>
+  <nz-divider nzText="List with index"></nz-divider>
+  <div *ngFor="let c of cities; let num = index">
+    <div class="item">{{ num+1 }} - {{ c }}</div>
+  </div>
+</div>

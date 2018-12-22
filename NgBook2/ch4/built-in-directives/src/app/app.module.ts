@@ -11,6 +11,8 @@ import zh from '@angular/common/locales/zh';
 import { HomeComponent } from './home/home.component';
 import { IntroComponent } from './intro/intro.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
+import { AppRoutingModule } from './app-routing.module';
+import { NgForComponent } from './ng-for/ng-for.component';
 
 registerLocaleData(zh);
 
@@ -19,14 +21,16 @@ registerLocaleData(zh);
     AppComponent,
     HomeComponent,
     IntroComponent,
-    SidebarComponent
+    SidebarComponent,
+    NgForComponent
   ],
   imports: [
     BrowserModule,
     NgZorroAntdModule,
     FormsModule,
     HttpClientModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    AppRoutingModule
   ],
   providers: [{ provide: NZ_I18N, useValue: zh_CN }],
   bootstrap: [AppComponent]

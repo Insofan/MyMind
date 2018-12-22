@@ -1,7 +1,7 @@
 <nz-sider>
   <ul  nz-menu [nzMode]="'vertical'">
     <li nz-menu-item *ngFor="let item of items">
-      <a href="">{{item.label}}</a>
+      <a  [routerLink]="[item.path]">{{item.label}}</a>
     </li>
   </ul>
 </nz-sider>
