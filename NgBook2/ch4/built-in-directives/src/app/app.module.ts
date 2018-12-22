@@ -10,6 +10,7 @@ import { registerLocaleData } from '@angular/common';
 import zh from '@angular/common/locales/zh';
 import { HomeComponent } from './home/home.component';
 import { IntroComponent } from './intro/intro.component';
+import { SidebarComponent } from './sidebar/sidebar.component';
 
 registerLocaleData(zh);
 
@@ -17,7 +18,8 @@ registerLocaleData(zh);
   declarations: [
     AppComponent,
     HomeComponent,
-    IntroComponent
+    IntroComponent,
+    SidebarComponent
   ],
   imports: [
     BrowserModule,

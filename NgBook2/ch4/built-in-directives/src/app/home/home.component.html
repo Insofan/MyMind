@@ -13,14 +13,10 @@
           Angular 2 Built-in Directives
         </div>
     </nz-header>
-    <nz-layout>
-      <nz-sider>
-        <ul nz-menu [nzMode]="'vertical'">
-          <li nz-menu-item>Navigation Two</li>
-        </ul>
-      </nz-sider>
-      <nz-content>Content</nz-content>
-    </nz-layout>
+    <!--<nz-layout>-->
+    <app-sidebar class="sider" [items]="examples"></app-sidebar>
+    <nz-content>Content</nz-content>
+    <!--</nz-layout>-->
   </nz-layout>
 </div>
 
