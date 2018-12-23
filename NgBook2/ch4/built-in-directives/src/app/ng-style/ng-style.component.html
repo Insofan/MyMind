@@ -1,0 +1,28 @@
+<div class="bg">
+  <nz-divider nzText="style.background-color"></nz-divider>
+  <div [style.background-color]="'yellow'">Uses fixed yellow background</div>
+  <nz-divider nzText="ngStyle literal"></nz-divider>
+  <div [ngStyle]="{'color': 'white', 'background-color': 'blue'}">Uses fixed white text on blue background</div>
+  <nz-divider nzText="ngStyle literal and style.font-size.px"></nz-divider>
+  <div [ngStyle]="{color: 'red'}" [style.font-size.px]="fontSize">red text</div>
+  <nz-divider nzText="ngStyle with an object"></nz-divider>
+  <div [ngStyle]="style">
+  </div>
+  <nz-divider nzText="ngStyle with object property from variable"></nz-divider>
+  <div [ngStyle]="{'color': color}">
+    {{color}} text
+  </div>
+  <nz-divider nzText="style from variable"></nz-divider>
+  <div [style.background-color]="color"
+       style="color: white;">
+    {{ color }} background
+  </div>
+  <nz-divider nzText="Play with the color and font-size here"></nz-divider>
+  <input nz-input placeholder="输入颜色" value="{{color}}" #colorinput>
+  <input nz-input placeholder="输入字号" value="{{fontSize}}" #fontinput>
+  <div class="btn-bg">
+    <button nz-button nzType="primary" class="apply-button" (click)="apply(colorinput.value, fontinput.value)">Apply settings</button>
+  </div>
+
+</div>
+

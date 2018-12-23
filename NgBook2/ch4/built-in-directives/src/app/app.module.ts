@@ -13,6 +13,10 @@ import { IntroComponent } from './intro/intro.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { AppRoutingModule } from './app-routing.module';
 import { NgForComponent } from './ng-for/ng-for.component';
+import { SwitchComponent } from './switch/switch.component';
+import { NgStyleComponent } from './ng-style/ng-style.component';
+import { NgClassComponent } from './ng-class/ng-class.component';
+import { NgNonBindableComponent } from './ng-non-bindable/ng-non-bindable.component';
 
 registerLocaleData(zh);
 
@@ -22,7 +26,11 @@ registerLocaleData(zh);
     HomeComponent,
     IntroComponent,
     SidebarComponent,
-    NgForComponent
+    NgForComponent,
+    SwitchComponent,
+    NgStyleComponent,
+    NgClassComponent,
+    NgNonBindableComponent
   ],
   imports: [
     BrowserModule,

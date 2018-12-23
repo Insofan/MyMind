@@ -1,0 +1,17 @@
+<div class="bg">
+  <nz-divider nzText="Current choice is {{choice}}"></nz-divider>
+  <div class="card">
+    <ul [ngSwitch]="choice">
+      <li *ngSwitchCase="1">First choice</li>
+      <li *ngSwitchCase="2">Second choice</li>
+      <li *ngSwitchCase="3">Third choice</li>
+      <li *ngSwitchCase="4">Fourth choice</li>
+      <li *ngSwitchCase="2">Second choice again</li>
+      <li *ngSwitchDefault>Default choice</li>
+    </ul>
+  </div>
+  <div class="btn-bg">
+    <button nz-button nzType="primary" class="choice-button" (click)="nextChoice()">Next Choice</button>
+  </div>
+</div>
+
