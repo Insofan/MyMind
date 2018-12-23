@@ -1,0 +1,15 @@
+<div class="bg">
+  <nz-card style="border:1px solid rgba(0, 0, 0, 0.1);" [nzBordered]="true">
+    <h2 class="title">Demo Form: Sku with Validators</h2>
+    <form nz-form [formGroup]="myForm" (ngSubmit)="onSubmit(myForm.value)">
+      <div class="field">
+        <nz-form-label>SKU</nz-form-label>
+        <!--创建的 form group 中的sku 控件-->
+        <input nz-input type="text" id="skuInput" placeholder="SKU" [formControl]="sku">
+        <div *ngIf="!sku.valid">SKU is invalid</div>
+        <div *ngIf="sku.hasError('required')">SKU has error</div>
+      </div>
+      <button nz-button nzType="primary">Submit</button>
+    </form>
+  </nz-card>
+</div>

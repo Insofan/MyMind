@@ -1,0 +1,9 @@
+.bg {
+  /*background-color: pink;*/
+  border:1px solid rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+[nz-button] {
+  margin-right: 8px;
+  margin-bottom: 12px;
+}

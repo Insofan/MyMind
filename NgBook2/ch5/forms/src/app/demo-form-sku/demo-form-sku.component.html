@@ -1,0 +1,12 @@
+<div class="bg">
+  <nz-card style="border:1px solid rgba(0, 0, 0, 0.1);" [nzBordered]="true">
+    <h2 class="title">Demo Form: Sku</h2>
+    <form nz-form #f="ngForm" (ngSubmit)="onSubmit(f.value)">
+      <div class="field">
+        <nz-form-label>SKU</nz-form-label>
+        <input nz-input type="text" placeholder="SKU" id="skuInput" name="sku" ngModel>
+      </div>
+      <button nz-button nzType="primary">Submit</button>
+    </form>
+  </nz-card>
+</div>
