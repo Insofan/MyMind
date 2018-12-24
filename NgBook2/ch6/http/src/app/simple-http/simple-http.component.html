@@ -1,0 +1,19 @@
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>
+      <h2>Basic Request</h2>
+    </mat-card-title>
+  </mat-card-header>
+  <mat-card-actions>
+    <button mat-button (click)="makeRequest()">Click me!</button>
+  </mat-card-actions>
+  <mat-card-content>
+    <div *ngIf="loading">
+      loading...
+    </div>
+    <pre>
+      {{data | json}}
+    </pre>
+  </mat-card-content>
+</mat-card>
+
