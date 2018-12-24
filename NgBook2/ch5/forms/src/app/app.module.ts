@@ -14,6 +14,7 @@ import zh from '@angular/common/locales/zh';
 import { DemoFormSkuComponent } from './demo-form-sku/demo-form-sku.component';
 import { FormBuilderComponent } from './form-builder/form-builder.component';
 import { FormValidateComponent } from './form-validate/form-validate.component';
+import { EventFormComponent } from './event-form/event-form.component';
 
 registerLocaleData(zh);
 
@@ -24,7 +25,8 @@ registerLocaleData(zh);
     HomeComponent,
     DemoFormSkuComponent,
     FormBuilderComponent,
-    FormValidateComponent
+    FormValidateComponent,
+    EventFormComponent
   ],
   imports: [
     BrowserModule,

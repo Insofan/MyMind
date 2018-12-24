@@ -1,12 +1,10 @@
 <div class="bg">
   <nz-card style="border:1px solid rgba(0, 0, 0, 0.1);" [nzBordered]="true">
-    <h2 class="title">Demo Form: with ngModel</h2>
+    <h2 class="title">Demo Form: with events</h2>
     <form nz-form #f="ngForm" (ngSubmit)="onSubmit(f.value)">
       <div class="field">
         <nz-form-label>SKU</nz-form-label>
-        <!--[formControl]="myForm.get('productName')"-->
-        <input nz-input type="text" placeholder="Product Name" id="productNameInput" name="first" [(ngModel)]="productName">
-        <nz-form-label>Ng model {{productName}}</nz-form-label>
+        <input nz-input type="text" placeholder="SKU" id="skuInput" [formControl]="sku">
       </div>
       <button nz-button nzType="primary">Submit</button>
     </form>
