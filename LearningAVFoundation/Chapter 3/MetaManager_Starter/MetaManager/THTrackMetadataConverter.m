@@ -31,16 +31,52 @@
 - (id)displayValueFromMetadataItem:(AVMetadataItem *)item {
     
     // Listing 3.13
+    NSNumber *number = nil;
+    NSNumber *counnt = nil;
+
+    if ([item.value isKindOfClass:[NSString class]]) {
+        NSArray *components = [item.stringValue componentsSeparatedByString:@"/"];
+        number = @([components[0] integerValue]);
+        counnt = @([components[1] integerValue]);
+    } else if ([item.value isKindOfClass:[NSDictionary class]]) {
+        NSData *data = item.dataValue;
+        if (data.length == 8) {
+            uint16_t *values = (uint16_t *)[data bytes];
+            if (values[1] > 0) {
+                number = @(CFSwapInt16BigToHost(values[1]));
+            }
+            if (values[2] > 0) {
+                counnt = @(CFSwapInt16BigToHost(values[2]));
+            }
+        }
+    }
     
-    return nil;
+    NSMutableDictionary *dict = [NSMutableDictionary dictionary];
+    [dict setObject:number ?: [NSNull null] forKey:THMetadataKeyTrackNumber];
+    [dict setObject:counnt ?: [NSNull null] forKey:THMetadataKeyTrackCount];
+    return dict;
 }
 
 - (AVMetadataItem *)metadataItemFromDisplayValue:(id)value
                                 withMetadataItem:(AVMetadataItem *)item {
     
     // Listing 3.13
+    AVMutableMetadataItem *metadataItem = [item mutableCopy];
+    NSDictionary* discData = (NSDictionary *)value;
+    NSNumber *discNumber = discData[THMetadataKeyTrackNumber];
+    NSNumber *discCount = discData[THMetadataKeyTrackCount];
+    uint16_t values[3] = {0};
+    if (discNumber && ![discNumber isKindOfClass:[NSNull class]]) {
+        values[1] = CFSwapInt16HostToBig([discNumber unsignedIntegerValue]);
+    }
     
-    return nil;
+    if (discCount && ![discCount isKindOfClass:[NSNull class]]) {
+        values[2] = CFSwapInt16HostToBig([discCount unsignedIntegerValue]);
+    }
+    
+    size_t length = sizeof(values);
+    metadataItem.value = [NSData dataWithBytes:values length:length];
+    return metadataItem;
 }
 
 @end

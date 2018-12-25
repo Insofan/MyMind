@@ -142,8 +142,17 @@
 - (NSArray *)metadataItems {
 
     // Listing 3.16
+   
     
     return nil;
+}
+
+
+- (void)addMetadataItemForNumber:(NSNumber *)number count:(NSNumber *)count numberKey:(NSString *)numberKey countKey:(NSString *)countKey toArray:(NSMutableArray *)items {
+    id <THMetadataConverter> converter = [self.converterFactory converterForKey:numberKey];
+    NSDictionary *data = @{numberKey: number ?: [NSNull null], countKey: count ?: [NSNull null]};
+    AVMetadataItem *sourceItem = self.metadata[numberKey];
+    
 }
 
 @end
