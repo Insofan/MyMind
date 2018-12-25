@@ -142,9 +142,23 @@
 - (NSArray *)metadataItems {
 
     // Listing 3.16
-   
+    NSMutableArray *items = [NSMutableArray array];
+    [self addMetadataItemForNumber:self.trackNumber count:self.trackCount numberKey:THMetadataKeyTrackNumber countKey:THMetadataKeyTrackCount toArray:items];
+    [self addMetadataItemForNumber:self.discCount count:self.discCount numberKey:THMetadataKeyDiscNumber countKey:THMetadataKeyDiscCount toArray:items];
+    NSMutableDictionary *metaDic = [self.metadata mutableCopy];
+    [metaDic removeObjectForKey:THMetadataKeyTrackNumber];
+    [metaDic removeObjectForKey:THMetadataKeyDiscNumber];
     
-    return nil;
+    for (NSString *key in metaDic) {
+        id <THMetadataConverter> converter = [self.converterFactory converterForKey:key];
+        id value = [self valueForKey:key];
+        AVMetadataItem *item = [converter metadataItemFromDisplayValue:value withMetadataItem:metaDic[key]];
+        if (item) {
+            [items addObject:item];
+        }
+    }
+    
+    return items;
 }
 
 
@@ -152,7 +166,10 @@
     id <THMetadataConverter> converter = [self.converterFactory converterForKey:numberKey];
     NSDictionary *data = @{numberKey: number ?: [NSNull null], countKey: count ?: [NSNull null]};
     AVMetadataItem *sourceItem = self.metadata[numberKey];
-    
+    AVMetadataItem *item = [converter metadataItemFromDisplayValue:data withMetadataItem:sourceItem];
+    if (item) {
+        [items addObject:item];
+    }
 }
 
 @end
