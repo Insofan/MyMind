@@ -9,15 +9,15 @@ import { SimpleHttpComponent } from './simple-http/simple-http.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatCardModule} from '@angular/material';
 import {MatButtonModule} from '@angular/material';
-import { YoutTubeSearchComponent } from './yout-tube-search/yout-tube-search.component';
-import {youTubeSearchInjectables} from "./yout-tube-search/you-tube-search.injectables";
+import {youTubeSearchInjectables} from './you-tube-search/vendor/you-tube-search.injectables';
+import { YouTubeSearchComponent } from './you-tube-search/you-tube-search.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     SimpleHttpComponent,
-    YoutTubeSearchComponent
+    YouTubeSearchComponent,
   ],
   imports: [
     BrowserModule,
@@ -27,7 +27,8 @@ import {youTubeSearchInjectables} from "./yout-tube-search/you-tube-search.injec
     MatCardModule,
     MatButtonModule
   ],
-  providers: [],
+  providers: [youTubeSearchInjectables],
+  // providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
