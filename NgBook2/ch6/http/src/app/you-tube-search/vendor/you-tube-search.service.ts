@@ -1,8 +1,8 @@
 import { Injectable, Inject } from '@angular/core';
 import {HttpClient, HttpResponse} from '@angular/common/http';
 import {Observable, pipe} from "rxjs";
-import {SearchResult} from "./search-result.model";
-import {catchError, map} from "rxjs/operators";
+import {SearchResult} from "../search-result/search-result.model";
+import { map} from "rxjs/operators";
 
 export const YOUTUBE_API_KEY = 'AIzaSyDOfT_BO81aEZScosfTYMruJobmpjqNeEk';
 export const YOUTUBE_API_URL = 'https://www.googleapis.com/youtube/v3/search';
@@ -25,21 +25,20 @@ export class YouTubeSearchService {
     ].join('&');
     const queryUrl = `${this.apiUrl}?${params}`;
 
+    console.log('search item ');
     return this.http.get(queryUrl)
       .pipe(
         map((response: HttpResponse<any>) => {
-          return (<any>response).items
-            .pipe(
-              map( item => {
-                console.log('search item: ', item);
+          console.log(response);
+          return (<any>response).items.map(item => {
+            console.log('search item2 : ', item);
                 return new SearchResult({
-                  // id: item.id.videoId,
-                  // title: item.snippet.title,
-                  // description: item.snippet.description,
-                  // thumbnailUrl: item.snippet.thumbnails.high.url
+                  id: item.id.videoId,
+                  title: item.snippet.title,
+                  description: item.snippet.description,
+                  thumbnailUrl: item.snippet.thumbnails.high.url
                 });
-              })
-            );
+          });
         })
       );
   }

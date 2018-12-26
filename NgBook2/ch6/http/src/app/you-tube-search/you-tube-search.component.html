@@ -1,6 +1,30 @@
-<div>
-  <app-search-box></app-search-box>
-<p>
-  you-tube-search works!
-</p>
+<!--<div>-->
+  <!--<app-search-box></app-search-box>-->
+  <!--<app-search-result></app-search-result>-->
+<!--<p>-->
+  <!--you-tube-search works!-->
+<!--</p>-->
+<!--</div>-->
+
+<div class='container'>
+  <div class="page-header">
+    <h1>YouTube Search
+    </h1>
+  </div>
+
+  <div class="row">
+    <div class="input-group input-group-lg col-md-12">
+      <app-search-box
+        (loading)="loading = $event"
+        (results)="updateResults($event)"
+      ></app-search-box>
+    </div>
+  </div>
+
+  <div class="row">
+    <app-search-result
+      *ngFor="let result of results"
+      [result]="result">
+    </app-search-result>
+  </div>
 </div>
