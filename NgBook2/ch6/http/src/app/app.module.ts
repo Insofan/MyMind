@@ -11,6 +11,7 @@ import {MatCardModule} from '@angular/material';
 import {MatButtonModule} from '@angular/material';
 import {youTubeSearchInjectables} from './you-tube-search/vendor/you-tube-search.injectables';
 import { YouTubeSearchComponent } from './you-tube-search/you-tube-search.component';
+import { SearchBoxComponent } from './you-tube-search/search-box/search-box.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { YouTubeSearchComponent } from './you-tube-search/you-tube-search.compon
     HomeComponent,
     SimpleHttpComponent,
     YouTubeSearchComponent,
+    SearchBoxComponent,
   ],
   imports: [
     BrowserModule,
