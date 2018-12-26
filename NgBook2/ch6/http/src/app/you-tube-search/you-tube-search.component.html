@@ -13,6 +13,7 @@
   </div>
 
   <div class="row">
+    <nz-spin [nzSize]="'large'" *ngIf="loading"></nz-spin>
     <div class="input-group input-group-lg col-md-12">
       <app-search-box
         (loading)="loading = $event"
@@ -21,10 +22,13 @@
     </div>
   </div>
 
-  <div class="row">
-    <app-search-result
-      *ngFor="let result of results"
-      [result]="result">
-    </app-search-result>
+  <div nz-row nzGutter="16" nzType="flex" nzJustify="space-around">
+    <div nz-col class="gutter-row" nzSpan="6">
+      <app-search-result nz-col
+                         *ngFor="let result of results"
+                         [result]="result" class="gutter-box">
+      </app-search-result>
+    </div>
   </div>
 </div>
+

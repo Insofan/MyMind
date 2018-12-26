@@ -13,6 +13,12 @@ import {youTubeSearchInjectables} from './you-tube-search/vendor/you-tube-search
 import { YouTubeSearchComponent } from './you-tube-search/you-tube-search.component';
 import { SearchBoxComponent } from './you-tube-search/search-box/search-box.component';
 import { SearchResultComponent } from './you-tube-search/search-result/search-result.component';
+import { NgZorroAntdModule, NZ_I18N, en_US } from 'ng-zorro-antd';
+import { FormsModule } from '@angular/forms';
+import { registerLocaleData } from '@angular/common';
+import en from '@angular/common/locales/en';
+
+registerLocaleData(en);
 
 @NgModule({
   declarations: [
@@ -29,9 +35,11 @@ import { SearchResultComponent } from './you-tube-search/search-result/search-re
     HttpClientModule,
     BrowserAnimationsModule,
     MatCardModule,
-    MatButtonModule
+    MatButtonModule,
+    NgZorroAntdModule,
+    FormsModule
   ],
-  providers: [youTubeSearchInjectables],
+  providers: [youTubeSearchInjectables, { provide: NZ_I18N, useValue: en_US }],
   // providers: [],
   bootstrap: [AppComponent]
 })
