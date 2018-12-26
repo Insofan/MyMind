@@ -9,12 +9,15 @@ import { SimpleHttpComponent } from './simple-http/simple-http.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatCardModule} from '@angular/material';
 import {MatButtonModule} from '@angular/material';
+import { YoutTubeSearchComponent } from './yout-tube-search/yout-tube-search.component';
+import {youTubeSearchInjectables} from "./yout-tube-search/you-tube-search.injectables";
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    SimpleHttpComponent
+    SimpleHttpComponent,
+    YoutTubeSearchComponent
   ],
   imports: [
     BrowserModule,
