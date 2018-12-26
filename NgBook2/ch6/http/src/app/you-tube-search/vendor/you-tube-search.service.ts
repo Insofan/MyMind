@@ -27,11 +27,11 @@ export class YouTubeSearchService {
 
     return this.http.get(queryUrl)
       .pipe(
-        map((response: HttpResponse) => {
+        map((response: HttpResponse<any>) => {
           return (<any>response).items
             .pipe(
               map( item => {
-                console.log(item);
+                console.log('search item: ', item);
                 return new SearchResult({
                   // id: item.id.videoId,
                   // title: item.snippet.title,
