@@ -1,0 +1,10 @@
+<nz-layout>
+  <p>
+      wtf home
+  </p>
+    <div *ngFor="let poetry of poetries">
+        {{poetry.title.toString()}}
+        {{poetry.content.toString()}}
+        {{poetry.authors.toString()}}
+    </div>
+</nz-layout>

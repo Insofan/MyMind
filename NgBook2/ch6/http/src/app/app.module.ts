@@ -39,7 +39,7 @@ registerLocaleData(en);
     NgZorroAntdModule,
     FormsModule
   ],
-  providers: [youTubeSearchInjectables, { provide: NZ_I18N, useValue: en_US }],
+  providers: [youTubeSearchInjectables, { provide: NZ_I18N, useValue: en_US }, ],
   // providers: [],
   bootstrap: [AppComponent]
 })
