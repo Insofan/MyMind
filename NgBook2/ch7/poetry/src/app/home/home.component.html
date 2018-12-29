@@ -1,10 +1,22 @@
 <nz-layout>
-  <p>
-      wtf home
-  </p>
-    <div *ngFor="let poetry of poetries">
-        {{poetry.title.toString()}}
-        {{poetry.content.toString()}}
-        {{poetry.authors.toString()}}
+    <div nz-row nzType="flex" nzJustify="center" >
+        <div nz-col [nzSpan]="8" style="margin-top: 20px">
+            <form nz-form >
+                <nz-form-label [nzSpan]="24" style="text-align: center">搜索诗名</nz-form-label>
+                <nz-form-control [nzSpan]="24">
+                    <input nz-input placeholder="输入诗名" autofocus>
+                </nz-form-control>
+            </form>
+        </div>
     </div>
+    <nz-list [nzDataSource]="poetries" [nzRenderItem]="item" [nzGrid]="{gutter: 24, span: 6}" style="margin-top: 50px">
+        <ng-template #item let-item>
+          <nz-list-item [nzContent]="nzContent">
+            <ng-template #nzContent>
+                <app-card nz-col [nzSpan]="8"
+             [poetry]="item" ></app-card>
+            </ng-template>
+          </nz-list-item>
+        </ng-template>
+      </nz-list>
 </nz-layout>

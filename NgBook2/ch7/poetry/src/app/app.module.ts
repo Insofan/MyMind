@@ -11,13 +11,17 @@ import {HashLocationStrategy, LocationStrategy, registerLocaleData} from '@angul
 import en from '@angular/common/locales/en';
 import {PoetryService} from "../api/poetry.service";
 import { HomeComponent } from './home/home.component';
+import { CardComponent } from './card/card.component';
+import { SearchComponent } from './search/search.component';
 
 registerLocaleData(en);
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    CardComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,
