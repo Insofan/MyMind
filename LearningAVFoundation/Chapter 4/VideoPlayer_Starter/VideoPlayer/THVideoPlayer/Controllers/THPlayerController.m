@@ -82,7 +82,11 @@ static const NSString *PlayerItemStatusContext;
     self.playerItem = [AVPlayerItem playerItemWithAsset:self.asset
                            automaticallyLoadedAssetKeys:keys];
     
-    
+    [self.playerItem addObserver:self forKeyPath:STATUS_KEYPATH
+                         options:0
+                         context:&PlayerItemStatusContext];
+    self.playerView = [[THPlayerView alloc] initWithPlayer:self.player];
+    self.transport.delegate = self;
 }
 
 - (void)observeValueForKeyPath:(NSString *)keyPath
