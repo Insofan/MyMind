@@ -13,7 +13,6 @@ export class PoetryService {
 
   constructor(private http: HttpClient) {
   }
-
   public getPoetry(path: string, param: string): Observable<Poetry[]> {
     const getUrl = baseUrl + path + param;
     return this.http.get(getUrl)
