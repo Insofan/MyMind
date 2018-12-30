@@ -1,0 +1,17 @@
+<nz-layout>
+    <div >
+        <h1>Router Sample</h1>
+        <div >
+            <a style="margin-left: 20px" [routerLink]="['/home']">Home</a>
+            <a style="margin-left: 20px" [routerLink]="['/about']">About</a>
+            <a style="margin-left: 20px" [routerLink]="['/contact']">Contact us</a>
+            <a style="margin-left: 20px" [routerLink]="['/protected']">Protected</a>
+            <a style="margin-left: 20px" [routerLink]="['/procucts']">Products</a>
+        </div>
+    </div>
+        <div class="container">
+            <app-login></app-login>
+            <router-outlet></router-outlet>
+        </div>
+
+</nz-layout>

@@ -1,0 +1,10 @@
+<a [routerLink]="['./main']">Main</a>
+<a [routerLink]="['./main']">Main</a>
+Enter id: <input #id size="6">
+<button (click)="goToProduct(id.value)">Go</button>
+<p>
+    后台页面
+</p>
+<div>
+    <router-outlet></router-outlet>
+</div>
