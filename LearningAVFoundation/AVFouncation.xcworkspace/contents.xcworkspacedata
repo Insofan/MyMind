@@ -69,16 +69,16 @@
                      location = "group:THPlayerController.h">
                   </FileRef>
                   <FileRef
-                     location = "group:THPlayerViewController.h">
+                     location = "group:THPlayerController.m">
                   </FileRef>
                   <FileRef
-                     location = "group:THSubtitleViewController.h">
+                     location = "group:THPlayerViewController.h">
                   </FileRef>
                   <FileRef
                      location = "group:THPlayerViewController.m">
                   </FileRef>
                   <FileRef
-                     location = "group:THPlayerController.m">
+                     location = "group:THSubtitleViewController.h">
                   </FileRef>
                   <FileRef
                      location = "group:THSubtitleViewController.m">

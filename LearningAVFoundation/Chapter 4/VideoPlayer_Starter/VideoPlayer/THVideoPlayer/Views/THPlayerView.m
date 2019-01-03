@@ -51,7 +51,8 @@
         [(AVPlayerLayer *)[self layer] setPlayer:player];
         
         [[NSBundle mainBundle] loadNibNamed:@"THOverlayView"
-                                      owner:self options:nil];
+                                      owner:self
+                                    options:nil];
         [self addSubview:_overlayView];
         
     }

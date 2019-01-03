@@ -89,13 +89,39 @@ static const NSString *PlayerItemStatusContext;
     self.transport.delegate = self;
 }
 
+
+
 - (void)observeValueForKeyPath:(NSString *)keyPath
                       ofObject:(id)object
                         change:(NSDictionary *)change
                        context:(void *)context {
     
     // Listing 4.7
-    
+    // 将Status 设置为监听属性, 监听之前要先实现observeValueForKeyPath方法
+    if (context == &PlayerItemStatusContext) {
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [self.playerItem removeObserver:self forKeyPath:STATUS_KEYPATH];
+            
+            if (self.playerItem.status == AVPlayerItemStatusReadyToPlay) {
+                // set up time observers
+                [self addPlayerItemTimeObserver];
+                [self addItemEndObserverForPlayerItem];
+                
+                
+                CMTime duration = self.playerItem.duration;
+                
+                //Synchronize the time display, 同步时间
+                [self.transport setCurrentTime:CMTimeGetSeconds(kCMTimeZero) duration:CMTimeGetSeconds(duration)];
+                
+                //Set the video title
+                [self.transport setTitle:self.asset.title];
+                
+                [self.player play];
+            } else {
+                [UIAlertView showAlertWithTitle:@"Error" message:@"Failed to load video"];
+            }
+        });
+    }
 }
 
 #pragma mark - Time Observers
@@ -103,13 +129,63 @@ static const NSString *PlayerItemStatusContext;
 - (void)addPlayerItemTimeObserver {
 
     // Listing 4.8
+    // step 1
+    // Create 0.5 second refresh interval - REFRESH_INTERVAL == 0.5
+    CMTime interval = CMTimeMakeWithSeconds(REFRESH_INTERVAL, NSEC_PER_SEC);
     
+    // step 2
+    // Main dispatch queue
+    dispatch_queue_t queue = dispatch_get_main_queue();
+    
+    // step 3
+    // Create callback block for time observer
+    __weak THPlayerController *weakSelf = self;
+    void (^callBack) (CMTime time) = ^(CMTime time) {
+        // step 4: 取time, 算出来currentTime, duration 用代理传回去
+        NSTimeInterval currentTime = CMTimeGetSeconds(time);
+        NSTimeInterval duration = CMTimeGetSeconds(weakSelf.playerItem.duration);
+        [weakSelf.transport setCurrentTime:currentTime duration:duration];
+    };
+    
+    // step 5
+    // Add observer add store pointer for future use
+    self.timeObserver = [self.player addPeriodicTimeObserverForInterval:interval
+                                                                  queue:queue
+                                                             usingBlock:callBack];
 }
 
 - (void)addItemEndObserverForPlayerItem {
 
     // Listing 4.9
+    NSString *name = AVPlayerItemDidPlayToEndTimeNotification;
+    NSOperationQueue *queue = [NSOperationQueue mainQueue];
     
+    // step 1
+    __weak THPlayerController *weakSelf = self;
+    void (^callback) (NSNotification *note) = ^(NSNotification *notification) {
+        // step 2 播放完毕后将player的光标回到0位置
+        [weakSelf.player seekToTime:kCMTimeZero
+                  completionHandler:^(BOOL finished) {
+                      // step 3: 当 step 2完成后通知播放栏播放已经完成
+                      [weakSelf.transport playbackComplete];
+                  }];
+    };
+    // step 4 通过注册NSNotificationCenter 来添加itemEndObserver作为通知的监听器, 将之前的参数传给他
+    self.itemEndObserver = [[NSNotificationCenter defaultCenter] addObserverForName:name
+                                                                             object:self.playerItem
+                                                                              queue:queue
+                                                                         usingBlock:callback];
+}
+
+- (void)dealloc {
+    // step 5 重写delloc 移除itemEndObserver通知
+    if (self.itemEndObserver) {
+        NSNotificationCenter *nc = [NSNotificationCenter defaultCenter];
+        [nc removeObserver:self.itemEndObserver
+                      name:AVPlayerItemDidPlayToEndTimeNotification
+                    object:self.player.currentItem];
+        self.itemEndObserver = nil;
+    }
 }
 
 #pragma mark - THTransportDelegate Methods
