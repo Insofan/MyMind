@@ -78,14 +78,20 @@ static const NSString *PlayerItemStatusContext;
 - (void)prepareToPlay {
 
     // Listing 4.6
-    NSArray *keys = @[@"tracks", @"duration", @"commonMetadata"];
+    NSArray *keys = @[@"tracks",
+                      @"duration",
+                      @"commonMetadata",
+                      @"availableMediaCharacteristicsWithMediaSelectionOptions"
+                      ];
     self.playerItem = [AVPlayerItem playerItemWithAsset:self.asset
                            automaticallyLoadedAssetKeys:keys];
     
     [self.playerItem addObserver:self forKeyPath:STATUS_KEYPATH
                          options:0
                          context:&PlayerItemStatusContext];
+    self.player = [AVPlayer playerWithPlayerItem:self.playerItem];
     self.playerView = [[THPlayerView alloc] initWithPlayer:self.player];
+    self.transport  = self.playerView.transport;
     self.transport.delegate = self;
 }
 
@@ -193,42 +199,63 @@ static const NSString *PlayerItemStatusContext;
 - (void)play {
 
     // Listing 4.10
+    // step 1
+    [self.player play];
     
 }
 
 - (void)pause {
 
     // Listing 4.10
+    // step 2
+    self.lastPlaybackRate = self.player.rate;
+    [self.player pause];
     
 }
 
 - (void)stop {
 
     // Listing 4.10
+    // step 3
+    [self.player setRate:0.0f];
+    [self.transport playbackComplete];
     
 }
 
 - (void)jumpedToTime:(NSTimeInterval)time {
 
     // Listing 4.10
+    // step 4
+    [self.player seekToTime:CMTimeMakeWithSeconds(time, NSEC_PER_SEC)];
     
 }
 
 - (void)scrubbingDidStart {
-
+    
     // Listing 4.11
+    // step 5
+    self.lastPlaybackRate = self.player.rate;
+    [self.player pause];
+    [self.player removeTimeObserver:self.timeObserver];
+    self.timeObserver = nil;
 }
 
 - (void)scrubbedToTime:(NSTimeInterval)time {
-
-    // Listing 4.11
     
+    // Listing 4.11
+    // step 6
+    [self.playerItem cancelPendingSeeks];
+    [self.player seekToTime:CMTimeMakeWithSeconds(time, NSEC_PER_SEC)];
 }
 
 - (void)scrubbingDidEnd {
-
-    // Listing 4.11
     
+    // Listing 4.11
+    // step 7
+    [self addPlayerItemTimeObserver];
+    if (self.lastPlaybackRate > 0.0f) {
+        [self.player play];
+    }
 }
 
 

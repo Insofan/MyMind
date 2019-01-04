@@ -50,10 +50,10 @@
                   location = "group:Models"
                   name = "Models">
                   <FileRef
-                     location = "group:THThumbnail.m">
+                     location = "group:THTransport.h">
                   </FileRef>
                   <FileRef
-                     location = "group:THTransport.h">
+                     location = "group:THThumbnail.m">
                   </FileRef>
                   <FileRef
                      location = "group:THThumbnail.h">
