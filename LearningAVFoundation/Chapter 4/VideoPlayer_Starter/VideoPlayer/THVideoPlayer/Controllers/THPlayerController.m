@@ -126,6 +126,7 @@ static const NSString *PlayerItemStatusContext;
                 
                 [self.player play];
                 [self generateThumbnails];
+                [self loadMediaOptions];
             } else {
                 [UIAlertView showAlertWithTitle:@"Error" message:@"Failed to load video"];
             }
@@ -326,12 +327,45 @@ static const NSString *PlayerItemStatusContext;
 - (void)loadMediaOptions {
 
     // Listing 4.16
-    
+    // step 1
+    NSString *mc = AVMediaCharacteristicLegible;
+    // step 2
+    AVMediaSelectionGroup *group = [self.asset mediaSelectionGroupForMediaCharacteristic:mc];
+    if (group) {
+        // step 3
+        NSMutableArray *subtitles = [NSMutableArray array];
+        for (AVMediaSelectionOption *option in group.options) {
+            [subtitles addObject:option.displayName];
+        }
+        // step 4
+        [self.transport setSubtitles:subtitles];
+    } else {
+        [self.transport setSubtitles:nil];
+    }
 }
 
 - (void)subtitleSelected:(NSString *)subtitle {
 
     // Listing 4.17
+    NSString *mc = AVMediaCharacteristicLegible;
+    // step 1
+    AVMediaSelectionGroup *group = [self.asset mediaSelectionGroupForMediaCharacteristic:mc];
+    BOOL selected = false;
+    for (AVMediaSelectionOption *option in group.options) {
+        if ([option.displayName isEqualToString:subtitle]) {
+            // step 2
+            [self.playerItem selectMediaOption:option
+                         inMediaSelectionGroup:group];
+            selected = true;
+        }
+    }
+    
+    if (!selected) {
+        // step 3
+        [self.playerItem selectMediaOption:nil
+                     inMediaSelectionGroup:group];
+    }
+
     
 }
 
