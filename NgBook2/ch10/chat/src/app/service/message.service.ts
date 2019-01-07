@@ -91,3 +91,7 @@ export class MessageService {
             .subscribe(this.updates)
     }
 }
+
+export var messagesServiceInjectables: Array<any> = [
+    MessageService
+];
