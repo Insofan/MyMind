@@ -2,6 +2,134 @@
 <Workspace
    version = "1.0">
    <Group
+      location = "group:Chapter 5"
+      name = "Chapter 5">
+      <FileRef
+         location = "group:hubblecast.m4v">
+      </FileRef>
+      <Group
+         location = "group:KitTime Player_Starter"
+         name = "KitTime Player_Starter">
+         <Group
+            location = "group:KitTime Player"
+            name = "KitTime Player">
+            <Group
+               location = "group:en.lproj"
+               name = "en.lproj">
+               <FileRef
+                  location = "group:InfoPlist.strings">
+               </FileRef>
+               <FileRef
+                  location = "group:Credits.rtf">
+               </FileRef>
+            </Group>
+            <FileRef
+               location = "group:THExportWindowController.h">
+            </FileRef>
+            <FileRef
+               location = "group:THWindow.h">
+            </FileRef>
+            <FileRef
+               location = "group:ITProgressIndicator.h">
+            </FileRef>
+            <FileRef
+               location = "group:NSTimer+Additions.m">
+            </FileRef>
+            <FileRef
+               location = "group:THDocument.h">
+            </FileRef>
+            <FileRef
+               location = "group:KitTime Player-Info.plist">
+            </FileRef>
+            <FileRef
+               location = "group:NSBezierPath+Geometry.m">
+            </FileRef>
+            <FileRef
+               location = "group:THChapter.m">
+            </FileRef>
+            <Group
+               location = "group:Base.lproj"
+               name = "Base.lproj">
+               <FileRef
+                  location = "group:MainMenu.xib">
+               </FileRef>
+               <FileRef
+                  location = "group:THDocument.xib">
+               </FileRef>
+            </Group>
+            <FileRef
+               location = "group:THConvertingView.m">
+            </FileRef>
+            <FileRef
+               location = "group:NSFileManager+THAdditions.m">
+            </FileRef>
+            <FileRef
+               location = "group:main.m">
+            </FileRef>
+            <FileRef
+               location = "group:NSTimer+Additions.h">
+            </FileRef>
+            <FileRef
+               location = "group:THWindow.m">
+            </FileRef>
+            <FileRef
+               location = "group:ITProgressIndicator.m">
+            </FileRef>
+            <Group
+               location = "group:Images.xcassets"
+               name = "Images.xcassets">
+               <Group
+                  location = "group:AppIcon.appiconset"
+                  name = "AppIcon.appiconset">
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+               </Group>
+            </Group>
+            <FileRef
+               location = "group:THExportWindowController.m">
+            </FileRef>
+            <FileRef
+               location = "group:THDocument.m">
+            </FileRef>
+            <FileRef
+               location = "group:THExportWindow.xib">
+            </FileRef>
+            <FileRef
+               location = "group:KitTime Player-Prefix.pch">
+            </FileRef>
+            <FileRef
+               location = "group:THConvertingView.h">
+            </FileRef>
+            <FileRef
+               location = "group:NSFileManager+THAdditions.h">
+            </FileRef>
+            <FileRef
+               location = "group:THChapter.h">
+            </FileRef>
+            <FileRef
+               location = "group:NSBezierPath+Geometry.h">
+            </FileRef>
+         </Group>
+         <FileRef
+            location = "group:KitTime Player.xcodeproj">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:Legacy"
+         name = "Legacy">
+         <FileRef
+            location = "group:Autumn_cinepak.mov">
+         </FileRef>
+         <FileRef
+            location = "group:Bee_sorenson.mov">
+         </FileRef>
+         <FileRef
+            location = "group:Backyard_motion_jpeg.mov">
+         </FileRef>
+      </Group>
+   </Group>
+   <Group
       location = "group:Chapter 4"
       name = "Chapter 4">
       <Group
