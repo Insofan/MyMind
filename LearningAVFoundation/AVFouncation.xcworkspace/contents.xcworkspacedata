@@ -2,6 +2,218 @@
 <Workspace
    version = "1.0">
    <Group
+      location = "group:Chapter 6"
+      name = "Chapter 6">
+      <Group
+         location = "group:Kamera_Starter"
+         name = "Kamera_Starter">
+         <FileRef
+            location = "group:Kamera.xcodeproj">
+         </FileRef>
+         <Group
+            location = "group:Kamera"
+            name = "Kamera">
+            <FileRef
+               location = "group:THOverlayView.m">
+            </FileRef>
+            <FileRef
+               location = "group:record_stop.caf">
+            </FileRef>
+            <FileRef
+               location = "group:THCameraView.h">
+            </FileRef>
+            <FileRef
+               location = "group:Kamera-Prefix.pch">
+            </FileRef>
+            <FileRef
+               location = "group:THStatusView.h">
+            </FileRef>
+            <FileRef
+               location = "group:THAppDelegate.h">
+            </FileRef>
+            <FileRef
+               location = "group:THAssetsLibrary.m">
+            </FileRef>
+            <Group
+               location = "group:en.lproj"
+               name = "en.lproj">
+               <FileRef
+                  location = "group:InfoPlist.strings">
+               </FileRef>
+            </Group>
+            <FileRef
+               location = "group:THCameraController.m">
+            </FileRef>
+            <FileRef
+               location = "group:THPreviewView.m">
+            </FileRef>
+            <FileRef
+               location = "group:NSTimer+Additions.m">
+            </FileRef>
+            <FileRef
+               location = "group:record_start.caf">
+            </FileRef>
+            <FileRef
+               location = "group:THViewController.h">
+            </FileRef>
+            <FileRef
+               location = "group:UIView+THAdditions.m">
+            </FileRef>
+            <FileRef
+               location = "group:THFlashControl.h">
+            </FileRef>
+            <FileRef
+               location = "group:THCameraModeView.h">
+            </FileRef>
+            <FileRef
+               location = "group:THCaptureButton.m">
+            </FileRef>
+            <Group
+               location = "group:Base.lproj"
+               name = "Base.lproj">
+               <FileRef
+                  location = "group:Main.storyboard">
+               </FileRef>
+            </Group>
+            <FileRef
+               location = "group:NSFileManager+THAdditions.m">
+            </FileRef>
+            <FileRef
+               location = "group:Kamera-Info.plist">
+            </FileRef>
+            <FileRef
+               location = "group:THAssetsLibrary.h">
+            </FileRef>
+            <FileRef
+               location = "group:THAppDelegate.m">
+            </FileRef>
+            <FileRef
+               location = "group:THStatusView.m">
+            </FileRef>
+            <FileRef
+               location = "group:THCameraView.m">
+            </FileRef>
+            <FileRef
+               location = "group:THOverlayView.h">
+            </FileRef>
+            <FileRef
+               location = "group:main.m">
+            </FileRef>
+            <FileRef
+               location = "group:NSTimer+Additions.h">
+            </FileRef>
+            <FileRef
+               location = "group:THPreviewView.h">
+            </FileRef>
+            <Group
+               location = "group:Images.xcassets"
+               name = "Images.xcassets">
+               <Group
+                  location = "group:flash_icon.imageset"
+                  name = "flash_icon.imageset">
+                  <FileRef
+                     location = "group:flash_icon@2x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:flash_icon.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:camera_icon.imageset"
+                  name = "camera_icon.imageset">
+                  <FileRef
+                     location = "group:camera_icon@2x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+                  <FileRef
+                     location = "group:camera_icon.png">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:AppIcon.appiconset"
+                  name = "AppIcon.appiconset">
+                  <FileRef
+                     location = "group:Icon-76@2x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Icon-40@2x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Icon-40@3x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Icon-Small.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Icon-60@3x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Icon-76.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Icon-60@2x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Icon-40.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Icon-Small@3x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Icon-Small@2x.png">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:background.imageset"
+                  name = "background.imageset">
+                  <FileRef
+                     location = "group:background.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:LaunchImage.launchimage"
+                  name = "LaunchImage.launchimage">
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+               </Group>
+            </Group>
+            <FileRef
+               location = "group:THCameraController.h">
+            </FileRef>
+            <FileRef
+               location = "group:UIView+THAdditions.h">
+            </FileRef>
+            <FileRef
+               location = "group:THViewController.m">
+            </FileRef>
+            <FileRef
+               location = "group:NSFileManager+THAdditions.h">
+            </FileRef>
+            <FileRef
+               location = "group:THCaptureButton.h">
+            </FileRef>
+            <FileRef
+               location = "group:THCameraModeView.m">
+            </FileRef>
+            <FileRef
+               location = "group:THFlashControl.m">
+            </FileRef>
+         </Group>
+      </Group>
+   </Group>
+   <Group
       location = "group:Chapter 5"
       name = "Chapter 5">
       <FileRef
