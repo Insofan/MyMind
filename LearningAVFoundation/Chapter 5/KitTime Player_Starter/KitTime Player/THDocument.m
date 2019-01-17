@@ -58,7 +58,7 @@
     // step 3
     NSArray *keys = @[@"commonMetadata", @"availableChapterLocales"];
     // step 4
-
+    
     self.playerItem = [AVPlayerItem playerItemWithAsset:self.asset
                            automaticallyLoadedAssetKeys:keys];
     // step 5
@@ -71,13 +71,14 @@
 
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context {
     if ([keyPath isEqualToString:STATUS_KEY]) {
+        // step 6
         if (self.playerItem.status == AVPlayerItemStatusReadyToPlay) {
-            // step 6
+            // step 7
             NSString *title = [self titleForAsset:self.asset];
             if (title) {
                 self.windowForSheet.title = title;
             }
-            // step 7
+            // step 8
             self.chapters = [self chaptersForAsset:self.asset];
         }
     }
