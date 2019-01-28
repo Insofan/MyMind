@@ -46,6 +46,51 @@ NSString *const THThumbnailCreatedNotification = @"THThumbnailCreated";
 - (BOOL)setupSession:(NSError **)error {
 
     // Listing 6.4
+    self.captureSession = [AVCaptureSession new];
+    self.captureSession.sessionPreset = AVCaptureSessionPresetHigh;
+    
+    // Set up default camera device
+    AVCaptureDevice *videoDevice = [AVCaptureDevice defaultDeviceWithMediaType:AVMediaTypeVideo];
+    AVCaptureDeviceInput *videoInput = [AVCaptureDeviceInput deviceInputWithDevice:videoDevice
+                                                                             error:error];
+    if (videoInput) {
+        if ([self.captureSession canAddInput:videoInput]) {
+            [self.captureSession addInput:videoInput];
+            self.activeVideoInput = videoInput;
+        }
+    } else {
+        return false;
+    }
+    
+    // Setup default microphone
+    AVCaptureDevice *audioDevice = [AVCaptureDevice defaultDeviceWithMediaType:AVMediaTypeAudio];
+    AVCaptureDeviceInput *audioInput = [AVCaptureDeviceInput deviceInputWithDevice:audioDevice
+                                                                             error:error];
+    if (audioInput) {
+        if ([self.captureSession canAddInput:audioInput]) {
+            [self.captureSession addInput:audioInput];
+        }
+    } else {
+        return false;
+    }
+    
+    // Setup the still image output
+    self.imageOutput = [AVCaptureStillImageOutput new];
+    self.imageOutput.outputSettings = @{AVVideoCodecKey: AVVideoCodecJPEG};
+    
+    if ([self.captureSession canAddOutput:self.imageOutput]) {
+        [self.captureSession addOutput:self.imageOutput];
+    }
+    
+    // Setup movie file output
+    self.movieOutput = [AVCaptureMovieFileOutput new];
+    if ([self.captureSession canAddOutput:self.movieOutput]) {
+        [self.captureSession addOutput:self.movieOutput];
+    }
+    
+    self.videoQueue = dispatch_queue_create("com.tapharmonic.VideoQueue", NULL);
+    
+    
 
     return NO;
 }
