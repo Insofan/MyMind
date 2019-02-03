@@ -1,3 +1,5 @@
+# 1. cache缓存机制
+
 ## 缓存时用NSCache和NSMutableDictionry的区别
 
 NSCache是Foundation提供的缓存类, 使用方式类似NSMutableDcitonary.但NSCache在实现缓存时更方便, 最重要NSCache是线程安全的, 而NSMutableDictionary不是线程安全的, 多线程下使用NSCache使用更好.
@@ -186,4 +188,12 @@ NSURLRequestReloadRevaildatingCacheData // 未实现
 1. 经常更新: 不使用缓存
 2. 一成不变: 果断用缓存
 3. 偶尔更新: 可以定期更改缓存策略或者清除缓存
+
+# 2. 隐式动画和显式动画区别
+
+隐式动画是iOS创建动画的基础, 直接设定UI可见元素的目标值, 即可自动生成平滑变化的过渡动画
+
+显示动画是为了应付复杂的需求, 例如让视图沿曲线运动.显示动画不像隐式动画那样, 默认一个初始状态, 设置一个目标状态. 显示动画需要定义完整的动画流程,  要显示的定义动画对象, 设置动画对象的哥哥状态, 然后用动画对象应用到视图上, 虽然麻烦, 但是更灵活.
+
+# 3. Block内部结构和原理
 
