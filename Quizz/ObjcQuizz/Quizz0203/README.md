@@ -197,3 +197,138 @@ NSURLRequestReloadRevaildatingCacheData // 未实现
 
 # 3. Block内部结构和原理
 
+Block: 带自动变量的匿名函数.
+
+#### Block实现原理
+
+Block实际上是作为C语言源码来处理的, 使用LLVM编译器恩clang命令可以将含有Block的ObjC的代码转换成C++源码
+
+```
+clang -rewrite-objc 源码文件名
+```
+
+编译后可以得到三段主要代码,   _ _main_block_impl_0,    _ _main_block_func_0, __main_block_desc_0 
+
+```
+struct __main_block_impl_0 {
+  struct __block_impl impl;
+  struct __main_block_desc_0* Desc;
+  int i;
+  __main_block_impl_0(void *fp, struct __main_block_desc_0 *desc, int _i, int flags=0) : i(_i) {
+    impl.isa = &_NSConcreteStackBlock;
+    impl.Flags = flags;
+    impl.FuncPtr = fp;
+    Desc = desc;
+  }
+};
+static void __main_block_func_0(struct __main_block_impl_0 *__cself) {
+  int i = __cself->i; // bound by copy
+
+  printf("hello world! %d\n",i);
+
+ }
+
+static struct __main_block_desc_0 {
+  size_t reserved;
+  size_t Block_size;
+} __main_block_desc_0_DATA = { 0, sizeof(struct __main_block_impl_0)};
+int main(){
+ int i = 10;
+
+ void(*myBlock)(void) = (void (*)())&__main_block_impl_0((void *)__main_block_func_0, &__main_block_desc_0_DATA, i);
+
+ ((void (*)(__block_impl *))((__block_impl *)myBlock)->FuncPtr)((__block_impl *)myBlock);
+
+ return 0;
+}
+```
+
+其中block_impl(实现)的结构体为可以看到一个block的结构体
+
+```
+struct __block_impl {
+    void *isa;
+    int Flags;
+    int Reserved;
+    void *FuncPtr;
+}
+```
+
+*isa指针说明block可以作为对象使用, 指针变量FuncPtr是指向了block代码的函数首地址
+
+#### block如何截获自动变量
+
+栈上的变量以参数形式传入到impl_0的构造函数中, 即为变量的自动截获, 栈上的数据无论发生什么变化都不会影响到Block以参数形式传入捕获的变量, 但这个变量是指向对象指针的话, 是可以修改这个对象的.
+
+#### block分为全局block, 堆block, 栈block.
+
+注意在栈上的block, 如果没有捕获自动变量的block仍在全局数据区, 而非栈上.设置在栈上的block, 如果作用域结束会被废弃, 对于超出block作用域仍要使用的可以通过copy将栈上block移到堆上.ARC时, 大多数情况下编译器会自动判断, 复制到堆上, 通常有以下几种情况
+
+1. 调用copy
+2. 将block作为函数返回值
+3. 将block赋值给__strong修改的变量
+4. 用Cocoa含有usingBlock的方法
+
+#### 使用__block发生了什么
+
+block捕获的自动变量加上__block, 就可以在block内部读写该变量, 也可以在栈上读写该变量.
+
+原理: __block修饰符将自动变量封装成一个结构体, 让其在堆上创建, 以方便访问和修改的是同一份数据.
+
+#### 循环引用
+
+原因: 一个对象A有block类型的属性, 从而持有这个block, 如果block代码快中使用这个对象A,两者互相持有, 不能再作用域结束后正常释放.
+
+解决: 对象A持有block, 但block不强引用持有对象A
+
+# 4. tableView的高度预估价机制
+
+estimateHeightForRowAtIndexPath, 这个方法用于返回一个cell的预估计高度, 如果在程序中实现了这个方法, tableView首次加载的时候不会调用heightForRowAtIndexPath, 而是用estimateHeightForRowAtIndexPath返回高度的预估计值, 然后tableView就可以显示出来, 等到cell可见的时候, 再调用heightForRowAtIndexPath获取正确的cell高度.
+
+# 5. autorelease的原理和应用场景
+
+#### autorelease的释放时机
+
+autorelease并不是在作用域结束后释放, 而是在当前runloop迭代结束后才会释放的, 释放的原因是因为系统中每个runloop迭代中都加入了自动释放池push和pop.
+
+##### AutoReleasePool实现原理
+
+AutoReleasePool并没有自身的结构, 他是基于多个AutoReleasePoolPage(一个C++类)以及双链表组合起来的结构, 其基本操作都是封装了AutoReleasePool的方法, 可以push, pop, 自动释放池将用完的对象集中起来, 容易释放, 起到延迟释放对象的作用.
+
+##### AutoRelease应用场景
+
+当有大数for循环时, 短时间内创造大量对象, 早默认的自动释放池释放之前这些对象不会释放, 占用大量内存, 造成内存高峰以致内存不足.
+
+此时在循环内部嵌套一个自动释放池.
+
+# 6. KVO和KVC
+
+##### 概念
+
+KVC: 就是键值编码, 实在NSKeyValueCoding非正式协议下使用字符串间接访问对象属性的机制,  是传统访问方法的一种替代, 可以强行访问私有属性.
+
+KeyPath: 键路径就是键值编码中的属性的key, 由连续字符串组成, 键名之间用点隔开.
+
+KVO: 键值编码的观察者模式实现
+
+##### 使用场景
+
+KVC的应用场景
+
+KVC允许开发者通过key间接地访问对象属性, 而不需要调用类的存取方法, 这样可以动态的访问修改属性.
+
+1. 动态的存取值
+2. 利用KVC来访问对象的私有变量和属性
+3. 利用KVC进行Model和Dictionary之间的转换
+4. 利用KVC实现高阶信息传递
+
+```
+NSArray *test = @[@"jack", @"sam", @"tom"];
+NSArray *result = [test valueForKey:@"capitializedString"];
+```
+
+##### KVO原理
+
+当某个对象被第一次观察时, 系统就回在运行时动态的创建一个类的派生类, 这个类会重写父类中的setter和getter方法, 向setter中添加通知机制, 在setter的值改变前添加willChangeValueForkey, 改变后添加didChangeValueForKey, 分别用于属性即将发生变化和已经发生变化.使用KVO必须遵循kvc或者setter来改变值, 否则无法实现kvo.
+
+派生类还重写class方法来欺骗开发者, 让开发者以为调用的是原始类, 然后系统会将这个类的isa指针指向新创建的类.开发者调用setter实际上是调用派生类的setter, 从而实现通知机制.
