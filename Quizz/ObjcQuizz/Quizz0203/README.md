@@ -332,3 +332,101 @@ NSArray *result = [test valueForKey:@"capitializedString"];
 当某个对象被第一次观察时, 系统就回在运行时动态的创建一个类的派生类, 这个类会重写父类中的setter和getter方法, 向setter中添加通知机制, 在setter的值改变前添加willChangeValueForkey, 改变后添加didChangeValueForKey, 分别用于属性即将发生变化和已经发生变化.使用KVO必须遵循kvc或者setter来改变值, 否则无法实现kvo.
 
 派生类还重写class方法来欺骗开发者, 让开发者以为调用的是原始类, 然后系统会将这个类的isa指针指向新创建的类.开发者调用setter实际上是调用派生类的setter, 从而实现通知机制.
+
+# 7. tableView优化方法
+
+主要从两方面入手
+
+1. 减少cellForRowAtIndexPath代理中的计算量(cell的内容计算)
+2. 减少heightForRowAtIndexPath代理中的计算量(cell的高度计算)
+
+减少cellForRowAtIndexPath计算
+
+1. 提前计算好cell中的一些基本数据, 代理调用时直接取出
+2. 图片要异步加载
+3. 图片数量多时, 图片的尺寸经过transform矩阵变换压缩好, 准备预览图
+4. 图片懒加载, 当滚动速度很快时, 避免请求服务器频繁
+5. 尽量手动Drawing视图提升流畅性, 而不是直接子类化, UITableViewCell, 然后覆盖drawRect方法, 因为cell中不是只有一个contentView, 绘制cell不建议采用UIView, 而是使用CALayer.
+
+减少heightForRowAtIndexPath计算
+
+1. 使用estimateHeightForRowAtIndexPath
+2. 设置heightForRow为固定高
+3. 如果高度不固定, 尽量将cell的高度数据计算好存储起来,代理调用时, 直接取.
+
+图形渲染
+
+1. 减少autolayout在cell中的使用, 尽量使用frame
+2. 减少圆角的使用, 让 UI直接裁好
+3. 使用Texture(ASDisplay)facebook的库, 此库将所有UI的耗时操作移出主线程, 从而提高了帧数.
+
+# 8. 自旋锁和互斥锁(同步锁)的区别
+
+互斥锁(Mutex)属于sleep-waiting类型的锁, 例如一个临界资源被两个线程A, B所使用, B正在使用资源时, A则阻塞
+
+自旋锁(Spin Lock)是busy-waiting类型的, 临界资源被B使用时, A会不停的请求这个这个锁, 直到获得这个锁.
+
+# 9. 多线程GCD和NSOperation的比较
+
+##### NSOperation
+
+1. OC语言API
+2. 面向对象, 可以封装复用
+3. 控制精细灵活
+4. 用于复杂项目
+
+##### GCD
+
+1. C语言API
+2. 简单易读,代码精简
+3. 控制简单粗略
+4. 用于简单项目
+
+NSOperation可以实现中途取消, 而在gcd中无法取消
+
+GCD的最大有点是简单易用, 多数函数是线程安全的, 对于不复杂的多线程操作会节省大量代码
+
+# 10. NSCopying协议
+
+浅拷贝: 指针拷贝
+
+深拷贝: 内容拷贝 生成新对象
+
+总结:
+
+1. 深拷贝会产生新对象, 浅拷贝不会
+2. 不可变对象的copy才是浅拷贝, 其他情况都是深拷贝
+3. 若想类具备拷贝功能, 必须要遵守NSCopy协议, 并重写copyWithZone方法
+4. 一般情况下使用浅拷贝, 深拷贝会使内存中有两个一模一样的对象, 会造成浪费
+5. NSString一般会使用copy策略.
+
+让对象具有拷贝能力, 实现NSCopying协议, 该协议只有一个方法copyWithZone
+
+```
+- (id)copyWithZone:(NSZone *)zone {
+    Person *copy = [[[self class] allocWithZone:zone] init];
+    copy.firstname = _firstName;
+    copy.lastName = _lastName;
+    // 如果改成洗面为深拷贝
+    copy.firstName = [_firstName copy];
+    copy.lastName = [_lastName mutableCopy];
+    return copy;
+}
+```
+
+# 11. pushViewController后view的释放时机
+
+1. loadView
+2. loadViewIfNeed
+3. viewDidLoad
+4. viewWillAppear
+5. viewDidAppear
+6. viewWillDisappear
+7. viewDidDisappear
+8. – (void)didRecevieMemoryWarning
+9. – (void)viewWillUnload iOS6后废弃
+10. -(void)viewDidUnload
+11. [UIViewController dealloc]
+
+# 12. weak的应用场景, 和assign的区别, weak的实现原理
+
