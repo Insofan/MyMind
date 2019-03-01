@@ -1,0 +1,2 @@
+
+add_executable(UnknownNumOfInputs ch1/UnknownNumOfInputs.cpp)
