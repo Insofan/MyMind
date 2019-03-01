@@ -9,3 +9,7 @@ add_executable(e1-3 ch1/e1-3.cpp)
 add_executable(e1-4 ch1/e1-4.cpp)
 add_executable(e1-7 ch1/e1-7.cpp)
 add_executable(2-2 ch2/2-2.cpp)
+add_executable(2-3 ch2/2-3.cpp)
+add_executable(2-3-1 ch2/2-3-1.cpp)
+
+add_executable(2-4 ch2/2-4.cpp)
