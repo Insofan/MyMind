@@ -13,3 +13,7 @@ add_executable(2-3 ch2/2-3.cpp)
 add_executable(2-3-1 ch2/2-3-1.cpp)
 
 add_executable(2-4 ch2/2-4.cpp)
+add_executable(2-5 ch2/2-5.cpp)
+add_executable(2-5-1 ch2/2-5-1.cpp)
+add_executable(2-6 ch2/2-6.cpp)
+add_executable(e2-1 ch2/e2-1.cpp)
