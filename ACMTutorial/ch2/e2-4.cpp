@@ -6,22 +6,27 @@
 //
 
 #include <stdio.h>
+#include <iostream>
 #include <math.h>
 
+using namespace std;
 int main () {
     int n, m;
 
-    while (scanf("%d%d", &n, &m)) {
-        double sum = 0;
-        if (m <= n || m >= 1e6) {
-            return -1;
+    while (cin >> n >> m) {
+         double sum = 0.0;
+        if (n == 0 || m == 0 || n == m || m >= 1e6) {
+            break;
         }
 
         while (n <= m) {
-           sum += ( 1.0 / pow(n, 2));
-           n++;
+            //因为连乘会导致溢出, 所以需要连触发
+            sum += (1.0/ n/ n);
+            n++;
         }
+
         printf("%.5f\n", sum);
     }
+
     return 0;
 }
