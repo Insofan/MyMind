@@ -11,6 +11,7 @@
 using namespace std;
 
 
+//水仙花数
 int main() {
 
 
