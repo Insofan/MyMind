@@ -22,3 +22,6 @@ add_executable(e2-3 ch2/e2-3.cpp)
 add_executable(e2-4 ch2/e2-4.cpp)
 add_executable(e2-5 ch2/e2-5.cpp)
 add_executable(e2-6 ch2/e2-6.cpp)
+
+add_executable(3-1 ch3/3-1.cpp)
+add_executable(3-2 ch3/3-2.cpp)
